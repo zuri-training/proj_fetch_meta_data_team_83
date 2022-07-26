@@ -36,7 +36,7 @@ Zuri github repo for our project
 
 1. Go to [postgresql website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and download postgresql database version 13.7 for uniformity
 2. Install with adminstrator priviledges and set your superuser password
-3. open pgAdmin
+3. open [pgAdmin](pgAdmin1.gif)
    - click server, and right click you PostgreSQL version
    - create new database and input your superuser password
 4. Type the following in your `.env` file <br>
