@@ -39,11 +39,11 @@ Zuri github repo for our project
 3. open pgAdmin
    - click server, and right click you PostgreSQL version
    - create new database and input your superuser password
-4. Type the following in your `.env` file
-   `PG_DB = '<database_name>'`
-   `PG_USER = '<postgres_user>'`
-   `PG_PASSWORD = "<your_password>"`
-   `PG_HOST = "127.0.0.1"`
-   `PG_PORT = "<port_number>"`
+4. Type the following in your `.env` file <br>
+   `PG_DB = '<database_name>'` <br>
+   `PG_USER = '<postgres_user>'` <br>
+   `PG_PASSWORD = "<your_password>"` <br>
+   `PG_HOST = "127.0.0.1"` <br>
+   `PG_PORT = "<port_number>"` <br>
    _The postgres-user is usually_ `postgres` _and The port number is usually_ `5432` _unless you changed it_
 5. run `python manage.py runserver`
