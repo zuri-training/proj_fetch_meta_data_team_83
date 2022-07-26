@@ -45,6 +45,7 @@ Zuri github repo for our project
    `PG_PASSWORD = "<your_password>"` <br>
    `PG_HOST = "127.0.0.1"` <br>
    `PG_PORT = "<port_number>"` <br>
+   replace database_name, postgres_user, your_password and port_number with the database name you created, postgres user , your password and your portnumber.
    _The postgres-user is usually_ `postgres` _and The port number is usually_ `5432` _unless you changed it_
 5. run `python manage.py runserver`
 
