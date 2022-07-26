@@ -47,3 +47,5 @@ Zuri github repo for our project
    `PG_PORT = "<port_number>"` <br>
    _The postgres-user is usually_ `postgres` _and The port number is usually_ `5432` _unless you changed it_
 5. run `python manage.py runserver`
+
+Any errors? [beep me](https://wa.link/y15x4c)
