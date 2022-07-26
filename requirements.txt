@@ -1,0 +1,9 @@
+django
+djangorestframework
+django_extensions
+python-decouple
+Pillow
+python-magic-bin
+djangorestframework-simplejwt
+psycopg2
+

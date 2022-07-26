@@ -1,5 +1,7 @@
 # proj_fetch_meta_data_team_83
+
 This is the fetch meta data repository for team 83
+
 # team_83
 
 Zuri github repo for our project
@@ -15,7 +17,7 @@ Zuri github repo for our project
 
 4. Then add it to the repository using `git remote add upstream https://github.com/zuri-training/proj_fetch_meta_data_team_83`
 
-5. add your work so far
+5. create a `.env` file and add it to your `.gitignore` file
 
 6. push it back to github using `git push -u origin <your-username>`
 
@@ -29,4 +31,19 @@ Zuri github repo for our project
 2. upgrade pip using `pip install --upgrade pip`
 3. install the dependencies using `pip install -r requirements.txt`
 4. cd into the project folder `cd fetch_metadata`
+
+## Configure your database
+
+1. Go to [postgresql website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and download postgresql database version 13.7 for uniformity
+2. Install with adminstrator priviledges and set your superuser password
+3. open pgAdmin
+   - click server, and right click you PostgreSQL version
+   - create new database and input your superuser password
+4. Type the following in your `.env` file
+   <!-- PG_DB = '<database_name>'
+   PG_USER = '<postgres_user>'
+   PG_PASSWORD = "<your_password>"
+   PG_HOST = "127.0.0.1"
+   PG_PORT = "<port_number>" -->
+   _The postgres-user is usually_ `postgres` _and The port number is usually_ `5432` _unless you changed it_
 5. run `python manage.py runserver`
