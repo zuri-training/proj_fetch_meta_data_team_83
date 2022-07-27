@@ -1,0 +1,219 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Styling of the header section (nav_bars) */
+
+#nav_bar {
+	max-width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+#nav_bar .nav_left {
+	background-color: grey;
+	width: 10%;
+	height: 2rem;
+}
+
+#nav_bar .nav_middle .middle_link {
+	margin-right: 5rem;
+	color: grey;
+}
+
+#nav_bar .nav_right .right_link {
+	margin-right: 2rem;
+	padding: 0.5rem 2rem;
+}
+
+/* Styling of the top container (top_head) */
+
+#top_head {
+	max-width: 90%;
+	margin: 0 auto;
+	padding-top: 2.5rem;
+	display: flex;
+}
+
+#top_head .head_content {
+	max-width: 40%;
+	padding-top: 4rem;
+}
+
+#top_head .head_content .content {
+	margin-bottom: 1.5rem;
+}
+
+#top_head .head_content .head_button {
+	padding: 0.5rem 1rem;
+}
+
+#top_head .head_img {
+	background-color: grey;
+	width: 15%;
+	height: 300px;
+	margin-left: 20rem;
+}
+
+/* Styling of the first_layout */
+
+#first_layout {
+	max-width: 80%;
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+#first_layout .how_heading {
+	text-align: center;
+}
+
+#first_layout .layout_boxes {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 2rem;
+}
+
+#first_layout .layout_boxes .boxes {
+	max-width: 15%;
+}
+
+#first_layout .layout_boxes .boxes .box_img {
+	text-align: center;
+}
+
+#first_layout .layout_boxes .boxes .box_text {
+	padding-top: 0.7rem;
+}
+
+#first_layout .layout_boxes .boxes .action_button {
+	width: 30px;
+	margin: 0 auto;
+}
+
+/* Styling of the second_layouts */
+
+#second_layout {
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between; /* Still look into this */
+	padding-top: 5rem;
+}
+
+#second_layout .text_container {
+	max-width: 45%;
+	margin-top: 3rem;
+}
+
+#second_layout .text_container .metadata_head {
+	text-align: center;
+}
+
+#second_layout .text_container .content {
+	margin-bottom: 1.5rem;
+}
+
+#second_layout .text_container .metadata_button {
+	text-align: center;
+}
+
+#second_layout .text_container .extract_button {
+	padding: 0.5rem;
+}
+
+#second_layout .layout_img {
+	width: 45%;
+	height: 300px;
+	background-color: grey;
+}
+
+#second_layout .layouts_img {
+	width: 45%;
+	height: 300px;
+	background-color: grey;
+}
+
+/* Styling of the Third_layout */
+
+#third_layout {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+}
+
+#third_layout .layout_para {
+	text-align: center;
+}
+
+#third_layout .metatrack_boxes {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 1.5rem;
+}
+
+#third_layout .metatrack_boxes .third_boxes {
+	background-color: grey;
+	width: 10%;
+	height: 2rem;
+}
+
+/* Styling of the faq_layout */
+
+#faq_layout {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+#faq_layout .faq_texts {
+	text-align: center;
+}
+
+#faq_layout .faq_texts .faq_heading {
+	margin-bottom: 1rem;
+}
+
+#faq_layout .faq_bars .faq_quest {
+	cursor: pointer;
+	padding: 1rem 0.5rem;
+	border: 0.1rem thin;
+}
+
+/* Styling of the footer_layout */
+
+#footer_container {
+	background-color: grey;
+	padding-bottom: 1.5rem;
+}
+
+#footer_layout {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 10rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer_layout .footers .footer_head {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+#footer_layout .footers .footer_icons .footer_img {
+	width: 1rem;
+	margin-right: 2rem;
+}
+
+#footer_layout .footers .footer_links .link_anchors {
+	display: flex;
+	margin-bottom: 0.5rem;
+	color: whitesmoke;
+	font-size: 0.7rem;
+}
