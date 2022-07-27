@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'rest_framework.authtoken',
-    'crispy_forms',
+    # 'crispy_forms',
 
     #local apps
     'api.apps.ApiConfig',
