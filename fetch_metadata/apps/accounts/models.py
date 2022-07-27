@@ -9,13 +9,14 @@ from .managers import CustomUserManager
 # Create your models here.
 
 class CustomUser(AbstractUser):
-    # username = None #remove the default django username field
-    email = models.EmailField(unique=True)
+    username = models.CharField(max_length = 50, unique = True)
+    email = models.EmailField(('Email address'),unique=True)
 
-    REQUIRED_FIELDS = ['email']
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
     objects = CustomUserManager() #add the manager that will create a user and create a super user
     class Meta:
-        ordering = ["email","date_joined"]
+        ordering = ["username","date_joined"]
         verbose_name = "User"
 
     def __str__(self):
@@ -27,5 +28,4 @@ class CustomUser(AbstractUser):
         Create a default url for each user using their username
         """
 
-        return reverse('user_detail', kwargs={'slug': self.username})
-
+        return reverse('user_detail', kwargs={'slug': slugify(self.username)})
