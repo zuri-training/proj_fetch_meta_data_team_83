@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Styling of the header section (nav_bars) */
@@ -30,6 +36,8 @@
 #nav_bar .nav_right .right_link {
 	margin-right: 2rem;
 	padding: 0.5rem 2rem;
+	border: thin solid;
+    border-radius: .2rem;
 }
 
 /* Styling of the top container (top_head) */
@@ -43,15 +51,24 @@
 
 #top_head .head_content {
 	max-width: 40%;
-	padding-top: 4rem;
+	padding-top: 1.5rem;
 }
 
 #top_head .head_content .content {
-	margin-bottom: 1.5rem;
+	margin-bottom: .7rem;
+}
+
+#top_head .head_content .head_headings {
+    font-size: 2.5rem;
+	color: rgb(99, 98, 98);
 }
 
 #top_head .head_content .head_button {
 	padding: 0.5rem 1rem;
+	border: none;
+    border-radius: .2rem;
+    color: white;
+    background-color: black;
 }
 
 #top_head .head_img {
@@ -71,6 +88,8 @@
 
 #first_layout .how_heading {
 	text-align: center;
+	font-size: 1.5rem;
+	color: rgb(99, 98, 98);
 }
 
 #first_layout .layout_boxes {
@@ -108,11 +127,13 @@
 
 #second_layout .text_container {
 	max-width: 45%;
-	margin-top: 3rem;
+	margin-top: .6rem;
 }
 
 #second_layout .text_container .metadata_head {
 	text-align: center;
+	font-size: 2rem;
+    color: rgb(99, 98, 98);
 }
 
 #second_layout .text_container .content {
@@ -125,6 +146,10 @@
 
 #second_layout .text_container .extract_button {
 	padding: 0.5rem;
+	border: none;
+    border-radius: .2rem;
+    color: white;
+    background-color: black;
 }
 
 #second_layout .layout_img {
