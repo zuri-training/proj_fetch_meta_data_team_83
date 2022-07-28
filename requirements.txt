@@ -7,4 +7,5 @@ python-magic-bin
 djangorestframework-simplejwt
 psycopg2
 pandas
+tinytag
 
