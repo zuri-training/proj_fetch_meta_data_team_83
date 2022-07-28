@@ -1,4 +1,4 @@
-##import csv
+#import csv
 
 #with open('sample.csv')as fp:
    # reader = csv.reader(fp)
@@ -7,8 +7,8 @@
    # nrow = sum(1 for _ in reader) # What remains are the data rows
 
 
-## pip install pandas
-##from pathlib import Path
+# pip install pandas
+#from pathlib import Path
 #import pandas as pd
 #attnd_path = Path('..') / 'datasets' / 'sample.csv'
 #attnd = pd.read_csv(attnd_path)

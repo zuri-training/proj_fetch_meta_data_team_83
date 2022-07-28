@@ -1,5 +1,5 @@
 #pip install pikepdf
-#then run python <filename.py> <file>.pdf 
+#Then run python <filename.py> <file>.pdf 
 
 import pikepdf
 import sys
