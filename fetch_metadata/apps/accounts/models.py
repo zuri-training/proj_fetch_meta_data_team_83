@@ -11,7 +11,7 @@ from .managers import CustomUserManager
 class CustomUser(AbstractUser):
     username = models.CharField(max_length = 50, unique = True)
     email = models.EmailField(('Email address'),unique=True)
-
+    slug=models.SlugField(max_length=100,unique=True)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
     objects = CustomUserManager() #add the manager that will create a user and create a super user
@@ -28,11 +28,18 @@ class CustomUser(AbstractUser):
         Create a default url for each user using their username
         """
 
-        return reverse('user_detail', kwargs={'slug': slugify(self.username)})
+        return reverse('user_detail', kwargs={'slug': slug})
+    def save(self, *args, **kwargs):
+        # Check for a slug
+        if not self.slug:
+            # Create default slug
+            self.slug = slugify(self.username)
+        # Finally save.
+        super().save(*args, **kwargs)
 
 
 def get_upload_path(instance, filename):
-    return '{0}/profile'.format(instance.user.id)
+    return '{0}/profile/'.format(instance.user.id)
 
 
 class CustomUserProfile(models.Model):

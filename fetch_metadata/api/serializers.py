@@ -10,12 +10,11 @@ class UserInputSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(write_only=True)
 
     username = serializers.CharField(max_length = 50,)
-    first_name = serializers.CharField(required=False)
-    last_name = serializers.CharField(required=False)
+
 
     class Meta:
         model = UserModel
-        fields = ('username', 'email', 'first_name', 'last_name', 'password', 'password2', )
+        fields = ('username', 'email', 'password', 'password2', )
 
     def validate(self, attrs):
         if attrs['password'] != attrs['password2']:
@@ -25,7 +24,7 @@ class UserInputSerializer(serializers.ModelSerializer):
 class UserOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserModel
-        fields = ('email', 'first_name', 'last_name', 'slug')
+        fields = ('id', 'email', 'username','slug')
 
 class ChangePasswordSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
