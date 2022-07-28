@@ -3,6 +3,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth import get_user_model
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 from django.contrib.auth.models import Group
+from .models import CustomUserProfile
 
 UserModel = get_user_model()
 class CustomUserAdmin(BaseUserAdmin):
@@ -27,3 +28,4 @@ class CustomUserAdmin(BaseUserAdmin):
     ordering = ('username', )
 admin.site.register(UserModel, CustomUserAdmin)
 admin.site.unregister(Group)
+admin.site.register(CustomUserProfile)
