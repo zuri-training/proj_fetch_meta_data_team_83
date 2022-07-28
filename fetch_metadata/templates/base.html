@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'index.css'%}" rel="stylesheet" />
 	<!-- <script src="{% static 'index.js'%}"></script> -->
-    
+
     {% block title %}
         {% if title %}
             <title>{{title}} | MetaTrack</title>
@@ -17,6 +17,8 @@
     {% endblock %}
 </head>
 <body>
+
+    <!-- Header -->
     <header id="nav_bar">
 			<div class="nav_left">
 				<img src="" alt="" />
@@ -32,10 +34,16 @@
 				<!-- <button class="right_link">Register</button> -->
 			</div>
 	</header>
+    <!-- End of Header -->
+
+    <!-- Main Body -->
     <main>
         {% block content %}
         {% endblock%}
     </main>
+    <!-- End of Main Body -->
+
+    <!-- Footer -->
     <footer id="footer_container">
 			<section id="footer_layout">
 				<div class="footer_one footers">
@@ -80,6 +88,7 @@
 				</div>
 			</section>
 	</footer>
-	<!-- <script src="{% static 'index.js'%}"></script> -->
+    <!--End of footer-->
+    <script src="{% static 'index.js' %}"></script>
 </body>
 </html>

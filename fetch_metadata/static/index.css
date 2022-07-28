@@ -208,7 +208,36 @@ h1, h2, h3, h4, h5, h6, a, p, button {
 	cursor: pointer;
 	padding: 1rem 0.5rem;
 	border: 0.1rem thin;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
+
+.faq_quest::after {
+    content: "\25BE";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+.faq_quest.active::after{
+    transform:rotate(-180deg);
+}
+
+.faq_body {
+    max-height:0;
+    overflow: hidden;
+    transition:max-height 0.2s ease-out;
+}
+
+.faq_body p{
+    padding 1rem;
+    line-height:1.5rem;
+}
+
+
 
 /* Styling of the footer_layout */
 
