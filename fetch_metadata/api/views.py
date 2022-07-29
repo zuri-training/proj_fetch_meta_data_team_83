@@ -1,7 +1,9 @@
 from rest_framework import viewsets, permissions, status
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 # from rest_framework.decorators import action
 from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework.views import APIView
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
@@ -86,3 +88,25 @@ class UserViewSet(viewsets.ModelViewSet):
     #     else:
     #         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+class CreateUserView(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'signup.html'
+
+    def get(self, request, pk):
+        signup = get_object_or_404(UserModel, slug=pk)
+        serializer = serializers.UserInputSerializer(signup)
+        return Response({'serializer': serializer, 'signup': signup})
+
+    def post(self, request, pk):
+        self.check_permissions(request)
+        serializer = serializers.UserInputSerializer(data=request.POST)
+        serializer.is_valid(raise_exception=True)
+
+        user = UserModel.objects.create_user(
+            email = serializer.validated_data["email"],
+            username = serializer.validated_data["username"],
+            password = serializer.validated_data["password"]
+        )
+        response = serializers.UserOutputSerializer(user).data
+        return Response(response, status=status.HTTP_201_CREATED)
