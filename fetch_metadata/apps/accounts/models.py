@@ -11,7 +11,7 @@ from .managers import CustomUserManager
 class CustomUser(AbstractUser):
     username = models.CharField(max_length = 50, unique = True)
     email = models.EmailField(('Email address'),unique=True)
-    slug = models.SlugField(max_length=100,unique=True)
+    slug = models.SlugField(max_length=100)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
     objects = CustomUserManager() #add the manager that will create a user and create a super user
@@ -45,8 +45,8 @@ def get_upload_path(instance):
     return profile.format(instance.user.id)
 
 
-class CustomUserProfile(models.Model):
-    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    profile_pic = models.ImageField(null=True, blank=True, upload_to=get_upload_path)
-    job_type=models.CharField(max_length=100, null=True, blank=True)
-    bio=models.TextField(null=True,blank=True)
+# class CustomUserProfile(models.Model):
+#     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+#     profile_pic = models.ImageField(null=True, blank=True, upload_to=get_upload_path)
+#     job_type=models.CharField(max_length=100, null=True, blank=True)
+#     bio=models.TextField(null=True,blank=True)

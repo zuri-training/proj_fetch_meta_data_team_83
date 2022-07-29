@@ -1,5 +1,5 @@
 from django.urls import path 
-from .views import UserViewSet
+from .views import CreateUserView
 
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken.views import obtain_auth_token
@@ -15,5 +15,5 @@ urlpatterns = router.urls
 
 urlpatterns += [
     path('token/', obtain_auth_token, name='get_token'),
-    path('signup/', UserViewSet.create, name='signup')
+    path('signup/', CreateUserView.as_view(), name='signup')
 ]

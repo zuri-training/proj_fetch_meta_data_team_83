@@ -91,14 +91,14 @@ class UserViewSet(viewsets.ModelViewSet):
 
 class CreateUserView(APIView):
     renderer_classes = [TemplateHTMLRenderer]
-    template_name = 'signup.html'
+    template_name = 'api/signup.html'
 
-    def get(self, request, pk):
-        signup = get_object_or_404(UserModel, slug=pk)
+    def get(self, request, pk=None):
+        signup = get_object_or_404(UserModel)
         serializer = serializers.UserInputSerializer(signup)
         return Response({'serializer': serializer, 'signup': signup})
 
-    def post(self, request, pk):
+    def post(self, request):
         self.check_permissions(request)
         serializer = serializers.UserInputSerializer(data=request.POST)
         serializer.is_valid(raise_exception=True)
