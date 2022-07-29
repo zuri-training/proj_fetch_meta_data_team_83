@@ -28,7 +28,6 @@ class CustomUser(AbstractUser):
         Create a default url for each user using their username
         """
 
-
         return reverse('user_detail', kwargs={'slug': slug})
     def save(self, *args, **kwargs):
         # Check for a slug
@@ -41,6 +40,7 @@ class CustomUser(AbstractUser):
 
 def get_upload_path(instance, filename):
     return '{0}/profile/'.format(instance.user.id)
+
 
 class CustomUserProfile(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
