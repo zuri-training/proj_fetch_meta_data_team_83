@@ -210,6 +210,7 @@ button {
 
 #faq_layout .faq_texts .faq_heading {
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 #faq_layout .faq_bars .faq_quest {
