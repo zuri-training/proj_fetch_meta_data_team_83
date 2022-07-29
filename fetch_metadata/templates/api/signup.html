@@ -17,7 +17,7 @@
         <section class="order_2">
             <h2>Set Up a MetaTrack Account</h2>
             <p>Join thousands of <strong> MetaTrackers</strong> who extracts metadata from files<br> save, copy, share and track thier File history with <strong>MetaTrack</strong>   
-                <form class="box" id="form" action="{% url 'rest_framework:login' %}" role="form" method="post">
+                <form class="box" id="form" action="{% url 'rest_framework:login' %}" role="form" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ next }}" />
                             <section class="form-control">
@@ -26,7 +26,7 @@
                                 class="clearfix control-group {% if form.username.errors %}error{% endif %}"
                               >
                                 <div class="form-group">
-                                  <label for="id_username">{{ form.username.label }}:</label>
+                                  <label for="id_username">Username</label>
                                   <input
                                     type="text"
                                     name="username"
@@ -56,7 +56,7 @@
                               class="clearfix control-group {% if form.username.errors %}error{% endif %}"
                             >
                               <div class="form-group">
-                                <label for="id_email">{{ form.email.label }}:</label>
+                                <label for="id_email">Email:</label>
                                 <input
                                   type="email"
                                   name="email"
@@ -85,6 +85,27 @@
                             class="clearfix control-group {% if form.password.errors %}error{% endif %}"
                           >
                             <div class="form-group">
+                              <label for="id_password">Password:</label>
+                              <input
+                                type="password"
+                                name="password"
+                                maxlength="100"
+                                autocapitalize="off"
+                                autocorrect="off"
+                                class="form-control textinput textInput"
+                                id="id_password"
+                                placeholder="Re-type your password"
+                                required
+                              />
+                              {% if form.password.errors %}
+                              <p class="text-error">{{ form.password.errors|striptags }}</p>
+                              {% endif %}
+                            </div>
+                            <div
+                            id="div_id_password"
+                            class="clearfix control-group {% if form.password.errors %}error{% endif %}"
+                          >
+                            <div class="form-group">
                               <label for="id_password">Confirm Password:</label>
                               <input
                                 type="password"
@@ -101,7 +122,15 @@
                               <p class="text-error">{{ form.password.errors|striptags }}</p>
                               {% endif %}
                             </div>
-                                <input type="button" value = "Create account" class="btn">
+                            <div class="form-actions-no-box">
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Submit"
+                                class="btn btn-primary form-control"
+                                id="submit-id-submit"
+                              />
+                            </div>
                             <small>Already have an account? <a href="login.html">login</a></small>
                         </form>
         </section>
