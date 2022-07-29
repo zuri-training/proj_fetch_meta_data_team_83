@@ -89,22 +89,18 @@ WSGI_APPLICATION = 'fetch_metadata.wsgi.application'
 
 
 #decouple database variables from .env
-PG_DB = config("PG_DB")
-PG_USER = config("PG_USER")
-PG_PASSWORD = config("PG_PASSWORD")
-PG_HOST = config("PG_HOST")
-PG_PORT = config("PG_PORT")
+# PG_DB = config("PG_DB")
+# PG_USER = config("PG_USER")
+# PG_PASSWORD = config("PG_PASSWORD")
+# PG_HOST = config("PG_HOST")
+# PG_PORT = config("PG_PORT")
 
-# Database
+# Databasep
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': PG_DB,
-        'USER': PG_USER,
-        'PASSWORD': PG_PASSWORD,
-        'HOST': PG_HOST,
-        'PORT': PG_PORT,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -145,19 +141,71 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = (
-    BASE_DIR/'static',
-)
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+#DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+  #      'NAME': PG_DB,
+   #     'USER': PG_USER,
+    #    'PASSWORD': PG_PASSWORD,
+     #   'HOST': PG_HOST,
+      #  'PORT': PG_PORT,
+    #}
+#}
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
+
+# Password validation
+# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
+
+#AUTH_PASSWORD_VALIDATORS = [
+ #   {
+   #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+  #  },
+   # {
+    #    'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    #},
+    #{
+   #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+   # },
+    #{
+     #   'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    #},
+#]
+
+
+# Internationalization
+# https://docs.djangoproject.com/en/4.0/topics/i18n/
+
+#LANGUAGE_CODE = 'en-us'
+
+#TIME_ZONE = 'UTC'
+
+#USE_I18N = True
+
+#USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+#STATIC_URL = 'static/'
+
+#STATICFILES_DIRS = (
+ #   BASE_DIR/'static',
+#)
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
+#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#REST_FRAMEWORK = {
+ #   'DEFAULT_AUTHENTICATION_CLASSES': [
+  #      'rest_framework.authentication.SessionAuthentication',
+   #     'rest_framework.authentication.BasicAuthentication',
         # 'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ]
-}
+#    ]
+#}
