@@ -39,6 +39,8 @@ class CustomUser(AbstractUser):
 
 
 def get_upload_path(instance):
+    """"Generate a path to save individual's profile pictures"""
+
     profile = '{id}/profile'
     return profile.format(instance.user.id)
 
