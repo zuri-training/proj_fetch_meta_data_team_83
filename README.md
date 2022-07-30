@@ -5,8 +5,14 @@ This is the fetch meta data repository for team 83
 # team_83
 
 Zuri github repo for our project
+### Checkout the Design [here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494)<br>
+### See the database schema [here]()<br>
+### view our
 
-## create a pull request
+
+
+## Contribute
+### create a pull request
 
 1. clone the repo using `git clone https://github.com/zuri-training/proj_fetch_meta_data_team_83/`
 
@@ -21,7 +27,7 @@ Zuri github repo for our project
 
 6. push it back to github using `git push -u origin <your-username>`
 
-## configure the project for local machine
+### configure the project for local machine
 
 1. Create a virtual environment and activate `python -m venv env`
    - To activate in windows powershell `env\Scripts\activate.ps1`
@@ -32,7 +38,7 @@ Zuri github repo for our project
 3. install the dependencies using `pip install -r requirements.txt`
 4. cd into the project folder `cd fetch_metadata`
 
-## Configure your database
+### Configure your database
 
 1. Go to [postgresql website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and download postgresql database version 13.7 for uniformity
 2. Install with adminstrator priviledges and set your superuser password
