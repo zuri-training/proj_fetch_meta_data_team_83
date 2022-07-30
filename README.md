@@ -6,13 +6,14 @@ This is the fetch meta data repository for team 83
 
 Zuri github repo for our project
 ### Checkout the Design [here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494)<br>
-### See the database schema [here]()<br>
-### view our
+
+### See the database schema [here](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team-83-DATABASE-SCHEMA?node-id=0%3A1)<br>
+### View our
 
 
 
 ## Contribute
-### create a pull request
+### Create a pull request
 
 1. clone the repo using `git clone https://github.com/zuri-training/proj_fetch_meta_data_team_83/`
 
