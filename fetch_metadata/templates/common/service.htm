@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/4ff9262f4b.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <div class="container">
+      <div class="hero">
+        <header>
+          <a href=""
+            ><p><b>MetaTrack</b></p></a
+          >
+          <a href="" class="toggle__button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="nav__bar">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Sevices</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+            <a href="" class="nav__bar--link">Login to your Account</a>
+          </div>
+        </header>
+        <h1>Services</h1>
+      </div>
+      <div class="section">
+        <div class="first__section">
+          <div class="first__section--block">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h2>Metadata Extraction</h2>
+            <p>
+              <b>MetaTrack</b> uses an online extraction tool to extract
+              metadatas embedded in files ranging from pdf, image, files, csv
+              and json.
+            </p>
+          </div>
+          <div class="first__section--second__block">
+            <i class="fa-solid fa-unlock-keyhole"></i>
+            <h2>Security Check</h2>
+            <p>
+              <b>MetaTrack</b> protects all files that are stored in the
+              database against virus attacks and malware threats through scans
+              that are varied based on choice.
+            </p>
+          </div>
+        </div>
+        <div class="second__section">
+          <i class="fa-solid fa-database"></i>
+          <h2>Database Storage</h2>
+          <p>
+            <b>MetaTrack</b> uses an online database storage system to store up
+            files uploaded overtime in case of retrieval or recollection.
+          </p>
+        </div>
+      </div>
+      <div class="third__section">
+        <h1>FAQS</h1>
+        <p class="third__section--para">
+          Pretty new to <b>MetaTrack?</b> We answered some questions you don't
+          have to
+        </p>
+
+        <div class="third__section--text">
+          <p><b>What are Metadatas</b></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="third__section--text">
+          <p><b>What type of file can we extract metadata from?</b></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="third__section--text">
+          <p>
+            <b>Can we share details gotten from the copied metadata of file?</b>
+          </p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="third__section--text">
+          <p><b>Do we lose files after the files have been generated?</b></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="third__section--text">
+          <p>
+            <b
+              >Are there any measures to verify the authencity of files uploaded
+              to the website</b
+            >
+          </p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+      <footer>
+        <div class="first__footer">
+          <p>MetaTrack</p>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="second__footer">
+          <a href="" class="first__link">Home</a>
+          <a href="">How it works</a>
+          <a href="">Services</a>
+          <a href="">About Us</a>
+          <a href="">Register</a>
+          <a href="">Login</a>
+        </div>
+        <div class="second__footer">
+          <a href="" class="first__link">Support</a>
+          <a href="">FAQs</a>
+          <a href="">Help</a>
+          <a href="">Blogs</a>
+        </div>
+        <div class="second__footer">
+          <a href="" class="first__link">Legal</a>
+          <a href="">Terms of Services</a>
+          <a href="">Privacy Guidelines</a>
+        </div>
+        <div class="second__footer">
+          <a href="" class="first__link">Contact Us</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Twitter</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const toggleButton = document.getElementsByClassName("toggle__button")[0];
+    const navBarLinks = document.getElementsByClassName("nav__bar")[0];
+
+    toggleButton.addEventListener("click", () => {
+      navBarLinks.classList.toggle("active");
+    });
+  </script>
+</html>
