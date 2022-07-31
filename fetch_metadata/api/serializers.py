@@ -24,7 +24,7 @@ class UserInputSerializer(serializers.ModelSerializer):
 class UserOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserModel
-        fields = ('id', 'email', 'username','slug')
+        fields = ('id', 'email', 'username')
 
 class ChangePasswordSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
