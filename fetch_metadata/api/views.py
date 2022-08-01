@@ -28,18 +28,17 @@ class UserViewSet(viewsets.ModelViewSet):
         self.check_permissions(request)
         serializer = serializers.UserInputSerializer(data=request.POST)
         serializer.is_valid(raise_exception=True)
-        
+
         user = UserModel.objects.create_user(
             email = serializer.validated_data["email"],
-            first_name = serializer.validated_data["first_name"],
-            last_name = serializer.validated_data["last_name"],
+            username = serializer.validated_data["username"],
             password = serializer.validated_data["password"]
         )
-        response = serializers.UserOutputSerializer(user).data 
+        response = serializers.UserOutputSerializer(user).data
         return Response(response, status=status.HTTP_201_CREATED)
 
     def retrieve(self, request, pk=None):
-        # Check if pk is a valid slug 
+        # Check if pk is a valid slug
         user = UserModel.objects.filter(slug=pk).first()
 
         if not user and pk.isdigit():
@@ -53,31 +52,31 @@ class UserViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.action == 'create': # Create, List, Retrieve, Update, or Destroy
             permission_classes = [permissions.AllowAny]
-        elif self.action == 'retrieve':
-            permission_classes = [permissions.IsAuthenticated]
-        elif self.action in ['update', 'partial_update', 'destroy']:
+       #  elif self.action == 'retrieve':
+            # permission_classes = [permissions.IsAuthenticated]
+        elif self.action in ['retrieve', 'update', 'partial_update', 'destroy']:
             permission_classes = [IsCreatorOrAdminReadOnly,permissions.IsAuthenticated]
         elif self.action == 'list':
             permission_classes = [permissions.IsAdminUser]
         else:
             permission_classes = [permissions.IsAdminUser]
-        
+
         return [permission() for permission in permission_classes]
 
     def get_serializer_class(self):
         return self.serializers_classes.get(self.action, self.default_serializer_class)
-    
+
     @action(detail=True, methods=['post'])
     def change_password(self, request, pk=None):
         """
-        Allow an authenticated user can change password
+        Allow an authenticated user to change password
         """
         user = self.get_object()
-        serializer = serializers.UserInputSerializer(data=request.data)
+        serializer = serializers.PasswordChangeSerializer(data=request.data)
         if serializer.is_valid():
             user.change_password(serializer.validated_data['password'])
             user.save()
             return Response({'status': 'password changed'})
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
+
