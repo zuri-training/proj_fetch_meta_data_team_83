@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.meta_extract.apps.MetaExtractConfig',
     'apps.commons.apps.CommonsConfig',
-    'file_control',
+    'apps.file_control.apps.FileControlConfig',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
@@ -140,6 +140,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+#Media files (uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
@@ -162,6 +166,3 @@ REST_FRAMEWORK = {
         # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
