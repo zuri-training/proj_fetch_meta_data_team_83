@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: space-between; width: 70%; margin:0 auto; padding-top: 2em; align-items: center;">
+    <div >
+        <h1>view all your uploaded files here</h1>
+
+        {% for file in files %}
+            <h1 style="margin-left: 5em;">Welcome, {{ file.author }}</h1>
+            <h4 style="margin-left: 5em;">{{ file.title }}</h4>
+            <div style="margin-left: 5em;"><img src="../..{{ file.file.url }}" style="width: 100px; height: 100px;"></div>
+        {%endfor%}
+    </div>
+
+    <button style="height: 70px;"><a href="{% url 'userFileUpload' %}">upload files</a></button>
+</body>
+</html>

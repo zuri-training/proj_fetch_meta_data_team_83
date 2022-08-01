@@ -5,10 +5,15 @@ class IsCreatorOrAdminReadOnly(permissions.BasePermission):
 
 
     def has_object_permission(self, request, view, obj):
- #if user is requesting anything that doesn't belong to him, and she's not a staff, reject
-        if request.user != obj and not request.user.is_staff:
-            return False
 
+        # If it's a safe method (GET, HEAD, OPTIONS) allow
+        if request.method in permissions.SAFE_METHODS:
+            return True
+ #if user is requesting anything that doesn't belong to him, and she's not a staff, reject
+        # if request.user != obj and not request.user.is_staff:
+            # return False
+
+        #if user is staff he can see but not.edit
         if request.user.is_staff and request.method not in self.edit_methods:
             return True
 

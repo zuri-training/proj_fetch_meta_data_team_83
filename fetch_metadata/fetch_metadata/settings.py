@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.meta_extract.apps.MetaExtractConfig',
     'apps.commons.apps.CommonsConfig',
+    'apps.file_control.apps.FileControlConfig',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
@@ -134,11 +135,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'GMT+0'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-# USE_TZ = True
+USE_TZ = True
+
+#Media files (uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Static files (CSS, JavaScript, Images)
