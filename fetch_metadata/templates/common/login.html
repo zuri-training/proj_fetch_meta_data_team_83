@@ -1,0 +1,70 @@
+{% load static %} {%block 'login.css'%}
+<!-- left side  -->
+<div class="split left">
+  <button class="btn1"
+  ></button>
+</div>
+<!-- Right side-->
+<div class="split right">
+<!-- All elements centered on the right side -->
+  <div class="centered"  >
+      <!-- Elements in upper half of the right side-->
+  <div class="upper" style="display: flex;
+  flex-direction: column ;">
+  <!--H1 tag and image tag flexed side by side--> 
+      <div class="side" >
+          <img class="wave"  height="60px" src="{% static 'image/wave.png'%}" />
+    <h1
+    >
+    Good to have you back
+    </h1>
+    </div>
+
+    <p class="px" >
+      It's  been a Minute. Let's get back on extracting Metadatas from your
+      files
+    </p>
+    <form>
+      <label class="L1"  for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Type your email adress"
+        required
+      />
+      <!-- Password placeholder and forgot password link arranged -->
+      <div>
+      <br />
+      <label class="L2"   for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="..........."
+        required
+      />
+      <p class="p3"><a href="#">Forgotten Password? </a></p>
+      <br />
+      </div>
+      </div>
+
+      <!-- All elements in lower right side -->
+      <div class="lower"
+      >
+      <button
+
+        class="btn2"
+      >
+        Sign In To Your Account
+      </button>
+      <br>
+      <p class="p4"
+      >
+        or sign in using
+      </p>
+      <!-- Logo to be placed here -->
+      <button
+        class="btn3"
+      ></button>
+    </div>
+  </div>
+</div>
