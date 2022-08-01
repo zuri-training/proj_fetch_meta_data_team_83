@@ -6,7 +6,13 @@ This is the fetch meta data repository for team 83
 
 Zuri github repo for our project
 
-## create a pull request
+### Checkout the Design [here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494)<br>
+
+### See the database schema [here](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team-83-DATABASE-SCHEMA?node-id=0%3A1)<br>
+
+## Contribute
+
+### Create a pull request
 
 1. clone the repo using `git clone https://github.com/zuri-training/proj_fetch_meta_data_team_83/`
 
@@ -21,7 +27,7 @@ Zuri github repo for our project
 
 6. push it back to github using `git push -u origin <your-username>`
 
-## configure the project for local machine
+### configure the project for local machine
 
 1. Create a virtual environment and activate `python -m venv env`
    - To activate in windows powershell `env\Scripts\activate.ps1`
@@ -32,7 +38,7 @@ Zuri github repo for our project
 3. install the dependencies using `pip install -r requirements.txt`
 4. cd into the project folder `cd fetch_metadata`
 
-## Configure your database
+### Configure your database
 
 1. Go to [postgresql website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and download postgresql database version 13.7 for uniformity
 2. Install with adminstrator priviledges and set your superuser password
@@ -45,8 +51,8 @@ Zuri github repo for our project
    `PG_PASSWORD = "<your_password>"` <br>
    `PG_HOST = "127.0.0.1"` <br>
    `PG_PORT = "<port_number>"` <br>
-   replace database_name, postgres_user, your_password and port_number with the database name you created, postgres user , your password and your portnumber.
-   _The postgres-user is usually_ `postgres` _and The port number is usually_ `5432` _unless you changed it_
+   replace database*name, postgres_user, your_password and port_number with the database name you created, postgres user , your password and your portnumber.
+   \_The postgres-user is usually* `postgres` _and The port number is usually_ `5432` _unless you changed it_
 5. run `python manage.py runserver`
 
 Any errors? [beep me](https://wa.link/y15x4c)

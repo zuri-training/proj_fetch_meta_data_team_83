@@ -3,9 +3,10 @@ djangorestframework
 django_extensions
 python-decouple
 Pillow
-python-magic-bin
+#python-magic-bin
 djangorestframework-simplejwt
 psycopg2
 pandas
 tinytag
+django-crispy-forms
 

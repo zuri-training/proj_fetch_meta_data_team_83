@@ -1,0 +1,145 @@
+{% comment %}{% load rest_framework %}{% endcomment %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata Registration Form</title>
+    <link href="{% static 'api/signup.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+        <section class="order_1">
+            <p></p>
+        </section>
+        <section class="order_2">
+            <h2>Set Up a MetaTrack Account</h2>
+            <p>Join thousands of <strong> MetaTrackers</strong> who extracts metadata from files<br> save, copy, share and track thier File history with <strong>MetaTrack</strong>
+                <form class="box" id="form" action="{% url 'api:signup' %}" role="form" method="POST">
+                    {% csrf_token %}
+                    {% comment %}{{form.as_p}}{% endcomment %}
+                    <input type="hidden" name="next" value="{{ next }}" />
+                            <section class="form-control">
+                                <div
+                                id="div_id_username"
+                                class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+                              >
+                                <div class="form-group">
+                                    <label for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>
+                                  <input
+                                    type="text"
+                                    name="{{form.username.name}}"
+                                    maxlength="{{form.uusername.field.max_length}}"
+                                    autocapitalize="off"
+                                    autocorrect="off"
+                                    class="form-control textinput textInput"
+                                    id="{{form.username.id_for_label}}"
+                                    placeholder="Type your username"
+                                    required
+                                    autofocus
+                                    {%
+                                    if
+                                    form.username.value
+                                    %}value="{{ form.username.value }}"
+                                    {%
+                                    endif
+                                    %}
+                                  />
+                                  {% if form.username.errors %}
+                                  <p class="text-error">{{ form.username.errors|striptags }}</p>
+                                  {% endif %}
+                                </div>
+                              </div>
+                              <div
+                              id="div_id_username"
+                              class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+                            >
+                              <div class="form-group">
+                                  <label for="{{form.email.id_for_label}}">{{form.email.label_tag}}</label>
+                                <input
+                                  type="email"
+                                  name="{{form.email.name}}"
+                                  maxlength="{{form.email.field.max_length}}"
+                                  autocapitalize="off"
+                                  autocorrect="off"
+                                  class="form-control textinput textInput"
+                                  id="{{form.email.id_for_label}}"
+                                  required
+                                  autofocus
+                                  {%
+                                  if
+                                  form.email.value
+                                  %}value="{{ form.email.value }}"
+                                  {%
+                                  endif
+                                  %}
+                                />
+                                {% if form.email.errors %}
+                                <p class="text-error">{{ form.email.errors|striptags }}</p>
+                                {% endif %}
+                              </div>
+                            </div>
+                            <div
+                            id="div_id_password"
+                            class="clearfix control-group {% if form.password.errors %}error{% endif %}"
+                          >
+                            <div class="form-group">
+                                <label for="{{form.password.id_for_label}}">{{form.password1.label_tag}}</label>
+                              <input
+                                type="password"
+                                name="{{form.password1.name}}"
+                                maxlength="{{form.password1.field.max_length}}"
+                                autocapitalize="off"
+                                autocorrect="off"
+                                class="form-control textinput textInput"
+                                id="{{form.password1.id_for_label}}"
+                                placeholder="Type your password"
+                                required
+                              />
+                              {% if form.password.errors %}
+                              <p class="text-error">{{ form.password.errors|striptags }}</p>
+                              {% endif %}
+                            </div>
+                            <div
+                            id="div_id_password"
+                            class="clearfix control-group {% if form.password.errors %}error{% endif %}"
+                          >
+                            <div class="form-group">
+                                <label for="{{form.password2.id_for_label}}">{{form.password2.label_tag}}</label>
+                              <input
+                                type="password"
+                                name="{{form.password2.name}}"
+                                maxlength="{{form.password2.field.max_length}}"
+                                autocapitalize="off"
+                                autocorrect="off"
+                                class="form-control textinput textInput"
+                                id="{{form.password2.id_for_label}}"
+                                placeholder="Re-type your password"
+                                required
+                              />
+                              {% if form.password.errors %}
+                              <p class="text-error">{{ form.password.errors|striptags }}</p>
+                              {% endif %}
+                            </div>
+                            <div class="form-actions-no-box">
+                              <input
+                                type="submit"
+                                name="submit"
+                                value="Submit"
+                                class="btn btn-primary form-control"
+                                id="submit-id-submit"
+                              />
+                            </div>
+                            <small>Already have an account? <a href="{%url 'api:login'%}">login</a></small>
+                        </form>
+        </section>
+
+    </section>
+
+</body>
+</html>
+
+
+
