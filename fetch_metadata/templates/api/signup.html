@@ -1,4 +1,4 @@
-{% load rest_framework %}
+{% comment %}{% load rest_framework %}{% endcomment %}
 {%load static%}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +16,10 @@
         </section>
         <section class="order_2">
             <h2>Set Up a MetaTrack Account</h2>
-            <p>Join thousands of <strong> MetaTrackers</strong> who extracts metadata from files<br> save, copy, share and track thier File history with <strong>MetaTrack</strong>   
-                <form class="box" id="form" action="{% url 'rest_framework:login' %}" role="form" method="POST">
+            <p>Join thousands of <strong> MetaTrackers</strong> who extracts metadata from files<br> save, copy, share and track thier File history with <strong>MetaTrack</strong>
+                <form class="box" id="form" action="{% url 'api:signup' %}" role="form" method="POST">
                     {% csrf_token %}
+                    {% comment %}{{form.as_p}}{% endcomment %}
                     <input type="hidden" name="next" value="{{ next }}" />
                             <section class="form-control">
                                 <div
@@ -26,15 +27,15 @@
                                 class="clearfix control-group {% if form.username.errors %}error{% endif %}"
                               >
                                 <div class="form-group">
-                                  <label for="id_username">Username</label>
+                                    <label for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>
                                   <input
                                     type="text"
-                                    name="username"
-                                    maxlength="100"
+                                    name="{{form.username.name}}"
+                                    maxlength="{{form.uusername.field.max_length}}"
                                     autocapitalize="off"
                                     autocorrect="off"
                                     class="form-control textinput textInput"
-                                    id="id_username"
+                                    id="{{form.username.id_for_label}}"
                                     placeholder="Type your username"
                                     required
                                     autofocus
@@ -56,15 +57,15 @@
                               class="clearfix control-group {% if form.username.errors %}error{% endif %}"
                             >
                               <div class="form-group">
-                                <label for="id_email">Email:</label>
+                                  <label for="{{form.email.id_for_label}}">{{form.email.label_tag}}</label>
                                 <input
                                   type="email"
-                                  name="email"
-                                  maxlength="100"
+                                  name="{{form.email.name}}"
+                                  maxlength="{{form.email.field.max_length}}"
                                   autocapitalize="off"
                                   autocorrect="off"
                                   class="form-control textinput textInput"
-                                  id="id_email"
+                                  id="{{form.email.id_for_label}}"
                                   required
                                   autofocus
                                   {%
@@ -85,16 +86,16 @@
                             class="clearfix control-group {% if form.password.errors %}error{% endif %}"
                           >
                             <div class="form-group">
-                              <label for="id_password">Password:</label>
+                                <label for="{{form.password.id_for_label}}">{{form.password1.label_tag}}</label>
                               <input
                                 type="password"
-                                name="password"
-                                maxlength="100"
+                                name="{{form.password1.name}}"
+                                maxlength="{{form.password1.field.max_length}}"
                                 autocapitalize="off"
                                 autocorrect="off"
                                 class="form-control textinput textInput"
-                                id="id_password"
-                                placeholder="Re-type your password"
+                                id="{{form.password1.id_for_label}}"
+                                placeholder="Type your password"
                                 required
                               />
                               {% if form.password.errors %}
@@ -106,15 +107,15 @@
                             class="clearfix control-group {% if form.password.errors %}error{% endif %}"
                           >
                             <div class="form-group">
-                              <label for="id_password">Confirm Password:</label>
+                                <label for="{{form.password2.id_for_label}}">{{form.password2.label_tag}}</label>
                               <input
                                 type="password"
-                                name="password"
-                                maxlength="100"
+                                name="{{form.password2.name}}"
+                                maxlength="{{form.password2.field.max_length}}"
                                 autocapitalize="off"
                                 autocorrect="off"
                                 class="form-control textinput textInput"
-                                id="id_password"
+                                id="{{form.password2.id_for_label}}"
                                 placeholder="Re-type your password"
                                 required
                               />
@@ -131,12 +132,12 @@
                                 id="submit-id-submit"
                               />
                             </div>
-                            <small>Already have an account? <a href="login.html">login</a></small>
+                            <small>Already have an account? <a href="{%url 'api:login'%}">login</a></small>
                         </form>
         </section>
-        
+
     </section>
-    
+
 </body>
 </html>
 

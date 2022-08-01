@@ -45,8 +45,8 @@ def get_upload_path(instance):
     return profile.format(instance.user.id)
 
 
-# class CustomUserProfile(models.Model):
-#     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-#     profile_pic = models.ImageField(null=True, blank=True, upload_to=get_upload_path)
-#     job_type=models.CharField(max_length=100, null=True, blank=True)
-#     bio=models.TextField(null=True,blank=True)
+class CustomUserProfile(models.Model):
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+    profile_pic = models.ImageField(null=True, blank=True, upload_to=get_upload_path)
+    job_type=models.CharField(max_length=100, null=True, blank=True)
+    bio=models.TextField(null=True,blank=True)
