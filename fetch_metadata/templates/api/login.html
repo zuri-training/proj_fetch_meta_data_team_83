@@ -1,129 +1,73 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet"  href="{% static 'login.css' %}">
+{% endblock %}
 <!-- left side  -->
-<div class="split left" style="background-image:url() ;">
-    <button
-      style="
-        position: absolute;
-        width: 228px;
-        height: 72px;
-        left: 24px;
-        top: 24px;
-        background: #4d5054;
-      "
-    ></button>
-    
-    
-  </div>
+<div class="split left">
+  <button class="btn1"
+  ></button>
+</div>
 <!-- Right side-->
-  <div class="split right">
+<div class="split right">
 <!-- All elements centered on the right side -->
-    <div class="centered"  >
-        <!-- Elements in upper half of the right side-->
-    <div style="display: flex;
-    flex-direction: column ;">
-    <!--H1 tag and image tag flexed side by side--> 
-        <div style= "display: flex;
-        flex-direction:row-reverse; margin-top: 80px;white-space: nowrap;overflow: visible;">
-            <img height="80px" src="wave.png" />
-      <h1
-        style="
-          width: 400px;
-          height: 56px;
-          left: 966px;
-          top: 104px;
+  <div class="centered"  >
+      <!-- Elements in upper half of the right side-->
+  <div class="upper" style="display: flex;
+  flex-direction: column ;">
+  <!--H1 tag and image tag flexed side by side--> 
+      <div class="side" >
+          <img class="wave"  height="60px" src="{% static 'img/wave.png'%}" />
+    <h1
+    >
+    Good to have you back
+    </h1>
+    </div>
 
-          font-family: 'Poppins';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: px;
-          margin-right: 75px;
-        ">
-      Good to have you back
-      </h1>
+    <p class="px" >
+      It's  been a Minute. Let's get back on extracting Metadatas from your
+      files
+    </p>
+    <form>
+      <label class="L1"  for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Type your email adress"
+        required
+      />
+      <!-- Password placeholder and forgot password link arranged -->
+      <div>
+      <br />
+      <label class="L2"   for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="..........."
+        required
+      />
+      <p class="p3"><a href="#">Forgotten Password? </a></p>
+      <br />
+      </div>
       </div>
 
-      <p class="px" style="margin-right:10px ;">
-        It's been a Minute. Let's get back on extracting Metadatas from your
-        files
+      <!-- All elements in lower right side -->
+      <div class="lower"
+      >
+      <button
+
+        class="btn2"
+      >
+        Sign In To Your Account
+      </button>
+      <br>
+      <p class="p4"
+      >
+        or sign in using
       </p>
-      <form>
-        <label style="margin-right: 86%; " for="email">Email</label>
-        <input
-          style="width: 500px; height: 30px; margin: 1px; margin-bottom: 20px;"
-          id="email"
-          type="email"
-          placeholder="Type your email adress"
-          required
-        />
-        <!-- Password placeholder and forgot password link arranged -->
-        <div>
-        <br />
-        <label style="margin-right: 81%"  for="password">Password</label>
-        <input
-          style="width: 500px; height: 30px; margin: 0.5px ;"
-          id="password"
-          type="password"
-          placeholder="..........."
-          required
-        />
-        <p class="p3" style="margin-right: -280px;"><a href="#">Forgotten Password? </a></p>
-        <br />
-        </div>
-        </div>
-
-        <!-- All elements in lower right side -->
-        <div 
-        style="display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        ">
-        <button
-          style="
-          align-content: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 24px;
-            gap: 10px;
-            width: 450px;
-            height: 30px;
-            color: white;
-            background-color: black;
-        
-          "
-          class="btn1"
-        >
-          Sign In To Your Account
-        </button>
-        <br>
-        <p
-          style="
-            height: 34px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 140%;
-          "
-        >
-          or sign in using
-        </p>
-        <!-- Logo to be placed here -->
-        <button 
-        
-          onclick=""
-          style="
-            height: 100px;
-            width: 100px;
-            background-color: #d9d9d9
-          "
-          class="btn 2"
-        ></button>
-      </div>
+      <!-- Logo to be placed here -->
+      <button
+        class="btn3"
+      ></button>
     </div>
   </div>
-
-{% endblock %}
+</div>
