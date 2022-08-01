@@ -39,7 +39,7 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
-
+enb/
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -57,6 +57,7 @@ coverage.xml
 # Translations
 *.mo
 *.pot
+enb/
 
 # Django stuff:
 *.log
