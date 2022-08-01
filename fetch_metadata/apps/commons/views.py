@@ -1,18 +1,15 @@
 from django.shortcuts import render
 from .models import Post
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
 def home_page(request):
-    """
-    A view to fetch the homepage
-    """
-    return render(request, "common/home.html")
+
+    return render(request, "common/index.html")
 
 def about(request):
-    """
-    A view to fetch the about page
-    """
+
     return render(request, "common/about.html")
+
 
 
 class HomeView(ListView):
@@ -22,3 +19,8 @@ class HomeView(ListView):
 class ArticleDetailView(DetailView):
     model = Post
     template_name = 'common/article_details.html'
+
+class AddPostView(CreateView):
+    model = Post
+    template_name = 'common/post.html'
+    field = '__all_-'
