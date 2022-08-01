@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'apps.accounts',
     'apps.meta_extract.apps.MetaExtractConfig',
     'apps.commons.apps.CommonsConfig',
+    'file_control',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
@@ -161,3 +162,6 @@ REST_FRAMEWORK = {
         # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
