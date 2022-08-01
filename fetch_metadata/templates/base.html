@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{% static 'index.css'%}" rel="stylesheet" />
-    
-    {% block title %}
-        {% if title %}
-            <title>{{title}} | MetaTrack</title>
-        {% else %}
-            <title>MetaTrack</title>
-        {% endif %}
-    {% endblock %}
-</head>
-<body>
-    <header id="nav_bar">
-			<div class="nav_left">
-				<img src="" alt="" />
-			</div>
-			<div class="nav_middle">
-				<a href="" class="middle_link">Home</a>
-				<a href="" class="middle_link">How It Works</a>
-				<a href="" class="middle_link">Services</a>
-				<a href="" class="middle_link">About Us</a>
-			</div>
-			<div class="nav_right">
-				<button class="right_link">Login To Account</button>
-				<button class="right_link">Register</button>
-			</div>
-	</header>
-    <main>
-        {% block content %}
-        {% endblock%}
-    </main>
-    <footer id="footer_container">
-			<section id="footer_layout">
-				<div class="footer_one footers">
-					<h4 class="footer_head">MetaTrack</h4>
-					<div class="footer_icons">
-						<img src="{% static 'img/twitter_icon.png'%}" alt="" class="footer_img" />
-						<img src="{% static 'img/instagram_icon.png'%}" alt="" class="footer_img" />
-					</div>
-				</div>
-				<div class="footer_two footers">
-					<h4 class="footer_head">Home</h4>
-					<div class="footer_links">
-						<a href="" class="link_anchors">How It Works</a>
-						<a href="" class="link_anchors">Services</a>
-						<a href="" class="link_anchors">About Us</a>
-						<a href="" class="link_anchors">Register</a>
-						<a href="" class="link_anchors">Login</a>
-					</div>
-				</div>
-				<div class="footer_three footers">
-					<h4 class="footer_head">Support</h4>
-					<div class="footer_links">
-						<a href="" class="link_anchors">FAQs</a>
-						<a href="" class="link_anchors">Help</a>
-						<a href="" class="link_anchors">Blogs</a>
-					</div>
-				</div>
-				<div class="footer_four footers">
-					<h4 class="footer_head">Legal</h4>
-					<div class="footer_links">
-						<a href="" class="link_anchors">Terms of Services</a>
-						<a href="" class="link_anchors">Privacy Guidelines</a>
-					</div>
-				</div>
-				<div class="footer_five footers">
-					<h4 class="footer_head">Contact Us</h4>
-					<div class="footer_links">
-						<a href="" class="link_anchors">Facebook</a>
-						<a href="" class="link_anchors">Instagram</a>
-						<a href="" class="link_anchors">Twitter</a>
-					</div>
-				</div>
-			</section>
-	</footer>
 
-</body>
+    {% block title %} {% if title %}
+    <title>{{title}} | MetaTrack</title>
+    {% else %}
+    <title>MetaTrack</title>
+    {% endif %} {% endblock %}
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="nav_bar">
+      <div class="nav_left">
+        <img src="" alt="" />
+      </div>
+      <div class="nav_middle">
+        <a href="" class="middle_link">Home</a>
+        <a href="" class="middle_link">How It Works</a>
+        <a href="" class="middle_link">Services</a>
+        <a href="" class="middle_link">About Us</a>
+      </div>
+      <div class="nav_right">
+        <button class="right_link">Login To Account</button>
+        <!-- <button class="right_link">Register</button> -->
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main Body -->
+    <main>{% block content %} {% endblock%}</main>
+    <!-- End of Main Body -->
+
+    <!-- Footer -->
+    <footer id="footer_container">
+      <section id="footer_layout">
+        <div class="footer_one footers">
+          <h4 class="footer_head">MetaTrack</h4>
+          <div class="footer_icons">
+            <img
+              src="{% static 'img/twitter_icon.png'%}"
+              alt=""
+              class="footer_img"
+            />
+            <img
+              src="{% static 'img/instagram_icon.png'%}"
+              alt=""
+              class="footer_img"
+            />
+          </div>
+        </div>
+        <div class="footer_two footers">
+          <h4 class="footer_head">Home</h4>
+          <div class="footer_links">
+            <a href="" class="link_anchors">How It Works</a>
+            <a href="" class="link_anchors">Services</a>
+            <a href="" class="link_anchors">About Us</a>
+            <a href="" class="link_anchors">Register</a>
+            <a href="" class="link_anchors">Login</a>
+          </div>
+        </div>
+        <div class="footer_three footers">
+          <h4 class="footer_head">Support</h4>
+          <div class="footer_links">
+            <a href="" class="link_anchors">FAQs</a>
+            <a href="" class="link_anchors">Help</a>
+            <a href="" class="link_anchors">Blogs</a>
+          </div>
+        </div>
+        <div class="footer_four footers">
+          <h4 class="footer_head">Legal</h4>
+          <div class="footer_links">
+            <a href="" class="link_anchors">Terms of Services</a>
+            <a href="" class="link_anchors">Privacy Guidelines</a>
+          </div>
+        </div>
+        <div class="footer_five footers">
+          <h4 class="footer_head">Contact Us</h4>
+          <div class="footer_links">
+            <a href="" class="link_anchors">Facebook</a>
+            <a href="" class="link_anchors">Instagram</a>
+            <a href="" class="link_anchors">Twitter</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--End of footer-->
+    <script src="{% static 'index.js'%}" defer></script>
+  </body>
 </html>
