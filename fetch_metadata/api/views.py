@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth import get_user_model,views
-from .forms import SignupForm,CustomUserLoginForm,ChangePasswordForm
+from .forms import SignupForm,CustomUserLoginForm,ChangePasswordForm, PasswordResetForm
 
 from .permissions import IsCreatorOrAdminReadOnly
 from . import serializers
@@ -28,3 +28,8 @@ class UserPasswordChangeView(views.PasswordChangeView):
     template_name = 'api/password_change.html'
     model = UserModel
     form_class = ChangePasswordForm
+
+class UserResetPassword():
+    template_name='api/password_reset.html'
+    model = UserModel
+    form_class = PasswordResetForm

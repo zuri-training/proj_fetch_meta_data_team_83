@@ -45,3 +45,6 @@ class ProfileForm():
 class ChangePasswordForm(PasswordChangeForm):
     pass
 
+
+class PasswordResetForm():
+    pass
