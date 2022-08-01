@@ -1,0 +1,163 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section id="top_head">
+  <div class="head_content">
+    <h1 class="head_headings content">Extract Metadatas from your Files</h1>
+    <p class="head_text content">
+      Extract metadata recorded behind your files, ranging from files size and
+      modification history to the software tools used to create them. Available
+      to image files, csv, pdf, json, etc.
+    </p>
+    <a href="{%url 'api:signup'%}"
+      ><button class="head_button">Create A Free Account</button></a
+    >
+  </div>
+  <div class="head_img"></div>
+  <!--this is for image-->
+</section>
+<section id="first_layout">
+  <h3 class="how_heading">How it Works</h3>
+  <div class="layout_boxes">
+    <div class="box_1 boxes">
+      <div class="box_img">
+        <img
+          src="{% static 'img/Code Image.png'%}"
+          alt=""
+          class="action_button"
+        />
+      </div>
+      <div class="box_text">
+        <p>
+          Upload files ranging from images, csv, pdf and json, etc. by clicking
+          the <strong>Browse</strong> button
+        </p>
+      </div>
+    </div>
+    <div class="box_2 boxes">
+      <div class="box_img">
+        <img
+          src="{% static 'img/Code Image.png'%}"
+          alt=""
+          class="action_button"
+        />
+      </div>
+      <div class="box_text">
+        <p>
+          Click on the <strong>Extract</strong> button to generate the metadatas
+          embedded in the selected file.
+        </p>
+      </div>
+    </div>
+    <div class="box_3 boxes">
+      <div class="box_img">
+        <img
+          src="{% static 'img/Code Image.png'%}"
+          alt=""
+          class="action_button"
+        />
+      </div>
+      <div class="box_text">
+        <p>
+          Once generated, you are allow to <strong>Copy</strong> the extracted
+          metadatas to a clipboard
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="second_layout">
+  <div class="text_container">
+    <h2 class="metadata_head content">MetaData from Images</h2>
+    <p class="metadata_text content">
+      Images contain exif data that can give you useful information about the
+      picture. Information such as shutter speed and focal length are stored
+      inside an image. Likewise, you can find out where the photo was taken by
+      looking at the location information.
+    </p>
+    <p class="metadata_text content">
+      An online exif data reader can show you all these hidden information.
+    </p>
+    <div class="metadata_button">
+      <a href="{%url 'api:signup'%}" target="_blank" rel="noopener noreferrer"
+        ><button class="extract_button">Extract Metadata</button></a
+      >
+    </div>
+  </div>
+  <div class="layout_img"></div>
+  <!-- this is for image -->
+</section>
+<section id="second_layout">
+  <div class="layouts_img"></div>
+  <div class="text_container">
+    <h2 class="metadata_head content">MetaData from Files</h2>
+    <p class="metadata_text content">
+      Documents can contain metadata too. They include information such as file
+      size and date of creation, but also information about the author of a
+      document and the software used to create it.
+    </p>
+    <p class="metadata_text content">
+      An exif viewer shows you all you need to know about your text document.
+    </p>
+    <div class="metadata_button">
+      <a href="{%url 'api:signup'%}"
+        ><button class="extract_button">Create A Free Account</button></a
+      >
+    </div>
+  </div>
+</section>
+<section id="third_layout">
+  <div class="layout_para">
+    <p>Over 33,000 metadatas extracted with <strong>MetaTrack</strong></p>
+  </div>
+  <div class="metatrack_boxes">
+    <div class="third_boxes"></div>
+    <div class="third_boxes"></div>
+    <div class="third_boxes"></div>
+    <div class="third_boxes"></div>
+    <div class="third_boxes"></div>
+  </div>
+</section>
+<section id="faq_layout">
+  <div class="faq_texts">
+    <h2 class="faq_heading">FAQS</h2>
+    <p class="faq_content">
+      Pretty new to <strong>MetaTrack?</strong> We answered some questions so
+      you don't have to
+    </p>
+  </div>
+  <div class="faq_bars">
+    <div class="faq_one">
+      <h4 class="faq_quest">What are Meta Data?</h4>
+      <div class="faq_body">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+          tempora!
+        </p>
+      </div>
+    </div>
+    <hr class="hr_line" />
+    <div class="faq_two">
+      <h4 class="faq_quest">
+        What type of files can we extract metadata from?
+      </h4>
+      <div class="faq_body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum.
+        </p>
+      </div>
+    </div>
+    <hr class="hr_line" />
+    <div class="faq_three">
+      <h4 class="faq_quest">
+        Can we share details gotten from the copied metadata file?
+      </h4>
+      <div class="faq_body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+          eveniet?
+        </p>
+      </div>
+    </div>
+    <hr class="hr_line" />
+  </div>
+</section>
+{% endblock %}
