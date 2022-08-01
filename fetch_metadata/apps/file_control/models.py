@@ -1,5 +1,3 @@
-
-from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth import get_user_model
 
@@ -27,7 +25,7 @@ def user_directory_path(instance, filename):
         instance of type (CustomUser): The user that owns this file
         filename (name of file)): The name given to this file by our system
     """
-    
+
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
     return f'user_{instance.user.id}/{filename}'
 class FileUpload(models.Model):

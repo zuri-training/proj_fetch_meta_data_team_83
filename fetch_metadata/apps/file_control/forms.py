@@ -1,8 +1,8 @@
 
 from django import forms
-from .models import file_Upload
+from .models import FileUpload
 
 class FileUploadForm(forms.ModelForm):
     class Meta:
-        model = file_Upload
+        model = FileUpload
         fields = ['file',]

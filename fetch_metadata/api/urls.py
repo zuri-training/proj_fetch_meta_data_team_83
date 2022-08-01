@@ -3,7 +3,7 @@ from django.urls import path,include
 
 from rest_framework.authtoken.views import obtain_auth_token
 
-from .views import CreateUserView,LoginUserView
+from .views import CreateUserView,LoginUserView,UserResetPasswordView
 
 
 
@@ -16,4 +16,5 @@ urlpatterns = [
     path('login/', LoginUserView.as_view(), name='login'),
     path('', include('apps.commons.urls')),
     path('file/', include('apps.file_control.urls')),
-]
+    path('password_reset/', UserResetPasswordView.as_view(), name='password_reset'),
+    ]

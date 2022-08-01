@@ -29,7 +29,7 @@ class UserPasswordChangeView(views.PasswordChangeView):
     model = UserModel
     form_class = ChangePasswordForm
 
-class UserResetPassword():
+class UserResetPasswordView(views.PasswordResetView):
     template_name='api/password_reset.html'
     model = UserModel
     form_class = PasswordResetForm

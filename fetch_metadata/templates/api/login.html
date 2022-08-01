@@ -14,7 +14,7 @@
       <!-- Elements in upper half of the right side-->
   <div class="upper" style="display: flex;
   flex-direction: column ;">
-  <!--H1 tag and image tag flexed side by side--> 
+  <!--H1 tag and image tag flexed side by side-->
       <div class="side" >
           <img class="wave"  height="60px" src="{% static 'img/wave.png'%}" />
     <h1
@@ -27,25 +27,50 @@
       It's  been a Minute. Let's get back on extracting Metadatas from your
       files
     </p>
-    <form>
-      <label class="L1"  for="email">Email</label>
+    <form action="{%url 'api:login'%}" method="POST">
+      {% csrf_token %}
+
+      {% comment %}<input type="hidden" name="next" value="{{ next }}" />{% endcomment %}
+
+      <label class="L1" for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>
       <input
-        id="email"
-        type="email"
-        placeholder="Type your email adress"
+              id="email"
+        type="text"
+        placeholder="Type your username or email address"
+         maxlength="{{form.uusername.field.max_length}}"
         required
+{%
+                                    if
+                                    form.username.value
+                                    %}value="{{ form.username.value }}"
+                                    {%
+                                    endif
+                                    %}
+
       />
+{% if form.username.errors %}
+                                  <p class="text-error">{{ form.username.errors|striptags }}</p>
+                                  {% endif %}
+
       <!-- Password placeholder and forgot password link arranged -->
       <div>
       <br />
-      <label class="L2"   for="password">Password</label>
+      <label class="L2" for="{{form.password.id_for_label}}">{{form.password1.label_tag}}</label>
       <input
-        id="password"
-        type="password"
-        placeholder="..........."
-        required
-      />
-      <p class="p3"><a href="#">Forgotten Password? </a></p>
+                                type="password"
+                                name="{{form.password1.name}}"
+                                maxlength="{{form.password1.field.max_length}}"
+                                autocapitalize="off"
+                                autocorrect="off"
+                                class="form-control textinput textInput"
+                                id="password"
+                                placeholder="........."
+                                required
+                              />
+                              {% if form.password.errors %}
+                              <p class="text-error">{{ form.password.errors|striptags }}</p>
+                              {% endif %}
+                              <p class="p3"><a href="{%url 'api:password_reset'%}">Forgotten Password? </a></p>
       <br />
       </div>
       </div>
