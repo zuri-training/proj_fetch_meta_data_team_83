@@ -1,3 +1,6 @@
+{% extends 'common/bast.html' %}
+{{ post.title_tag}}
+{% block content %}
 
 
 <h1>{{ post.title }}</h1>
@@ -6,4 +9,6 @@
 {{ post.body}}
 
 <br> </br>
-<a href = "{% url 'home' %} "> Back</a>
+<a href = "{% url 'home' %}" class="btn btn-secondary"> Back</a>
+
+{% endblock %}
