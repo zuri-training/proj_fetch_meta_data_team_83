@@ -4,23 +4,19 @@
 {% endblock %}
 <!-- left side  -->
 <div class="split left">
-  <button class="btn1"
-  ></button>
+    <button class="btn1"></button>
 </div>
 <!-- Right side-->
 <div class="split right">
 <!-- All elements centered on the right side -->
-  <div class="centered"  >
-      <!-- Elements in upper half of the right side-->
-  <div class="upper" style="display: flex;
+    <div class="centered"  >
+        <!-- Elements in upper half of the right side-->
+        <div class="upper" style="display: flex;
   flex-direction: column ;">
   <!--H1 tag and image tag flexed side by side-->
       <div class="side" >
           <img class="wave"  height="60px" src="{% static 'img/wave.png'%}" />
-    <h1
-    >
-    Good to have you back
-    </h1>
+          <h1>Good to have you back</h1>
     </div>
 
     <p class="px" >
@@ -32,38 +28,38 @@
 
       {% comment %}<input type="hidden" name="next" value="{{ next }}" />{% endcomment %}
 
-      <label class="L1" for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>
+      <label class="L1" for="{{form.email.id_for_label}}">{{form.email.label_tag}}</label>
       <input
-              id="email"
-        type="text"
-        placeholder="Type your username or email address"
-         maxlength="{{form.uusername.field.max_length}}"
+              id="{{form.email.id_for_label}}"
+        type="email"
+        placeholder="Type your email address"
+         maxlength="{{form.email.field.max_length}}"
         required
 {%
                                     if
-                                    form.username.value
-                                    %}value="{{ form.username.value }}"
+                                    form.email.value
+                                    %}value="{{ form.email.value }}"
                                     {%
                                     endif
                                     %}
 
       />
-{% if form.username.errors %}
-                                  <p class="text-error">{{ form.username.errors|striptags }}</p>
+{% if form.email.errors %}
+                                  <p class="text-error">{{ form.email.errors|striptags }}</p>
                                   {% endif %}
 
       <!-- Password placeholder and forgot password link arranged -->
       <div>
       <br />
-      <label class="L2" for="{{form.password.id_for_label}}">{{form.password1.label_tag}}</label>
+      <label class="L2" for="{{form.password.id_for_label}}">{{form.password.label_tag}}</label>
       <input
                                 type="password"
-                                name="{{form.password1.name}}"
-                                maxlength="{{form.password1.field.max_length}}"
+                                name="{{form.password.name}}"
+                                maxlength="{{form.password.field.max_length}}"
                                 autocapitalize="off"
                                 autocorrect="off"
                                 class="form-control textinput textInput"
-                                id="password"
+                                id="{{form.password.id_for_label}}"
                                 placeholder="........."
                                 required
                               />
@@ -78,12 +74,13 @@
       <!-- All elements in lower right side -->
       <div class="lower"
       >
-      <button
-
-        class="btn2"
-      >
-        Sign In To Your Account
-      </button>
+      <input
+                                type="submit"
+                                name="submit"
+                                value="Submit"
+                                class="btn btn-primary btn2 form-control"
+                                id="submit-id-submit"
+                              />
       <br>
       <p class="p4"
       >
@@ -94,5 +91,6 @@
         class="btn3"
       ></button>
     </div>
+    </form>
   </div>
 </div>

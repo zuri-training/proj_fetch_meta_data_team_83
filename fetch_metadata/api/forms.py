@@ -12,26 +12,24 @@ class SignupForm(UserCreationForm):
 class CustomUserLoginForm(AuthenticationForm):
     class Meta:
         model = UserModel
-        fields = ['username','password']
+        fields = ['email','password']
 
     def clean(self):
-        username = self.cleaned_data.get('username')
-        email = self.cleaned_data.get('username')
+        email = self.cleaned_data.get('email')
         password = self.cleaned_data.get('password')
 
-        if username and password:
-            self.user_cache = authenticate(username=username,
+        if email and password:
+            self.user_cache = authenticate(email=email,
   password=password)
             if self.user_cache is None:
                 self.user_cache = authenticate(email=email, password=password)
-                if self.user_cache is None:
-                    raise forms.ValidationError(
+                raise forms.ValidationError(
                         self.error_messages['invalid_login'],
                         code='invalid_login',
                         params={'username': self.username_field.verbose_name},
                    )
-                else:
-                    self.confirm_login_allowed(self.user_cache)
+            else:
+                self.confirm_login_allowed(self.user_cache)
 
         return self.cleaned_data
 
