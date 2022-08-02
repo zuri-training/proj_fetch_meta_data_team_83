@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth import get_user_model,views
 from .forms import SignupForm,CustomUserLoginForm,ChangePasswordForm, PasswordResetForm
-
+from django.contrib.auth.forms import AuthenticationForm
 from .permissions import IsCreatorOrAdminReadOnly
 from . import serializers
 
@@ -21,7 +21,7 @@ class CreateUserView(CreateView):
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     model = UserModel
-    form_class = CustomUserLoginForm
+    form_class = AuthenticationForm
     next_page = '/<user>/dashboard/'
 
 class UserPasswordChangeView(views.PasswordChangeView):
@@ -29,7 +29,7 @@ class UserPasswordChangeView(views.PasswordChangeView):
     model = UserModel
     form_class = ChangePasswordForm
 
-class UserResetPassword():
+class UserResetPasswordView(views.PasswordResetView):
     template_name='api/password_reset.html'
     model = UserModel
     form_class = PasswordResetForm
