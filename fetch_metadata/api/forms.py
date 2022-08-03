@@ -12,7 +12,6 @@ class SignupForm(UserCreationForm):
 class CustomUserLoginForm(AuthenticationForm):
     class Meta:
         model = UserModel
-        fields = ['email','password']
 
 
 class UploadForm():
