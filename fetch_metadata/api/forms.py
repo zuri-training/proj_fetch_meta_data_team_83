@@ -13,7 +13,6 @@ class CustomUserLoginForm(AuthenticationForm):
     class Meta:
         model = UserModel
 
-
 class UploadForm():
     pass
 
