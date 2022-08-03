@@ -1,10 +1,9 @@
 
-from django.urls import include, path
+from django.urls import path
 from . import views
 
-
-
+app_name='file'
 urlpatterns = [
-    path('',views.fileListView.as_view(), name='userFileList'),
-    path('create/',views.fileCreateView.as_view(), name='userFileUpload'),
+    path('',views.FileListView.as_view(), name='userFileList'),
+    path('dashboard/',views.FileCreateView.as_view(), name='userFileUpload'),
 ]

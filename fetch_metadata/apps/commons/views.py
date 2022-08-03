@@ -1,42 +1,34 @@
-from django.shortcuts import render
-from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .forms import PostForm, EditForm
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.urls import reverse_lazy
-
-def home_page(request):
-
-    return render(request, "common/index.html")
-
-def about(request):
-
-    return render(request, "common/about.html")
-
-
+from .forms import PostForm, EditForm
+from .models import Post
 
 class HomeView(ListView):
+    """
+    Include a summary of how it works in a list
+    """
     model = Post
-    template_name = 'common/index.html'
-    odering = ['-id']
+    template_name = 'common/home.html'
 
-class ArticleDetailView(DetailView):
+class HowItWorksView(DetailView):
     model = Post
-    template_name = 'common/article_details.html'
+    template_name = 'common/how_it_works.html'
 
-class AddPostView(CreateView):
+class CreateDocumentationView(PermissionRequiredMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'common/add_post.html'
-    #fields= '__all__'
     
-class UpdatePostView(UpdateView):
+    
+class UpdateDocumentationView(PermissionRequiredMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'common/update_post.html'
     #fields = ['title', 'title_tag', 'body']
 
 
-class DeletePostView(DeleteView):
+class DeleteDocumentationView(PermissionRequiredMixin, DeleteView):
     model = Post
     template_name = 'common/delete_post.html'
     success_url = reverse_lazy('home')
