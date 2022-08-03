@@ -20,8 +20,7 @@ class CreateUserView(CreateView):
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     form_class = CustomUserLoginForm
-    next_page = '/'
-    
+    next_page = '/dashboard/'
 
 class UserPasswordChangeView(views.PasswordChangeView):
     template_name = 'api/password_change.html'
