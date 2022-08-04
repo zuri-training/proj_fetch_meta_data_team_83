@@ -9,12 +9,11 @@ from .views import CreateUserView,LoginUserView,UserResetPasswordView
 
 app_name = 'api'
 
-urlpatterns = [
-    
+urlpatterns = [ 
     path('token/', obtain_auth_token, name='get_token'),
     path('signup/', CreateUserView.as_view(), name='signup'),
     path('login/', LoginUserView.as_view(), name='login'),
     path('', include('apps.commons.urls')),
-    path('file/', include('apps.file_control.urls')),
+    path('<slug:user_slug>', include('apps.file_control.urls')),
     path('password_reset/', UserResetPasswordView.as_view(), name='password_reset'),
     ]
