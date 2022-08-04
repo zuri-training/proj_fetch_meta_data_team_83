@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
+import django_on_heroku
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -49,7 +51,6 @@ INSTALLED_APPS = [
     #local apps
     'api.apps.ApiConfig',
     'apps.accounts',
-    'apps.meta_extract.apps.MetaExtractConfig',
     'apps.commons.apps.CommonsConfig',
     'apps.file_control.apps.FileControlConfig',
 ]
@@ -182,7 +183,7 @@ REST_FRAMEWORK = {
     ],
 }
 # Configure Django App for Heroku
-import django_on_heroku
+
 django_on_heroku.settings(locals())
-import dj_database_url
+
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
