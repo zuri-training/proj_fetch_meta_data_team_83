@@ -2,7 +2,7 @@
 
 This is the fetch meta data repository for team 83 Zuri
 
-# team_83
+# team 83
 
 Zuri github repo for our project
 
