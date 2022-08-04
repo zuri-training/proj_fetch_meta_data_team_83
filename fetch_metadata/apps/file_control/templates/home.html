@@ -13,10 +13,12 @@
         {% for file in files %}
             <h1 style="margin-left: 5em;">Welcome, {{ file.author }}</h1>
             <h4 style="margin-left: 5em;">{{ file.title }}</h4>
-            <div style="margin-left: 5em;"><img src="../..{{ file.file.url }}" style="width: 100px; height: 100px;"></div>
+            <div style="margin-left: 5em;"><img src="../..{{ file.file.url }}" style="width: 100px; height: 100px;">{{ file.file.url }}</div>
+            <div>{{ file.created_at }}</div>
+            <!-- <h1>DOWNLOAD THE FILE FROM HERE<a href="{% url 'api:download' %}" download>{{file.title}}</a></h1> -->
         {%endfor%}
     </div>
-
-    <button style="height: 70px;"><a href="{% url 'userFileUpload' %}">upload files</a></button>
+    <button><a href="{% url 'api:upload' %}">UPLOAD FILES HERE</a></button>
+    
 </body>
 </html>
