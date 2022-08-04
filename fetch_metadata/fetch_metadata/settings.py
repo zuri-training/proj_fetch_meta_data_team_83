@@ -92,25 +92,25 @@ WSGI_APPLICATION = 'fetch_metadata.wsgi.application'
 
 
 
-# #decouple database variables from .env
-# PG_DB = config("PG_DB")
-# PG_USER = config("PG_USER")
-# PG_PASSWORD = config("PG_PASSWORD")
-# PG_HOST = config("PG_HOST")
-# PG_PORT = config("PG_PORT")
+#decouple database variables from .env
+PG_DB = config("PG_DB")
+PG_USER = config("PG_USER")
+PG_PASSWORD = config("PG_PASSWORD")
+PG_HOST = config("PG_HOST")
+PG_PORT = config("PG_PORT")
 
-# # Database
-# # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': PG_DB,
-#         'USER': PG_USER,
-#         'PASSWORD': PG_PASSWORD,
-#         'HOST': PG_HOST,
-#         'PORT': PG_PORT,
-#     }
-# }
+# Database
+# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': PG_DB,
+        'USER': PG_USER,
+        'PASSWORD': PG_PASSWORD,
+        'HOST': PG_HOST,
+        'PORT': PG_PORT,
+    }
+}
 
 
 # Password validation
