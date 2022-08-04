@@ -2,11 +2,8 @@ django
 djangorestframework
 django_extensions
 python-decouple
-Pillow
-#python-magic-bin
 djangorestframework-simplejwt
-psycopg2
-pandas
-tinytag
+psycopg2-binary
 django-crispy-forms
-pyexiftool
+psycopg2
+Pillow
