@@ -69,6 +69,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fetch_metadata.urls'
+CSRF_TRUSTED_ORIGINS = [
+    'https://metatrack.herokuapp.com'
+]
 
 TEMPLATES = [
     {
