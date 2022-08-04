@@ -1,3 +1,4 @@
+from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth import get_user_model
 
@@ -41,3 +42,7 @@ class FileUpload(models.Model):
             ("view_file_upload", "Can view uploaded file"),
             ("list_file_upload", "Can list all uploaded file"),
         )
+
+class MetaExtract(models.Model):
+    file = models.OneToOneField(FileUpload, on_delete=CASCADE)
+    meta_file_url = models.URLField()
