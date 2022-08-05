@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
     #local apps
     'api.apps.ApiConfig',
-    'apps.accounts',
+    'apps.accounts.apps.AccountsConfig',
     'apps.commons.apps.CommonsConfig',
     'apps.file_control.apps.FileControlConfig',
 ]

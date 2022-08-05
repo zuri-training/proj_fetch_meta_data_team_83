@@ -11,6 +11,7 @@ content_types = [
     'audio/mpeg',
     'image/png',
     'image/jpeg',
+    'image/jpg',
     'image/gif',
     'image/svg+xml',
     'text/csv',
