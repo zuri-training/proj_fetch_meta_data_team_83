@@ -28,8 +28,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DJANGO_DEBUG",True)
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['metatrack.herokuapp.com']
 
 # Application definition
 
@@ -201,4 +200,4 @@ else:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static')
         ]
-   
+
