@@ -1,0 +1,33 @@
+{% extends 'common/bast.html' %}
+{% block title %}Edit Blog Post{% endblock %}
+{% block content %}
+
+<h1> Delete Post...</h1>
+<br></br>
+<h3> Delete: {{ post.title}}</h3>
+
+<br/>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        <strong>Are you sure?!</strong><br/><br></r><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+        <button class = "btn btn-secondary">Delete Post!</button>
+    </form>
+    
+</div>
+
+
+    
+
+{% endblock %}

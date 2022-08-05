@@ -1,4 +1,4 @@
-{% comment %}{% load rest_framework %}{% endcomment %}
+
 {%load static%}
 <!DOCTYPE html>
 <html lang="en">
@@ -53,8 +53,8 @@
                                 </div>
                               </div>
                               <div
-                              id="div_id_username"
-                              class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+                              id="div_id_email"
+                              class="clearfix control-group {% if form.email.errors %}error{% endif %}"
                             >
                               <div class="form-group">
                                   <label for="{{form.email.id_for_label}}">{{form.email.label_tag}}</label>
