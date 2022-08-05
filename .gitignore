@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 .env
+package.json
+yarn.lock
 env/
 Scripts/
 # C extensions
