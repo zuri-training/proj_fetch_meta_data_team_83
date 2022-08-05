@@ -15,7 +15,6 @@ from decouple import config
 import django_on_heroku
 import dj_database_url
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'rest_framework.authtoken',
+    'storages',
     # 'crispy_forms',
 
     #local apps
@@ -147,25 +147,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-#Media files (uploaded files)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = '/static/'
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
-        ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-#setup media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -182,8 +163,42 @@ REST_FRAMEWORK = {
                 'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
 # Configure Django App for Heroku
-if DEBUG == False:
+if DEBUG is False:
     django_on_heroku.settings(locals())
 
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
+    AWS_S3_CUSTOM_DOMAIN = config("AWS_S3_CUSTOM_DOMAIN")
+    AWS_S3_OBJECT_PARAMETERS = {
+        'CacheControl': 'max-age=86400',
+    }
+    AWS_LOCATION = 'media'
+
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+    ]
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/media/'
+    STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static/'
+
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+else:
+    #Media files (uploaded files)
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static')
+        ]
+   
