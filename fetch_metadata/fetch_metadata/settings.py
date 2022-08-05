@@ -187,6 +187,15 @@ if DEBUG is False:
     STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static/'
 
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+    DEFAULT_FILE_STORAGE = 'buckets.storage.S3Storage'
+
+    AWS = {
+    'BUCKET': 'fetchmetadata',
+    'ACCESS_KEY': config("AWS_ACCESS_KEY_ID"),
+    'SECRET_KEY': config("AWS_SECRET_ACCESS_KEY"),
+    'REGION': 'af-south-1'
+    }
 else:
     #Media files (uploaded files)
     MEDIA_URL = '/media/'
