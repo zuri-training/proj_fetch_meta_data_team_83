@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
+from buckets.fields import S3FileField
 
 
 from .filechecker import ContentTypeRestrictedFileField
@@ -34,7 +35,7 @@ def user_directory_path(instance, filename):
 class FileUpload(models.Model):
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types, max_upload_size=max_upload_size)
+    file = S3FileField(upload_to=user_directory_path, accepted_types=content_types, MAX_FILE_SIZE=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
@@ -56,4 +57,4 @@ class FileUpload(models.Model):
 
 class MetaExtract(models.Model):
     file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
-    meta_file_url = models.FileField(upload_to=user_directory_path)
+    meta_file_url = models.FileField(upload_to = user_directory_path)
