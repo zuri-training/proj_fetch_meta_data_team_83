@@ -2,7 +2,6 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 
-from cloudinary.models import CloudinaryField
 
 from .filechecker import ContentTypeRestrictedFileField
 
@@ -57,4 +56,4 @@ class FileUpload(models.Model):
 
 class MetaExtract(models.Model):
     file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
-    meta_file_url = models.URLField()
+    meta_file_url = models.FileField(upload_to=user_directory_path)
