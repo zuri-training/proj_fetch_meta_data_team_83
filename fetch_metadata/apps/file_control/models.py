@@ -1,4 +1,3 @@
-from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth import get_user_model
 
@@ -44,5 +43,5 @@ class FileUpload(models.Model):
         )
 
 class MetaExtract(models.Model):
-    file = models.OneToOneField(FileUpload, on_delete=CASCADE)
+    file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
     meta_file_url = models.URLField()

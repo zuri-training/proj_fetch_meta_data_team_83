@@ -22,8 +22,13 @@ class FileListView(PermissionRequiredMixin, ListView):
     model = FileUpload
     template_name = 'home.html'
     context_object_name = 'files'
+    def has_permission(self):
+        user = self.request.user
+        return user.has_perm('add_file_upload')
 
 class FileDetailView(PermissionRequiredMixin, DetailView):
     model = FileUpload
     template_name = 'file_detail_view.html'
-
+    def has_permission(self):
+        user = self.request.user
+        return user.has_perm(FileUpload.add_file_upload)

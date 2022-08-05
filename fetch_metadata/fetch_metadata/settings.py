@@ -183,7 +183,7 @@ REST_FRAMEWORK = {
     ],
 }
 # Configure Django App for Heroku
+if DEBUG == False:
+    django_on_heroku.settings(locals())
 
-django_on_heroku.settings(locals())
-
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+    DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
