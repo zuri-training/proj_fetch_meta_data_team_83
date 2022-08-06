@@ -1,7 +1,8 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
+<header class="header_container">
 <section id="top_head">
   <div class="head_content">
-    <h1 class="head_headings content">Extract Metadatas from your Files</h1>
+    <h1 class="head_headings content">Extract <span class="target_meta">Metadatas</span> from your Files</h1>
     <p class="head_text content">
       Extract metadata recorded behind your files, ranging from files size and
       modification history to the software tools used to create them. Available
@@ -14,19 +15,20 @@
   <div class="head_img"></div>
   <!--this is for image-->
 </section>
+</header>
 <section id="first_layout">
-  <h3 class="how_heading">How it Works</h3>
+  <h2 class="how_heading">How it Works</h2>
   <div class="layout_boxes">
     <div class="box_1 boxes">
       <div class="box_img">
         <img
-          src="{% static 'img/Code Image.png'%}"
+          src="{% static 'img/document_upload.svg'%}"
           alt=""
           class="action_button"
         />
       </div>
       <div class="box_text">
-        <p>
+        <p class="first_layout_texts">
           Upload files ranging from images, csv, pdf and json, etc. by clicking
           the <strong>Browse</strong> button
         </p>
@@ -35,13 +37,13 @@
     <div class="box_2 boxes">
       <div class="box_img">
         <img
-          src="{% static 'img/Code Image.png'%}"
+          src="{% static 'img/document_forward.svg'%}"
           alt=""
           class="action_button"
         />
       </div>
       <div class="box_text">
-        <p>
+        <p class="first_layout_texts">
           Click on the <strong>Extract</strong> button to generate the metadatas
           embedded in the selected file.
         </p>
@@ -50,13 +52,13 @@
     <div class="box_3 boxes">
       <div class="box_img">
         <img
-          src="{% static 'img/Code Image.png'%}"
+          src="{% static 'img/document_copy.svg'%}"
           alt=""
           class="action_button"
         />
       </div>
       <div class="box_text">
-        <p>
+        <p class="first_layout_texts">
           Once generated, you are allow to <strong>Copy</strong> the extracted
           metadatas to a clipboard
         </p>
@@ -82,11 +84,15 @@
       >
     </div>
   </div>
-  <div class="layout_img"></div>
+  <div class="layout_img">
+    <img src="/img/second_landpage_img.svg" alt="" class="second_landpage_img"/>
+  </div>
   <!-- this is for image -->
 </section>
 <section id="second_layout">
-  <div class="layouts_img"></div>
+  <div class="layouts_img">
+    <img src="/img/third_landpage_img.svg" alt="" class="third_landpage_img" />
+  </div>
   <div class="text_container">
     <h2 class="metadata_head content">MetaData from Files</h2>
     <p class="metadata_text content">
@@ -106,14 +112,24 @@
 </section>
 <section id="third_layout">
   <div class="layout_para">
-    <p>Over 33,000 metadatas extracted with <strong>MetaTrack</strong></p>
+    <p class="third_layout_head">Over 33,000 metadatas extracted with <strong>MetaTrack</strong></p>
   </div>
   <div class="metatrack_boxes">
-    <div class="third_boxes"></div>
-    <div class="third_boxes"></div>
-    <div class="third_boxes"></div>
-    <div class="third_boxes"></div>
-    <div class="third_boxes"></div>
+    <div class="third_boxes">
+      <img src="img/binance_coin_(bnb).svg" alt="" class="third_layout_icons" />
+    </div>
+    <div class="third_boxes">
+      <img src="img/trontron_(trx).svg" alt="" class="third_layout_icons" />
+    </div>
+    <div class="third_boxes">
+      <img src="img/angur.svg" alt="" class="third_layout_icons" />
+    </div>
+    <div class="third_boxes">
+      <img src="img/hex_(hex).svg" alt="" class="third_layout_icons" />
+    </div>
+    <div class="third_boxes">
+      <img src="img/quant_(qnt).svg" alt="" class="third_layout_icons" />
+    </div>
   </div>
 </section>
 <section id="faq_layout">
@@ -125,39 +141,39 @@
     </p>
   </div>
   <div class="faq_bars">
-    <div class="faq_one">
+    <div class="faq_one faq_containers">
       <h4 class="faq_quest">What are Meta Data?</h4>
       <div class="faq_body">
-        <p>
+        <p class="faq_answers">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
           tempora!
         </p>
       </div>
+      <hr class="hr_line">
     </div>
-    <hr class="hr_line" />
-    <div class="faq_two">
+    <div class="faq_two faq_containers">
       <h4 class="faq_quest">
         What type of files can we extract metadata from?
       </h4>
       <div class="faq_body">
-        <p>
+        <p class="faq_answers">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum.
         </p>
       </div>
+      <hr class="hr_line">
     </div>
-    <hr class="hr_line" />
-    <div class="faq_three">
+    <div class="faq_three faq_containers">
       <h4 class="faq_quest">
         Can we share details gotten from the copied metadata file?
       </h4>
       <div class="faq_body">
-        <p>
+        <p class="faq_answers">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
           eveniet?
         </p>
       </div>
+      <hr class="hr_line">
     </div>
-    <hr class="hr_line" />
   </div>
 </section>
 {% endblock %}

@@ -1,5 +1,6 @@
 {
-  "python.linting.prospectorEnabled": false,
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true
+	"python.linting.prospectorEnabled": false,
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"liveServer.settings.port": 5502
 }
