@@ -26,7 +26,11 @@ SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my
 
 DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DJANGO_DEBUG",True)
+if not config("DJANGO_DEBUG"):
+    DEBUG = False
+else:
+    DEBUG = True
+
 
 ALLOWED_HOSTS = DJANGO_ALLOWED_HOSTS
 

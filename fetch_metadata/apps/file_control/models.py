@@ -1,3 +1,5 @@
+import os
+import uuid
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
@@ -32,8 +34,9 @@ def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
     return f'user_{instance.user.id}/{filename}'
 class FileUpload(models.Model):
+
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
-    title = models.CharField(max_length=100)
+
     file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types, max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -56,4 +59,4 @@ class FileUpload(models.Model):
 
 class MetaExtract(models.Model):
     file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
-    meta_file_url = models.FileField(upload_to = user_directory_path)
+    meta_file = models.FileField(upload_to = user_directory_path)

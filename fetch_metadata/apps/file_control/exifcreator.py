@@ -2,7 +2,7 @@ import os
 import subprocess
 from . import models
 
-input_file = models.FileUpload.files.url
+
 
 file_ext = ".mttrck" #metatrack file extension for saving metadata
 root_file_name = os.path.splitext(input_file)[0] #file name without extension
