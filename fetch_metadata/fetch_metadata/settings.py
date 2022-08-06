@@ -25,10 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my#)qs)y5p)$x+3$sb^8@fp8858h&')
 
+DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DJANGO_DEBUG",True)
+DEBUG = False
 
-ALLOWED_HOSTS = ['metatrack.herokuapp.com']
+ALLOWED_HOSTS = DJANGO_ALLOWED_HOSTS
 
 # Application definition
 
@@ -165,6 +166,10 @@ REST_FRAMEWORK = {
 
 # Configure Django App for Heroku
 if DEBUG is False:
+    STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static'
+    MEDIA_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/media/'
+
+
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
@@ -179,16 +184,20 @@ if DEBUG is False:
     }
     AWS_DEFAULT_ACL=None
 
-    AWS_CLOUDFRONT_KEY = config('AWS_CLOUDFRONT_KEY', None).encode('ascii')
-    AWS_CLOUDFRONT_KEY_ID = config('AWS_CLOUDFRONT_KEY_ID', None)
+    # AWS_CLOUDFRONT_KEY = config('AWS_CLOUDFRONT_KEY', None).encode('ascii')
+    # AWS_CLOUDFRONT_KEY_ID = config('AWS_CLOUDFRONT_KEY_ID', None)
     AWS_LOCATION = 'media'
 
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
+        os.path.join(BASE_DIR, 'staticdev'),
     ]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    MEDIA_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/media/'
-    STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static/'
+    if not "localhost" in DJANGO_ALLOWED_HOSTS:
+        django_on_heroku.settings(locals())
+
+        DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 else:
     #Media files (uploaded files)
@@ -204,6 +213,4 @@ else:
         os.path.join(BASE_DIR, 'static')
         ]
 
-django_on_heroku.settings(locals())
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
