@@ -3,7 +3,13 @@ from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm, EditForm
 from django.urls import reverse_lazy
+from django.views import generic
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import get_user_model
 
+# Create your views here.
+
+UserModel= get_user_model()
 def home_page(request):
 
     return render(request, "common/index.html")
@@ -40,3 +46,9 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'common/delete_post.html'
     success_url = reverse_lazy('home')
+
+
+class UserRegisterView(generic.CreateView):
+    form_class = UserCreationForm
+    template_name = 'registration/registration.html'
+    success_url = reverse_lazy('login')

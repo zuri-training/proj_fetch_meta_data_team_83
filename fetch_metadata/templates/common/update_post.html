@@ -2,6 +2,7 @@
 {% block title %}Edit Blog Post{% endblock %}
 {% block content %}
 
+{% if user.is_authenticated %}
 <h1> Update Post...</h1>
 <br></br>
 <div class="form-group">
@@ -12,6 +13,11 @@
     </form>
     
 </div>
+{% else %}
+
+You should register to update
+
+{% endif %}
 
 
     

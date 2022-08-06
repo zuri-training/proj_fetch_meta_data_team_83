@@ -21,3 +21,7 @@ class fileListView(ListView):
 
 #download files
 # class downloadFilesView(CreateView):
+
+
+#from django.contrin.auth import get_user_model
+#user = get_user_model
