@@ -26,7 +26,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my
 
 DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config("DJANGO_DEBUG",True)
 
 ALLOWED_HOSTS = DJANGO_ALLOWED_HOSTS
 
@@ -211,5 +211,5 @@ else:
 
     STATIC_URL = '/static/'
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
+        os.path.join(BASE_DIR, 'staticdev')
         ]
