@@ -1,129 +1,107 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'api/css/login.css' %}" />
+{% endblock %}
 <!-- left side  -->
-<div class="split left" style="background-image:url() ;">
-    <button
-      style="
-        position: absolute;
-        width: 228px;
-        height: 72px;
-        left: 24px;
-        top: 24px;
-        background: #4d5054;
-      "
-    ></button>
-    
-    
-  </div>
+<div class="split left">
+  <button class="btn1"></button>
+</div>
 <!-- Right side-->
-  <div class="split right">
-<!-- All elements centered on the right side -->
-    <div class="centered"  >
-        <!-- Elements in upper half of the right side-->
-    <div style="display: flex;
-    flex-direction: column ;">
-    <!--H1 tag and image tag flexed side by side--> 
-        <div style= "display: flex;
-        flex-direction:row-reverse; margin-top: 80px;white-space: nowrap;overflow: visible;">
-            <img height="80px" src="wave.png" />
-      <h1
-        style="
-          width: 400px;
-          height: 56px;
-          left: 966px;
-          top: 104px;
-
-          font-family: 'Poppins';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: px;
-          margin-right: 75px;
-        ">
-      Good to have you back
-      </h1>
+<div class="split right">
+  <!-- All elements centered on the right side -->
+  <div class="centered">
+    <!-- Elements in upper half of the right side-->
+    <div class="upper" style="display: flex; flex-direction: column">
+      <!--H1 tag and image tag flexed side by side-->
+      <div class="side">
+        <img class="wave" height="80px" src="{% static 'img/wave.png'%}" />
+        <h1>Good to have you back</h1>
       </div>
 
-      <p class="px" style="margin-right:10px ;">
+      <p class="px">
         It's been a Minute. Let's get back on extracting Metadatas from your
         files
       </p>
-      <form>
-        <label style="margin-right: 86%; " for="email">Email</label>
-        <input
-          style="width: 500px; height: 30px; margin: 1px; margin-bottom: 20px;"
-          id="email"
-          type="email"
-          placeholder="Type your email adress"
-          required
-        />
-        <!-- Password placeholder and forgot password link arranged -->
-        <div>
-        <br />
-        <label style="margin-right: 81%"  for="password">Password</label>
-        <input
-          style="width: 500px; height: 30px; margin: 0.5px ;"
-          id="password"
-          type="password"
-          placeholder="..........."
-          required
-        />
-        <p class="p3" style="margin-right: -280px;"><a href="#">Forgotten Password? </a></p>
-        <br />
+      <form id="form" action="{% url 'api:login' %}" role="form" method="POST">
+        {% csrf_token %} {% comment %}{{form.as_p}}{% endcomment %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        {% if form.non_field_errors %}
+        <p class="text-error">{{ form.non_field_errors|striptags }}</p>
+        {% endif %}
+        <div
+          id="div_id_username"
+          class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+        >
+          <div class="form-group">
+            <label class="L1" for="{{form.username.id_for_label}}">Email</label>
+            <input
+              placehoder="Type your email address"
+              class="email"
+              type="email"
+              name="{{form.username.name}}"
+              maxlength="{{form.username.field.max_length}}"
+              autocapitalize="off"
+              autocorrect="off"
+              class="form-control textinput textInput"
+              id="{{form.username.id_for_label}}"
+              required
+              autofocus
+              {%
+              if
+              form.username.value
+              %}
+              placehoder="{{ form.username.value|default_if_none:'Type your email address' }}"
+              {%
+              endif
+              %}
+            />
+          </div>
         </div>
+        <!-- Password placeholder and forgot password link arranged -->
+        <div
+          id="div_id_password"
+          class="clearfix control-group {% if form.password.errors %}error{% endif %}"
+        >
+          <div class="form-group">
+            <label class="L2" for="{{form.password.id_for_label}}"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="{{form.password.name}}"
+              maxlength="{{form.password.field.max_length}}"
+              autocapitalize="off"
+              placeholder="..........."
+              autocorrect="off"
+              class="password form-control textinput textInput"
+              id="{{form.password.id_for_label}}"
+              placeholder="Type your password"
+              required
+            />
+            {% if form.password.errors %}
+            <p class="text-error">{{ form.password.errors|striptags }}</p>
+            {% endif %}
+          </div>
+          <p class="p3">
+            <a href="{% url 'api:password_reset'%}">Forgotten Password? </a>
+          </p>
+          <br />
         </div>
 
-        <!-- All elements in lower right side -->
-        <div 
-        style="display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        ">
-        <button
-          style="
-          align-content: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 24px;
-            gap: 10px;
-            width: 450px;
-            height: 30px;
-            color: white;
-            background-color: black;
-        
-          "
-          class="btn1"
-        >
-          Sign In To Your Account
-        </button>
-        <br>
-        <p
-          style="
-            height: 34px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 140%;
-          "
-        >
-          or sign in using
-        </p>
+        <input
+          type="submit"
+          name="submit"
+          value="Sign In To Your Account"
+          class="btn2 btn-primary form-control"
+          id="submit-id-submit"
+        />
+      </form>
+      <!-- All elements in lower right side -->
+      <div class="lower">
+        <br />
+        <p class="p4">or sign in using</p>
         <!-- Logo to be placed here -->
-        <button 
-        
-          onclick=""
-          style="
-            height: 100px;
-            width: 100px;
-            background-color: #d9d9d9
-          "
-          class="btn 2"
-        ></button>
+        <a href="#"> <button class="btn3"></button> </a>
       </div>
     </div>
   </div>
-
-{% endblock %}
+</div>
