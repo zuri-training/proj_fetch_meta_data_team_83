@@ -1,3 +1,4 @@
+from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth import get_user_model
 
@@ -32,3 +33,16 @@ class FileUpload(models.Model):
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
     file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types, max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
+    class Meta:
+        default_permissions = ()
+        permissions = (
+            ("add_file_upload", "Can upload file"),
+            ("change_file_upload", "Can change the database of uploaded file"),
+            ("delete_file_upload", "Can delete uploaded file"),
+            ("view_file_upload", "Can view uploaded file"),
+            ("list_file_upload", "Can list all uploaded file"),
+        )
+
+class MetaExtract(models.Model):
+    file = models.OneToOneField(FileUpload, on_delete=CASCADE)
+    meta_file_url = models.URLField()

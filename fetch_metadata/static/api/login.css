@@ -65,7 +65,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  
+
 }
 .px {
   margin-right: 10px;
@@ -73,7 +73,7 @@ h1 {
 .L1 {
   margin-right: 86%;
 }
-#email {
+.email {
   width: 500px;
   height: 30px;
   margin: 1px;
@@ -82,7 +82,7 @@ h1 {
 .L2 {
   margin-right: 81%;
 }
-#password {
+.password {
   width: 500px;
   height: 30px;
   margin: 0.5px;
@@ -121,4 +121,8 @@ h1 {
   height: 100px;
                 width: 100px;
                 background-color: #d9d9d9
+}
+
+.text-error{
+    color:red;
 }

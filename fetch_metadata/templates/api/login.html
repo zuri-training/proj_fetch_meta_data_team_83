@@ -1,98 +1,107 @@
-{% load static %}
-{% block css %}
-<link rel="stylesheet"  href="{% static 'login.css' %}">
+{% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'api/login.css' %}" />
 {% endblock %}
 <!-- left side  -->
 <div class="split left">
-  <button class="btn1"
-  ></button>
+  <button class="btn1"></button>
 </div>
 <!-- Right side-->
 <div class="split right">
-<!-- All elements centered on the right side -->
-  <div class="centered"  >
-      <!-- Elements in upper half of the right side-->
-  <div class="upper" style="display: flex;
-  flex-direction: column ;">
-  <!--H1 tag and image tag flexed side by side-->
-      <div class="side" >
-          <img class="wave"  height="60px" src="{% static 'img/wave.png'%}" />
-    <h1
-    >
-    Good to have you back
-    </h1>
-    </div>
-
-    <p class="px" >
-      It's  been a Minute. Let's get back on extracting Metadatas from your
-      files
-    </p>
-    <form action="{%url 'api:login'%}" method="POST">
-      {% csrf_token %}
-
-      {% comment %}<input type="hidden" name="next" value="{{ next }}" />{% endcomment %}
-
-      <label class="L1" for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>
-      <input
-              id="email"
-        type="text"
-        placeholder="Type your username or email address"
-         maxlength="{{form.uusername.field.max_length}}"
-        required
-{%
-                                    if
-                                    form.username.value
-                                    %}value="{{ form.username.value }}"
-                                    {%
-                                    endif
-                                    %}
-
-      />
-{% if form.username.errors %}
-                                  <p class="text-error">{{ form.username.errors|striptags }}</p>
-                                  {% endif %}
-
-      <!-- Password placeholder and forgot password link arranged -->
-      <div>
-      <br />
-      <label class="L2" for="{{form.password.id_for_label}}">{{form.password1.label_tag}}</label>
-      <input
-                                type="password"
-                                name="{{form.password1.name}}"
-                                maxlength="{{form.password1.field.max_length}}"
-                                autocapitalize="off"
-                                autocorrect="off"
-                                class="form-control textinput textInput"
-                                id="password"
-                                placeholder="........."
-                                required
-                              />
-                              {% if form.password.errors %}
-                              <p class="text-error">{{ form.password.errors|striptags }}</p>
-                              {% endif %}
-                              <p class="p3"><a href="{%url 'api:password_reset'%}">Forgotten Password? </a></p>
-      <br />
-      </div>
+  <!-- All elements centered on the right side -->
+  <div class="centered">
+    <!-- Elements in upper half of the right side-->
+    <div class="upper" style="display: flex; flex-direction: column">
+      <!--H1 tag and image tag flexed side by side-->
+      <div class="side">
+        <img class="wave" height="80px" src="{% static 'img/wave.png'%}" />
+        <h1>Good to have you back</h1>
       </div>
 
-      <!-- All elements in lower right side -->
-      <div class="lower"
-      >
-      <button
-
-        class="btn2"
-      >
-        Sign In To Your Account
-      </button>
-      <br>
-      <p class="p4"
-      >
-        or sign in using
+      <p class="px">
+        It's been a Minute. Let's get back on extracting Metadatas from your
+        files
       </p>
-      <!-- Logo to be placed here -->
-      <button
-        class="btn3"
-      ></button>
+      <form id="form" action="{% url 'api:login' %}" role="form" method="POST">
+        {% csrf_token %} {% comment %}{{form.as_p}}{% endcomment %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        {% if form.non_field_errors %}
+        <p class="text-error">{{ form.non_field_errors|striptags }}</p>
+        {% endif %}
+        <div
+          id="div_id_username"
+          class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+        >
+          <div class="form-group">
+            <label class="L1" for="{{form.username.id_for_label}}">Email</label>
+            <input
+              placehoder="Type your email address"
+              class="email"
+              type="email"
+              name="{{form.username.name}}"
+              maxlength="{{form.username.field.max_length}}"
+              autocapitalize="off"
+              autocorrect="off"
+              class="form-control textinput textInput"
+              id="{{form.username.id_for_label}}"
+              required
+              autofocus
+              {%
+              if
+              form.username.value
+              %}
+              placehoder="{{ form.username.value|default_if_none:'Type your email address' }}"
+              {%
+              endif
+              %}
+            />
+          </div>
+        </div>
+        <!-- Password placeholder and forgot password link arranged -->
+        <div
+          id="div_id_password"
+          class="clearfix control-group {% if form.password.errors %}error{% endif %}"
+        >
+          <div class="form-group">
+            <label class="L2" for="{{form.password.id_for_label}}"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="{{form.password.name}}"
+              maxlength="{{form.password.field.max_length}}"
+              autocapitalize="off"
+              placeholder="..........."
+              autocorrect="off"
+              class="password form-control textinput textInput"
+              id="{{form.password.id_for_label}}"
+              placeholder="Type your password"
+              required
+            />
+            {% if form.password.errors %}
+            <p class="text-error">{{ form.password.errors|striptags }}</p>
+            {% endif %}
+          </div>
+          <p class="p3">
+            <a href="{% url 'api:password_reset'%}">Forgotten Password? </a>
+          </p>
+          <br />
+        </div>
+
+        <input
+          type="submit"
+          name="submit"
+          value="Sign In To Your Account"
+          class="btn2 btn-primary form-control"
+          id="submit-id-submit"
+        />
+      </form>
+      <!-- All elements in lower right side -->
+      <div class="lower">
+        <br />
+        <p class="p4">or sign in using</p>
+        <!-- Logo to be placed here -->
+        <a href="#"> <button class="btn3"></button> </a>
+      </div>
     </div>
   </div>
 </div>
