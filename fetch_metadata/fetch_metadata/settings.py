@@ -12,8 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import django_on_heroku
-import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -166,8 +165,10 @@ REST_FRAMEWORK = {
 
 # Configure Django App for Heroku
 if DEBUG is False:
-    STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static'
-    MEDIA_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/media/'
+    import django_on_heroku
+    import dj_database_url
+    STATIC_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
+    MEDIA_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
 
 
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
@@ -191,10 +192,10 @@ if DEBUG is False:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'staticdev'),
     ]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATIC_ROOT = 'static'
 
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    if not "localhost" in DJANGO_ALLOWED_HOSTS:
+    MEDIA_ROOT = 'media'
+    if "localhost" not in DJANGO_ALLOWED_HOSTS:
         django_on_heroku.settings(locals())
 
         DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
@@ -212,5 +213,3 @@ else:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static')
         ]
-
-
