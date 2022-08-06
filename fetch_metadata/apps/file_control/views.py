@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 
 # Create your views here.
 #upload files
-class FileCreateView(PermissionRequiredMixin,CreateView):
+class FileCreateView(PermissionRequiredMixin, CreateView):
     """
     Generates the view where the user can upload their files
     PermissionRequiredMixin: Requires that the user has appropriate permissions
