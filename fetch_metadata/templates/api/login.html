@@ -4,9 +4,24 @@
 {% endblock %}
 <!-- left side  -->
 <div class="split left">
-  <button class="btn1"
-  ></button>
-</div>
+  <a class="logo" href="#"> <img src="{% static 'img/logo.png'%}"> </a>
+   <!-- All elements centered on the left side -->
+   <div class="centered"  >
+ <img class="contract" height="290rem" src="{% static 'img/contract.png'%}">
+ <img class="shadow" height="250rem" src="{% static 'img/shadow.png'%}">
+ <br>
+ <img class="cd" height="80rem" src="{% static 'img/create-date.png'%}">
+ <img class="di" height="80rem"src="{% static 'img/document-id.png'%}">
+ <img class="fn" height="80rem" src="{% static 'img/file-name.png'%}">
+ <img class="fs" height="90rem" src="{% static 'img/file-size.png'%}">
+ <img class="ft" height="80rem" src="{% static 'img/file-type.png'%}">
+ <img class="mt" height="90rem" src="{% static 'img/mime-type.png'%}">
+ <img class="md" height="70rem" src="{% static 'img/modify-date.png'%}">
+
+ <h1 class="htwo">DOCUMENTS</h1>
+   </div>
+
+ </div>
 <!-- Right side-->
 <div class="split right">
 <!-- All elements centered on the right side -->
@@ -16,8 +31,8 @@
   flex-direction: column ;">
   <!--H1 tag and image tag flexed side by side--> 
       <div class="side" >
-       <img class="wave"  height="80px" src="{% static 'img/wave.png'%}" /> 
-    <h1
+          <img class="wave"  height="80rem" src="{% static 'img/wave.png'%}" />
+    <h1 class="hone"
     >
     Good to have you back
     </h1>
@@ -30,6 +45,7 @@
     <form>
       <label class="L1"  for="email">Email</label>
       <input
+      class="email"
         id="email"
         type="email"
         placeholder="Type your email adress"
@@ -40,12 +56,13 @@
       <br />
       <label class="L2"   for="password">Password</label>
       <input
+      class="password"
         id="password"
         type="password"
         placeholder="..........."
         required
       />
-      <p class="p3"><a href="#">Forgotten Password? </a></p>
+      <a href="#" class="p3"> <p class="p3">Forgotten Password? </p> </a>
       <br />
       </div>
       </div>
@@ -53,24 +70,19 @@
       <!-- All elements in lower right side -->
       <div class="lower"
       >
-     <a href="#"> <button
+      <button
 
         class="btn2"
       >
         Sign In To Your Account
       </button>
-    </a>
-    </form>
       <br>
       <p class="p4"
       >
         or sign in using
       </p>
       <!-- Logo to be placed here -->
-      <a href="#"> <button
-        class="btn3"
-      ></button>
-      </a>
+    <a href="#">  <img src="{% static 'img/logo.png'%}" > </a>
     </div>
   </div>
 </div>

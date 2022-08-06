@@ -5,8 +5,9 @@ p,
 a,
 button {
   font-family: "poppins", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
+
 .split {
   height: 100%;
   width: 50%;
@@ -14,13 +15,56 @@ button {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .left {
   left: 0;
-  background-color: #707376;
+  background-image:linear-gradient(#003566, #2d5b85)
 }
+.htwo{ 
+  color: gold;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 33.125rem;
+}
+
+.contract{
+  margin-bottom: -34.375rem;
+  margin-left: -6.25rem;
+}
+.shadow{
+  margin-bottom: -40.625rem;
+}
+.fn{
+  margin-bottom: -13.75rem;
+  margin-right: 25rem;
+}
+.di{
+  margin-bottom:-25rem ;
+  margin-right:31.25rem ;
+}
+.cd{
+  margin-bottom: -37.5rem;
+  margin-right: 31.25rem;
+}
+.ft{
+  margin-bottom:-6.25rem ;
+  margin-left:21.875rem ;
+}
+.mt{
+  margin-bottom: -11.25rem;
+  margin-left: 21.875rem;
+}
+.md{
+  margin-bottom: -18.75rem;
+  margin-left: -9.375rem;
+}
+.fs{
+  margin-bottom: -34.375rem;
+  margin-left: 26.25rem;
+}
+
 .right {
   right: 0;
   background-color: white;
@@ -33,17 +77,10 @@ button {
   text-align: center;
 }
 .wave{
-  margin-left: -4px;
-  margin-top: 60px;
+  margin-left: -0.25rem;
+  margin-top: 3.75rem;
 }
-.btn1 {
-  position: absolute;
-  width: 228px;
-  height: 72px;
-  left: 24px;
-  top: 24px;
-  background: #4d5054;
-}
+
 .upper {
   display: flex;
   flex-direction: column;
@@ -51,44 +88,54 @@ button {
 .side {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 80px;
+  margin-top: 5rem;
   white-space: nowrap;
   overflow: visible;
-  row-gap: 0px;
+  row-gap: 0rem;
 }
-h1 {
-  width: 400px;
-  height: 56px;
-  margin-right: 70px;
-  margin-top: 85px;
-  font-family: "Poppins";
-  font-style: normal;
+.hone {
+  width: 25rem;
+  height:3.5rem;
+  margin-right: 4.375rem;
+  margin-top: 5.313rem;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   
+
 }
 .px {
-  margin-right: 10px;
+  margin-right: 0.625rem;
+  font-size: 0.90rem;
 }
 .L1 {
   margin-right: 86%;
+  color:#003566 ;
+  font-size: 1rem;
 }
-#email {
-  width: 500px;
-  height: 30px;
-  margin: 1px;
-  margin-bottom: 20px;
+.email {
+  width: 31.25rem;
+  height: 1.875rem;
+  margin: 0.063rem;
+  margin-bottom: 1.25rem;
+  border-style:solid;
+  border-color: #003566;
 }
 .L2 {
   margin-right: 81%;
+  color:#003566 ;
+  font-size: 1rem;
 }
-#password {
-  width: 500px;
-  height: 30px;
-  margin: 0.5px;
+.password {
+  width:31.25rem;
+  height: 1.875rem;
+  margin: 0.031rem;
+  border-style:solid;
+  border-color: #003566;
 }
 .p3 {
-  margin-right: -280px;
+  margin-right: -17.5rem;
+  color: gold;
+  font-size: 1rem;
 }
 .lower {
   display: flex;
@@ -102,23 +149,27 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 24px;
-  gap: 10px;
-  width: 450px;
-  height: 30px;
+  padding: 1rem 1.5rem;
+  gap: 0.625rem;
+  width:28.125rem;
+  height: 1.875rem;
   color: white;
-  background-color: black;
+  background-color:#003566;
+  font-size: 1rem;
 }
 .p4 {
-  height: 34px;
+  height: 2.125rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 140%;
+  color:#003566 ;
+  font-size: 1rem;
 }
 .btn3{
-  height: 100px;
-                width: 100px;
-                background-color: #d9d9d9
+  height: 6.25rem;
+                width: 6.25rem;
+                background-color: #d9d9d9;
+                font-size: 1rem;
 }
