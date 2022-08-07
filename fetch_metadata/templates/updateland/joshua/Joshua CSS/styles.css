@@ -14,7 +14,7 @@ body{
 }
 
 .hero{
-    background-color: #D4D5D6;
+    background-color: #003566;
     padding-top: 1em;
     height: 300px;
 }
@@ -26,13 +26,13 @@ header{
     align-items: center;
 }
 
-header p{
+{% comment %} header p{
     margin-left: 1.5em;
     padding: 1em;
     background-color: #444E53;
     color: white;
     border: 3px solid white;
-}
+} {% endcomment %}
 
 .nav__bar{
     display: flex;
@@ -67,12 +67,13 @@ header p{
 
 .nav__bar--link{
     text-decoration: none;
-    color: black;
+    color: #FFD60A;
     padding: .5em 1em;
     border: 2px solid black;
     border-radius: 30px;  
     display: inline-block; 
-    margin-right: 2em;   
+    margin-right: 2em; 
+    border: 1px solid #FFD60A;  
 }
 
 .nav__bar--link:hover{
@@ -100,6 +101,7 @@ header p{
 .hero h1{
     text-align: center;
     margin-top: 2.5em;
+    color: #FFD60A;
 }
 
 .first__section{
@@ -129,7 +131,7 @@ header p{
 .fa-database{
     font-size: 3rem;
     margin-bottom: .5em;
-    color: #292D32;
+    color: #003566;
 }
 
 .second__section{
@@ -147,6 +149,7 @@ header p{
     margin-top: 2em;
     max-width: 1500px;
     margin: 0 auto;
+    background-color: #CCD7E0;
 }
 
 .third__section h1{
@@ -165,15 +168,16 @@ header p{
     margin-bottom: 2em;
     align-items: center;
     cursor: pointer;
+    color: #003566;
 }
 
 .fa-circle-plus{
-    color: #292D32;
+    color: #003566;
 }
 
 footer{
     display: flex;
-    background-color: #444E53;
+    background-color: #003566;
     height: 250px;
     padding: 2em;
     color: whitesmoke;
