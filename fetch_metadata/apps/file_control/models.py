@@ -33,12 +33,13 @@ def user_directory_path(instance, filename):
 
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
     return f'user_{instance.user.id}/{filename}'
-class FileUpload(models.Model):
+class File(models.Model):
 
-    user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
+    user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
 
     file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types, max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
+    meta_file = models.FileField(upload_to = user_directory_path)
 
     def get_absolute_url(self):
         """
@@ -47,16 +48,8 @@ class FileUpload(models.Model):
         """
         return reverse('file_detail', kwargs={'pk': self.id})
 
-    # class Meta:
-    #     default_permissions = ()
-    #     permissions = (
-    #         ("add_file_upload", "Can upload file"),
-    #         ("change_file_upload", "Can change the database of uploaded file"),
-    #         ("delete_file_upload", "Can delete uploaded file"),
-    #         ("view_file_upload", "Can view uploaded file"),
-    #         ("list_file_upload", "Can list all uploaded file"),
-    #     )
+    @property
+    def get_file_full_path(self):
+        return self.file.url
 
-class MetaExtract(models.Model):
-    file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
-    meta_file = models.FileField(upload_to = user_directory_path)
+

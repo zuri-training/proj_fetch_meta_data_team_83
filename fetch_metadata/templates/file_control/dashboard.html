@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+	<body>
+        <header class="right_container_header">
+            <section class="nav_container">
+                <div class="right_nav">
+					<div class="right_navlinks">
+						<img src="img/metatrack_logo.svg" class="right_logo" alt="" />
+						<a href="">Home</a>
+						<a href="">How It Works</a>
+						<a href="">Services</a>
+						<a href="">About Us</a>
+						<input type="search" name="" id="" />
+						<img src="img/Code Image.png" class="show_photo" alt="" />
+					</div>
+				</div>
+            </section>
+            <!-- <section id="left_container">
+				<div class="left_top">
+					<nav class="left_nav">
+						<div class="left_navlinks">
+							<div><img src="img/dashboard_icon.png" alt="" /></div>
+							<div><a href="">Dashboard</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/security_icon.png" alt="" /></div>
+							<div><a href="">Security</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/file_icon.png" alt="" /></div>
+							<div><a href="">Files</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/storage_icon.png" alt="" /></div>
+							<div><a href="">Storage</a></div>
+						</div>
+					</nav>
+				</div>
+			</section> -->
+            <div class="right_top">
+                <div class="right_head">
+					<h1 class="right_heading">Extract <span>Metadatas</span> from your files</h1>
+				</div>
+                <img src="" alt="">
+                <div>
+                    <p class="right_contents">
+						Extract metadata embedded behind your files, ranging from file size
+						and modification history to the software tools used to create them.
+						Available to image files, csv, pdf, json, etc.
+					</p>
+                </div>
+				<div class="top_buttons">
+					<div class="button_stuff">
+						<form
+                  id="form"
+                  action="{% url 'file:userFileUpload' %}"
+                            role="form"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+        {% csrf_token %}
+        <!--{{form.as_p}}-->
+              <input class="browse_button" type="file" name="{{form.file.name}}" value="Extract"/>
+     				       <input
+              class="extract_button" type="submit" value="Extract">
+    </form>
+					</div>
+
+				</div>
+            </div>
+        </header>
+		<main class="overall_container">
+			<section class="middle_container">
+
+				<div class="second_right">
+					<div class="file_track">
+						<div class="tracking_file">
+                            <div class="tracking_nav">
+                                <h4>File Tracking</h4>
+                                <div>
+                                    <img src="img/3dots_icon.svg" alt="" class="tracking_3dots"/>
+                                </div>
+                            </div>
+							<div class="file_types">
+                                <div class="big_circle">
+                                    <img src="img/FullCircle_icon.svg" alt="" class="full_circle" />
+                                    <div class="circle_content">
+                                        <p class="track_text">File Types <br> Extracted</p>
+                                    </div>
+                                </div>
+								<div class="tracking_types">
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">JPEG</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">PNG</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Csv</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Pdf</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Json</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="third_right">
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								JPEG <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								PNG <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Csv <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Pdf <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Json <br />
+								12
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="bottom_container">
+
+				<div class="bottom_contents">
+					<div class="bottom_left">
+						<h4 style="text-align: center;">File Records</h4>
+						<table class="table_box" width="100%" cellpadding="5" cellspacing="5">
+							<thead class="table_headings">
+								<tr class="rows_data">
+									<th>No</th>
+									<th>File Name</th>
+									<th>File Size</th>
+									<th>File Type</th>
+									<th>File Type Extension</th>
+									<th>View Details</th>
+								</tr>
+							</thead>
+							<tbody class="table_body">
+								<tr class="rows_data">
+									<td>1</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>2</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>3</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>4</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>5</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>6</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>7</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- <table class="table_box" width="100%" cellpadding="3" cellspacing="3">
+						<thead class="table_headings">
+							<tr class="table_one">
+								<th>
+									<h4 class="table_head" colspan="6">File Records</h4>
+								</th>
+							</tr>
+							<tr class="rows_data">
+								<th>No</th>
+								<th>File Name</th>
+								<th>File Size</th>
+								<th>File Type</th>
+								<th>File Type Extension</th>
+								<th>View Details</th>
+							</tr>
+						</thead>
+						<tbody class="table_body">
+							<tr class="rows_data">
+								<td>1</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>2</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>3</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>4</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>5</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>6</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>7</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+						</tbody>
+					</table> -->
+
+                    <div class="bottom_right">
+						<h4>Security Checks</h4>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/Warning_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Urgent
+								</p>
+                                <span style="font-size: .5rem;">2 files suspected of malware virus</span>
+							</div>
+							<div class="security">
+								<button>View</button>
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/DeepScan_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Deep Scan Completed
+								</p>
+                                <span style="font-size: .5rem;">2 Threats detected</span>
+							</div>
+							<div class="security">
+								<img src="img/RightArrow_icon.svg" alt="" class="security_imgs" />
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/duplicate_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Duplicate Files
+								</p>
+                                <span style="font-size: .5rem;">Presence of similar files</span>
+							</div>
+							<div class="security">
+								<button>Delete</button>
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/ScanUpdate_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Scan Update
+								</p>
+                                <span style="font-size: .5rem;">The next scan update is scheduled for <br> 24-08-2022</span>
+							</div>
+							<div class="security">
+								<button>Edit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+		</main>
+	</body>
+</html>

@@ -51,10 +51,13 @@ class ContentTypeRestrictedFileField(FileField):
 
 
 
-class MediaStorage(S3Boto3Storage):
-    bucket_name = 'my-app-bucket'
-    location = 'media'
 
-class StaticStorage(S3Boto3Storage):
-    bucket_name = 'my-app-bucket'
-    location = 'static'
+
+
+# class MediaStorage(S3Boto3Storage):
+    # bucket_name = 'my-app-bucket'
+    # location = 'media'
+
+# class StaticStorage(S3Boto3Storage):
+    # bucket_name = 'my-app-bucket'
+    # location = 'static'

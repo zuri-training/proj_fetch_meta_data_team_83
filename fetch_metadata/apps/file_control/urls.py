@@ -7,5 +7,5 @@ app_name='file'
 urlpatterns = [
     path('',views.FileListView.as_view(), name='userFileList'),
     path('dashboard/',views.FileCreateView.as_view(), name='userFileUpload'),
-    path('download/<int:pk>', views.FileDetailView.as_view(), name='download'),
+    path('<int:pk>/', views.FileDetailView.as_view(), name='fileDetail'),
 ]

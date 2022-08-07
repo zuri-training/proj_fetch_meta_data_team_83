@@ -1,11 +1,11 @@
 
 from django import forms
-from .models import FileUpload
+from .models import File
 
 class FileUploadForm(forms.ModelForm):
     class Meta:
-        model = FileUpload
-        fields = ['file',]
+      model = File
+      fields = ['file',]
 
     # def __init__(self, *args, **kwargs):
         # user = kwargs.pop('user')

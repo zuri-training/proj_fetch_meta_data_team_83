@@ -1,7 +1,8 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
 from .forms import FileUploadForm
-from .models import FileUpload
+from .models import File
+from . import exifcreator
 from django.urls import reverse_lazy
 
 
@@ -10,30 +11,39 @@ from django.urls import reverse_lazy
 class FileCreateView(LoginRequiredMixin, CreateView):
     """
     Generates the view where the user can upload their files
-    PermissionRequiredMixin: Requires that the user has appropriate permissions
+    LoginRequiredMixin: Requires that the user has appropriate permissions
     """
     form_class = FileUploadForm
-    success_url = reverse_lazy('userFileList')
-    template_name = 'dashboard.html'
+    success_url = reverse_lazy('/fileDetail/')
+    template_name = 'file_control/dashboard.html'
 
-    # def get_form_kwargs(self):
-        # kwargs = super(FileCreateView, self).get_form_kwargs()
-        # kwargs['user'] = self.request.user
-    #     return kwargs
 
     def form_valid(self, form):
         self.object = form.save(commit=False)
         self.object.user = self.request.user
+
+        # get the instancee of the file that will be used to create the metadata
+
         return super(FileCreateView, self).form_valid(form)
+
+
+    model_instance = File.objects.first().file
+    print(model_instance)
+
+    #create the exif file
+    # exifcreator.create_meta_file(model_instance.path)
+
 
 #files list
 class FileListView(LoginRequiredMixin, ListView):
-    model = FileUpload
-    template_name = 'file.html'
+    # user = request.user
+    model = File
+    template_name = 'file_control/dashboard.html'
     context_object_name = 'file'
-    permission_required='list_file_upload'
+    def get_queryset(self):
+        return File.objects.filter(file__user=self.kwargs['user'])
+
 
 class FileDetailView(LoginRequiredMixin, DetailView):
-    model = FileUpload
-    permission_required='view_file_upload'
+    model = File
     template_name = 'file_detail_view.html'
