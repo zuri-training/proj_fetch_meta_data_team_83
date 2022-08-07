@@ -1,0 +1,71 @@
+{% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'api/css/security.css' %}" />
+{% endblock %}
+<body>
+    <div class="everything">
+        <div>
+            <h1 class="head">We all trust the Authenticity of Files</h1>
+            <p class="p1">...but just in case</p>
+        </div>
+        <div class="ls">
+            <img height="300rem" width="250rem" src="{% static 'img/security.png'%}">
+            <p><strong> Scan:</strong> 24/08/2022 23:00 (Deep Scan)</p>
+            <p><strong>Threats:</strong> 2 Threats detected</p>
+            <p><strong>Duration:</strong> Scan lasted for 2 hours 30 minutes 12 seconds</p>
+            <p><strong>File(s)</strong> Scanned: 165 files scanned</p>
+        </div>
+    </div>
+    <div class="rs">
+        <div class="rt">
+            <a href="#"><img src="{% static 'img/deepscan.png'%}"></a>
+            <a href="#"><img src="{% static 'img/quickscan.png'%}"></a>
+            <a href="#"><img src="{% static 'img/scheduledscan.png'%}"></a>
+            <a href="#"><img src="{% static 'img/customscan.png'%}"></a>
+            <hr width="800rem">
+        </div>
+        <div class="rd">
+            <div class="div1">
+                <img class="w1" src="{% static 'img/warning2.png'%}" height="50rem">
+                <div class="w1d" >
+                    <h4>urgent</h4>
+                </div>
+                <div class="w1d2">
+                    <h5>2 files suspected of malware virus</h5>
+                </div>
+                <div class="w1d3" > <a href="#"> <button class="btt"> view</button> </a></div>
+            </div>
+            <div class="div2">
+                <img class="w2" src="{% static 'img/warning4.png'%}" height="50rem">
+                <div class="w2d">
+                    <h4>Deep scan completed</h4>
+                </div>
+                <div class="w2d2">
+                    <h5>2 threats detected</h5>
+                </div>
+                <div class="w2d3" > <a href="#"> <i class="arrow"></i> </a></div>
+            </div>
+            <div class="div3">
+                <img class="w3" src="{% static 'img/warning.png'%}" height="50rem">
+                <div class="w3d" >
+                    <h4>Duplicate files</h4>
+                </div>
+                <div class="w3d2" >
+                    <h5>presence of similar files>
+                </div>
+                <div class="w3d3" ><a href="#"> <button class="btu">Delete</button> </a></div>
+            </div>
+        </div>
+        <div class="div4">
+            <img class="w4" src="{% static 'img/warning3.png'%}" height="50rem">
+            <div class="w4d" >
+                <h4>Scan updated</h4>
+            </div>
+            <div class="w4d2" >
+                <h5>The next scan is scheduled for: 31-09-22</h5>
+            </div>
+            <div class="w4d3" > <a href="#"><button class="btu">Edit</button></a></div>
+        </div>
+    </div>
+
+    </div>
+</body>

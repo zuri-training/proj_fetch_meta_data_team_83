@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: #003566;
+}
+.everything {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  margin-left: 25rem;
+  color: white;
+}
+.p1 {
+  margin-left: 40rem;
+  color: white;
+}
+.ls {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.rs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35rem;
+  margin-top: -30rem;
+}
+hr {
+  margin-left: -2rem;
+  margin-bottom: 2rem;
+}
+.rd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.div1 {
+  background-color: black;
+  width: 48rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin-left: -1rem;
+}
+.div2 {
+  background-color: white;
+  width: 45rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.div3 {
+  background-color: white;
+  width: 45rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.div4 {
+  background-color: white;
+  width: 45rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.w1 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.w2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.w3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.w4 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.arrow {
+  border: solid gray;
+  border-width: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  padding: 0.5rem;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.btt {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  margin-left: 45rem;
+  background-color: black;
+  margin-bottom: -5rem;
+}
+.btu {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #003566;
+  border-style: solid;
+  border-color: #003566;
+}
+.btv {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #003566;
+  border-style: solid;
+  border-color: #003566;
+}
+.w1d{
+    margin-top:-5rem ; color:white; margin-left: 5rem;
+}
+.w1d2{
+    color:white;margin-left: 5rem;margin-top: -1rem;
+}
+.w1d3{
+    margin-top:-5rem;
+    margin-left:-1.5rem
+}
+.w2d{
+    margin-top:-5rem ; color: #003566; margin-left: 6rem;
+}
+.w2d2{
+    color:#003566;margin-top: -1rem;margin-left: 6rem;
+}
+.w2d3{
+    margin-left: 40rem; margin-top:-4rem;
+}
+.w3d{
+    margin-top:-5rem ; color: #003566; margin-left: 6rem
+}
+.w3d2{
+    color:#003566;margin-left: 5rem; margin-top: -1rem;
+}
+.w3d3{
+    margin-left:40rem; margin-top:-5rem;
+}
+.w4d{
+    margin-top:-5rem ; color: #003566; margin-left: 6rem;
+}
+.w4d2{
+    color:#003566;margin-left: 5rem;margin-top: -1rem;
+}
+.w4d3{
+    margin-left:40rem; margin-top:-5rem;
+}
