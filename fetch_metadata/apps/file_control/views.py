@@ -23,8 +23,8 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         self.object.user = self.request.user
 
         # get the instance of the file that will be used to create the metadata
-        model_instance = File.objects.first().file
-        print(model_instance)
+        # model_instance = File.objects.first().file
+        # print(model_instance)
 
 
         return super(FileCreateView, self).form_valid(form)
