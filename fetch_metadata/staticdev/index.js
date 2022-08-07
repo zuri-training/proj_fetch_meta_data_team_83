@@ -1,5 +1,4 @@
 const faqQuest = document.querySelectorAll(".faq_quest");
-console.log(faqQuest);
 
 faqQuest.forEach((faqQuest) => {
   faqQuest.addEventListener("click", (event) => {

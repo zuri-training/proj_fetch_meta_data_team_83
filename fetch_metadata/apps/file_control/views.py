@@ -22,13 +22,12 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         self.object = form.save(commit=False)
         self.object.user = self.request.user
 
-        # get the instancee of the file that will be used to create the metadata
+        # get the instance of the file that will be used to create the metadata
+        model_instance = File.objects.first().file
+        print(model_instance)
+
 
         return super(FileCreateView, self).form_valid(form)
-
-
-    model_instance = File.objects.first().file
-    print(model_instance)
 
     #create the exif file
     # exifcreator.create_meta_file(model_instance.path)
