@@ -12,14 +12,19 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     Generates the view where the user can upload their files
     PermissionRequiredMixin: Requires that the user has appropriate permissions
     """
-    models = FileUpload
+    form_class = FileUploadForm
     success_url = reverse_lazy('userFileList')
     template_name = 'dashboard.html'
+
+    # def get_form_kwargs(self):
+        # kwargs = super(FileCreateView, self).get_form_kwargs()
+        # kwargs['user'] = self.request.user
+    #     return kwargs
+
     def form_valid(self, form):
-
-        form.instance.user = self.request.user
-        return super().form_valid(form)
-
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+        return super(FileCreateView, self).form_valid(form)
 
 #files list
 class FileListView(LoginRequiredMixin, ListView):
