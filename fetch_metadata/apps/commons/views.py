@@ -1,5 +1,7 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.views.generic.base import RedirectView
+
 from django.urls import reverse_lazy
 from .forms import PostForm, EditForm
 from .models import Post
@@ -11,6 +13,9 @@ class HomeView(ListView):
     model = Post
     template_name = 'common/home.html'
 
+class DashboardView(RedirectView):
+    pattern_name="file:userFileUpload"
+
 class HowItWorksView(DetailView):
     model = Post
     template_name = 'common/how_it_works.html'
@@ -19,8 +24,8 @@ class CreateDocumentationView(PermissionRequiredMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'common/add_post.html'
-    
-    
+
+
 class UpdateDocumentationView(PermissionRequiredMixin, UpdateView):
     model = Post
     form_class = EditForm
