@@ -1,3 +1,4 @@
+
 const faq = document.getElementsByClassName("faq_quest");
 
 for (let i = 0; i < faq.length; i++) {

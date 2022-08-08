@@ -1,7 +1,7 @@
 from django.db.models import FileField
 from django.forms import forms
 from django.template.defaultfilters import filesizeformat
-from storages.backends.s3boto3 import S3Boto3Storage
+# from storages.backends.s3boto3 import S3Boto3Storage
 
 class ContentTypeRestrictedFileField(FileField):
     """
@@ -51,10 +51,13 @@ class ContentTypeRestrictedFileField(FileField):
 
 
 
-class MediaStorage(S3Boto3Storage):
-    bucket_name = 'my-app-bucket'
-    location = 'media'
 
-class StaticStorage(S3Boto3Storage):
-    bucket_name = 'my-app-bucket'
-    location = 'static'
+
+
+# class MediaStorage(S3Boto3Storage):
+    # bucket_name = 'my-app-bucket'
+    # location = 'media'
+
+# class StaticStorage(S3Boto3Storage):
+    # bucket_name = 'my-app-bucket'
+    # location = 'static'
