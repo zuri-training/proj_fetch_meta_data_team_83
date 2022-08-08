@@ -1,11 +1,14 @@
 import os
 from django.db import models
+from django.core.files import File as Filer
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.dispatch import receiver
+from django.conf import settings
 from django.db.models.signals import pre_save, post_save
 from .tasks import create_metadata
 from .filechecker import ContentTypeRestrictedFileField
+from .storage import OverwriteStorage
 
 # Create your models here.
 UserModel = get_user_model()
@@ -37,7 +40,7 @@ class File(models.Model):
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
 
-    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types, max_upload_size=max_upload_size)
+    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types,storage=OverwriteStorage(), max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
     meta_file = models.FileField(upload_to = user_directory_path, null=True,blank=True)
 
@@ -55,13 +58,13 @@ class File(models.Model):
 
 # @receiver(pre_save, sender=File)
 # def file_update(sender, **kwargs):
-    # """
-    # If a file contains double names, remove the old name before saving a new one
-    # """
-    # file_instance = kwargs['instance']
-    # if file_instance.file:
-        # path = file_instance.file.path
-        # os.remove(path)
+#     """
+#     If a file contains double names, remove the old name before saving a new one
+#     """
+#     file_instance = kwargs['instance']
+#     if file_instance.file:
+#         path = file_instance.file.path
+#         os.remove(path)
 
 @receiver(post_save, sender=File)
 def create_meta_file(sender, **kwargs):
@@ -69,5 +72,13 @@ def create_meta_file(sender, **kwargs):
     Create the metadata file and populate the database
     """
     file_instance = kwargs['instance']
-    file_instance.meta_file =  create_metadata.delay(file_instance.file.path)
+    metadatafile =  create_metadata.delay(file_instance.file.path)
+    file_ext = ".mttrck" #metatrack file extension for saving metadata
+    root_file_name = os.path.splitext(file_instance.file.path)[0] #file name without extension
+   
 
+    output_file = root_file_name+file_ext #join the rootname and extension
+    media_path = settings.MEDIA_ROOT #get the media root
+    final_output = os.path.relpath(output_file,media_path) #get the relative path
+
+    File.objects.filter(id=file_instance.id).update(meta_file=str(final_output))
