@@ -4,7 +4,7 @@ from django.views.generic.base import RedirectView
 
 from .views import HomeView, HowItWorksView, CreateDocumentationView, UpdateDocumentationView, DeleteDocumentationView
 
-app_name = 'commons'
+app_name = 'common'
 urlpatterns = [
     path("", HomeView.as_view(), name="home"),
     path("dashboard/", RedirectView.as_view(url="/file/dashboard"), name="dashboard"),

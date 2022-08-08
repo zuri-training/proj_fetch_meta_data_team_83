@@ -1,506 +1,463 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="dashboard.css" />
-	</head>
-	<body>
-		<header class="header_container">
-			<section class="right_container_header">
-				<div class="nav_container">
-					<div class="right_nav">
-						<div class="right_navlinks">
-							<img src="img/metatrack_logo.svg" class="right_logo" alt="" />
-							<a href="" class="navlinks_text">Home</a>
-							<a href="" class="navlinks_text">How It Works</a>
-							<a href="" class="navlinks_text">Services</a>
-							<a href="" class="navlinks_text">About Us</a>
-							<input
-								type="search"
-								name="Search"
-								id=""
-								placeholder="Search for files"
-								class="search_field"
-							/>
-							<img src="img/Code Image.svg" class="show_photo" alt="" />
-						</div>
-					</div>
+{% extends base.html %}
+{% load static %}
+{% block css %}
+<link href="{% static 'common/dashboard.css'%}" rel="stylesheet" />
+{% endblock %}
+	
+
+			{% block hero %}
+			<div class="right_top">
+				<div class="right_head">
+					<h1 class="right_heading">
+						Extract <span class="target_meta">Metadatas</span> from your files
+					</h1>
+					<span class="straight_ell"><img src="{%static 'img/MetaEllipse_icon.svg'%}" alt="" class="first_ell"></span>
+					<span class="slant_ell"><img src="/img/MetaEllipse_icon_2.svg" alt="" class="second_ell"></span>
 				</div>
-				<!-- <section id="left_container">
-				<div class="left_top">
-					<nav class="left_nav">
-						<div class="left_navlinks">
-							<div><img src="img/dashboard_icon.svg" alt="" /></div>
-							<div><a href="">Dashboard</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/security_icon.svg" alt="" /></div>
-							<div><a href="">Security</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/file_icon.svg" alt="" /></div>
-							<div><a href="">Files</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/storage_icon.svg" alt="" /></div>
-							<div><a href="">Storage</a></div>
-						</div>
-					</nav>
+				<img src="" alt="" />
+				<div class="right_head_texts">
+					<p class="right_contents">
+						Extract metadata embedded behind your files, ranging from file
+						size and modification history to the software tools used to create
+						them. Available to image files, csv, pdf, json, etc.
+					</p>
 				</div>
-			</section> -->
-				<div class="right_top">
-					<div class="right_head">
-						<h1 class="right_heading">
-							Extract <span class="target_meta">Metadatas</span> from your files
-						</h1>
-						<span class="straight_ell"><img src="/img/MetaEllipse_icon.svg" alt="" class="first_ell"></span>
-						<span class="slant_ell"><img src="/img/MetaEllipse_icon_2.svg" alt="" class="second_ell"></span>
+				<div class="top_buttons">
+					<div class="button_stuff">
+						<button class="browse_button">Browse...</button>
+						<p class="browse_content">No file selected.</p>
 					</div>
-					<img src="" alt="" />
-					<div class="right_head_texts">
-						<p class="right_contents">
-							Extract metadata embedded behind your files, ranging from file
-							size and modification history to the software tools used to create
-							them. Available to image files, csv, pdf, json, etc.
-						</p>
+					<div class="side_button">
+						<input
+							type="button"
+							value="Extract"
+							class="extract_button"
+							name="extract_button"
+						/>
 					</div>
-					<div class="top_buttons">
-						<div class="button_stuff">
-							<button class="browse_button">Browse...</button>
-							<p class="browse_content">No file selected.</p>
-						</div>
-						<div class="side_button">
-							<input
-								type="button"
-								value="Extract"
-								class="extract_button"
-								name="extract_button"
-							/>
-						</div>
-						<!-- <button class="extract_button">Extract</button> -->
-					</div>
+					<!-- <button class="extract_button">Extract</button> -->
 				</div>
-			</section>
-		</header>
-		<main class="overall_container">
-			<section class="middle_container">
-				<div class="second_right">
-					<div class="file_track">
-						<div class="tracking_file">
-							<div class="tracking_nav">
-								<h3 class="tracking_head">File Tracking</h3>
-								<div>
-									<img src="img/3dots_icon.svg" alt="" class="tracking_3dots" />
-								</div>
-							</div>
-							<div class="file_types">
-								<div class="big_circle">
-									<img
-										src="img/FullCircle_icon.svg"
-										alt=""
-										class="full_circle"
-									/>
-									<div class="circle_content">
-										<p class="track_text">300 Files Extracted</p>
+			</div>
+		
+			{% endblock %}
+		
+			{% block content%}
+			<div class="overall_container">
+				<section class="middle_container">
+					<div class="second_right">
+						<div class="file_track">
+							<div class="tracking_file">
+								<div class="tracking_nav">
+									<h3 class="tracking_head">File Tracking</h3>
+									<div>
+										<img src="{% static 'img/3dots_icon.svg'%}" alt="" class="tracking_3dots" />
 									</div>
 								</div>
-								<div class="tracking_types">
-									<div class="tracking_contents">
-										<div>
-											<img
-												src="img/jpeg_fullcircle.svg"
-												alt=""
-												class="file_circle"
-											/>
+								<div class="file_types">
+									<div class="big_circle">
+										<img
+											src="img/FullCircle_icon.svg"
+											alt=""
+											class="full_circle"
+										/>
+										<div class="circle_content">
+											<p class="track_text">300 Files Extracted</p>
 										</div>
-										<p class="tracking_text">JPEG</p>
 									</div>
-									<div class="tracking_contents">
-										<div>
-											<img
-												src="img/png_fullcircle.svg"
-												alt=""
-												class="file_circle"
-											/>
+									<div class="tracking_types">
+										<div class="tracking_contents">
+											<div>
+												<img
+													src="img/jpeg_fullcircle.svg"
+													alt=""
+													class="file_circle"
+												/>
+											</div>
+											<p class="tracking_text">JPEG</p>
 										</div>
-										<p class="tracking_text">PNG</p>
-									</div>
-									<div class="tracking_contents">
-										<div>
-											<img
-												src="img/csv_fullcircle.svg"
-												alt=""
-												class="file_circle"
-											/>
+										<div class="tracking_contents">
+											<div>
+												<img
+													src="img/png_fullcircle.svg"
+													alt=""
+													class="file_circle"
+												/>
+											</div>
+											<p class="tracking_text">PNG</p>
 										</div>
-										<p class="tracking_text">Csv</p>
-									</div>
-									<div class="tracking_contents">
-										<div>
-											<img
-												src="img/pdf_fullcircle.svg"
-												alt=""
-												class="file_circle"
-											/>
+										<div class="tracking_contents">
+											<div>
+												<img
+													src="img/csv_fullcircle.svg"
+													alt=""
+													class="file_circle"
+												/>
+											</div>
+											<p class="tracking_text">Csv</p>
 										</div>
-										<p class="tracking_text">Pdf</p>
-									</div>
-									<div class="tracking_contents">
-										<div>
-											<img
-												src="img/json_fullcircle.svg"
-												alt=""
-												class="file_circle"
-											/>
+										<div class="tracking_contents">
+											<div>
+												<img
+													src="img/pdf_fullcircle.svg"
+													alt=""
+													class="file_circle"
+												/>
+											</div>
+											<p class="tracking_text">Pdf</p>
 										</div>
-										<p class="tracking_text">Json</p>
+										<div class="tracking_contents">
+											<div>
+												<img
+													src="img/json_fullcircle.svg"
+													alt=""
+													class="file_circle"
+												/>
+											</div>
+											<p class="tracking_text">Json</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="third_right">
-					<div class="each_boxes">
-						<div class="file_image">
-							<img src="img/jpeg_box.svg" alt="" class="file_icons" />
+					<div class="third_right">
+						<div class="each_boxes">
+							<div class="file_image">
+								<img src="img/jpeg_box.svg" alt="" class="file_icons" />
+							</div>
+							<div class="file_contents">
+								<p class="file_text">
+									<span class="text_file">JPEG</span><br />
+									45
+								</p>
+							</div>
 						</div>
-						<div class="file_contents">
-							<p class="file_text">
-								<span class="text_file">JPEG</span><br />
-								45
-							</p>
+						<div class="each_boxes">
+							<div class="file_image">
+								<img src="img/png_box.svg" alt="" class="file_icons" />
+							</div>
+							<div class="file_contents">
+								<p class="file_text">
+									<span class="text_file">PNG</span><br />
+									34
+								</p>
+							</div>
+						</div>
+						<div class="each_boxes">
+							<div class="file_image">
+								<img src="img/csv_box.svg" alt="" class="file_icons" />
+							</div>
+							<div class="file_contents">
+								<p class="file_text">
+									<span class="text_file">Csv</span><br />
+									122
+								</p>
+							</div>
+						</div>
+						<div class="each_boxes">
+							<div class="file_image">
+								<img src="img/pdf_box.svg" alt="" class="file_icons" />
+							</div>
+							<div class="file_contents">
+								<p class="file_text">
+									<span class="text_file">Pdf</span><br />
+									77
+								</p>
+							</div>
+						</div>
+						<div class="each_boxes">
+							<div class="file_image">
+								<img src="img/json_box.svg" alt="" class="file_icons" />
+							</div>
+							<div class="file_contents">
+								<p class="file_text">
+									<span class="text_file">Json</span><br />
+									22
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="each_boxes">
-						<div class="file_image">
-							<img src="img/png_box.svg" alt="" class="file_icons" />
-						</div>
-						<div class="file_contents">
-							<p class="file_text">
-								<span class="text_file">PNG</span><br />
-								34
-							</p>
-						</div>
-					</div>
-					<div class="each_boxes">
-						<div class="file_image">
-							<img src="img/csv_box.svg" alt="" class="file_icons" />
-						</div>
-						<div class="file_contents">
-							<p class="file_text">
-								<span class="text_file">Csv</span><br />
-								122
-							</p>
-						</div>
-					</div>
-					<div class="each_boxes">
-						<div class="file_image">
-							<img src="img/pdf_box.svg" alt="" class="file_icons" />
-						</div>
-						<div class="file_contents">
-							<p class="file_text">
-								<span class="text_file">Pdf</span><br />
-								77
-							</p>
-						</div>
-					</div>
-					<div class="each_boxes">
-						<div class="file_image">
-							<img src="img/json_box.svg" alt="" class="file_icons" />
-						</div>
-						<div class="file_contents">
-							<p class="file_text">
-								<span class="text_file">Json</span><br />
-								22
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="bottom_container">
-				<div class="bottom_contents">
-					<table class="table_box" width="80%" cellpadding="3" cellspacing="3">
-						<caption>
-							<h3 class="table_head">File Records</h3>
-						</caption>
-						<thead class="table_headings">
-							<tr class="rows_data rows_head">
-								<th class="each_thead">No</th>
-								<th class="each_thead">File Name</th>
-								<th class="each_thead">File Size</th>
-								<th class="each_thead">File Type</th>
-								<th class="each_thead">
-									File Type <br />
-									Extension
-								</th>
-								<th class="each_thead">View Details</th>
-							</tr>
-						</thead>
-						<tbody class="table_body">
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">1</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="JPEG"
-										name="JPEG"
-										class="tdata_button jpeg_color"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">2</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="PNG"
-										name="PNG"
-										class="tdata_button"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">3</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="JPEG"
-										name="JPEG"
-										class="tdata_button jpeg_color"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">4</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="PNG"
-										name="PNG"
-										class="tdata_button"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">5</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="PNG"
-										name="PNG"
-										class="tdata_button"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">6</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="JPEG"
-										name="JPEG"
-										class="tdata_button jpeg_color"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-							<tr class="rows_data">
-								<td class="each_tdata">
-									<div class="tdata_num">
-										<span class="num_text">7</span>
-									</div>
-								</td>
-								<td class="each_tdata">OIP.jpg</td>
-								<td class="each_tdata">43KB</td>
-								<td class="each_tdata">
-									<input
-										type="button"
-										value="PNG"
-										name="PNG"
-										class="tdata_button"
-									/>
-								</td>
-								<td class="each_tdata">jpg</td>
-								<td>
-									<img
-										src="img/ExpandArrows_icon.svg"
-										alt=""
-										class="expand_arrows"
-									/>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+				</section>
+				<section class="bottom_container">
+					<div class="bottom_contents">
+						<table class="table_box" width="80%" cellpadding="3" cellspacing="3">
+							<caption>
+								<h3 class="table_head">File Records</h3>
+							</caption>
+							<thead class="table_headings">
+								<tr class="rows_data rows_head">
+									<th class="each_thead">No</th>
+									<th class="each_thead">File Name</th>
+									<th class="each_thead">File Size</th>
+									<th class="each_thead">File Type</th>
+									<th class="each_thead">
+										File Type <br />
+										Extension
+									</th>
+									<th class="each_thead">View Details</th>
+								</tr>
+							</thead>
+							<tbody class="table_body">
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">1</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="JPEG"
+											name="JPEG"
+											class="tdata_button jpeg_color"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">2</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="PNG"
+											name="PNG"
+											class="tdata_button"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">3</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="JPEG"
+											name="JPEG"
+											class="tdata_button jpeg_color"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">4</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="PNG"
+											name="PNG"
+											class="tdata_button"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">5</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="PNG"
+											name="PNG"
+											class="tdata_button"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">6</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="JPEG"
+											name="JPEG"
+											class="tdata_button jpeg_color"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+								<tr class="rows_data">
+									<td class="each_tdata">
+										<div class="tdata_num">
+											<span class="num_text">7</span>
+										</div>
+									</td>
+									<td class="each_tdata">OIP.jpg</td>
+									<td class="each_tdata">43KB</td>
+									<td class="each_tdata">
+										<input
+											type="button"
+											value="PNG"
+											name="PNG"
+											class="tdata_button"
+										/>
+									</td>
+									<td class="each_tdata">jpg</td>
+									<td>
+										<img
+											src="img/ExpandArrows_icon.svg"
+											alt=""
+											class="expand_arrows"
+										/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
-					<div class="bottom_right">
-						<h3 class="security_head">Security Checks</h3>
+						<div class="bottom_right">
+							<h3 class="security_head">Security Checks</h3>
 
-						<div class="security_boxes">
-							<div class="each_security">
-								<img src="img/Warning_icon.svg" alt="" class="security_img" />
+							<div class="security_boxes">
+								<div class="each_security">
+									<img src="img/Warning_icon.svg" alt="" class="security_img" />
+								</div>
+								<div class="each_security">
+									<p class="secure_head security_text">Urgent</p>
+									<span style="font-size: 0.5rem" class="security_text span_text"
+										>2 files suspected of malware virus</span
+									>
+								</div>
+								<div class="each_security">
+									<button class="secure_buttons security_text">View</button>
+								</div>
 							</div>
-							<div class="each_security">
-								<p class="secure_head security_text">Urgent</p>
-								<span style="font-size: 0.5rem" class="security_text span_text"
-									>2 files suspected of malware virus</span
-								>
+							<div class="security_boxes">
+								<div class="each_security">
+									<img src="img/DeepScan_icon.svg" alt="" class="security_img" />
+								</div>
+								<div class="each_security">
+									<p class="secure_head security_text">Deep Scan Completed</p>
+									<span style="font-size: 0.5rem" class="security_text span_text"
+										>2 Threats detected</span
+									>
+								</div>
+								<div class="each_security">
+									<svg
+										class="security_imgs"
+										width="14"
+										viewBox="0 0 14 28"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M0.849976 27.2008L11.7166 16.3341C13 15.0508 13 12.9508 11.7166 11.6674L0.849976 0.800781"
+											stroke="#003566"
+											stroke-width="1.5"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
 							</div>
-							<div class="each_security">
-								<button class="secure_buttons security_text">View</button>
+							<div class="security_boxes">
+								<div class="each_security">
+									<img src="img/duplicate_icon.svg" alt="" class="security_img" />
+								</div>
+								<div class="each_security">
+									<p class="secure_head security_text">Duplicate Files</p>
+									<span style="font-size: 0.5rem" class="security_text span_text"
+										>Presence of similar files</span
+									>
+								</div>
+								<div class="each_security">
+									<button class="secure_buttons security_text">Delete</button>
+								</div>
 							</div>
-						</div>
-						<div class="security_boxes">
-							<div class="each_security">
-								<img src="img/DeepScan_icon.svg" alt="" class="security_img" />
-							</div>
-							<div class="each_security">
-								<p class="secure_head security_text">Deep Scan Completed</p>
-								<span style="font-size: 0.5rem" class="security_text span_text"
-									>2 Threats detected</span
-								>
-							</div>
-							<div class="each_security">
-								<svg
-									class="security_imgs"
-									width="14"
-									viewBox="0 0 14 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M0.849976 27.2008L11.7166 16.3341C13 15.0508 13 12.9508 11.7166 11.6674L0.849976 0.800781"
-										stroke="#003566"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
+							<div class="security_boxes">
+								<div class="each_security">
+									<img
+										src="img/ScanUpdate_icon.svg"
+										alt=""
+										class="security_img"
 									/>
-								</svg>
-							</div>
-						</div>
-						<div class="security_boxes">
-							<div class="each_security">
-								<img src="img/duplicate_icon.svg" alt="" class="security_img" />
-							</div>
-							<div class="each_security">
-								<p class="secure_head security_text">Duplicate Files</p>
-								<span style="font-size: 0.5rem" class="security_text span_text"
-									>Presence of similar files</span
-								>
-							</div>
-							<div class="each_security">
-								<button class="secure_buttons security_text">Delete</button>
-							</div>
-						</div>
-						<div class="security_boxes">
-							<div class="each_security">
-								<img
-									src="img/ScanUpdate_icon.svg"
-									alt=""
-									class="security_img"
-								/>
-							</div>
-							<div class="each_security">
-								<p class="secure_head security_text">Scan Update</p>
-								<span style="font-size: 0.5rem" class="security_text span_text"
-									>The next scan update is scheduled for 24-08-2022</span
-								>
-							</div>
-							<div class="each_security">
-								<button class="secure_buttons security_text">Edit</button>
+								</div>
+								<div class="each_security">
+									<p class="secure_head security_text">Scan Update</p>
+									<span style="font-size: 0.5rem" class="security_text span_text"
+										>The next scan update is scheduled for 24-08-2022</span
+									>
+								</div>
+								<div class="each_security">
+									<button class="secure_buttons security_text">Edit</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</main>
-	</body>
-</html>
+				</section>
+			</div>
+			{%endblock%}
+		
