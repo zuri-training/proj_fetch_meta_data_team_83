@@ -1,10 +1,12 @@
 import os
+from time import sleep
 from django.core.files import File
 import subprocess
 # from . import models
 
 
 def create_meta_file(input_file):
+    sleep(10)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(input_file)[0] #file name without extension
 
