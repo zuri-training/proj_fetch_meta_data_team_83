@@ -19,6 +19,7 @@ class DashboardView(RedirectView):
 class HowItWorksView(DetailView):
     model = Post
     template_name = 'common/how_it_works.html'
+    
 
 class CreateDocumentationView(PermissionRequiredMixin, CreateView):
     model = Post
