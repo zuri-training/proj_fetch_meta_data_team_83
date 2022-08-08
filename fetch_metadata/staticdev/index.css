@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 
 .header_container {
     background-color: #003566;
+
 }
 
 /* Styling of the header section (nav_bars) */
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     text-align: center;
     font-size: 1.5rem;
     color: #4D5054;
-    Fill: Solid;
+    fill: Solid;
     fill-opacity: Black/50;
 }
 
@@ -145,6 +146,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 /* Styling of the second_layouts */
 
 #second_layout {
+<<<<<<< HEAD
     max-width: 90%;
     margin: 0 auto;
     display: flex;
@@ -239,6 +241,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 }
 
 #faq_layout .faq_texts .faq_heading {
+<<<<<<< HEAD
     margin-bottom: 1rem;
     Fill: Solid;
     color: #4D5054;
@@ -295,6 +298,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
   line-height: 1.5rem;
 }
 
+<<<<<<< HEAD
 #faq_layout .faq_bars .faq_body {
     padding: 0 .5rem;
     display: none;

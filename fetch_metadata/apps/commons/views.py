@@ -1,15 +1,39 @@
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.views.generic.base import RedirectView
 
-# Create your views here.
+from django.urls import reverse_lazy
+from .forms import PostForm, EditForm
+from .models import Post
 
-def home_page(request):
+class HomeView(ListView):
     """
-    A view to fetch the homepage
+    Include a summary of how it works in a list
     """
-    return render(request, "common/home.html")
+    model = Post
+    template_name = 'common/home.html'
 
-def about(request):
-    """
-    A view to fetch the about page
-    """
-    return render(request, "common/about.html")
+class DashboardView(RedirectView):
+    pattern_name="file:userFileUpload"
+
+class HowItWorksView(DetailView):
+    model = Post
+    template_name = 'common/how_it_works.html'
+
+class CreateDocumentationView(PermissionRequiredMixin, CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'common/add_post.html'
+
+
+class UpdateDocumentationView(PermissionRequiredMixin, UpdateView):
+    model = Post
+    form_class = EditForm
+    template_name = 'common/update_post.html'
+    #fields = ['title', 'title_tag', 'body']
+
+
+class DeleteDocumentationView(PermissionRequiredMixin, DeleteView):
+    model = Post
+    template_name = 'common/delete_post.html'
+    success_url = reverse_lazy('home')

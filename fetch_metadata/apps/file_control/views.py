@@ -1,29 +1,47 @@
-from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
 from .forms import FileUploadForm
-from .models import FileUpload
+from .models import File
+from .tasks import create_metadata
 from django.urls import reverse_lazy
 
 
 # Create your views here.
 #upload files
-class FileCreateView(PermissionRequiredMixin,CreateView):
+class FileCreateView(LoginRequiredMixin, CreateView):
     """
     Generates the view where the user can upload their files
-    PermissionRequiredMixin: Requires that the user has appropriate permissions
+    LoginRequiredMixin: Requires that the user has appropriate permissions
     """
-    model = FileUpload
     form_class = FileUploadForm
-    success_url = reverse_lazy('userFileList')
-    template_name = 'dashboard.html'
+    success_url = reverse_lazy('fileDetail')
+    template_name = 'file_control/dashboard.html'
+
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+
+        # get the instance of the file that will be used to create the metadata
+        # model_instance = File.objects.first().file
+        # print(model_instance)
+
+        return super(FileCreateView, self).form_valid(form)
+
+    #create the exif file
+    # exifcreator.create_meta_file(model_instance.path)
+
 
 #files list
-class FileListView(PermissionRequiredMixin, ListView):
-    model = FileUpload
-    template_name = 'home.html'
-    context_object_name = 'files'
+class FileListView(LoginRequiredMixin, ListView):
+    # user = request.user
+    model = File
+    template_name = 'file_control/dashboard.html'
+    context_object_name = 'file'
+    def get_queryset(self):
+        return File.objects.filter(file__user=self.kwargs['user'])
 
-class FileDetailView(PermissionRequiredMixin, DetailView):
-    model = FileUpload
+
+class FileDetailView(LoginRequiredMixin, DetailView):
+    model = File
     template_name = 'file_detail_view.html'
-

@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
 .middle_container .second_right .tracking_file .tracking_types {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;    
+    margin-left: 5rem;
 }
 
 .middle_container .second_right .tracking_file .tracking_types .tracking_contents {

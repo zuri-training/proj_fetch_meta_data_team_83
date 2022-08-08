@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import django_on_heroku
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,11 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my#)qs)y5p)$x+3$sb^8@fp8858h&')
 
+DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DJANGO_DEBUG",True)
+if not config("DJANGO_DEBUG"):
+    DEBUG = False
+else:
+    DEBUG = True
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = DJANGO_ALLOWED_HOSTS
 
 # Application definition
 
@@ -46,11 +48,12 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'rest_framework.authtoken',
+    'storages',
     # 'crispy_forms',
 
     #local apps
     'api.apps.ApiConfig',
-    'apps.accounts',
+    'apps.accounts.apps.AccountsConfig',
     'apps.commons.apps.CommonsConfig',
     'apps.file_control.apps.FileControlConfig',
 ]
@@ -147,25 +150,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-#Media files (uploaded files)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = '/static/'
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
-        ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-#setup media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -182,8 +166,61 @@ REST_FRAMEWORK = {
                 'rest_framework.permissions.IsAuthenticated',
     ],
 }
+LOGIN_REDIRECT_URL = "dashboard"
+LOGOUT_REDIRECT_URL = "home"
+
 # Configure Django App for Heroku
+if DEBUG is False:
+    import django_on_heroku
+    import dj_database_url
+    STATIC_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
+    MEDIA_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
 
-django_on_heroku.settings(locals())
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+    AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
+    AWS_S3_CUSTOM_DOMAIN = config("AWS_S3_CUSTOM_DOMAIN")
+    AWS_S3_REGION_NAME = "af-south-1"
+    AWS_S3_OBJECT_PARAMETERS = {
+        'CacheControl': 'max-age=86400',
+    }
+    AWS_DEFAULT_ACL=None
+
+    # AWS_CLOUDFRONT_KEY = config('AWS_CLOUDFRONT_KEY', None).encode('ascii')
+    # AWS_CLOUDFRONT_KEY_ID = config('AWS_CLOUDFRONT_KEY_ID', None)
+    AWS_LOCATION = 'media'
+
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'staticdev'),
+    ]
+    STATIC_ROOT = 'static'
+
+    MEDIA_ROOT = 'media'
+    if "localhost" not in DJANGO_ALLOWED_HOSTS:
+        django_on_heroku.settings(locals())
+
+        DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+else:
+    #Media files (uploaded files)
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    STATIC_ROOT = 'static'
+
+
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'staticdev')
+        ]
+# django_celery/settings.py
+# Celery settings
+CELERY_BROKER_URL = "redis://localhost:6379"
+CELERY_RESULT_BACKEND = "redis://localhost:6379"

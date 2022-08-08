@@ -1,142 +1,409 @@
-{%load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    <section class="main_container">
-        <aside class="aside">
-            <section class="aside_dashboard">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.4" d="M36.6667 14.1997V6.63301C36.6667 4.28301 35.6 3.33301 32.95 3.33301H26.2167C23.5667 3.33301 22.5 4.28301 22.5 6.63301V14.183C22.5 16.5497 23.5667 17.483 26.2167 17.483H32.95C35.6 17.4997 36.6667 16.5497 36.6667 14.1997Z" fill="white"/>
-                    <path d="M36.6667 32.95V26.2167C36.6667 23.5667 35.6 22.5 32.95 22.5H26.2167C23.5667 22.5 22.5 23.5667 22.5 26.2167V32.95C22.5 35.6 23.5667 36.6667 26.2167 36.6667H32.95C35.6 36.6667 36.6667 35.6 36.6667 32.95Z" fill="white"/>
-                    <path d="M17.5002 14.1997V6.63301C17.5002 4.28301 16.4335 3.33301 13.7835 3.33301H7.05016C4.40016 3.33301 3.3335 4.28301 3.3335 6.63301V14.183C3.3335 16.5497 4.40016 17.483 7.05016 17.483H13.7835C16.4335 17.4997 17.5002 16.5497 17.5002 14.1997Z" fill="white"/>
-                    <path opacity="0.4" d="M17.5002 32.95V26.2167C17.5002 23.5667 16.4335 22.5 13.7835 22.5H7.05016C4.40016 22.5 3.3335 23.5667 3.3335 26.2167V32.95C3.3335 35.6 4.40016 36.6667 7.05016 36.6667H13.7835C16.4335 36.6667 17.5002 35.6 17.5002 32.95Z" fill="white"/>
-                </svg>
-                
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+	<body>
+        <header class="right_container_header">
+            <section class="nav_container">
+                <div class="right_nav">
+					<div class="right_navlinks">
+						<img src="img/metatrack_logo.svg" class="right_logo" alt="" />
+						<a href="">Home</a>
+						<a href="">How It Works</a>
+						<a href="">Services</a>
+						<a href="">About Us</a>
+						<input type="search" name="" id="" />
+						<img src="img/Code Image.png" class="show_photo" alt="" />
+					</div>
+				</div>
             </section>
-            <section class="aside_shield">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.4" d="M18.2665 3.51631L9.09984 6.94965C7.34984 7.61631 5.9165 9.68298 5.9165 11.5663V25.0663C5.9165 26.4163 6.79984 28.1996 7.88317 28.9996L17.0498 35.8496C18.6665 37.0663 21.3165 37.0663 22.9332 35.8496L32.0998 28.9996C33.1832 28.183 34.0665 26.4163 34.0665 25.0663V11.5663C34.0665 9.69965 32.6332 7.61631 30.8832 6.96631L21.7165 3.53298C20.7832 3.16631 19.2165 3.16631 18.2665 3.51631Z" fill="white"/>
-                    <path d="M24.1668 17.4997C24.1668 15.1997 22.3002 13.333 20.0002 13.333C17.7002 13.333 15.8335 15.1997 15.8335 17.4997C15.8335 19.3663 17.0668 20.9163 18.7502 21.4497V25.833C18.7502 26.5163 19.3168 27.083 20.0002 27.083C20.6835 27.083 21.2502 26.5163 21.2502 25.833V21.4497C22.9335 20.9163 24.1668 19.3663 24.1668 17.4997Z" fill="white"/>
-                </svg>
-                
-                
-            </section>
-            <section class="aside_folder">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.6668 18.4501V27.7501C36.6668 32.6667 32.6668 36.6667 27.7502 36.6667H12.2502C7.3335 36.6667 3.3335 32.6667 3.3335 27.7501V15.7334H36.2335C36.4835 16.4834 36.6168 17.2501 36.6502 18.0667C36.6668 18.1834 36.6668 18.3334 36.6668 18.4501Z" fill="#22262A"/>
-                    <path opacity="0.4" d="M36.2335 15.733H3.3335V10.6997C3.3335 6.63301 6.6335 3.33301 10.7002 3.33301H14.5835C17.3002 3.33301 18.1502 4.21634 19.2335 5.66634L21.5668 8.76634C22.0835 9.44968 22.1502 9.54967 23.1168 9.54967H27.7668C31.7168 9.53301 35.0835 12.133 36.2335 15.733Z" fill="#22262A"/>
-                </svg>
-                
-                
-            </section>
-            <section class="aside_graph">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.1164 11.583C35.0498 7.96634 32.0331 4.94968 28.4164 3.88301C25.6664 3.08301 23.7664 3.14968 22.4498 4.13301C20.8664 5.31634 20.6831 7.44968 20.6831 8.96634V13.1163C20.6831 17.2163 22.5498 19.2997 26.2164 19.2997H30.9998C32.4998 19.2997 34.6498 19.1163 35.8331 17.533C36.8498 16.233 36.9331 14.333 36.1164 11.583Z" fill="white"/>
-                    <path opacity="0.4" d="M31.5165 22.2659C31.0832 21.7659 30.4498 21.4826 29.7998 21.4826H23.8332C20.8998 21.4826 18.5165 19.0993 18.5165 16.1659V10.1993C18.5165 9.54927 18.2332 8.91594 17.7332 8.48261C17.2498 8.04927 16.5832 7.84927 15.9498 7.93261C12.0332 8.43261 8.43316 10.5826 6.08316 13.8159C3.7165 17.0659 2.84983 21.0326 3.59983 24.9993C4.68316 30.7326 9.2665 35.3159 15.0165 36.3993C15.9332 36.5826 16.8498 36.6659 17.7665 36.6659C20.7832 36.6659 23.6998 35.7326 26.1832 33.9159C29.4165 31.5659 31.5665 27.9659 32.0665 24.0493C32.1498 23.3993 31.9498 22.7493 31.5165 22.2659Z" fill="white"/>
-                </svg>
-                
-                
-            </section>
-            
-            
-        </aside>
-        <section class="main">
+            <!-- <section id="left_container">
+				<div class="left_top">
+					<nav class="left_nav">
+						<div class="left_navlinks">
+							<div><img src="img/dashboard_icon.png" alt="" /></div>
+							<div><a href="">Dashboard</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/security_icon.png" alt="" /></div>
+							<div><a href="">Security</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/file_icon.png" alt="" /></div>
+							<div><a href="">Files</a></div>
+						</div>
+						<div class="left_navlinks">
+							<div><img src="img/storage_icon.png" alt="" /></div>
+							<div><a href="">Storage</a></div>
+						</div>
+					</nav>
+				</div>
+			</section> -->
+            <div class="right_top">
+                <div class="right_head">
+					<h1 class="right_heading">Extract <span>Metadatas</span> from your files</h1>
+				</div>
+                <img src="" alt="">
+                <div>
+                    <p class="right_contents">
+						Extract metadata embedded behind your files, ranging from file size
+						and modification history to the software tools used to create them.
+						Available to image files, csv, pdf, json, etc.
+					</p>
+                </div>
+				<div class="top_buttons">
+					<div class="button_stuff">
+						<form
+                  id="form"
+                  action="{% url 'file:userFileUpload' %}"
+                            role="form"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+        {% csrf_token %}
+        <!--{{form.as_p}}-->
+              <input class="browse_button" type="file" name="{{form.file.name}}" value="Extract"/>
+     				       <input
+              class="extract_button" type="submit" value="Extract">
+    </form>
+					</div>
 
-            <header class="main-header">
-                <section class="header_logo">
-                    <svg width="228" height="72" viewBox="0 0 228 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="228" height="72" fill="#707376"/>
-                    </svg>
-                        
-        
-                </section>
-                 <nav class="header_navbar">
-                    <ul class="header_navbar-list">
-                        <li class="header_navbarlist-item"><a href="" class="header_navbar-link">Home</a></li>
-                        <li class="header_navbarlist-item"><a href="" class="header_navbar-link">How it works</a></li>
-                        <li class="header_navbarlist-item"><a href="" class="header_navbar-link">Services</a></li>
-                        <li class="header_navbarlist-item"><a href="" class="header_navbar-link">About Us</a></li>
-                    </ul>
-                 </nav>
-                 <section class="header_searchbar">
-                    <input type="text" placeholder="search for files">
-                    <section class="header_searcbar-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#22262A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18.9299 20.6898C19.4599 22.2898 20.6699 22.4498 21.5999 21.0498C22.4499 19.7698 21.8899 18.7198 20.3499 18.7198C19.2099 18.7098 18.5699 19.5998 18.9299 20.6898Z" stroke="#22262A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            
-                    </section>
-        
-                 </section>
-                 <section class="header_profile-pic">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="25" fill="#4D5054"/>
-                    </svg>
-                        
-        
-                 </section>
-        
-            </header>
-            
-            <section class="main-section">
-                <h2 class="main-section_heading">
-                    There are probably more than 99 files in the world
-                </h2>
-                <p class="main-section_subheading">.but we’ve definitely got the 1 you need</p>
-                <section class="main-section_subsection">
-                    <section class="main-section_subsection-folderimage">
-                        <img src="../design/csv-icon.png" alt="">
-                        
-                    </section>
-                    <section class="main-section_subsection-file-icons">
-                        <section class="main-section_subsection-file-icons_item1 img_file_bg small_grid">
-                            <img src="../design/jpeg-file-icon.svg" alt="">
-                            <p>JPEG</p>
-                            <h3>12</h3>
-                        </section>
-                
-                        <section class="main-section_subsection-file-icons_item2 img_file_bg small_grid">
-                            <img src="../design/jpeg-file-icon.svg" alt="">
-                            <p>PNG</p>
-                            <h3>12</h3>
-                        </section>
-                
-                        <section class="main-section_subsection-file-icons_item3 img_file_bg small_grid">
-                            <img src="../design/jpeg-file-icon.svg" alt="">
-                            <p>csv</p>
-                            <h3>34</h3>
-                        </section>
-                
-                        <section class="main-section_subsection-file-icons_item4 img_file_bg small_grid">
-                            <img src="../design/jpeg-file-icon.svg" alt="">
-                            <p>Pdf</p>
-                            <h3>12</h3>
-                        </section>
-                
-                        <section class="main-section_subsection-file-icons_item5 img_file_bg small_grid">
-                            <img src="../design/jpeg-file-icon.svg" alt="">
-                            <p>Json</p>
-                            <h3>12</h3>
-                        </section>
-                         
-                    </section>
-                    
-                </section>
-                <section class="main-section_subsection-arrow_right">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.0498 9.88379L34.1665 20.0005L24.0498 30.1171" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.8335 20H33.8835" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </section>
-        </section>
-    </section>
-</body>
+				</div>
+            </div>
+        </header>
+		<main class="overall_container">
+			{%block css%}<link rel="stylesheet" href="dashboard.css" />{%endblock%}
+			<section class="middle_container">
+
+				<div class="second_right">
+					<div class="file_track">
+						<div class="tracking_file">
+                            <div class="tracking_nav">
+                                <h4>File Tracking</h4>
+                                <div>
+                                    <img src="img/3dots_icon.svg" alt="" class="tracking_3dots"/>
+                                </div>
+                            </div>
+							<div class="file_types">
+                                <div class="big_circle">
+                                    <img src="img/FullCircle_icon.svg" alt="" class="full_circle" />
+                                    <div class="circle_content">
+                                        <p class="track_text">File Types <br> Extracted</p>
+                                    </div>
+                                </div>
+								<div class="tracking_types">
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">JPEG</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">PNG</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Csv</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Pdf</p>
+									</div>
+									<div class="tracking_contents">
+										<div>
+                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                        </div>
+										<p class="tracking_text">Json</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="third_right">
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								JPEG <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								PNG <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Csv <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Pdf <br />
+								12
+							</p>
+						</div>
+					</div>
+					<div class="each_boxes">
+						<div class="file_image">
+							<img src="img/FileType_icons.png" alt="" class="file_icons" />
+						</div>
+						<div class="file_contents">
+							<p class="file_text">
+								Json <br />
+								12
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="bottom_container">
+
+				<div class="bottom_contents">
+					<div class="bottom_left">
+						<h4 style="text-align: center;">File Records</h4>
+						<table class="table_box" width="100%" cellpadding="5" cellspacing="5">
+							<thead class="table_headings">
+								<tr class="rows_data">
+									<th>No</th>
+									<th>File Name</th>
+									<th>File Size</th>
+									<th>File Type</th>
+									<th>File Type Extension</th>
+									<th>View Details</th>
+								</tr>
+							</thead>
+							<tbody class="table_body">
+								<tr class="rows_data">
+									<td>1</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>2</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>3</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>4</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>5</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>6</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+								<tr class="rows_data">
+									<td>7</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- <table class="table_box" width="100%" cellpadding="3" cellspacing="3">
+						<thead class="table_headings">
+							<tr class="table_one">
+								<th>
+									<h4 class="table_head" colspan="6">File Records</h4>
+								</th>
+							</tr>
+							<tr class="rows_data">
+								<th>No</th>
+								<th>File Name</th>
+								<th>File Size</th>
+								<th>File Type</th>
+								<th>File Type Extension</th>
+								<th>View Details</th>
+							</tr>
+						</thead>
+						<tbody class="table_body">
+							<tr class="rows_data">
+								<td>1</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>2</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>3</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>4</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>5</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>6</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+							<tr class="rows_data">
+								<td>7</td>
+								<td>OIP.jpg</td>
+								<td>43KB</td>
+								<td><button>JPEG</button></td>
+								<td>jpg</td>
+								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
+							</tr>
+						</tbody>
+					</table> -->
+
+                    <div class="bottom_right">
+						<h4>Security Checks</h4>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/Warning_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Urgent
+								</p>
+                                <span style="font-size: .5rem;">2 files suspected of malware virus</span>
+							</div>
+							<div class="security">
+								<button>View</button>
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/DeepScan_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Deep Scan Completed
+								</p>
+                                <span style="font-size: .5rem;">2 Threats detected</span>
+							</div>
+							<div class="security">
+								<img src="img/RightArrow_icon.svg" alt="" class="security_imgs" />
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/duplicate_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Duplicate Files
+								</p>
+                                <span style="font-size: .5rem;">Presence of similar files</span>
+							</div>
+							<div class="security">
+								<button>Delete</button>
+							</div>
+						</div>
+						<div class="security_boxes">
+							<div class="security">
+								<img src="img/ScanUpdate_icon.png" alt="" class="security_img" />
+							</div>
+							<div class="security">
+								<p>
+									Scan Update
+								</p>
+                                <span style="font-size: .5rem;">The next scan update is scheduled for <br> 24-08-2022</span>
+							</div>
+							<div class="security">
+								<button>Edit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+		</main>
+	</body>
 </html>
