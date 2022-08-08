@@ -218,3 +218,7 @@ else:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'staticdev')
         ]
+# django_celery/settings.py
+# Celery settings
+CELERY_BROKER_URL = "redis://localhost:6379"
+CELERY_RESULT_BACKEND = "redis://localhost:6379"

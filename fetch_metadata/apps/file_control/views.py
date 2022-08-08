@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
 from .forms import FileUploadForm
 from .models import File
-from . import exifcreator
+from .tasks import create_metadata
 from django.urls import reverse_lazy
 
 
@@ -25,7 +25,6 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         # get the instance of the file that will be used to create the metadata
         # model_instance = File.objects.first().file
         # print(model_instance)
-
 
         return super(FileCreateView, self).form_valid(form)
 
