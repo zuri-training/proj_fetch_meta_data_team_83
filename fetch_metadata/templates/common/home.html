@@ -28,7 +28,8 @@
         />
       </div>
       <div class="box_text">
-        <p class="first_layout_texts">
+        <div class="box_text">
+          <p class="first_layout_texts">
           Upload files ranging from images, csv, pdf and json, etc. by clicking
           the <strong>Browse</strong> button
         </p>
@@ -85,13 +86,19 @@
     </div>
   </div>
   <div class="layout_img">
-    <img src="/img/second_landpage_img.svg" alt="" class="second_landpage_img"/>
-  </div>
+  <img 
+  src="{% static 'img/second_landpage_img.svg'%}"
+  alt="" 
+  class="second_landpage_img"/>
+				</div>
   <!-- this is for image -->
 </section>
 <section id="second_layout">
   <div class="layouts_img">
-    <img src="/img/third_landpage_img.svg" alt="" class="third_landpage_img" />
+    <img 
+    src="{% static 'img/third_landpage_img.svg'%}" 
+    alt="" 
+    class="third_landpage_img" />
   </div>
   <div class="text_container">
     <h2 class="metadata_head content">MetaData from Files</h2>
@@ -116,19 +123,30 @@
   </div>
   <div class="metatrack_boxes">
     <div class="third_boxes">
-      <img src="img/binance_coin_(bnb).svg" alt="" class="third_layout_icons" />
+      <img 
+      src="{% static 'img/binance_coin_(bnb).svg'%}" 
+      alt="" 
+      class="third_layout_icons" />  
     </div>
     <div class="third_boxes">
-      <img src="img/trontron_(trx).svg" alt="" class="third_layout_icons" />
+      <img src="{% static 'img/trontron_(trx).svg'%}" 
+      alt="" 
+      class="third_layout_icons" />
     </div>
     <div class="third_boxes">
-      <img src="img/angur.svg" alt="" class="third_layout_icons" />
+      <img src="{% static 'img/angur.svg'%}" 
+      alt="" 
+      class="third_layout_icons" />
     </div>
     <div class="third_boxes">
-      <img src="img/hex_(hex).svg" alt="" class="third_layout_icons" />
+      <img src="{% static 'img/hex_(hex).svg'%}" 
+      alt="" 
+      class="third_layout_icons" />
     </div>
     <div class="third_boxes">
-      <img src="img/quant_(qnt).svg" alt="" class="third_layout_icons" />
+      <img src="{% static 'img/quant_(qnt).svg'%}" 
+      alt="" 
+      class="third_layout_icons" />
     </div>
   </div>
 </section>

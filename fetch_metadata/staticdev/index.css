@@ -1,19 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* Recent Updates */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');   
+/* Recent Updates */
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, button, span, input {
+/* Recent Updates */
+h1, h2, h3, h4, h5, h6, a, p, button {
     font-family: 'Poppins', sans-serif;
 }
+/* Recent Updates */
 
 .header_container {
     background-color: #003566;
-
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
 }
 
 /* Styling of the header section (nav_bars) */
@@ -31,6 +36,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     width: 5rem;
 }
 
+
 #nav_bar .nav_middle .middle_link {
     margin-right: 5rem;
     color: #FFFFFF;
@@ -42,6 +48,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 }
 
 #nav_bar .nav_right .right_link {
+    /* margin-right: 2rem; */
     padding: 0.5rem 2rem;
     border: thin solid #FFD60A;
     border-radius: .2rem;
@@ -49,6 +56,8 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     background-color: #003566;
     font-size: 1rem;
 }
+
+
 
 /* Styling of the top container (top_head) */
 
@@ -146,11 +155,11 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 /* Styling of the second_layouts */
 
 #second_layout {
-<<<<<<< HEAD
+
     max-width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;        /* Still look into this */
     padding-top: 5rem;
 }
 
@@ -200,6 +209,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     height: 300px;
 }
 
+
 /* Styling of the Third_layout */
 
 #third_layout {
@@ -231,17 +241,17 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 /* Styling of the faq_layout */
 
 #faq_layout {
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 3rem;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 #faq_layout .faq_texts {
-  text-align: center;
+    text-align: center;
 }
 
 #faq_layout .faq_texts .faq_heading {
-<<<<<<< HEAD
+
     margin-bottom: 1rem;
     Fill: Solid;
     color: #4D5054;
@@ -275,30 +285,23 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.faq_quest::after {
-  content: "\002B";
-  font-size: 1rem;
-  position: absolute;
-  right: 1rem;
-  transition: transform 0.1s ease-in-out;
-}
-.faq_quest.active::after {
-  transform: rotate(-180deg);
-  content: "\2212";
-}
-
-.faq_body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
+#faq_layout .faq_bars .faq_quest:after {
+    /* content:url(img/add_circle.svg); */
+    content: '\02795';
+    padding: .1rem;
+    margin-right: .5rem;
+    font-size: .6rem;
+    fill: #003566;;
+    background-color: #003566;
+    /* color: black; */
+    float: right;
+    border-radius: 50%;
 }
 
-.faq_body p {
-  padding: 1rem;
-  line-height: 1.5rem;
+#faq_layout .faq_bars .faq_quest .active:after {
+    content: '\2796';
 }
 
-<<<<<<< HEAD
 #faq_layout .faq_bars .faq_body {
     padding: 0 .5rem;
     display: none;
@@ -309,6 +312,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     font-size: 1rem;
     color: #003566;
 }
+
 
 /* Styling of the footer_layout */
 
