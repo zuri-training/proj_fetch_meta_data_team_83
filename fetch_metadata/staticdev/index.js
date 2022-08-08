@@ -1,15 +1,16 @@
-const faqQuest = document.querySelectorAll(".faq_quest");
 
-faqQuest.forEach((faqQuest) => {
-  faqQuest.addEventListener("click", (event) => {
-    faqQuest.classList.toggle("active");
-    const faqBody = faqQuest.nextElementSibling;
-    console.log(faqBody);
-    if (faqQuest.classList.contains("active")) {
-      faqBody.style.maxHeight = faqBody.scrollHeight + "px";
-      console.log(faqBody.scrollHeight);
-    } else {
-      faqBody.style.maxHeight = 0;
-    }
-  });
-});
+const faq = document.getElementsByClassName("faq_quest");
+
+for (let i = 0; i < faq.length; i++) {
+	faq[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+
+		/* Toggle between hiding and showing the active panel */
+		const body = this.nextElementSibling;
+		if (body.style.display === "block") {
+			body.style.display = "none";
+		} else {
+			body.style.display = "block";
+		}
+	});
+}
