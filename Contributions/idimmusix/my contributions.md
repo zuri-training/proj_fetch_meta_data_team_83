@@ -1,5 +1,6 @@
 # Idimmachukwu Okoro's contribution to team 83 fetch meta data
 
+
  - I and Regina created the database schema design page in figma [click here to view](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team_83-DATABASE-SCHEMA?node-id=91%3A102)
  - With respect to [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/20), I developed the accounts configuration for our app  [click here to view the code](https://github.com/zuri-training/proj_fetch_meta_data_team_83/tree/main/fetch_metadata/apps/accounts)
 
@@ -20,4 +21,3 @@
  I was also incharge of checking and merging commits from different team members
  See the contributor's graph [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/graphs/contributors) and all my personal commits [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/commits?author=Idimmusix)
 
- 
