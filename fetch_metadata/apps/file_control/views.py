@@ -1,4 +1,5 @@
 import os
+from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
 from .forms import FileUploadForm
@@ -50,10 +51,6 @@ class FileDetailView(LoginRequiredMixin, DetailView):
 
 
 def read_file(request):
-    
-    # file_name = 
-
-
 
     with open(os.getcwd()+'/apps/file_control/login.mttrck', 'r') as f:
         file_content = f.readlines()
