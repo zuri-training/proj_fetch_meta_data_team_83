@@ -38,12 +38,6 @@ class LogoutUserView(views.LogoutView):
 
 class UserPasswordChangeView(views.PasswordChangeView):
     template_name = 'api/password_change.html'
-<<<<<<< HEAD
-    form_class = ChangePasswordForm
-    success_url="password_change_done"
-=======
-
->>>>>>> 0859122e96e5754dbfeaaa2df1d1e6b498db3343
 
 class UserResetPasswordView(views.PasswordResetView):
     template_name='api/password_reset.html'
