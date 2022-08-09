@@ -13,3 +13,11 @@
     -  I created a custom admin, that can view all information about the users for regulation purposes
  - I implemented our [exifcreator](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/main/fetch_metadata/apps/file_control/exifcreator.py) to write metadata to a `.mttrck` file and save the file path to the database asynchronously using [celery](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/main/fetch_metadata/apps/file_control/tasks.py). The file thus generated is downloadable by the end user
  - I also assisted in templating the frontend html to the backend
+
+
+ You can view my personal branch in the project [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/tree/idimmusix)
+
+ I was also incharge of checking and merging commits from different team members
+ See the contributor's graph [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/graphs/contributors) and all my personal commits [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/commits?author=Idimmusix)
+
+ 
