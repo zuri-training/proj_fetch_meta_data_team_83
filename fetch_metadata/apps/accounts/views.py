@@ -18,8 +18,8 @@ class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     form_class = CustomUserLoginForm
     next_page = '/dashboard/'
-    
-    
+
+
 class LogoutUserView(views.LogoutView):
     template_name = 'common/home.html'
     next_page = '/home/'
@@ -27,6 +27,7 @@ class LogoutUserView(views.LogoutView):
 class UserPasswordChangeView(views.PasswordChangeView):
     template_name = 'api/password_change.html'
     form_class = ChangePasswordForm
+    success_url="password_change_done"
 
 class UserResetPasswordView(views.PasswordResetView):
     template_name='api/password_reset.html'
