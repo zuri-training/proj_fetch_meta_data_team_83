@@ -49,7 +49,7 @@ class FileDetailView(LoginRequiredMixin, DetailView):
     template_name = 'file_detail_view.html'
 
 
-def read_file(request, pk):
+def read_file(request):
     
     # file_name = 
 
