@@ -5,8 +5,8 @@ from django.views.generic import CreateView,ListView, DetailView
 from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
-from django.urls import reverse_lazy
-from django.shortcuts import render
+from django.urls import reverse
+from django.shortcuts import render, get_object_or_404
 
 
 # Create your views here.
@@ -21,7 +21,8 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     template_name = 'file_control/dashboard.html'
 
     def get_success_url(self):
-        return reverse('file_detail',args=(self.object.id,))
+        print(self.object.id)
+        return reverse('file-detail', kwargs={'pk': self.kwargs['pk']})
 
 
     def form_valid(self, form):
@@ -59,18 +60,25 @@ def read_file(request, file_path):
         file_content = f.readlines()
         result = [item.split(':', 1) for item in file_content]
         f.close()
-        context = {'meta_data': result}
+        context = result
         return (context)
 
 
 
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File
-    template_name = 'file_detail_view.html'
+    template_name = 'file_control/extraction_page.html'
 
-    def get_context_data(self):
-        context = super(File, self).get_context_data(**kwargs)
-        context["meta_data"]= read_file(self.request, Task.objects.filter(meta_file=self.object.file))
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        filepk = self.kwargs.get('pk') #get the primary key of the file
+        fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
+        metafile = fullfile.meta_file #return jusst the meta_file
+        path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
+
+        metadata = read_file(self.request, path)
+        print(metadata)
+        context["meta_data"]= metadata
         return context
 
 
