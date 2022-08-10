@@ -14,13 +14,8 @@ def create_meta_file(input_file):
 
     with open(output_file, "wb") as output:
         """
-        Open a file and write the metadata into it
+        Open a file in the same directory as the input file and write the metadata into it
         """
         exiftool_command = ["exiftool", input_file]
-        result = subprocess.Popen(exiftool_command, capture_output) #File(output))
-        data = result.stdout
-        print (data.decode("utf-8"))
-        output.write(data)
-        print(output.name)
-        return File(output)
-
+        result = subprocess.run(exiftool_command, stdout=output) 
+    
