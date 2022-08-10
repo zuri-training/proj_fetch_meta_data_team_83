@@ -1,0 +1,8 @@
+﻿#Ajadi Muibat Taiwo's Contribution To proj_fetch_meta_data_team_83
+- I designed Empathy map and User research based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/36) [click here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=773%3A5188) to view
+- I designed Change password, Reset password and Forget password page for LoFi based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/10) [click here](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team_83-DATABASE-SCHEMA?node-id=176%3A184912) to view
+- I designed Wireframe for Desktop screen based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/37) [click here](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team_83-DATABASE-SCHEMA?node-id=182%3A4498) to view
+- I designed Change password, Password reset and Forget password page for HiFi based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/83) [click here](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team_83-DATABASE-SCHEMA?node-id=176%3A184922) to view
+- I designed About Us page for LoFi based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/82) [click here](https://www.figma.com/file/scj0Ef5kvb0NizWX792Oqo/team-83-hifi-designs?node-id=38%3A1220) to view
+- I documented product designer's work based on [this issue,](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/41) [click here](https://docs.google.com/document/d/1v6et1KU_zItpbcSX7i5kHUj1BgvAuGZaoVcWtI19RMQ/edit?usp=sharing) to view
+ 
