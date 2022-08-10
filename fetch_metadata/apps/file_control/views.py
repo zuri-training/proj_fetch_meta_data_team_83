@@ -17,7 +17,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     LoginRequiredMixin: Requires that the user has appropriate permissions
     """
     form_class = FileUploadForm
-    success_url = reverse_lazy('/file_detail/')
+    success_url = reverse_lazy('/file_detail/') #redirect the user to file details page
     template_name = 'file_control/dashboard.html'
 
 
@@ -50,16 +50,7 @@ def read_file(request, file_path):
     args:
     file_path = path to saved metadata file
 
-<<<<<<< HEAD
     """
-=======
-class FileDetailView(LoginRequiredMixin, DetailView):
-    model = File
-    template_name = 'file_detail_view.html'
-
-
-def read_file(request):
->>>>>>> dev
 
     with open(file_path, 'r') as f:
         file_content = f.readlines()

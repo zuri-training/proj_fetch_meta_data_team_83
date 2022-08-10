@@ -17,7 +17,7 @@ class CreateUserView(CreateView):
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     form_class = CustomUserLoginForm
-    next_page = '/dashboard/'
+    next_page = '/dashboard/' #after a successful login, redirect to dashboard
 
 
 class LogoutUserView(views.LogoutView):
