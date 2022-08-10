@@ -1,0 +1,8 @@
+# Oladosu Victoria (Theverifiedvee) contribution to team 83 fetch meta data
+
+- I created a high fidelity figma design for the first and second landing page of the  metadata website (METATRACK) based on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/11), [click to view results](https://www.figma.com/file/b8gkH0CwzOByQIxEVbdGLQ/MY-METADATA-PROJECT?node-id=15%3A1564)
+- I created a high fidelity figma design for the website dashboard based on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/92), [click to view results](https://www.figma.com/file/b8gkH0CwzOByQIxEVbdGLQ/MY-METADATA-PROJECT?node-id=15%3A1565)
+- I created a moodboard for the website based on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/38), [click to view results](https://www.figma.com/file/b8gkH0CwzOByQIxEVbdGLQ/MY-METADATA-PROJECT?node-id=15%3A1563)
+- I prototyped the website screens with Amaka Nsude on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/39), [click to view results](https://www.figma.com/file/b8gkH0CwzOByQIxEVbdGLQ/MY-METADATA-PROJECT?node-id=15%3A1567)
+- I worked on the wireframing of the website WITH Muibat Ajadi and Amaka Nsude based on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/37), [click to view results](https://www.figma.com/file/b8gkH0CwzOByQIxEVbdGLQ/MY-METADATA-PROJECT?node-id=15%3A1566)
+ - I presented the project on behalf of my team based on [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/91), [click to view results](https://drive.google.com/file/d/1G3fwjNLtMDS3bSiCAiyFrkI5i5G7IPAj/view?usp=sharing)
