@@ -2,11 +2,13 @@
 
 This is Team_83 Project Repository 
 
+### Checkout the Design [here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494)<br>
+
 ## Team 83 Project >> Fetch_Metadata <br>
 
 ### MetaTrack :: Metadata extractor platform
 
-[MetaTrack](metaTrack.PNG) 
+![MetaTrack](metaTrack.png) 
 <br>
 
 # METATRACK 
@@ -17,8 +19,9 @@ A platform that collects and displays metadata of uploaded file.The web applicat
 * [Technologies/framework](#Technologies/framework)
 * [Features](#Features)
 * [How to Make Use of MetaTrack](#How-to-Make-Use-of-The-MetaTrack)
-* <details>
-<summary> Contribute [How to Set Up and Run the Project](#)</summary>
+
+<details>
+<summary> * Contribute [How to Set Up and Run the Project](#)</summary>
    - Create a pull request
    - Configure the project for local machine
    - Configure your database
