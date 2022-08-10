@@ -49,7 +49,7 @@ class File(models.Model):
         The url for each file
         Can be accessed through file_details
         """
-        return reverse('file_detail', kwargs={'pk': self.id})
+        return reverse('file:file_detail', kwargs={'pk': self.id})
 
     @property
     def get_file_full_path(self):
@@ -75,7 +75,7 @@ def create_meta_file(sender, **kwargs):
     metadatafile =  create_metadata.delay(file_instance.file.path)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(file_instance.file.path)[0] #file name without extension
-   
+
 
     output_file = root_file_name+file_ext #join the rootname and extension
     media_path = settings.MEDIA_ROOT #get the media root
