@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.gitignore
 .env
 package.json
 yarn.lock

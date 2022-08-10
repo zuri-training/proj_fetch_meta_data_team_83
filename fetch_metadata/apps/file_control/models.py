@@ -56,8 +56,5 @@ class FileUpload(models.Model):
 
 class MetaExtract(models.Model):
     file = models.OneToOneField(FileUpload, on_delete=models.CASCADE)
-<<<<<<< HEAD
     meta_file_url = models.FileField(upload_to = user_directory_path)
-=======
-    meta_file_url = models.FileField(upload_to = user_directory_path)
->>>>>>> 03cfc020ac4957cf993bd3b245054da035351c5b
+
