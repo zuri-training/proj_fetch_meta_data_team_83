@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_container {
+    background-color: #003566;
+    padding-bottom: .5rem;
+
+/* This style needs to be added to the page to give the slanting of the header    */
+    /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    overflow: hidden; */
+}
+
+/* Styling of the hr tags under header container */
+
+/* .metatrack_slant {
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0 100%);
+    overflow: hidden;
+}
+
+.header_borderline {
+    border: none;
+    height: 2.2rem;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+}
+
+.border-1 {
+    background: #2a5780;
+    transform: rotate(-5deg);
+    bottom: 6.1rem;
+    right: .6rem;
+}
+
+.border-2 {
+    background: #557899;
+    transform: rotate(-6deg);
+    bottom: 7.5rem;
+    right: .6rem;
+} */
+
+
+
+
+/* Right Container styling */
+
+
+/* 1. Styling the right container (navigation container) */
+
+.right_container_header {
+    margin: 0 auto;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text {
+    color: #FFFFFF;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text:hover {
+    color: #FFD60A;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .search_field {
+    padding: .6rem;
+    font-style: italic;
+    border-radius: .2rem;
+    font-size: .5rem;
+    width: 12rem;
+    background-image: url(img/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .right_logo {
+    width: 5rem;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .show_photo {
+    height: 3rem;
+}
