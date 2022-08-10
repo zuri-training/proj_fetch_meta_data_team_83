@@ -5,7 +5,7 @@ Metatrack is a project executed by team 83 in the 2022 cohort of Zuri's training
 
 ## TABLE OF CONTENTS
 
-- [What is Metatrack?](#what-is-meta-track)
+- [What is Metatrack?](#what-is-metatrack)
 - [Is it necessary?](#is-it-necessary)
 - [Tech Stack](#tech-stack)
 - [Features](#how-will-it-benefit-you)
