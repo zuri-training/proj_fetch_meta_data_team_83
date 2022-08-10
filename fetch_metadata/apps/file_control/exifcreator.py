@@ -17,10 +17,10 @@ def create_meta_file(input_file):
         Open a file and write the metadata into it
         """
         exiftool_command = ["exiftool", input_file]
-        result = subprocess.run(exiftool_command, stdout=PIPE) #File(output))
+        result = subprocess.Popen(exiftool_command, capture_output) #File(output))
         data = result.stdout
         print (data.decode("utf-8"))
         output.write(data)
         print(output.name)
         return File(output)
-    
+
