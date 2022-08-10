@@ -9,8 +9,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import django_on_heroku
-import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +22,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my#)qs)y5p)$x+3$sb^8@fp8858h&')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = config("DJANGO_DEBUG",True)
+=======
+if not config("DJANGO_DEBUG"):
+    DEBUG = False
+else:
+    DEBUG = True
+
+>>>>>>> origin/main
 
 ALLOWED_HOSTS = ['metatrack.herokuapp.com']
 
@@ -159,9 +166,20 @@ REST_FRAMEWORK = {
                 'rest_framework.permissions.IsAuthenticated',
     ],
 }
+LOGIN_REDIRECT_URL = "dashboard"
+LOGOUT_REDIRECT_URL = "home"
 
 # Configure Django App for Heroku
 if DEBUG is False:
+<<<<<<< HEAD
+=======
+    import django_on_heroku
+    import dj_database_url
+    STATIC_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
+    MEDIA_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
+
+
+>>>>>>> origin/main
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
@@ -183,14 +201,25 @@ if DEBUG is False:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
     ]
+<<<<<<< HEAD
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/media/'
     STATIC_URL = 'https://fetchmetadata.s3.af-south-1.amazonaws.com/static/'
+=======
+    STATIC_ROOT = 'static'
+
+    MEDIA_ROOT = 'media'
+    if "localhost" not in DJANGO_ALLOWED_HOSTS:
+        django_on_heroku.settings(locals())
+
+        DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+>>>>>>> origin/main
 
 else:
     #Media files (uploaded files)
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    STATIC_ROOT = 'static'
 
 
     # Static files (CSS, JavaScript, Images)
@@ -198,9 +227,16 @@ else:
 
     STATIC_URL = '/static/'
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
+        os.path.join(BASE_DIR, 'staticdev')
         ]
+<<<<<<< HEAD
 
 django_on_heroku.settings(locals())
 
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+=======
+# django_celery/settings.py
+# Celery settings
+CELERY_BROKER_URL = "redis://localhost:6379"
+CELERY_RESULT_BACKEND = "redis://localhost:6379"
+>>>>>>> origin/main

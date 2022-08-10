@@ -15,29 +15,51 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="nav_bar">
+    <header class="header_container">
+    <section id="nav_bar">
       <div class="nav_left">
-        <img src="" alt="" />
+      <a href="{%url 'common:home'%}"></a><img src="{% static 'img/metatrack_logo.svg'%}" 
+      alt="" 
+      class="metatrack_logo" />
       </div>
       <div class="nav_middle">
         <a href="" class="middle_link">Home</a>
-        <a href="{%url 'commons:how_it_works'%}" class="middle_link"
+        <a href="{%url 'common:how_it_works'%}" class="middle_link"
           >How It Works</a
         >
         <a href="" class="middle_link">Services</a>
         <a href="" class="middle_link">About Us</a>
       </div>
+      
+      {% if user.is_authenticated %}
+      <input
+      type="search"
+      name="Search"
+      id=""
+      placeholder="Search for files"
+      class="search_field"
+    />
+    <img src="img/Code Image.svg" class="show_photo" alt="" />
+      
+      {% else %}
       <div class="nav_right">
         <a href="{%url 'api:login'%}"
           ><button class="right_link">Login To Account</button></a
         >
         <!-- <button class="right_link">Register</button> -->
       </div>
+      {% endif %}
+    </section>
+    
+    {% block hero %}
+      
+    {% endblock %}
+      
     </header>
     <!-- End of Header -->
 
     <!-- Main Body -->
-    <main>{% block content %} {% endblock%}</main>
+    <main>{% block content %} {% endblock %}</main>
     <!-- End of Main Body -->
 
     <!-- Footer -->
@@ -47,12 +69,12 @@
           <h4 class="footer_head">MetaTrack</h4>
           <div class="footer_icons">
             <img
-              src="{% static 'img/twitter_icon.png'%}"
+              src="{% static 'img/twitter.svg'%}"
               alt=""
               class="footer_img"
             />
             <img
-              src="{% static 'img/instagram_icon.png'%}"
+              src="{% static 'img/instagram.svg'%}"
               alt=""
               class="footer_img"
             />

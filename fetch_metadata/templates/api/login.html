@@ -1,5 +1,9 @@
 {% load static %} {% block css %}
+<<<<<<< HEAD
 <link rel="stylesheet" href="{% static 'api/login.css' %}" />
+=======
+<link rel="stylesheet" href="{% static 'css/login.css' %}" />
+>>>>>>> origin/main
 {% endblock %}
 <!-- left side  -->
 <div class="split left">
@@ -34,7 +38,7 @@
           <div class="form-group">
             <label class="L1" for="{{form.username.id_for_label}}">Email</label>
             <input
-              placehoder="Type your email address"
+              placeholder="Type your email address"
               class="email"
               type="email"
               name="{{form.username.name}}"

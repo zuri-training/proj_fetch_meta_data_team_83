@@ -1,99 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="dashboard.css" />
-	</head>
-	<body>
-        <header class="right_container_header">
-            <section class="nav_container">
-                <div class="right_nav">
-					<div class="right_navlinks">
-						<img src="img/metatrack_logo.svg" class="right_logo" alt="" />
-						<a href="">Home</a>
-						<a href="">How It Works</a>
-						<a href="">Services</a>
-						<a href="">About Us</a>
-						<input type="search" name="" id="" />
-						<img src="img/Code Image.png" class="show_photo" alt="" />
-					</div>
-				</div>
-            </section>
-            <!-- <section id="left_container">
-				<div class="left_top">
-					<nav class="left_nav">
-						<div class="left_navlinks">
-							<div><img src="img/dashboard_icon.png" alt="" /></div>
-							<div><a href="">Dashboard</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/security_icon.png" alt="" /></div>
-							<div><a href="">Security</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/file_icon.png" alt="" /></div>
-							<div><a href="">Files</a></div>
-						</div>
-						<div class="left_navlinks">
-							<div><img src="img/storage_icon.png" alt="" /></div>
-							<div><a href="">Storage</a></div>
-						</div>
-					</nav>
-				</div>
-			</section> -->
-            <div class="right_top">
-                <div class="right_head">
-					<h1 class="right_heading">Extract <span>Metadatas</span> from your files</h1>
-				</div>
-                <img src="" alt="">
-                <div>
-                    <p class="right_contents">
-						Extract metadata embedded behind your files, ranging from file size
-						and modification history to the software tools used to create them.
-						Available to image files, csv, pdf, json, etc.
-					</p>
-                </div>
-				<div class="top_buttons">
-					<div class="button_stuff">
-						<button class="browse_button">Browse...</button>
-						<p class="browse_content">No file selected.</p>
-					</div>
-					<button class="extract_button">Extract</button>
-				</div>
-            </div>
-        </header>
-		<main class="overall_container">
-			<section class="middle_container">
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link href="{% static 'common/dashboard.css'%}" rel="stylesheet" />
+{% endblock %}
 
-				<div class="second_right">
-					<div class="file_track">
-						<div class="tracking_file">
-                            <div class="tracking_nav">
-                                <h4>File Tracking</h4>
+	{% block hero %}
+	<div class="right_top">
+		<div class="right_head">
+			<h1 class="right_heading">
+				Extract <span class="target_meta">Metadatas</span> from your 
+			</h1>
+		
+			<span class="straight_ell">
+				<img src="{%static 'img/MetaEllipse_icon.svg'%}" alt="" class="first_ell">
+			</span>
+			<span class="slant_ell">
+				<img src="/img/MetaEllipse_icon_2.svg" alt="" class="second_ell">
+			</span>
+			<div class="right_head_texts">
+				<p class="right_contents">
+					Extract metadata embedded behind your files, ranging from file size
+					and modification history to the software tools used to create them.
+					Available to image files, csv, pdf, json, etc.
+				</p>
+			</div>
+			<div class="top_buttons">
+				<div class="button_stuff">
+					<form 
+						id="form" 
+						action="{% url 'file:userFileUpload' %}" 
+						role="form" 
+						method="POST" 
+						enctype="multipart/form-data"
+					>
+						{% csrf_token %}
+	
+						<input 
+						class="browse_button" 
+						type="file" 
+						name="{{form.file.name}}" 
+						value="Browse..."/>
+						<div class="side_button">
+							<input 
+								class="extract_button"
+								type="submit"
+								value="Extract"
+								class="extract_button"
+								name="submit"
+							/>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+    
+	{% block content%}
+	<div class="overall_container">
+		<section class="middle_container">
+
+			<div class="second_right">
+				<div class="file_track">
+					<div class="tracking_file">
+                        <div class="tracking_nav">
+							<h3 class="tracking_head">File Tracking</h3>
                                 <div>
                                     <img src="img/3dots_icon.svg" alt="" class="tracking_3dots"/>
                                 </div>
                             </div>
 							<div class="file_types">
                                 <div class="big_circle">
-                                    <img src="img/FullCircle_icon.svg" alt="" class="full_circle" />
+                                    <img src="{% static 'img/FullCircle_icon.svg'%}" alt="" class="full_circle" />
                                     <div class="circle_content">
-                                        <p class="track_text">File Types <br> Extracted</p>
+                                        <p class="track_text">{{file_count}} File Types <br> Extracted</p>
                                     </div>
                                 </div>
 								<div class="tracking_types">
 									<div class="tracking_contents">
 										<div>
-                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                            <img src="{% static 'img/FileCircle_icon.svg'%}" alt="" class="file_circle" />
                                         </div>
 										<p class="tracking_text">JPEG</p>
 									</div>
 									<div class="tracking_contents">
 										<div>
-                                            <img src="img/FileCircle_icon.svg" alt="" class="file_circle" />
+                                            <img src="{% static 'img/FileCircle_icon.svg'" alt="" class="file_circle" />
                                         </div>
 										<p class="tracking_text">PNG</p>
 									</div>
@@ -255,82 +248,8 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- <table class="table_box" width="100%" cellpadding="3" cellspacing="3">
-						<thead class="table_headings">
-							<tr class="table_one">
-								<th>
-									<h4 class="table_head" colspan="6">File Records</h4>
-								</th>
-							</tr>
-							<tr class="rows_data">
-								<th>No</th>
-								<th>File Name</th>
-								<th>File Size</th>
-								<th>File Type</th>
-								<th>File Type Extension</th>
-								<th>View Details</th>
-							</tr>
-						</thead>
-						<tbody class="table_body">
-							<tr class="rows_data">
-								<td>1</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>2</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>3</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>4</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>5</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>6</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-							<tr class="rows_data">
-								<td>7</td>
-								<td>OIP.jpg</td>
-								<td>43KB</td>
-								<td><button>JPEG</button></td>
-								<td>jpg</td>
-								<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
-							</tr>
-						</tbody>
-					</table> -->
 					
+
                     <div class="bottom_right">
 						<h4>Security Checks</h4>
 						<div class="security_boxes">
@@ -392,6 +311,6 @@
 					</div>
 				</div>
             </section>
-		</main>
-	</body>
+			</div>
+			{%endblock%}
 </html>
