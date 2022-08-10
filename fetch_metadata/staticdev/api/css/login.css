@@ -99,12 +99,9 @@ button {
   margin-right: 4.375rem;
   margin-top: 5.313rem;
   font-weight: 700;
-<<<<<<< HEAD:fetch_metadata/static/login.css
   font-size: 2.5rem;
   
-=======
   font-size: 40px;
->>>>>>> b30b3f2e469b2695061bdafc98e8c2799f7c0b2b:fetch_metadata/staticdev/api/css/login.css
 
 }
 .px {
@@ -117,19 +114,16 @@ button {
   font-size: 1rem;
 }
 .email {
-<<<<<<< HEAD:fetch_metadata/static/login.css
   width: 31.25rem;
   height: 1.875rem;
   margin: 0.063rem;
   margin-bottom: 1.25rem;
   border-style:solid;
   border-color: #003566;
-=======
   width: 500px;
   height: 30px;
   margin: 1px;
   margin-bottom: 20px;
->>>>>>> b30b3f2e469b2695061bdafc98e8c2799f7c0b2b:fetch_metadata/staticdev/api/css/login.css
 }
 .L2 {
   margin-right: 81%;
@@ -137,17 +131,14 @@ button {
   font-size: 1rem;
 }
 .password {
-<<<<<<< HEAD:fetch_metadata/static/login.css
   width:31.25rem;
   height: 1.875rem;
   margin: 0.031rem;
   border-style:solid;
   border-color: #003566;
-=======
   width: 500px;
   height: 30px;
   margin: 0.5px;
->>>>>>> b30b3f2e469b2695061bdafc98e8c2799f7c0b2b:fetch_metadata/staticdev/api/css/login.css
 }
 .p3 {
   margin-right: -17.5rem;
