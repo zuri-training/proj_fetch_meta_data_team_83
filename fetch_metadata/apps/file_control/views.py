@@ -16,7 +16,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     LoginRequiredMixin: Requires that the user has appropriate permissions
     """
     form_class = FileUploadForm
-    success_url = reverse_lazy('fileDetail')
+    success_url = reverse_lazy('/file_detail/')
     template_name = 'file_control/dashboard.html'
 
 
@@ -43,24 +43,32 @@ class FileListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return File.objects.filter(file__user=self.kwargs['user'])
 
+def read_file(request, file_path):
+    """
+    Read the metadata from the file and retuens to the user.
+    args:
+    file_path = path to saved metadata file
+
+    """
+
+    with open(file_path, 'r') as f:
+        file_content = f.readlines()
+        result = [item.split(':', 1) for item in file_content]
+        f.close()
+        context = {'meta_data': result}
+        return (context)
+
+
+
 
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File
     template_name = 'file_detail_view.html'
 
-
-def read_file(request, pk):
-    
-    # file_name = 
-
-
-
-    with open(os.getcwd()+'/apps/file_control/login.mttrck', 'r') as f:
-        file_content = f.readlines()
-        result = [item.split(':', 1) for item in file_content]
-        f.close()
-        context = {'meta_data': result}
-        return render(request, "file_control/extraction_page.html", context)
+    def get_context_data(self):
+        context = super(File, self).get_context_data(**kwargs)
+        context["meta_data"]= read_file(self.request, Task.objects.filter(meta_file=self.object.file))
+        return context
 
 
 # class MetadataView(LoginRequiredMixin, ListView):
