@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{%static 'css/extraction_page.css'%}">
+    <title>EXTRACTION PAGE</title>
+</head>
+
+<body>
+    <main class="metadata__container">
+        <!-- Insert Nav links -->
+        <section class="metadata__wrapper">
+            <div class="metadata__title">
+                <h3>Metadatas: </h3>
+            </div>
+        </section>
+
+        <section class="metadata_information">
+            <div class="metadata_details">
+
+
+                {% for title,text in meta_data%}
+                <div class="data_detail">
+                    {%if 'ExifTool Version Number' in title%}
+                    {%elif 'Directory' in title%}
+                    {%else%}
+                    <span class="file_header"> {{title}}:</span>
+                    <p class="file_text">{{text}}</p>
+                    {%endif%}
+                </div>
+                {%endfor%}
+
+                <div class="data_detail">
+                    <span class="file_header"> FILE NAME:</span>
+                    <p class="file_text">A_Metadata_Approach_for_Building_Web_Application.pdf</p>
+                </div>
+
+                <div class="data_detail">
+                    <span class="file_header">FILE SIZE:</span>
+                    <p class="file_text">536 KB</p>
+                </div>
+
+
+            </div>
+
+            <div class="div">
+<<<<<<< HEAD
+                <img src="{%static 'img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+=======
+                <img src="{%static 'file_control/img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+>>>>>>> 0859122e96e5754dbfeaaa2df1d1e6b498db3343
+                <div>
+                    <input type="submit" value="Export" class="extraction_button extract-btn1">
+                    <input type="submit" value="Share" class="extraction_button extract-btn2">
+                </div>
+
+            </div>
+        </section>
+        </header>

@@ -1,0 +1,349 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
+
+:root{
+    /* font family */
+    --font-family: 'Poppins', sans-serif;
+    /* font weights */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+
+   
+/* colours */
+    --primary: #003566;
+   
+
+    /* font size */
+    --font-size: 18px;
+}
+
+body{
+    background-color: #3F3D3D;;
+    color: white;
+    font-family: var(--font-family);
+
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100vh;
+    background-color: #003566;
+}
+.top_section{
+    width: 100%;
+    padding-inline: 6.95%;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.main_header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: flex-start;
+    padding-block: 1rem;
+    margin-inline: auto; 
+    
+}
+.main_header .logo{
+   order: 0;
+   margin-inline-end: 2rem;
+
+}
+.main_header .logo{
+   order: 0;
+   margin-inline-end: 2rem;
+
+}
+.main_header .logo img{
+   width: 5rem;
+   height: 6rem;
+}
+.main_header .header_list{
+   order: 1;
+   margin-inline-end: 2rem;
+
+}
+.main_header .header_list li{
+    display: inline-block;
+   list-style: none;
+   margin-inline: 1rem;
+
+}
+.main_header .header_list li a{
+    text-decoration: none;
+    color: #f0f0f0;
+
+}
+.main_header .header_searchbar {
+    margin-inline-start: 2.5rem;
+    margin-inline-end: auto;
+    order: 2;
+    width: 24%;
+    height: 46px;
+    position: relative;
+    padding-block-start: 0.5rem;
+
+}
+.header_searchbar input{
+    width: 100%;
+    padding-block: 0.5rem;
+    padding-inline-start: 0.5rem;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 0.4rem;
+    
+    
+}
+
+.header_searcbar-icon{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.8rem;
+}
+.header_searcbar-icon svg{
+  width: 18px;
+  height: 18px;
+}
+.user_profile-pic{
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+    order: 3;
+    align-items: flex-start;
+}
+
+.user_profile-pic figure{
+    /* align-content: flex-start; */
+}
+.user_profile-pic figure img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit:fill;
+    border: 0.1rem solid black; 
+}
+.container .profile_account{
+
+    display: inline-flex;
+    margin-inline-start: 40%;
+    margin-inline-end: auto;
+    padding-block-end: 1rem;
+    
+     
+}
+.container .profile_account a{
+    margin-block-start: 1rem;
+    margin-inline: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    
+     
+}
+
+.container .profile_account a:hover{
+    color: #FFD60A;
+}
+
+.bottom_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    padding-inline: 6.95%;
+    padding-block-start: 1rem;
+    /* border-left: 6px solid black; */
+    /* height: 700px; */
+    /* position: relative; */
+    /* left: 20%; */
+   
+    
+    
+}
+
+
+.bottom_section .profile{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    border-right: 1px solid #FFD60A;
+
+    
+}
+.bottom_section .profile .pro_title h3{
+    color: #FFD60A;
+    margin-block-start: 0;
+    margin-inline-end: auto;
+    margin-block-end: 2rem;
+    
+
+}
+
+.bottom_section .profile .pro_content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.bottom_section .profile .pro_content .figure img{
+    display: block ;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 80%;
+    object-fit:fill;
+    border: 0.1rem solid black;
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+   
+
+
+}
+.bottom_section .profile .pro_content .figure h2{
+    text-align: right;
+    margin-block: 1rem;
+    margin-inline-end: 1rem;
+    
+
+}
+
+.bottom_section .profile .pro_content .figure #img-caption{
+    text-align: right;
+    margin-block: 1rem;
+    margin-inline-end: 3rem;
+
+}
+
+.bottom_section .profile .pro_content .figure p{
+    text-align: right;
+    margin-block: 1rem;
+    margin-inline-end: 1.5rem;
+
+}
+
+
+.bottom_section .profile .pro_content .btn{
+    display: block;
+    margin-block-start: 1rem; 
+    margin-inline-end: 0; 
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    font-size: 0.8rem ; 
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bottom_section .profile .pro_content .pbtn{
+    background-color: white;
+    color: black;
+    
+}
+
+.bottom_section .profile .pro_content .dbtn{
+    width: 198.8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+
+}
+.bottom_section .profile .pro_content .btn_group{
+    display: inline-block;
+    margin-inline: auto;
+    padding-block:  0.5rem;
+    padding-inline: 1.5rem;
+    /* justify-content: right; */
+    margin-inline-end: 0;
+    /* position: absolute; */
+     /* margin-left: 40%;  */
+
+    
+}
+
+
+.bottom_section .basic_info{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding-inline-start: 2rem;
+}
+
+.bottom_section .basic_info form{
+    display: block;
+    width: 50%;
+    
+
+}
+.bottom_section .basic_info form input{
+    display: block;
+    margin-block: 1rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding-inline-start: 1rem;
+
+}
+.bottom_section .basic_info form input ::placeholder{
+    padding-inline-start: 1rem;
+}
+
+
+.bottom_section .basic_info h3{
+    color: #FFD60A;
+    margin-block-end: 2rem;
+}
+
+.bottom_section .basic_info .form-control .input{
+    display: inline;
+    position: relative;
+    margin-inline-start: 30rem;
+    margin-inline-end: auto;
+    padding-top: 2rem;
+    
+
+}
+
+.bottom_section .basic_info .form-control .input .btn{
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+
+}
+
+.bottom_section .basic_info .form-control .input .sbtn{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    margin-left: 1rem;
+
+}
+
+
+
+

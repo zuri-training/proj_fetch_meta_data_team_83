@@ -1,8 +1,13 @@
 
 from django import forms
-from .models import file_Upload
+from .models import File
 
-class file_Upload_Form(forms.ModelForm):
+class FileUploadForm(forms.ModelForm):
     class Meta:
-        model = file_Upload
-        fields = ['author', 'title', 'file',]
+      model = File
+      fields = ['file',]
+
+    # def __init__(self, *args, **kwargs):
+        # user = kwargs.pop('user')
+        # super(FileUploadForm, self).__init__(*args, **kwargs)
+        # self.fields['user'].queryset = FileUpload.objects.filter(user=user)

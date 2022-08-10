@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metadata Registration Form</title>
-    <link href="{% static 'api/signup.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/signup.css'%}" rel="stylesheet" />
 </head>
 <body>
     <section class="container">
@@ -53,8 +53,8 @@
                                 </div>
                               </div>
                               <div
-                              id="div_id_username"
-                              class="clearfix control-group {% if form.username.errors %}error{% endif %}"
+                              id="div_id_email"
+                              class="clearfix control-group {% if form.email.errors %}error{% endif %}"
                             >
                               <div class="form-group">
                                   <label for="{{form.email.id_for_label}}">{{form.email.label_tag}}</label>
