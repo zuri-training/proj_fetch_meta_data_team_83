@@ -75,7 +75,7 @@ class CustomUserProfileCreationForm(ModelForm):
 
         return profile_pic
 
-class ShowUserForm(ModelForm):
-    class Meta:
-        model = UserModel
-        fields= ["username","email"]
+# class ShowUserForm(ModelForm):
+#     class Meta:
+#         model = UserModel
+#         fields= ["username","email"]
