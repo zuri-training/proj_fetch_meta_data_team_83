@@ -2,6 +2,7 @@ import os
 from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
+from django.http import HttpResponse
 from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
@@ -22,7 +23,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
 
     def get_success_url(self):
         print(self.object.id)
-        return reverse('file-detail', kwargs={'pk': self.kwargs['pk']})
+        return reverse_lazy('file:file-detail', kwargs={'pk': self.object.id})
 
 
     def form_valid(self, form):
@@ -70,9 +71,15 @@ class FileDetailView(LoginRequiredMixin, DetailView):
     template_name = 'file_control/extraction_page.html'
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
         filepk = self.kwargs.get('pk') #get the primary key of the file
         fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
+
+        #check if user is the owner of the file. Return none if not
+        # if self.request.user is not fullfile.user:
+        #     return None
+
+        context = super().get_context_data(**kwargs)
+
         metafile = fullfile.meta_file #return jusst the meta_file
         path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
 
