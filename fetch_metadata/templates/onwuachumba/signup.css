@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #003566;
+
+    
+   
+}
+
+:root{
+    /* font family */
+    --font-family: 'Poppins', sans-serif;
+    /* font weights */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+
+    /* font style */
+    --font-style: italic;
+
+/* colours */
+    --primary: #003566;
+    --secondary: #3F3D3D;
+    --accent: #707376;
+
+    /* font size */
+    --font-size: 18px;
+
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    color: var(--primary);
+    
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    background-color: #4D5054;
+    
+}
+
+
+h2{
+    text-align: center;
+    margin-block-start: 1rem;
+    color: var(--primary);
+    /* font-weight: var(--font-weight-700); */
+}
+
+p{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 18px;
+
+    
+}
+.container .container_images{
+    background-color: #003566;
+    width: 50%;
+    position: relative;
+
+
+}
+
+.container .container_images .logo{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+}
+
+.container .container_images .contract_paper{
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+}
+.container .container_images .contract_paper img{
+    display: block ;
+    height: 100%;
+    width: 100%; 
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+}
+
+.container .container_images .flyers {
+    position: absolute;
+
+}
+.container .container_images .flyer_1{
+    top: 15%;
+    left: 10%;
+}
+.container .container_images .flyer_2{
+    top: 40%;
+    left: 0;
+}
+
+.container .container_images .flyer_3{
+    top: 70%;
+    right: 0;
+
+}
+.container .container_images .flyer_4{
+    top: 2%;
+    right: 2%;
+}
+
+.container .container_images .flyer_5{
+    top: 15%;
+    right: 0;
+
+}
+
+.container .container_images .flyer_6{
+    top: 40%;
+    right: 0;
+
+}
+.container .container_images .flyer_7{
+    top: 75%;
+    left: 0;
+
+}
+.container .container_images .footer_button{
+    
+
+
+    
+}
+
+
+.container .container_images h1{
+    color: #FFD60A;
+    position: absolute;
+    bottom: 13%;
+    left: 35%;
+    font-size: 3rem;
+    
+
+}
+
+
+/* form styling field */
+
+.container .order_2{
+    background-color: white;
+    width: 50%;
+    color: var(--primary);
+}
+form{
+    width: 75%;
+    margin-inline: auto;
+    margin-block: 4rem;
+
+
+}
+
+form label{
+    
+    margin-block: 0.5rem;
+    display: flex;
+}
+    
+form label{
+}
+
+.btn{
+    
+    margin-top: 3rem; 
+    height: 35px; 
+    border: none;
+    background-color: #003566;
+    color: white;
+    
+
+
+}
+small{
+    display: block;
+    text-align: center;
+    margin-block: 0.8rem;
+}
+
+a{
+    color: #FFD60A;
+    font-weight: var(--font-weight-700);
+    /* text-decoration: none; */
+
+}
+
+form input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border: 1px solid #003566;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+
