@@ -2,6 +2,8 @@ import os
 from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
+from django.http import JsonResponse
+from django.core import serializers
 from django.http import HttpResponse
 from .forms import FileUploadForm
 from .models import File
@@ -66,13 +68,30 @@ def read_file(request, file_path):
 
 
 
+class getmetadata(LoginRequiredMixin, DetailView):
+    model=File
+    # request should be ajax and method should be POST.
+    def get_context_data(self):
+        context = super().get_context_data(**kwargs)
+
+        if self.request.is_ajax:
+            # read the file_content
+
+            fullfile = get_object_or_404(File, pk=pk) # get everything in that row in the database
+            metafile = fullfile.meta_file #return jusst the meta_file
+            path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
+
+            metadata = read_file(request, path)
+            context["meta_data"]= metadata
+
+
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File
     template_name = 'file_control/extraction_page.html'
 
     def get_context_data(self, **kwargs):
-        filepk = self.kwargs.get('pk') #get the primary key of the file
-        fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
+        # filepk = self.kwargs.get('pk') #get the primary key of the file
+        # fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
 
         #check if user is the owner of the file. Return none if not
         # if self.request.user is not fullfile.user:
@@ -80,12 +99,12 @@ class FileDetailView(LoginRequiredMixin, DetailView):
 
         context = super().get_context_data(**kwargs)
 
-        metafile = fullfile.meta_file #return jusst the meta_file
-        path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
+        # metafile = fullfile.meta_file #return jusst the meta_file
+        # path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
 
-        metadata = read_file(self.request, path)
-        print(metadata)
-        context["meta_data"]= metadata
+        # metadata = read_file(self.request, path)
+        # print(metadata)
+        # context["meta_data"]= metadata
         return context
 
 

@@ -18,9 +18,9 @@
     <header class="header_container">
     <section id="nav_bar">
       <div class="nav_left">
-      <a href="{%url 'common:home'%}"></a><img src="{% static 'img/metatrack_logo.svg'%}" 
-      alt="" 
-      class="metatrack_logo" />
+      <a href="{%url 'common:home'%}"><img src="{% static 'img/metatrack_logo.svg'%}"
+      alt=""
+      class="metatrack_logo" /> </a>
       </div>
       <div class="nav_middle">
         <a href="" class="middle_link">Home</a>
@@ -30,7 +30,7 @@
         <a href="" class="middle_link">Services</a>
         <a href="" class="middle_link">About Us</a>
       </div>
-      
+
       {% if user.is_authenticated %}
       <input
       type="search"
@@ -40,7 +40,7 @@
       class="search_field"
     />
     <img src="img/Code Image.svg" class="show_photo" alt="" />
-      
+
       {% else %}
       <div class="nav_right">
         <a href="{%url 'api:login'%}"
@@ -50,11 +50,11 @@
       </div>
       {% endif %}
     </section>
-    
+
     {% block hero %}
-      
+
     {% endblock %}
-      
+
     </header>
     <!-- End of Header -->
 

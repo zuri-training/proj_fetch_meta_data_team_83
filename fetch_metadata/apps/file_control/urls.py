@@ -8,5 +8,5 @@ urlpatterns = [
     path('',views.FileListView.as_view(), name='userFileList'),
     path('dashboard/',views.FileCreateView.as_view(), name='userFileUpload'),
     path('<int:pk>/', views.FileDetailView.as_view(), name='file-detail'),
-    # path('test/', views.read_file, name='fileDetail'),
+    path('<int:pk>/meta', views.getmetadata.as_view(), name='meta-detail'),
 ]

@@ -24,16 +24,16 @@
             <div class="metadata_details">
 
 
-                {% for title,text in meta_data%}
-                <div class="data_detail">
-                    {%if 'ExifTool Version Number' in title%}
-                    {%elif 'Directory' in title%}
-                    {%else%}
-                    <span class="file_header"> {{title}}:</span>
-                    <p class="file_text">{{text}}</p>
-                    {%endif%}
-                </div>
-                {%endfor%}
+               {% comment %} {% for title,text in meta_data%}{% endcomment %}
+                {% comment %}<div class="data_detail">{% endcomment %}
+                    {% comment %}{%if 'ExifTool Version Number' in title%}{% endcomment %}
+                    {% comment %}{%elif 'Directory' in title%}{% endcomment %}
+                    {% comment %}{%else%}{% endcomment %}
+                    {% comment %}<span class="file_header"> {{title}}:</span>{% endcomment %}
+                    {% comment %}<p class="file_text">{{text}}</p>{% endcomment %}
+                    {% comment %}{%endif%}{% endcomment %}
+                {% comment %}</div>{% endcomment %}
+               {% comment %} {%endfor%} {% endcomment %}
 
                 <div class="data_detail">
                     <span class="file_header"> FILE NAME:</span>
@@ -58,3 +58,35 @@
             </div>
         </section>
         </header>
+        <script>$(document).ready(function() {
+    setTimeout(function() {
+                    var metadata = JSON.parse(response["metadata"]);
+                    $.ajax( {
+                  contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    type: "get",
+                                    url:'{% url "file:meta-detail" %}',
+                    success: function(response) {
+                     console.log("got some response")
+                     var metadata = JSON.parse(response["metadata"]);
+                      {% for title,text in meta_data%}
+                <div class="data_detail">
+                    {%if 'ExifTool Version Number' in title%}
+                    {%elif 'Directory' in title%}
+                    {%else%}
+                    <span class="file_header"> {{title}}:</span>
+                    <p class="file_text">{{text}}</p>
+                    {%endif%}
+                </div>
+                {%endfor%}
+
+
+                  },
+                  error: function(data) {
+                      console.log("down here")
+                      post_tables("error being thrown")
+                  }
+               });
+    }, 100);
+});
+</script>
