@@ -8,12 +8,30 @@ from django.http import HttpResponse
 from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
+from .readfile import read_file
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
+
 
 
 # Create your views here.
-#upload files
+
+#Home view
+# @login_required
+# def dashboardview(request):
+#     context ={}
+  
+#     # add the dictionary during initialization
+#     form = FileUploadForm(request.POST or None)
+#     if form.is_valid():
+#         form.save()
+          
+#     context['form'] = form
+#     context["file_list"] = File.objects.filter(user=request.user)
+         
+#     return render(request, "common/dashboard.html", context)
+# upload files
 class FileCreateView(LoginRequiredMixin, CreateView):
     """
     Generates the view where the user can upload their files
@@ -26,6 +44,14 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         print(self.object.id)
         return reverse_lazy('file:file-detail', kwargs={'pk': self.object.id})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        # context["file_list"] = user.file.all()
+        # filelist = 
+        context["file_list"] = File.objects.filter(user=self.request.user)
+        return context
 
 
     def form_valid(self, form):
@@ -51,38 +77,21 @@ class FileListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return File.objects.filter(file__user=self.kwargs['user'])
 
-def read_file(request, file_path):
-    """
-    Read the metadata from the file and retuens to the user.
-    args:
-    file_path = path to saved metadata file
+# class getmetadata(LoginRequiredMixin, DetailView):
+#     model=File
+#     # request should be ajax and method should be POST.
+#     def get_context_data(self):
+#         context = super().get_context_data(**kwargs)
 
-    """
+#         if self.request.is_ajax:
+#             # read the file_content
 
-    with open(file_path, 'r') as f:
-        file_content = f.readlines()
-        result = [item.split(':', 1) for item in file_content]
-        f.close()
-        context = result
-        return (context)
+#             fullfile = get_object_or_404(File, pk=pk) # get everything in that row in the database
+#             metafile = fullfile.meta_file #return jusst the meta_file
+#             path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
 
-
-
-class getmetadata(LoginRequiredMixin, DetailView):
-    model=File
-    # request should be ajax and method should be POST.
-    def get_context_data(self):
-        context = super().get_context_data(**kwargs)
-
-        if self.request.is_ajax:
-            # read the file_content
-
-            fullfile = get_object_or_404(File, pk=pk) # get everything in that row in the database
-            metafile = fullfile.meta_file #return jusst the meta_file
-            path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
-
-            metadata = read_file(request, path)
-            context["meta_data"]= metadata
+#             metadata = read_file(request, path)
+#             context["meta_data"]= metadata
 
 
 class FileDetailView(LoginRequiredMixin, DetailView):
@@ -90,8 +99,8 @@ class FileDetailView(LoginRequiredMixin, DetailView):
     template_name = 'file_control/extraction_page.html'
 
     def get_context_data(self, **kwargs):
-        # filepk = self.kwargs.get('pk') #get the primary key of the file
-        # fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
+        filepk = self.kwargs.get('pk') #get the primary key of the file
+        fullfile = get_object_or_404(File, pk=filepk) # get everything in that row in the database
 
         #check if user is the owner of the file. Return none if not
         # if self.request.user is not fullfile.user:
@@ -99,12 +108,12 @@ class FileDetailView(LoginRequiredMixin, DetailView):
 
         context = super().get_context_data(**kwargs)
 
-        # metafile = fullfile.meta_file #return jusst the meta_file
-        # path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
+        metafile = fullfile.meta_file #return jusst the meta_file
+        path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
 
-        # metadata = read_file(self.request, path)
-        # print(metadata)
-        # context["meta_data"]= metadata
+        metadata = read_file(path)
+        print(metadata)
+        context["meta_data"]= metadata
         return context
 
 

@@ -24,16 +24,16 @@
             <div class="metadata_details">
 
 
-               {% comment %} {% for title,text in meta_data%}{% endcomment %}
-                {% comment %}<div class="data_detail">{% endcomment %}
-                    {% comment %}{%if 'ExifTool Version Number' in title%}{% endcomment %}
-                    {% comment %}{%elif 'Directory' in title%}{% endcomment %}
-                    {% comment %}{%else%}{% endcomment %}
-                    {% comment %}<span class="file_header"> {{title}}:</span>{% endcomment %}
-                    {% comment %}<p class="file_text">{{text}}</p>{% endcomment %}
-                    {% comment %}{%endif%}{% endcomment %}
-                {% comment %}</div>{% endcomment %}
-               {% comment %} {%endfor%} {% endcomment %}
+               {% for title,text in meta_data%}
+                <div class="data_detail">
+                    {%if 'ExifTool Version Number' in title%}
+                    {%elif 'Directory' in title%}
+                    {%else%}
+                    <span class="file_header"> {{title}}:</span>
+                    <p class="file_text">{{text}}</p>
+                    {%endif%}
+                </div>
+               {%endfor%}
 
                 <div class="data_detail">
                     <span class="file_header"> FILE NAME:</span>
@@ -58,7 +58,7 @@
             </div>
         </section>
         </header>
-        <script>$(document).ready(function() {
+        {% comment %}  <script>$('.metadata-details')).onfocus(function() {
     setTimeout(function() {
                     var metadata = JSON.parse(response["metadata"]);
                     $.ajax( {
@@ -89,4 +89,4 @@
                });
     }, 100);
 });
-</script>
+</script> {%endcomment %}

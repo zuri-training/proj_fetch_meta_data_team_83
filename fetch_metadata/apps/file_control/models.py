@@ -9,6 +9,7 @@ from django.db.models.signals import pre_save, post_save
 from .tasks import create_metadata
 from .filechecker import ContentTypeRestrictedFileField
 from .storage import OverwriteStorage
+from .readfile import read_file
 
 # Create your models here.
 UserModel = get_user_model()
@@ -40,9 +41,16 @@ class File(models.Model):
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
 
-    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types,storage=OverwriteStorage(), max_upload_size=max_upload_size)
+    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, storage=OverwriteStorage(), max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
     meta_file = models.FileField(upload_to = user_directory_path, null=True,blank=True)
+
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    def filesize(self):
+        file_list = read_file
+
 
     def get_absolute_url(self):
         """

@@ -1,0 +1,9 @@
+ALTER ROLE team83 
+	SET client_encoding 
+	TO 'utf8';
+ALTER ROLE team83 
+	SET timezone 
+	TO 'UTC';
+GRANT ALL PRIVILEGES 
+	ON DATABASE team83 
+	TO team83;
