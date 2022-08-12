@@ -1,0 +1,279 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 2550px;
+}
+
+.hero{
+    background-color: #003566;
+    padding-top: 1em;
+    height: 300px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+
+{% comment %} header p{
+    margin-left: 1.5em;
+    padding: 1em;
+    background-color: #444E53;
+    color: white;
+    border: 3px solid white;
+} {% endcomment %}
+
+.nav__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.nav__bar ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav__bar li{
+    list-style: none;   
+}
+
+.nav__bar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1.2em;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav__bar ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.504);
+}
+
+.nav__bar--link{
+    text-decoration: none;
+    color: #FFD60A;
+    padding: .5em 1em;
+    border: 2px solid black;
+    border-radius: 30px;  
+    display: inline-block; 
+    margin-right: 2em; 
+    border: 1px solid #FFD60A;  
+}
+
+.nav__bar--link:hover{
+    background-color: rgba(255, 255, 255, 0.504);
+}
+
+.toggle__button{
+    display: none;
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle__button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #292D32;
+    border-radius: 10px;
+}
+
+.hero h1{
+    text-align: center;
+    margin-top: 2.5em;
+    color: #FFD60A;
+}
+
+.first__section{
+    display: flex;
+    text-align: center;
+    gap: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4em;
+    align-items: center;
+}
+
+.first__section--block,
+.first__section--second__block{
+    padding: 3em;
+    flex: 40%;
+}
+
+.first__section--block h2,
+.first__section--second__block h2,
+.second__section h2{
+    margin-bottom: .5em;
+}
+
+.fa-file-arrow-up,
+.fa-unlock-keyhole,
+.fa-database{
+    font-size: 3rem;
+    margin-bottom: .5em;
+    color: #003566;
+}
+
+.second__section{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 3em;
+    width: 50%;
+}
+
+.third__section{
+    text-align: center;
+    padding: 1em 8em;
+    margin-top: 2em;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #CCD7E0;
+}
+
+.third__section h1{
+    color: #292D32;
+}
+
+.third__section--para{
+    margin-bottom: 2em;
+}
+
+.third__section--text{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2em;
+    align-items: center;
+    cursor: pointer;
+    color: #003566;
+}
+
+.fa-circle-plus{
+    color: #003566;
+}
+
+footer{
+    display: flex;
+    background-color: #003566;
+    height: 250px;
+    padding: 2em;
+    color: whitesmoke;
+    gap: 5em;
+    margin: 0 auto;
+    max-width: 2550px;
+    margin-top: 4em;
+}
+
+.first__footer,
+.second__footer{
+    margin: 0 auto;
+}
+
+.first__footer a{
+    color: white;
+    margin-top: .5em;
+    display: inline-block;
+    margin-left: .5em;
+}
+
+.second__footer a{
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 100;
+}
+
+.first__link{
+    font-size: 1.3rem;
+    margin-bottom: .8em;
+}
+
+@media (max-width: 750px){
+    .toggle__button{
+        display: flex;  
+    }
+
+    .nav__bar{
+        width: 100%;
+        display: none;
+        align-items: flex-start;
+    }
+
+    .nav__bar ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav__bar li{
+        text-align: center;
+    }
+
+    .nav__bar ul li a{
+        padding: .8rem 1rem;
+    }
+
+    .nav__bar.active{
+        display: flex;
+    }
+
+    .third__section{
+        padding: 1em 3em;
+        text-align: left;
+    }
+    footer{
+        gap: 2em;
+    }
+
+}
+
+@media (max-width: 660px){
+    .nav__bar--link{
+        padding: .5em ;
+    }
+}
+
+@media (max-width: 550px){
+    hero{
+        width: 100%;
+    }
+    .first__section,
+    .second__section{
+        flex-direction: column;
+    }
+    .second__section{
+        width: 100%;
+    }
+
+    .third__section{
+        padding: 1.5em;
+    }
+
+    .third__section--text{
+        text-align: left;
+    
+    }
+}

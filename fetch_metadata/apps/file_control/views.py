@@ -9,7 +9,7 @@ from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
 from .readfile import read_file
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 

@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my#)qs)y5p)$x+3$sb^8@fp8858h&')
 
-DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
+DJANGO_ALLOWED_HOSTS = ['metatrack.zurifordummies.com']
 # SECURITY WARNING: don't run with debug turned on in production!
 if not config("DJANGO_DEBUG"):
     DEBUG = False
@@ -74,7 +74,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'fetch_metadata.urls'
 CSRF_TRUSTED_ORIGINS = [
-    'https://metatrack.herokuapp.com'
+    'https://metatrack.herokuapp.com',
+    'https://metatrack.zurifordummies.com'
 ]
 
 TEMPLATES = [
@@ -166,12 +167,10 @@ REST_FRAMEWORK = {
                 'rest_framework.permissions.IsAuthenticated',
     ],
 }
-LOGIN_REDIRECT_URL = "dashboard"
-LOGOUT_REDIRECT_URL = "home"
+
 
 # Configure Django App for Heroku
 if DEBUG is False:
-    import django_on_heroku
     import dj_database_url
     STATIC_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
     MEDIA_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
@@ -198,9 +197,9 @@ if DEBUG is False:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'staticdev'),
     ]
-    STATIC_ROOT = 'static'
+    STATIC_ROOT = "/var/www/metatrack83/static"
 
-    MEDIA_ROOT = 'media'
+    MEDIA_ROOT = '/var/www/metatrack83/media'
     if "localhost" not in DJANGO_ALLOWED_HOSTS:
         django_on_heroku.settings(locals())
 
@@ -209,8 +208,9 @@ if DEBUG is False:
 else:
     #Media files (uploaded files)
     MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    STATIC_ROOT = 'static'
+    STATIC_ROOT = "/var/www/metatrack83/static/"
+
+    MEDIA_ROOT = '/var/www/metatrack83/media/'
 
 
     # Static files (CSS, JavaScript, Images)
