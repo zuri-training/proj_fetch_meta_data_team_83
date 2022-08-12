@@ -3,7 +3,6 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth import get_user_model,views
 from .forms import SignupForm,CustomUserLoginForm#, PasswordResetForm,ChangePasswordForm,
 from .permissions import IsCreatorOrAdminReadOnly
-from django.urls import reverse_lazy
 
 
 # Create your views here.
@@ -11,14 +10,14 @@ from django.urls import reverse_lazy
 UserModel = get_user_model()
 
 class CreateUserView(CreateView):
-    success_url = reverse_lazy('api:login')
-    form_class = SignupForm
     template_name = 'api/signup.html'
+    form_class = SignupForm
+    success_url = '/login/'
 
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     form_class = CustomUserLoginForm
-    next_page = 'api:userFileUpload'
+    next_page = '/dashboard/'
 
 
 class LogoutUserView(views.LogoutView):

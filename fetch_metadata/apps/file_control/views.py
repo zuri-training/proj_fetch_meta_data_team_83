@@ -50,14 +50,16 @@ def read_file(request, file_path):
     args:
     file_path = path to saved metadata file
 
+<<<<<<< HEAD
     """
-
+=======
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File
     template_name = 'file_detail_view.html'
 
 
 def read_file(request):
+>>>>>>> dev
 
     with open(file_path, 'r') as f:
         file_content = f.readlines()
