@@ -19,52 +19,53 @@
 <section id="first_layout">
   <h2 class="how_heading">How it Works</h2>
   <div class="layout_boxes">
-    <div class="box_1 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_upload.svg'%}"
-          alt=""
-          class="action_button"
-        />
-      </div>
-      <div class="box_text">
+      <div class="box_1 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_upload.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
+        <div class="box_text">
+          <div class="box_text">
+            <p class="first_layout_texts">
+            Upload files ranging from images, csv, pdf and json, etc. by clicking
+            the <strong>Browse</strong> button
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="box_2 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_forward.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
         <div class="box_text">
           <p class="first_layout_texts">
-          Upload files ranging from images, csv, pdf and json, etc. by clicking
-          the <strong>Browse</strong> button
-        </p>
+            Click on the <strong>Extract</strong> button to generate the metadatas
+            embedded in the selected file.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="box_2 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_forward.svg'%}"
-          alt=""
-          class="action_button"
-        />
+      <div class="box_3 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_copy.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
+        <div class="box_text">
+          <p class="first_layout_texts">
+            Once generated, you are allow to <strong>Copy</strong> the extracted
+            metadatas to a clipboard
+          </p>
+        </div>
       </div>
-      <div class="box_text">
-        <p class="first_layout_texts">
-          Click on the <strong>Extract</strong> button to generate the metadatas
-          embedded in the selected file.
-        </p>
-      </div>
-    </div>
-    <div class="box_3 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_copy.svg'%}"
-          alt=""
-          class="action_button"
-        />
-      </div>
-      <div class="box_text">
-        <p class="first_layout_texts">
-          Once generated, you are allow to <strong>Copy</strong> the extracted
-          metadatas to a clipboard
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 <section id="second_layout">
