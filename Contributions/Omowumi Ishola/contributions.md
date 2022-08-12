@@ -1,10 +1,9 @@
-# Amaka nsude's contribution to team 83 fetch meta data
+# Ishola Omowumi's contribution to team 83 fetch meta data
 
--I created research plan [click here](https://docs.google.com/document/d/1qmovnHjnw6QERktM9jjY4p7uXY0qZ4wM4J7_3_P0qf8/edit?usp=drivesdk)<br>
--I created the user story [click here](https://www.figma.com/file/UWg7iZ9dqgrAuK2YaoF7P4/USER-STORY?node-id=0%3A1)<br>
--I created the empathy map [click here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=0%3A1)<br>
--I collaborated to prototype [click here](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=0%3A1)<br>
-
--I created the [empathy map and user research](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=773%3A5188) [based on the issues](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/36)
--I worked on [prototyping on each screen](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=478%3A6614) on figma [based on the issues](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/39)
--I assisted on building [wireframes](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=817%3A5260) [based on the issues](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/37)
+ I created the the setup of our commons app [click here to view the codes] my branch (https://github.com/zuri-training/proj_fetch_meta_data_team_83/tree/omo_wumi)
+with respect to [this issue](https://github.com/zuri-training/proj_fetch_meta_data_team_83/issues/57) 
+I setup the models in commons for our project[here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/omo_wumi/fetch_metadata/apps/commons/models.py)
+I created  views to link the html files that will be displayed in commons[here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/omo_wumi/fetch_metadata/apps/commons/views.py)
+I configured the urls to enable it connect to the frontend [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/omo_wumi/fetch_metadata/apps/commons/urls.py)
+I created some html templates for the commons app.
+I created custom forms in the commons for authorized user [here](https://github.com/zuri-training/proj_fetch_meta_data_team_83/blob/omo_wumi/fetch_metadata/apps/commons/urls.py) 
