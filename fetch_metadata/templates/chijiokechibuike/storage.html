@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <link rel="stylesheet" href="storage.css" />
+</head> -->
+<body>
+        <header>
+            <section class="right_container_header">
+                <div class="nav_container">
+                        <div class="right_nav">
+                            <div class="right_navlinks">
+                                <img src="img/metatrack_logo.svg" class="right_logo" alt="" />
+                                <a href="" class="navlinks_text">Home</a>
+                                <a href="" class="navlinks_text">How It Works</a>
+                                <a href="" class="navlinks_text">Services</a>
+                                <a href="" class="navlinks_text">About Us</a>
+                                <input
+                                    type="search"
+                                    name="Search"
+                                    id=""
+                                    placeholder="Search for files"
+                                    class="search_field"
+                                />
+                                <img src="img/Code Image.svg" class="show_photo" alt="" />
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </header>
+        <main class="overall_main">
+            <section class="top_storage">
+                <h1 class="storage_header storage_texts">Just so you know, this might sound Cliche</h1>
+                <p class="store_text storage_texts">...but I will always have a space for 1 more file, always</p>
+            </section>
+            <section class="bottom_storage">
+                <div class="storage_sizes">
+                    <div class="main_sizes">
+                        <p class="overall_sizes storage_texts">500MB</p>
+                        <button class="storage_button">BUY MORE STORAGE</button>
+                    </div>
+                    <div class="storage_img">
+                        <div class="storage_images">
+                            <img src="{% static 'img/storage_circle.svg'%}" alt="" class="storage_circle">
+                            <span class="circle_one smaller_circles">
+                                <img src="{% static 'img/storage_smallcircle1.svg'%}" alt="" class="first_circle small_circles">
+                            </span>
+                            <span class="circle_two smaller_circles">
+                                <img src="{% static 'img/storage_smallcircle2.svg'%}" alt="" class="second_circle small_circles">
+                            </span>
+                            <span class="pointer_one points_size">
+                                <img src="{% static 'img/storage_pointer1.svg'%}" alt="" class="storage_pointer1 size_pointers">
+                            </span>
+                            <span class="pointer_two points_size">
+                                <img src="{% static 'storage_pointer2.svg'%}" alt="" class="storage_pointer2 size_pointers">
+                            </span>
+                        </div>
+                        <div class="split_sizes">
+                            <div class="free_size">
+                                <p class="free_head storage_texts">Free Space Left</p>
+                                <p class="free_text storage_texts">(100MB)</p>
+                            </div>
+                            <div class="used_size">
+                                <p class="used_head storage_texts">Uploaded File</p>
+                                <p class="used_text storage_texts">(400MB)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>

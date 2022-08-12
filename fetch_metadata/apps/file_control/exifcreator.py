@@ -6,6 +6,7 @@ import subprocess
 
 
 def create_meta_file(input_file):
+    sleep(1)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(input_file)[0] #file name without extension
 
@@ -16,5 +17,5 @@ def create_meta_file(input_file):
         Open a file in the same directory as the input file and write the metadata into it
         """
         exiftool_command = ["exiftool", input_file]
-        result = subprocess.run(exiftool_command, stdout=output)
-
+        result = subprocess.run(exiftool_command, stdout=output) 
+    

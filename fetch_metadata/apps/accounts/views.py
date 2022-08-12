@@ -12,7 +12,7 @@ UserModel = get_user_model()
 class CreateUserView(CreateView):
     template_name = 'api/signup.html'
     form_class = SignupForm
-    success_url = '/accounts/login/'
+    success_url = '/login/'
 
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'

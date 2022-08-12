@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./about_us.css">
     <title>ABOUT US</title>
-</head>
+</head> -->
 
 <body>
+
+    {% extends 'base.html' %} {% load static %} {% block content %}
     <header class="header__container metatrack__slant">
         <!-- Insert Nav links -->
         <section class="header__wrapper">
@@ -41,11 +43,11 @@
                     </p>
                 </div>
 
-                <img src="./images/Rectangle_4.png" alt="image_of_file_chartbox" class="about_us_img">
+                <img src="{% static 'images/Rectangle_4.png'%}" alt="image_of_file_chartbox" class="about_us_img">
                 <!-- No 1 end -->
 
                 <!-- No 2 start -->
-                <img src="./images/contract_display.png" alt="contract" class="about_us_img">
+                <img src="{% static 'images/contract_display.png'%}" alt="contract" class="about_us_img">
 
                 <div class="features__feature">
                     <div class="features__header">
@@ -69,35 +71,35 @@
             <div class="testimonial__cards-container">
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user1.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'images/user1.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Dvrmc</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings1.png" alt="" class="card_rating">
+                    <img src="{% static 'images/ratings1.png'%}" alt="" class="card_rating">
                 </div>
 
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user2.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'images/user2.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Idinnma</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings2.png" alt="" class="card_rating">
+                    <img src="{% static 'images/ratings2.png'%}" alt="" class="card_rating">
                 </div>
 
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user3.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'images/user3.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Opeyemmy</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings3.png" alt="" class="card_rating">
+                    <img src="{% static 'images/ratings3.png'%}" alt="" class="card_rating">
                 </div>
             </div>
 
@@ -107,6 +109,7 @@
                 <div class="dots__dot dot_three"></div>
             </div>
         </section>
+        {% endblock %}
     </main>
 
     <!-- <script src="aboutUs.js"></script> -->

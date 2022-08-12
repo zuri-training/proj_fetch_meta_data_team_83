@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% load static %}
+{% extends 'base.html' %}
+{% load static %}
 {% block css %}
 <link href="{% static 'common/dashboard.css'%}" rel="stylesheet" />
 {% endblock %}
@@ -187,18 +188,15 @@
 									<th>View Details</th>
 								</tr>
 							</thead>
-							
 							<tbody class="table_body">
-								{% for item in file_list %}
-								<tr>
-								    {% comment %} <td>{{ item }}</td> {% endcomment %}
-									<td>{{ item.filename }}</td>
-									{% comment %} <td>{{ item }}</td> {% endcomment %}
-									{% comment %} <td>{{ item.email }}</td>
-									<td>{{ item.title }}</td>
-									<td>{{ item.department }}</td> {% endcomment %}
+								<tr class="rows_data">
+									<td>1</td>
+									<td>OIP.jpg</td>
+									<td>43KB</td>
+									<td><button>JPEG</button></td>
+									<td>jpg</td>
+									<td><img src="img/ExpandArrows_icon.svg" alt="" /></td>
 								</tr>
-								{% endfor %}
 								<tr class="rows_data">
 									<td>2</td>
 									<td>OIP.jpg</td>

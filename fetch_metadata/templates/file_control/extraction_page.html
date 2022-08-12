@@ -24,7 +24,7 @@
             <div class="metadata_details">
 
 
-               {% for title,text in meta_data%}
+                {% for title,text in meta_data%}
                 <div class="data_detail">
                     {%if 'ExifTool Version Number' in title%}
                     {%elif 'Directory' in title%}
@@ -33,7 +33,7 @@
                     <p class="file_text">{{text}}</p>
                     {%endif%}
                 </div>
-               {%endfor%}
+                {%endfor%}
 
                 <div class="data_detail">
                     <span class="file_header"> FILE NAME:</span>
@@ -49,7 +49,11 @@
             </div>
 
             <div class="div">
+<<<<<<< HEAD
                 <img src="{%static 'img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+=======
+                <img src="{%static 'file_control/img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+>>>>>>> 0859122e96e5754dbfeaaa2df1d1e6b498db3343
                 <div>
                     <input type="submit" value="Export" class="extraction_button extract-btn1">
                     <input type="submit" value="Share" class="extraction_button extract-btn2">
@@ -58,35 +62,3 @@
             </div>
         </section>
         </header>
-        {% comment %}  <script>$('.metadata-details')).onfocus(function() {
-    setTimeout(function() {
-                    var metadata = JSON.parse(response["metadata"]);
-                    $.ajax( {
-                  contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    type: "get",
-                                    url:'{% url "file:meta-detail" %}',
-                    success: function(response) {
-                     console.log("got some response")
-                     var metadata = JSON.parse(response["metadata"]);
-                      {% for title,text in meta_data%}
-                <div class="data_detail">
-                    {%if 'ExifTool Version Number' in title%}
-                    {%elif 'Directory' in title%}
-                    {%else%}
-                    <span class="file_header"> {{title}}:</span>
-                    <p class="file_text">{{text}}</p>
-                    {%endif%}
-                </div>
-                {%endfor%}
-
-
-                  },
-                  error: function(data) {
-                      console.log("down here")
-                      post_tables("error being thrown")
-                  }
-               });
-    }, 100);
-});
-</script> {%endcomment %}
