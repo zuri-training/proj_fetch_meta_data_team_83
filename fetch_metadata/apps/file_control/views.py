@@ -8,7 +8,7 @@ from django.http import HttpResponse
 from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
-from django.urls import reverse
+from django.urls import reverse,reverse_lazy
 from django.shortcuts import render, get_object_or_404
 
 

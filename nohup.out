@@ -1,0 +1,1834 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2022 - 21:17:52
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Aug/2022 21:50:47] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:09:55] "GET / HTTP/1.0" 400 67111
+[11/Aug/2022 22:11:08] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:11:10] "GET /favicon.ico HTTP/1.0" 404 3549
+Invalid HTTP_HOST header: '148.251.6.230:443'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230:443'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:12:02] "GET / HTTP/1.0" 400 66501
+Invalid HTTP_HOST header: 'pricejar.zurifordummies.com'. You may need to add 'pricejar.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'pricejar.zurifordummies.com'. You may need to add 'pricejar.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:12:03] "GET / HTTP/1.0" 400 67203
+[11/Aug/2022 22:15:10] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:18:18] "GET / HTTP/1.0" 400 68850
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:18:19] "GET /favicon.ico HTTP/1.0" 400 68550
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:18:31] "GET / HTTP/1.0" 400 68850
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:18:32] "GET /favicon.ico HTTP/1.0" 400 68550
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:19:11] "GET / HTTP/1.0" 400 68850
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:19:12] "GET /favicon.ico HTTP/1.0" 400 68550
+Invalid HTTP_HOST header: 'team35.zurifordummies.com'. You may need to add 'team35.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team35.zurifordummies.com'. You may need to add 'team35.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:19:45] "GET / HTTP/1.0" 400 68955
+Invalid HTTP_HOST header: 'team35.zurifordummies.com'. You may need to add 'team35.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team35.zurifordummies.com'. You may need to add 'team35.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:19:46] "GET /favicon.ico HTTP/1.0" 400 68662
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:19:56] "GET / HTTP/1.0" 400 68713
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:19:57] "GET /favicon.ico HTTP/1.0" 400 68550
+[11/Aug/2022 22:20:23] "GET / HTTP/1.0" 200 9220
+[11/Aug/2022 22:20:29] "GET /accounts/login/ HTTP/1.0" 200 3144
+Forbidden (Origin checking failed - https://metatrack.zurifordummies.com does not match any trusted origins.): /accounts/login/
+[11/Aug/2022 22:20:49] "POST /accounts/login/ HTTP/1.0" 403 2584
+/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/fetch_metadata/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2022 - 21:32:55
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Forbidden (Origin checking failed - https://metatrack.zurifordummies.com does not match any trusted origins.): /accounts/login/
+[11/Aug/2022 22:22:18] "POST /accounts/login/ HTTP/1.0" 403 2584
+Forbidden (Origin checking failed - https://metatrack.zurifordummies.com does not match any trusted origins.): /accounts/login/
+[11/Aug/2022 22:22:43] "POST /accounts/login/ HTTP/1.0" 403 2584
+/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/fetch_metadata/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2022 - 22:22:11
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/fetch_metadata/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2022 - 22:23:57
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[11/Aug/2022 22:25:20] "POST /accounts/login/ HTTP/1.0" 302 0
+[11/Aug/2022 22:25:20] "GET /dashboard/ HTTP/1.0" 302 0
+[11/Aug/2022 22:25:21] "GET /file/dashboard HTTP/1.0" 301 0
+[11/Aug/2022 22:25:21] "GET /file/dashboard/ HTTP/1.0" 200 12626
+Not Found: /file/dashboard/img/Code Image.svg
+[11/Aug/2022 22:25:21] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4248
+Not Found: /file/dashboard/img/FileType_icons.png
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/FileType_icons.png HTTP/1.0" 404 4258
+Not Found: /file/dashboard/img/FileCircle_icon.svg
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/FileCircle_icon.svg HTTP/1.0" 404 4261
+Not Found: /img/MetaEllipse_icon_2.svg
+[11/Aug/2022 22:25:22] "GET /img/MetaEllipse_icon_2.svg HTTP/1.0" 404 3594
+Not Found: /file/dashboard/img/3dots_icon.svg
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/3dots_icon.svg HTTP/1.0" 404 4246
+Not Found: /file/dashboard/img/ExpandArrows_icon.svg
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/ExpandArrows_icon.svg HTTP/1.0" 404 4267
+Not Found: /file/dashboard/img/Warning_icon.png
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/Warning_icon.png HTTP/1.0" 404 4252
+Not Found: /file/dashboard/img/DeepScan_icon.png
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/DeepScan_icon.png HTTP/1.0" 404 4255
+Not Found: /file/dashboard/img/RightArrow_icon.svg
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/RightArrow_icon.svg HTTP/1.0" 404 4261
+Not Found: /file/dashboard/img/duplicate_icon.png
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/duplicate_icon.png HTTP/1.0" 404 4258
+Not Found: /file/dashboard/img/ScanUpdate_icon.png
+[11/Aug/2022 22:25:22] "GET /file/dashboard/img/ScanUpdate_icon.png HTTP/1.0" 404 4261
+Internal Server Error: /file/dashboard/
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 39, in form_valid
+    return super(FileCreateView, self).form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 28, in get_success_url
+    return reverse_lazy('file:file-detail', kwargs={'pk': self.object.id})
+NameError: name 'reverse_lazy' is not defined
+[11/Aug/2022 22:25:42] "POST /file/dashboard/ HTTP/1.0" 500 101512
+Internal Server Error: /file/dashboard/
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 39, in form_valid
+    return super(FileCreateView, self).form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 28, in get_success_url
+    return reverse_lazy('file:file-detail', kwargs={'pk': self.object.id})
+NameError: name 'reverse_lazy' is not defined
+[11/Aug/2022 22:25:51] "POST /file/dashboard/ HTTP/1.0" 500 101512
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /.git/config
+[11/Aug/2022 22:26:05] "GET /.git/config HTTP/1.0" 400 67478
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:26:19] "GET / HTTP/1.0" 400 68408
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:26:20] "GET / HTTP/1.0" 400 68518
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:26:46] "GET / HTTP/1.0" 400 66769
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /info.php
+Bad Request: /
+[11/Aug/2022 22:26:50] "GET /?rest_route=/wp/v2/users/ HTTP/1.0" 400 67550
+[11/Aug/2022 22:26:50] "GET /info.php HTTP/1.0" 400 67067
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /.DS_Store
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+[11/Aug/2022 22:26:50] "GET /.DS_Store HTTP/1.0" 400 67078
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /.git/config
+Bad Request: /server-status
+Bad Request: /.env
+[11/Aug/2022 22:26:50] "GET /.git/config HTTP/1.0" 400 67100
+[11/Aug/2022 22:26:50] "GET /server-status HTTP/1.0" 400 67122
+Bad Request: /telescope/requests
+Bad Request: /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[11/Aug/2022 22:26:50] "GET /.env HTTP/1.0" 400 67023
+[11/Aug/2022 22:26:50] "GET /telescope/requests HTTP/1.0" 400 67177
+[11/Aug/2022 22:26:50] "GET /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.0" 400 68069
+Bad Request: /
+Bad Request: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[11/Aug/2022 22:26:50] "GET / HTTP/1.0" 400 67240
+[11/Aug/2022 22:26:50] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 400 67804
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /config.json
+[11/Aug/2022 22:26:51] "GET /config.json HTTP/1.0" 400 67100
+Bad Request: /login.action
+[11/Aug/2022 22:26:51] "GET /login.action HTTP/1.0" 400 67111
+Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[11/Aug/2022 22:27:04] "GET / HTTP/1.0" 400 66786
+[11/Aug/2022 22:27:30] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:27:30] "GET /favicon.ico HTTP/1.0" 404 3549
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:27:34] "GET / HTTP/1.0" 400 67967
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:27:35] "GET /favicon.ico HTTP/1.0" 400 67995
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:28:19] "GET / HTTP/1.0" 400 68380
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:28:21] "GET / HTTP/1.0" 400 68522
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /allauthlib
+[11/Aug/2022 22:28:36] "GET /allauthlib HTTP/1.0" 400 68977
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:28:37] "GET /favicon.ico HTTP/1.0" 400 68676
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:28:46] "GET / HTTP/1.0" 400 68823
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:28:47] "GET /favicon.ico HTTP/1.0" 400 68666
+/home/team83/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2022 - 22:24:14
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+1
+2
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:31:48] "GET / HTTP/1.0" 400 67165
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:32:19] "GET / HTTP/1.0" 400 68522
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:32:21] "GET / HTTP/1.0" 400 68384
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:32:30] "GET / HTTP/1.0" 400 67032
+[11/Aug/2022 22:32:55] "GET / HTTP/1.0" 200 9203
+Not Found: /img/Code Image.svg
+[11/Aug/2022 22:32:57] "GET /img/Code%20Image.svg HTTP/1.0" 404 3572
+[11/Aug/2022 22:34:37] "GET / HTTP/1.0" 200 9203
+Not Found: /img/Code Image.svg
+[11/Aug/2022 22:34:38] "GET /img/Code%20Image.svg HTTP/1.0" 404 3572
+Not Found: /logout
+[11/Aug/2022 22:34:47] "GET /logout HTTP/1.0" 404 3534
+[11/Aug/2022 22:34:56] "GET / HTTP/1.0" 200 9203
+Not Found: /img/Code Image.svg
+[11/Aug/2022 22:34:57] "GET /img/Code%20Image.svg HTTP/1.0" 404 3572
+[11/Aug/2022 22:35:08] "GET /accounts/logout HTTP/1.0" 301 0
+[11/Aug/2022 22:35:08] "GET /accounts/logout/ HTTP/1.0" 302 0
+Not Found: /home/
+[11/Aug/2022 22:35:08] "GET /home/ HTTP/1.0" 404 3531
+Not Found: //
+[11/Aug/2022 22:36:07] "GET // HTTP/1.0" 404 3519
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:36:12] "GET / HTTP/1.0" 400 68582
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:36:13] "GET / HTTP/1.0" 400 66827
+[11/Aug/2022 22:36:13] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /telescope/requests
+[11/Aug/2022 22:36:13] "GET /telescope/requests HTTP/1.0" 400 67235
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:36:13] "GET /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.0" 400 68127
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+[11/Aug/2022 22:36:13] "GET /?rest_route=/wp/v2/users/ HTTP/1.0" 400 67608
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Bad Request: /info.php
+Bad Request: /
+[11/Aug/2022 22:36:13] "GET / HTTP/1.0" 400 67298
+[11/Aug/2022 22:36:13] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 400 67862
+Bad Request: /.env
+Bad Request: /.git/config
+Bad Request: /.DS_Store
+Bad Request: /server-status
+[11/Aug/2022 22:36:13] "GET /info.php HTTP/1.0" 400 67125
+[11/Aug/2022 22:36:13] "GET /.env HTTP/1.0" 400 67081
+[11/Aug/2022 22:36:13] "GET /.DS_Store HTTP/1.0" 400 67136
+[11/Aug/2022 22:36:13] "GET /.git/config HTTP/1.0" 400 67158
+[11/Aug/2022 22:36:13] "GET /server-status HTTP/1.0" 400 67180
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /config.json
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+[11/Aug/2022 22:36:13] "GET /config.json HTTP/1.0" 400 67158
+Bad Request: /login.action
+[11/Aug/2022 22:36:13] "GET /login.action HTTP/1.0" 400 67169
+Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[11/Aug/2022 22:36:15] "GET / HTTP/1.0" 400 66786
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:36:21] "GET / HTTP/1.0" 400 68462
+[11/Aug/2022 22:36:39] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:36:39] "GET /favicon.ico HTTP/1.0" 404 3549
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:36:45] "GET / HTTP/1.0" 400 67967
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:36:46] "GET /favicon.ico HTTP/1.0" 400 67995
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:38:13] "GET / HTTP/1.0" 400 68424
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:38:19] "GET / HTTP/1.0" 400 68516
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:38:21] "GET / HTTP/1.0" 400 68522
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:38:22] "GET / HTTP/1.0" 400 68582
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:39:04] "GET / HTTP/1.0" 400 67032
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:39:05] "GET / HTTP/1.0" 400 67032
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:39:12] "GET / HTTP/1.0" 400 67404
+[11/Aug/2022 22:41:08] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:41:09] "GET / HTTP/1.0" 400 68960
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:41:10] "GET /favicon.ico HTTP/1.0" 400 68666
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /team5
+[11/Aug/2022 22:41:42] "GET /team5 HTTP/1.0" 400 68832
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:41:43] "GET /favicon.ico HTTP/1.0" 400 68575
+[11/Aug/2022 22:41:46] "GET / HTTP/1.0" 200 9220
+[11/Aug/2022 22:41:46] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:41:50] "GET /favicon.ico HTTP/1.0" 404 3549
+[11/Aug/2022 22:41:52] "GET /accounts/login/ HTTP/1.0" 200 3144
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:42:04] "GET / HTTP/1.0" 400 68733
+[11/Aug/2022 22:42:05] "GET /accounts/signup/ HTTP/1.0" 200 6260
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:42:05] "GET /favicon.ico HTTP/1.0" 400 68570
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:42:13] "GET / HTTP/1.0" 400 68580
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:42:22] "GET / HTTP/1.0" 400 68428
+[11/Aug/2022 22:43:15] "GET / HTTP/1.0" 200 9220
+[11/Aug/2022 22:43:56] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:46:07] "GET / HTTP/1.0" 400 69060
+Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:46:09] "GET /favicon.ico HTTP/1.0" 400 68741
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:46:20] "GET / HTTP/1.0" 400 68408
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:46:21] "GET / HTTP/1.0" 400 68408
+Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:48:01] "GET / HTTP/1.0" 400 69197
+Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:48:04] "GET /favicon.ico HTTP/1.0" 400 68741
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:48:13] "GET / HTTP/1.0" 400 68578
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:48:20] "GET / HTTP/1.0" 400 68900
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:48:22] "GET / HTTP/1.0" 400 68582
+[11/Aug/2022 22:49:22] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:49:25] "GET /favicon.ico HTTP/1.0" 404 3549
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:52:12] "GET / HTTP/1.0" 400 68881
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:52:14] "GET /favicon.ico HTTP/1.0" 400 68581
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:52:41] "GET / HTTP/1.0" 400 66673
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Bad Request: /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[11/Aug/2022 22:52:41] "GET / HTTP/1.0" 400 67144
+[11/Aug/2022 22:52:41] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 400 67708
+Bad Request: /
+[11/Aug/2022 22:52:41] "GET /s/3134382e3235312e362e323330/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.0" 400 67973
+Bad Request: /server-status
+[11/Aug/2022 22:52:41] "GET /?rest_route=/wp/v2/users/ HTTP/1.0" 400 67454
+Bad Request: /.git/config
+[11/Aug/2022 22:52:41] "GET /server-status HTTP/1.0" 400 67026
+Bad Request: /.env
+Bad Request: /telescope/requests
+[11/Aug/2022 22:52:41] "GET /.git/config HTTP/1.0" 400 67004
+[11/Aug/2022 22:52:41] "GET /.env HTTP/1.0" 400 66927
+[11/Aug/2022 22:52:41] "GET /telescope/requests HTTP/1.0" 400 67081
+Bad Request: /info.php
+Bad Request: /.DS_Store
+[11/Aug/2022 22:52:41] "GET /info.php HTTP/1.0" 400 66971
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+[11/Aug/2022 22:52:41] "GET /.DS_Store HTTP/1.0" 400 66982
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /login.action
+Bad Request: /config.json
+[11/Aug/2022 22:52:41] "GET /login.action HTTP/1.0" 400 67015
+[11/Aug/2022 22:52:41] "GET /config.json HTTP/1.0" 400 67004
+Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '${ip}:${port}'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[11/Aug/2022 22:52:50] "GET / HTTP/1.0" 400 66786
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:53:10] "GET / HTTP/1.0" 400 67967
+[11/Aug/2022 22:53:10] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /.git/config
+[11/Aug/2022 22:53:11] "GET /.git/config HTTP/1.0" 400 67338
+Not Found: /favicon.ico
+[11/Aug/2022 22:53:11] "GET /favicon.ico HTTP/1.0" 404 3549
+Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '148.251.6.230'. You may need to add '148.251.6.230' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:53:11] "GET /favicon.ico HTTP/1.0" 400 67995
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:54:41] "GET / HTTP/1.0" 400 68870
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:54:42] "GET /favicon.ico HTTP/1.0" 400 68570
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:55:10] "GET / HTTP/1.0" 400 68823
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:55:10] "GET /favicon.ico HTTP/1.0" 400 68666
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:56:06] "GET / HTTP/1.0" 400 68994
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 22:56:07] "GET /favicon.ico HTTP/1.0" 400 68700
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:56:13] "GET / HTTP/1.0" 400 68576
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:56:20] "GET / HTTP/1.0" 400 68522
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:56:21] "GET / HTTP/1.0" 400 68508
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 22:56:22] "GET / HTTP/1.0" 400 68582
+[11/Aug/2022 22:57:11] "GET /accounts/login/ HTTP/1.0" 200 3144
+[11/Aug/2022 22:59:04] "GET / HTTP/1.0" 200 9220
+Not Found: /favicon.ico
+[11/Aug/2022 22:59:05] "GET /favicon.ico HTTP/1.0" 404 3549
+[11/Aug/2022 22:59:17] "GET /accounts/signup/ HTTP/1.0" 200 6260
+[11/Aug/2022 22:59:27] "GET / HTTP/1.0" 200 9220
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:01:35] "GET / HTTP/1.0" 400 68881
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 23:01:48] "GET /favicon.ico HTTP/1.0" 400 68581
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:03:52] "GET / HTTP/1.0" 400 68881
+Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zurifordummies.com'. You may need to add 'zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 23:04:44] "GET /favicon.ico HTTP/1.0" 400 68581
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:06:13] "GET / HTTP/1.0" 400 68464
+Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.authwiki9be.zurifordummies.com'. You may need to add 'www.authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:06:22] "GET / HTTP/1.0" 400 68426
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:08:20] "GET / HTTP/1.0" 400 68404
+Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'authwiki9be.zurifordummies.com'. You may need to add 'authwiki9be.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:08:22] "GET / HTTP/1.0" 400 68508
+Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:09:05] "GET / HTTP/1.0" 400 68971
+Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:09:08] "GET / HTTP/1.0" 400 68971
+Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team51.zurifordummies.com'. You may need to add 'team51.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 23:09:27] "GET /favicon.ico HTTP/1.0" 400 68678
+Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dmateam32.zurifordummies.com'. You may need to add 'dmateam32.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:10:11] "GET / HTTP/1.0" 400 68894
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /
+[11/Aug/2022 23:10:12] "GET / HTTP/1.0" 400 68960
+Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/team83/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[11/Aug/2022 23:10:13] "GET /favicon.ico HTTP/1.0" 400 68666
