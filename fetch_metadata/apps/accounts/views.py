@@ -18,7 +18,7 @@ class CreateUserView(CreateView):
 class LoginUserView(views.LoginView):
     template_name = 'api/login.html'
     form_class = CustomUserLoginForm
-    next_page = 'api:userFileUpload'
+    next_page = 'file:userFileUpload'
 
 
 class LogoutUserView(views.LogoutView):

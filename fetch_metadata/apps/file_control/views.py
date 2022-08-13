@@ -17,7 +17,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     LoginRequiredMixin: Requires that the user has appropriate permissions
     """
     form_class = FileUploadForm
-    success_url = reverse_lazy('/file_detail/')
+    success_url = reverse_lazy('file:dashboard')
     template_name = 'file_control/dashboard.html'
 
 

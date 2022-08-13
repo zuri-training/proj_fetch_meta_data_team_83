@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <header class="header_container">
 <section id="top_head">
-  <div class="head_content">
+  <div class="head_content" style="padding-bottom: 10px;">
     <h1 class="head_headings content">Extract <span class="target_meta">Metadatas</span> from your Files</h1>
     <p class="head_text content">
       Extract metadata recorded behind your files, ranging from files size and
@@ -19,52 +19,53 @@
 <section id="first_layout">
   <h2 class="how_heading">How it Works</h2>
   <div class="layout_boxes">
-    <div class="box_1 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_upload.svg'%}"
-          alt=""
-          class="action_button"
-        />
-      </div>
-      <div class="box_text">
+      <div class="box_1 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_upload.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
+        <div class="box_text">
+          <div class="box_text">
+            <p class="first_layout_texts">
+            Upload files ranging from images, csv, pdf and json, etc. by clicking
+            the <strong>Browse</strong> button
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="box_2 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_forward.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
         <div class="box_text">
           <p class="first_layout_texts">
-          Upload files ranging from images, csv, pdf and json, etc. by clicking
-          the <strong>Browse</strong> button
-        </p>
+            Click on the <strong>Extract</strong> button to generate the metadatas
+            embedded in the selected file.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="box_2 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_forward.svg'%}"
-          alt=""
-          class="action_button"
-        />
+      <div class="box_3 boxes">
+        <div class="box_img">
+          <img
+            src="{% static 'img/document_copy.svg'%}"
+            alt=""
+            class="action_button"
+          />
+        </div>
+        <div class="box_text">
+          <p class="first_layout_texts">
+            Once generated, you are allow to <strong>Copy</strong> the extracted
+            metadatas to a clipboard
+          </p>
+        </div>
       </div>
-      <div class="box_text">
-        <p class="first_layout_texts">
-          Click on the <strong>Extract</strong> button to generate the metadatas
-          embedded in the selected file.
-        </p>
-      </div>
-    </div>
-    <div class="box_3 boxes">
-      <div class="box_img">
-        <img
-          src="{% static 'img/document_copy.svg'%}"
-          alt=""
-          class="action_button"
-        />
-      </div>
-      <div class="box_text">
-        <p class="first_layout_texts">
-          Once generated, you are allow to <strong>Copy</strong> the extracted
-          metadatas to a clipboard
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 <section id="second_layout">
@@ -163,8 +164,7 @@
       <h4 class="faq_quest">What are Meta Data?</h4>
       <div class="faq_body">
         <p class="faq_answers">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
-          tempora!
+          Metadatas are bits of information hidden inside files that make up its entirety.
         </p>
       </div>
       <hr class="hr_line">
@@ -175,7 +175,7 @@
       </h4>
       <div class="faq_body">
         <p class="faq_answers">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum.
+          PDF, JSON, CSV, MP3, MP4, JPEG, PNG...
         </p>
       </div>
       <hr class="hr_line">
@@ -184,7 +184,7 @@
 
       <h4 class="faq_quest">Can we share details gotten from the copied metadata file?</h4>
       <div class="faq_body">
-        <p class="faq_answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eveniet?</p>
+        <p class="faq_answers">Yes, you can decide to share details through to anyone.</p>
       </div>
       <hr class="hr_line">
     </div>
