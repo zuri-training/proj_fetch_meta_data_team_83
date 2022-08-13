@@ -9,6 +9,7 @@ from django.db.models.signals import pre_save, post_save
 from .tasks import create_metadata
 from .filechecker import ContentTypeRestrictedFileField
 from .storage import OverwriteStorage
+from .readfile import read_file
 
 # Create your models here.
 UserModel = get_user_model()
@@ -40,16 +41,23 @@ class File(models.Model):
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
 
-    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, content_types=content_types,storage=OverwriteStorage(), max_upload_size=max_upload_size)
+    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, storage=OverwriteStorage(), max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
     meta_file = models.FileField(upload_to = user_directory_path, null=True,blank=True)
+
+    def filename(self):
+        return os.path.basename(self.file.name)
+
+    def filesize(self):
+        file_list = read_file
+
 
     def get_absolute_url(self):
         """
         The url for each file
         Can be accessed through file_details
         """
-        return reverse('file_detail', kwargs={'pk': self.id})
+        return reverse('file:file_detail', kwargs={'pk': self.id})
 
     @property
     def get_file_full_path(self):
@@ -75,7 +83,7 @@ def create_meta_file(sender, **kwargs):
     metadatafile =  create_metadata.delay(file_instance.file.path)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(file_instance.file.path)[0] #file name without extension
-   
+
 
     output_file = root_file_name+file_ext #join the rootname and extension
     media_path = settings.MEDIA_ROOT #get the media root

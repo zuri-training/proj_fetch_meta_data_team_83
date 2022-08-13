@@ -1,0 +1,258 @@
+:root {
+  --color-primary: #003566;
+  --color-secondary: #ffd60a;
+  --color-primary-darker: #4d5054;
+  --color-secondary-darker: #22262a;
+}
+
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__container {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.9;
+  background-color: var(--color-primary);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--color-primary-darker);
+  font-weight: 400;
+  text-align: center;
+}
+
+/******* HOW IT WORKS ******/
+
+/* HEADER */
+.header__wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 500;
+  padding: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.json {
+  position: absolute;
+  top: 7.5rem;
+  left: 20.1rem;
+}
+
+.gif {
+  position: absolute;
+  top: 5.62rem;
+  left: 40.9rem;
+}
+
+.pdf {
+  position: absolute;
+  top: 7.5rem;
+  right: 20.5rem;
+}
+
+.csv {
+  position: absolute;
+  top: 15.62rem;
+  left: 13.12rem;
+}
+
+.png {
+  position: absolute;
+  left: 20.5rem;
+  bottom: 7.5rem;
+}
+
+.mp3 {
+  position: absolute;
+  bottom: 5.62rem;
+  left: 40.5rem;
+}
+
+.mp4 {
+  position: absolute;
+  bottom: 7.5rem;
+  right: 20.5rem;
+}
+
+.jpg {
+  position: absolute;
+  top: 15.62rem;
+  right: 13.12rem;
+}
+
+.ellipse {
+  height: 1.75rem;
+  width: 5.63rem;
+  border-radius: 50%;
+  border: 0.06rem solid var(--color-secondary);
+  position: absolute;
+}
+
+.one {
+  transform: rotate(15deg);
+  top: 7.5rem;
+  left: 18.75rem;
+}
+
+.two {
+  transform: rotate(-15deg);
+  top: 7.5rem;
+  left: 18.75rem;
+}
+
+.three {
+  transform: rotate(15deg);
+  top: 5.62rem;
+  left: 38.63rem;
+}
+
+.four {
+  transform: rotate(-15deg);
+  top: 5.62rem;
+  left: 38.63rem;
+}
+
+.five {
+  transform: rotate(15deg);
+  top: 7.5rem;
+  right: 18.75rem;
+}
+
+.six {
+  transform: rotate(-15deg);
+  top: 7.5rem;
+  right: 18.75rem;
+}
+
+.seven {
+  transform: rotate(15deg);
+  top: 15.62rem;
+  left: 11.25rem;
+}
+
+.eight {
+  transform: rotate(-15deg);
+  top: 15.62rem;
+  left: 11.25rem;
+}
+
+.nine {
+  transform: rotate(15deg);
+  left: 18.75rem;
+  bottom: 7.5rem;
+}
+
+.ten {
+  transform: rotate(-15deg);
+  left: 18.75rem;
+  bottom: 7.5rem;
+}
+
+.eleven {
+  transform: rotate(15deg);
+  bottom: 5.62rem;
+  left: 38.63rem;
+}
+
+.twelve {
+  transform: rotate(-15deg);
+  bottom: 5.62rem;
+  left: 38.63rem;
+}
+
+.thirteen {
+  transform: rotate(15deg);
+  bottom: 7.5rem;
+  right: 18.75rem;
+}
+
+.fourteen {
+  transform: rotate(-15deg);
+  bottom: 7.5rem;
+  right: 18.75rem;
+}
+
+.fifteen {
+  transform: rotate(15deg);
+  top: 15.62rem;
+  right: 11.25rem;
+}
+
+.sixteen {
+  transform: rotate(-15deg);
+  top: 15.62rem;
+  right: 11.25rem;
+}
+
+/* SECTION */
+.section {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section__title {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+img {
+  width: 22rem;
+  height: 25rem;
+  margin: 0 auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.features__description {
+  margin-bottom: 40px;
+}
+
+.features__no h1 {
+  margin: 0 auto;
+  border: 0.3rem solid;
+  background-color: var(--color-primary);
+  color: #fff;
+  width: 3.8rem;
+  padding: 0.7rem;
+  text-align: center;
+  margin: 3.8rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 3px 3px rgb(128 128 128 / 9%);
+}
+
+input {
+  margin-top: 1rem;
+  margin-bottom: 3.8rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 4rem;
+  font-size: inherit;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.32rem;
+  border-style: none;
+  box-shadow: 0px 0px 3px 3px rgb(128 128 128 / 9%);
+}
+
+/****** END OF HOW IT WORKS ******/

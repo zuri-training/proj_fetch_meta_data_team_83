@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{%static 'file_control/css/extraction_page.css'%}">
+    <link rel="stylesheet" href="{%static 'css/extraction_page.css'%}">
     <title>EXTRACTION PAGE</title>
 </head>
 
@@ -22,9 +22,9 @@
 
         <section class="metadata_information">
             <div class="metadata_details">
-               
 
-                {% for title,text in meta_data%}
+
+               {% for title,text in meta_data%}
                 <div class="data_detail">
                     {%if 'ExifTool Version Number' in title%}
                     {%elif 'Directory' in title%}
@@ -33,8 +33,8 @@
                     <p class="file_text">{{text}}</p>
                     {%endif%}
                 </div>
-                {%endfor%}
-             
+               {%endfor%}
+
                 <div class="data_detail">
                     <span class="file_header"> FILE NAME:</span>
                     <p class="file_text">A_Metadata_Approach_for_Building_Web_Application.pdf</p>
@@ -45,11 +45,11 @@
                     <p class="file_text">536 KB</p>
                 </div>
 
-               
+
             </div>
 
             <div class="div">
-                <img src="images/Rectangle_shape.png" alt="" class="extraction_file_img">
+                <img src="{%static 'img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
                 <div>
                     <input type="submit" value="Export" class="extraction_button extract-btn1">
                     <input type="submit" value="Share" class="extraction_button extract-btn2">
@@ -58,3 +58,35 @@
             </div>
         </section>
         </header>
+        {% comment %}  <script>$('.metadata-details')).onfocus(function() {
+    setTimeout(function() {
+                    var metadata = JSON.parse(response["metadata"]);
+                    $.ajax( {
+                  contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    type: "get",
+                                    url:'{% url "file:meta-detail" %}',
+                    success: function(response) {
+                     console.log("got some response")
+                     var metadata = JSON.parse(response["metadata"]);
+                      {% for title,text in meta_data%}
+                <div class="data_detail">
+                    {%if 'ExifTool Version Number' in title%}
+                    {%elif 'Directory' in title%}
+                    {%else%}
+                    <span class="file_header"> {{title}}:</span>
+                    <p class="file_text">{{text}}</p>
+                    {%endif%}
+                </div>
+                {%endfor%}
+
+
+                  },
+                  error: function(data) {
+                      console.log("down here")
+                      post_tables("error being thrown")
+                  }
+               });
+    }, 100);
+});
+</script> {%endcomment %}
