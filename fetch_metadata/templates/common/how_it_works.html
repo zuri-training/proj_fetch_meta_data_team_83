@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./how_it_works.css">
+    <link rel="stylesheet" href="{% static 'css/how_it_works.css'}">
     <title>HOW IT WORKS</title>
 </head>
 
@@ -65,11 +66,11 @@
                     </p>
                 </div>
 
-                <img src="./images/Loading.png" alt="a_picture_of_loading_files">
+                <img src="{% static 'img/Loading.png'%}" alt="a_picture_of_loading_files">
                 <!-- No 1 end -->
 
                 <!-- No 2 start -->
-                <img src="./images/Charts_and_graphs_analytics_on_mobile.png" alt="charts_graphs_analytics">
+                <img src="{% static 'img/Charts_and_graphs_analytics_on_mobile.png'%}" alt="charts_graphs_analytics">
 
 
                 <div class="features__feature">
@@ -97,12 +98,12 @@
                     </p>
                 </div>
 
-                <img src="./images/Searching_information_on_the_internet.png" alt="searching_info_on_the_internet">
+                <img src="{% static 'img/Searching_information_on_the_internet.png'%}" alt="searching_info_on_the_internet">
 
                 <!-- No 3 end -->
 
                 <!-- No 4 start -->
-                <img src="./images/Files_exchange_in_the_air_at_the_character.png" alt="files_exchange">
+                <img src="{% static 'img/Files_exchange_in_the_air_at_the_character.png'%}" alt="files_exchange">
 
 
                 <div class="features__feature">
@@ -132,7 +133,7 @@
                     </p>
                 </div>
 
-                <img src="./images/Downloading.png" alt="downloading_of_files">
+                <img src="{% static 'img/Downloading.png'%}" alt="downloading_of_files">
 
                 <!-- No 5 end -->
             </div>
