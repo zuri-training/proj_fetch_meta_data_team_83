@@ -1832,3 +1832,304 @@ Traceback (most recent call last):
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'team5.zurifordummies.com'. You may need to add 'team5.zurifordummies.com' to ALLOWED_HOSTS.
 Bad Request: /favicon.ico
 [11/Aug/2022 23:10:13] "GET /favicon.ico HTTP/1.0" 400 68666
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 16:13:09
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 16:30:49
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[14/Aug/2022 16:36:56] "GET / HTTP/1.1" 200 9200
+[14/Aug/2022 16:44:15] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:17:11] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 17:17:14] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 17:17:19] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:17:24] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:17:27] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:17:32] "GET / HTTP/1.0" 200 9200
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 34: 'endif'. Did you forget to register or load this tag?
+[14/Aug/2022 17:17:57] "GET /accounts/signup/ HTTP/1.0" 500 171947
+[14/Aug/2022 17:18:30] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:18:38] "GET / HTTP/1.0" 200 9200
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 34: 'endif'. Did you forget to register or load this tag?
+[14/Aug/2022 17:18:49] "GET /accounts/signup/ HTTP/1.0" 500 172106
+[14/Aug/2022 17:33:47] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:43:43] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 17:55:28] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 17:55:29] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 17:55:44] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 17:55:46] "POST /accounts/login/ HTTP/1.0" 200 3279
+[14/Aug/2022 17:55:49] "GET /accounts/login/ HTTP/1.0" 200 3144
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 34: 'endif'. Did you forget to register or load this tag?
+[14/Aug/2022 17:55:53] "GET /accounts/signup/ HTTP/1.0" 500 172721
+[14/Aug/2022 17:57:48] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 17:58:20] "POST /accounts/signup/ HTTP/1.0" 302 0
+[14/Aug/2022 17:58:20] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 17:58:30] "POST /accounts/login/ HTTP/1.0" 200 3279
+[14/Aug/2022 17:58:38] "POST /accounts/login/ HTTP/1.0" 200 3279
+[14/Aug/2022 17:58:48] "POST /accounts/login/ HTTP/1.0" 302 0
+[14/Aug/2022 17:58:49] "GET /dashboard/ HTTP/1.0" 302 0
+[14/Aug/2022 17:58:49] "GET /file/dashboard HTTP/1.0" 301 0
+Internal Server Error: /file/dashboard/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader_tags.py", line 122, in get_parent
+    raise TemplateSyntaxError(error_msg)
+django.template.exceptions.TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'base.html' variable.
+[14/Aug/2022 17:58:49] "GET /file/dashboard/ HTTP/1.0" 500 107038
+[14/Aug/2022 17:59:56] "GET /file/dashboard/ HTTP/1.0" 200 16360
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 17:59:56] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:00:38] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:01:07] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 18:01:08] "GET /favicon.ico HTTP/1.0" 404 3549
+Not Found: /favicon.ico
+[14/Aug/2022 18:01:18] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 18:01:43] "GET /file/dashboard/ HTTP/1.0" 200 16360
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:01:44] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:02:31] "GET / HTTP/1.0" 200 9200
+Internal Server Error: /docs/how_it_works
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 108, in get
+    self.object = self.get_object()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 46, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view HowItWorksView must be called with either an object pk or a slug in the URLconf.
+[14/Aug/2022 18:02:40] "GET /docs/how_it_works HTTP/1.0" 500 78997
+[14/Aug/2022 18:02:48] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:02:50] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:02:51] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:02:54] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:02:56] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:03:00] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 18:05:18] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:05:20] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 18:05:23] "GET / HTTP/1.0" 200 9200
+Internal Server Error: /docs/how_it_works
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 108, in get
+    self.object = self.get_object()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 46, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view HowItWorksView must be called with either an object pk or a slug in the URLconf.
+[14/Aug/2022 18:05:25] "GET /docs/how_it_works HTTP/1.0" 500 79632
+[14/Aug/2022 18:18:50] "GET /file/dashboard/ HTTP/1.0" 200 16952
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:18:50] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:18:59] "POST /file/dashboard/ HTTP/1.0" 200 16952
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:18:59] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:26:49] "GET / HTTP/1.0" 200 9200
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 16:36:44
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[14/Aug/2022 18:34:48] "POST /file/dashboard/ HTTP/1.0" 200 17048
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:34:48] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:34:53] "POST /file/dashboard/ HTTP/1.0" 200 17048
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:34:53] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 18:35:02] "POST /file/dashboard/ HTTP/1.0" 200 17048
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 18:35:02] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 18:27:26
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 18:54:15
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 18:54:26
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader

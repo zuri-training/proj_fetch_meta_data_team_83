@@ -21,15 +21,15 @@ from django.contrib.auth.decorators import login_required
 # @login_required
 # def dashboardview(request):
 #     context ={}
-  
+
 #     # add the dictionary during initialization
 #     form = FileUploadForm(request.POST or None)
 #     if form.is_valid():
 #         form.save()
-          
+
 #     context['form'] = form
 #     context["file_list"] = File.objects.filter(user=request.user)
-         
+
 #     return render(request, "common/dashboard.html", context)
 # upload files
 class FileCreateView(LoginRequiredMixin, CreateView):
@@ -49,7 +49,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         context = super().get_context_data(**kwargs)
         user = self.request.user
         # context["file_list"] = user.file.all()
-        # filelist = 
+        # filelist =
         context["file_list"] = File.objects.filter(user=self.request.user)
         return context
 

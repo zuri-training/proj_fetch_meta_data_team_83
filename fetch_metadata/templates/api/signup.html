@@ -30,6 +30,7 @@
                                   {% if form.non_field_errors %}
                                   <p class="text-error">{{ form.non_field_errors|striptags }}</p>
                                   {% endif %}
+                                  {%if form.username.errors %}
                                   <p class="text-error">{{ form.username.errors|striptags }}</p>
                                   {% endif %}
                                     <label for="{{form.username.id_for_label}}">{{form.username.label_tag}}</label>

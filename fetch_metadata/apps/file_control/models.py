@@ -49,8 +49,13 @@ class File(models.Model):
         return os.path.basename(self.file.name)
 
     def filesize(self):
-        file_list = read_file
-
+        pass
+    def file_extension(self):
+        pass
+    def filetype(self):
+        pass
+    def filedetails(self):
+        pass
 
     def get_absolute_url(self):
         """
