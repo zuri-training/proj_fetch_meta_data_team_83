@@ -26,13 +26,13 @@ header{
     align-items: center;
 }
 
-{% comment %} header p{
+header p{
     margin-left: 1.5em;
     padding: 1em;
     background-color: #444E53;
     color: white;
     border: 3px solid white;
-} {% endcomment %}
+}
 
 .nav__bar{
     display: flex;
