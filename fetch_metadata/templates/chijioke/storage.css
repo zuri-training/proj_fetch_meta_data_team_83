@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #003566;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* Styling of the navigation links */
+
+.right_container_header {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text {
+    color: #FFFFFF;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text:hover {
+    color: #FFD60A;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .search_field {
+    padding: .6rem;
+    font-style: italic;
+    border-radius: .2rem;
+    font-size: .5rem;
+    width: 12rem;
+    background-image: url(img/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #FFFFFF;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .right_logo {
+    width: 5rem;
+}
+
+.right_container_header .nav_container .right_nav .right_navlinks .show_photo {
+    height: 3rem;
+}
+
+/* Styling of the overall main container */
+
+.overall_main {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.overall_main .storage_texts {
+    color: #FFFFFF;
+    fill: solid;
+}
+
+/* Styling of the top container (storage top container) */
+
+.overall_main .top_storage {
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.overall_main .top_storage .storage_header {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Styling of the bottom container (storage bottom container) */
+
+.overall_main .bottom_storage {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.overall_main .bottom_storage .storage_sizes {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+
+/* Styling of the main sizes container */
+
+.overall_main .bottom_storage .storage_sizes .main_sizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .main_sizes .storage_button {
+    width: 10rem;
+    border: none;
+    background-color: #FFD60A;
+    color: #22262A;
+    Fill: Solid;
+    font-weight: 500;
+    font-size: .6rem;
+    padding: .5rem 1.1rem;
+    border-radius: .2rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .main_sizes .overall_sizes {
+    Fill: Solid;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Styling of the Storage images container */
+
+.overall_main .bottom_storage .storage_sizes .storage_img {
+    display: flex;
+    
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_images {
+    position: relative;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_images .first_circle {
+    position: absolute;
+    right: 30%;
+    top: 75%;
+    background: none;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_images .second_circle{
+    position: absolute;
+    right: 18%;
+    top: 29%;
+    background: none;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_images .storage_pointer1 {
+    position: absolute;
+    left: 80%;
+    top: 16%;
+    background: none;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_images .storage_pointer2 {
+    position: absolute;
+    top: 77%;
+    left: 68%;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .storage_circle {
+    width: 25rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .smaller_circles .small_circles {
+    width: 1rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .points_size .size_pointers {
+    width: 9rem;
+}
+
+
+/* Styling of the Split sizes container */
+
+.overall_main .bottom_storage .storage_sizes .storage_img .split_sizes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* flex-basis: ; */
+    /* justify-content: space-around; */
+    text-align: center;
+    margin: 3.5rem 4rem 3rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .split_sizes .used_size {
+    margin-top: 12rem;
+    margin-right: 5rem;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .split_sizes .free_size .free_head {
+    Fill: Solid;
+    font-weight: 500;
+}
+
+.overall_main .bottom_storage .storage_sizes .storage_img .split_sizes .used_size .used_head {
+    Fill: Solid;
+    font-weight: 500;
+}

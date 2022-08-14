@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');   
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button, span, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_container {
+    background-color: #003566;
+    padding-bottom: 4rem;
+}
+
+/* This style needs to be added to the page to give the slanting of the header    */
+
+/* Styling of the hr tags under header container */
+
+/* .metatrack_slant {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    overflow: hidden;
+}
+
+.header_borderline {
+    border: none;
+    height: 2.2rem;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+}
+
+.border-1 {
+    background: #2a5780;
+    transform: rotate(-5deg);
+    bottom: 6.1rem;
+    right: .6rem;
+}
+
+.border-2 {
+    background: #557899;
+    transform: rotate(-6deg);
+    bottom: 7.5rem;
+    right: .6rem;
+} */
+
+/* Styling of the header section (nav_bars) */
+
+#nav_bar {
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+#nav_bar .nav_left .metatrack_logo {
+    width: 5rem;
+}
+
+
+#nav_bar .nav_middle .middle_link {
+    margin-right: 5rem;
+    color: #FFFFFF;
+}
+
+#nav_bar .nav_middle .middle_link:hover {
+    cursor: pointer;
+    color: #FFD60A;
+}
+
+#nav_bar .nav_right .right_link {
+    padding: 0.5rem 2rem;
+    border: thin solid #FFD60A;
+    border-radius: .2rem;
+    color: #FFD60A;
+    background-color: #003566;
+    font-size: 1rem;
+}

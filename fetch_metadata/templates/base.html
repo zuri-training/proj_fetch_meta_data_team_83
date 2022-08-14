@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{% static 'css/index.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/landingpage.css'%}" rel="stylesheet" />
 
     {% block title %} {% if title %}
     <title>{{title}} | MetaTrack</title>
@@ -15,49 +15,55 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header_container">
-    <section id="nav_bar">
-      <div class="nav_left">
-      <a href="{%url 'common:home'%}"><img src="{% static 'img/metatrack_logo.svg'%}"
-      alt=""
-      class="metatrack_logo" /> </a>
-      </div>
-      <div class="nav_middle">
-        <a href="" class="middle_link">Home</a>
-        <a href="{%url 'common:how_it_works'%}" class="middle_link"
-          >How It Works</a
-        >
-        <a href="" class="middle_link">Services</a>
-        <a href="" class="middle_link">About Us</a>
-      </div>
+    <header class="header_container metatrack_slant">
+      <section id="nav_bar">
+            <div class="nav_left">
+              <a href="{%url 'common:home'%}"><img src="{% static 'img/metatrack_logo.svg'%}"
+              alt=""
+              class="metatrack_logo" /> </a>
+            </div>
+            <div class="nav_middle">
+                <a href="{%url 'common:home'%}" class="middle_link">Home</a>
+                <a href="{%url 'common:how_it_works'%}" class="middle_link"
+                  >How It Works</a
+                >
+                <a href="{%url 'common:services'%}" class="middle_link">Services</a>
+                <a href="{%url 'common:about_us'%}" class="middle_link">About Us</a>
+            </div>
 
-      {% if user.is_authenticated %}
-      <input
-      type="search"
-      name="Search"
-      id=""
-      placeholder="Search for files"
-      class="search_field"
-    />
-    <img src="img/Code Image.svg" class="show_photo" alt="" />
+            {% if user.is_authenticated %}
+              <input
+              type="search"
+              name="Search"
+              id=""
+              placeholder="Search for files"
+              class="search_field"
+              />
+              <img src="img/Code Image.svg" class="show_photo" alt="" />
 
-      {% else %}
-      <div class="nav_right">
-        <a href="{%url 'api:login'%}"
-          ><button class="right_link">Login To Account</button></a
-        >
-        <!-- <button class="right_link">Register</button> -->
-      </div>
-      {% endif %}
-    </section>
+            {% else %}
+              <div class="nav_right">
+                <a href="{%url 'api:login'%}"
+                  ><button class="right_link">Login To Account</button></a
+                >
+                <!-- <button class="right_link">Register</button> -->
+              </div>
+            {% endif %}
+      </section>
 
-    {% block hero %}
+      {% block hero %}
 
-    {% endblock %}
+      {% endblock %}
 
     </header>
     <!-- End of Header -->
+    <div class="slant1">
+			<hr class="header_borderline border-1" />
+		</div>
 
+		<div class=slant2>
+			<hr class="header_borderline border-2" />
+		</div>
     <!-- Main Body -->
     <main>{% block content %} {% endblock %}</main>
     <!-- End of Main Body -->
@@ -116,6 +122,6 @@
       </section>
     </footer>
     <!--End of footer-->
-    <script src="{% static 'index.js'%}" defer></script>
+    <script src="{% static 'js/index.js'%}" defer></script>
   </body>
 </html>

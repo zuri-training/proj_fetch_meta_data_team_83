@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<header class="header_container">
+{% extends 'base.html' %} {% load static %}
+{% block hero %}
 <section id="top_head">
   <div class="head_content">
     <h1 class="head_headings content">Extract <span class="target_meta">Metadatas</span> from your Files</h1>
@@ -44,10 +44,10 @@
     >
     {%endif%}
   </div>
-  <div class="head_img"></div>
+  <div class="head_img"><img src="{% static 'img/image_display.svg'%}" alt="" class="image_display" /></div>
   <!--this is for image-->
-</section>
-</header>
+</section> {% endblock %}
+{% block content %}
 <section id="first_layout">
   <h2 class="how_heading">How it Works</h2>
   <div class="layout_boxes">
@@ -60,7 +60,6 @@
         />
       </div>
       <div class="box_text">
-        <div class="box_text">
           <p class="first_layout_texts">
           Upload files ranging from images, csv, pdf and json, etc. by clicking
           the <strong>Browse</strong> button

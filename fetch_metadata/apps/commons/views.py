@@ -16,7 +16,7 @@ class HomeView(ListView):
 class DashboardView(RedirectView):
     pattern_name="file:userFileUpload"
 
-class HowItWorksView(DetailView):
+class HowItWorksView(ListView):
     model = Post
     template_name = 'common/how_it_works.html'
     
@@ -38,3 +38,12 @@ class DeleteDocumentationView(PermissionRequiredMixin, DeleteView):
     model = Post
     template_name = 'common/delete_post.html'
     success_url = reverse_lazy('home')
+
+
+class ServicePage(ListView):
+    model = Post
+    template_name = 'common/service.html'
+
+class AboutUs(ListView):
+    model = Post
+    template_name = 'common/about_us.html'
