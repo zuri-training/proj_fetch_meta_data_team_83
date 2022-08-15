@@ -30,12 +30,19 @@
 
 
             </div>
-
+{%load temple%}
             <div class="div">
-                <img src="{%static 'img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+                <img src="{{file.file.url}}" width="500" height="500"  class="extraction_file_img">
                 <div>
-                    <input type="submit" value="Export" class="extraction_button extract-btn1">
-                    <input type="submit" value="Share" class="extraction_button extract-btn2">
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn1">Download</button>
+                    </a>
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Share</button>
+                    </a>
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Embed</button>
+                    </a>
                 </div>
 
             </div>

@@ -4,7 +4,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView,ListView, DetailView
 from django.http import JsonResponse
 from django.core import serializers
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse
 from .forms import FileUploadForm
 from .models import File
 from .tasks import create_metadata
@@ -93,10 +93,17 @@ class FileListView(LoginRequiredMixin, ListView):
 
 #             metadata = read_file(request, path)
 #             context["meta_data"]= metadata
+def detail_view(request, pk):
+    files = get_object_or_404(File, pk=pk)
+    return render(request, 'file_control/file_success.html', context={'file': files})
 
-class FileSuccessView(LoginRequiredMixin, DetailView):
-    model = File
-    template_name = 'file_control/file_success.html'
+    
+
+# class FileSuccessView(LoginRequiredMixin, DetailView):
+#     model = File
+#     template_name = 'file_control/file_success.html'
+#     # def get_context_data(self, **kwargs):
+#     #     context = super().get_context_data(**kwargs)
 
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File

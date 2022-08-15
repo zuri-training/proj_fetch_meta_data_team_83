@@ -186,3 +186,4 @@ STATICFILES_DIRS = [
 # Celery settings
 CELERY_BROKER_URL = "redis://localhost:17718"
 CELERY_RESULT_BACKEND = "redis://localhost:17718"
+X_FRAME_OPTIONS = "SAMEORIGIN"

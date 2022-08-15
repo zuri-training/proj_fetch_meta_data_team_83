@@ -1,4 +1,4 @@
-import os,io
+import os, io, mimetypes
 from django.db import models
 from django.core.files import File as Filer
 from django.urls import reverse
@@ -37,7 +37,7 @@ def user_directory_path(instance, filename):
     """
 
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
-    return f'user_{instance.user.id}/{filename}'
+    return f'user_{instance.user.id}/{instance.file_ext()}/{filename}'
 class File(models.Model):
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
@@ -69,7 +69,18 @@ class File(models.Model):
     def get_file_full_path(self):
         return self.file.url
     
-    
+    def filename(self):
+
+        return os.path.basename(self.file.name)
+
+    def file_ext(self):
+        return os.path.splitext(self.file.name)[1]
+
+    def file_size(self):
+        return os.path.getsize(self.file.name)
+
+    def filetype(self):
+        return mimetypes.guess_type(self.file.url, strict=True) 
         
 
 

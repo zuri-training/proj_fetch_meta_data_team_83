@@ -28,6 +28,7 @@
                 <div class="data_detail">
                     {%if 'ExifTool Version Number' in title%}
                     {%elif 'Directory' in title%}
+                    {%elif 'File Permissions' in title%}
                     {%else%}
                     <span class="file_header"> {{title}}:</span>
                     <p class="file_text">{{text}}</p>
@@ -35,24 +36,28 @@
                 </div>
                {%endfor%}
 
-                <div class="data_detail">
-                    <span class="file_header"> FILE NAME:</span>
-                    <p class="file_text">A_Metadata_Approach_for_Building_Web_Application.pdf</p>
-                </div>
-
-                <div class="data_detail">
-                    <span class="file_header">FILE SIZE:</span>
-                    <p class="file_text">536 KB</p>
-                </div>
 
 
             </div>
 
             <div class="div">
-                <img src="{%static 'img/Rectangle_shape.png'%}" alt="" class="extraction_file_img">
+            {{file.filetype}}
+                {% if "image" in file.filetype%}
+                    <img src="{{file.file.url}}" width="500" height="500"  class="extraction_file_img">
+                {%else%}
+                    <iframe src="{{file.file.url}}">
+                {%endif%}
+
                 <div>
-                    <input type="submit" value="Export" class="extraction_button extract-btn1">
-                    <input type="submit" value="Share" class="extraction_button extract-btn2">
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn1">Download</button>
+                    </a>
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Share</button>
+                    </a>
+                    <a src="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Embed</button>
+                    </a>
                 </div>
 
             </div>
