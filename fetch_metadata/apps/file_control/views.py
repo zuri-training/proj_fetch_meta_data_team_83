@@ -40,16 +40,17 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     form_class = FileUploadForm
     # success_url = reverse_lazy('/file_detail/') #redirect the user to file details page
     template_name = 'file_control/dashboard.html'
-
+    
     def get_success_url(self):
-        print(self.object.id)
-        return reverse_lazy('file:file-detail', kwargs={'pk': self.object.id})
+        print(self.object.pk)
+        return reverse_lazy('file:file-detail', kwargs={'pk': self.object.pk})
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user
         # context["file_list"] = user.file.all()
         # filelist =
+        print(self.object.pk)
         context["file_list"] = File.objects.filter(user=self.request.user)
         return context
 
@@ -59,8 +60,8 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         self.object.user = self.request.user
 
         # get the instance of the file that will be used to create the metadata
-        # model_instance = File.objects.first().file
-        # print(model_instance)
+        model_instance = File.objects.first().file
+        print(model_instance)
 
         return super(FileCreateView, self).form_valid(form)
 

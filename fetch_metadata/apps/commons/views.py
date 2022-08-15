@@ -14,7 +14,8 @@ class HomeView(ListView):
     template_name = 'common/home.html'
 
 class DashboardView(RedirectView):
-    pattern_name="file:userFileUpload"
+    # pattern_name="file:userFileUpload"
+    pass
 
 class HowItWorksView(ListView):
     model = Post
