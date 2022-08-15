@@ -35,7 +35,8 @@
 						enctype="multipart/form-data"
 				         	/>
 						{% csrf_token %}
-                                                {%if forms.errors%}
+						{{form.as_p}}
+                                                {% comment %} {%if forms.errors%}
 						<div>{{errors}}</div>{%endif%}
                                                 <div class="buttons_stuff">
                                                 
@@ -43,7 +44,7 @@
 						class="browse_button" 
 						type="file" 
 						name="{{form.file.name}}" 
-						value="Browse..."/>
+						value="Browse..."/>{% endcomment %}
                                                 </div>
 						<div class="side_button">
 							<input id="submit"
@@ -53,7 +54,7 @@
 								class="extract_button"
 								name="submit"
 							/>
-						</div>
+						</div> 
 					</form>
                                         <!--end button class-->
 				</div>

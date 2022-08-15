@@ -50,7 +50,6 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         user = self.request.user
         # context["file_list"] = user.file.all()
         # filelist =
-        print(self.object.pk)
         context["file_list"] = File.objects.filter(user=self.request.user)
         return context
 
@@ -60,8 +59,8 @@ class FileCreateView(LoginRequiredMixin, CreateView):
         self.object.user = self.request.user
 
         # get the instance of the file that will be used to create the metadata
-        model_instance = File.objects.first().file
-        print(model_instance)
+        # model_instance = File.objects.first().file
+        # print(model_instance)
 
         return super(FileCreateView, self).form_valid(form)
 

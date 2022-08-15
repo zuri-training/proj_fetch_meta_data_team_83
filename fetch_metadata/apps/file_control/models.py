@@ -10,6 +10,7 @@ from .tasks import create_metadata
 from .filechecker import ContentTypeRestrictedFileField
 from .storage import OverwriteStorage
 from .readfile import read_file
+from .exifcreator import create_meta_file
 
 # Create your models here.
 UserModel = get_user_model()
@@ -41,21 +42,21 @@ class File(models.Model):
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE) #the user object that owns  file
 
-    file = ContentTypeRestrictedFileField(upload_to=user_directory_path, storage=OverwriteStorage(), max_upload_size=max_upload_size)
+    file = ContentTypeRestrictedFileField(upload_to=user_directory_path,content_types=content_types, max_upload_size=max_upload_size)
     created_at = models.DateTimeField(auto_now_add=True)
     meta_file = models.FileField(upload_to = user_directory_path, null=True,blank=True)
 
-    def filename(self):
-        return os.path.basename(self.file.name)
+    # def filename(self):
+    #     return os.path.basename(self.file.name)
 
-    def filesize(self):
-        pass
-    def file_extension(self):
-        pass
-    def filetype(self):
-        pass
-    def filedetails(self):
-        pass
+    # def filesize(self):
+    #     pass
+    # def file_extension(self):
+    #     pass
+    # def filetype(self):
+    #     pass
+    # def filedetails(self):
+    #     pass
 
     def get_absolute_url(self):
         """
@@ -85,7 +86,7 @@ def create_meta_file(sender, **kwargs):
     Create the metadata file and populate the database
     """
     file_instance = kwargs['instance']
-    metadatafile =  create_metadata.delay(file_instance.file.path)
+    metadatafile =  create_meta_file(file_instance.file.path)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(file_instance.file.path)[0] #file name without extension
 

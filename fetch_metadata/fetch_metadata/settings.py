@@ -171,7 +171,7 @@ REST_FRAMEWORK = {
 MEDIA_URL = '/media/'
 STATIC_ROOT = "/var/www/metatrack83/static/"
 
-MEDIA_ROOT = '/var/www/metatrack83/media/'
+# MEDIA_ROOT = '/var/www/metatrack83/media/'
 
 
 # Static files (CSS, JavaScript, Images)
