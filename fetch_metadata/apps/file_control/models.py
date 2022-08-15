@@ -1,4 +1,4 @@
-import os
+import os,io
 from django.db import models
 from django.core.files import File as Filer
 from django.urls import reverse
@@ -68,6 +68,10 @@ class File(models.Model):
     @property
     def get_file_full_path(self):
         return self.file.url
+    
+    
+        
+
 
 
 # @receiver(pre_save, sender=File)
@@ -80,19 +84,34 @@ class File(models.Model):
 #         path = file_instance.file.path
 #         os.remove(path)
 
-@receiver(post_save, sender=File)
-def create_meta_file(sender, **kwargs):
+@receiver(pre_save, sender=File)
+def save_meta_file(sender,**kwargs):
     """
     Create the metadata file and populate the database
     """
-    file_instance = kwargs['instance']
-    metadatafile =  create_meta_file(file_instance.file.path)
+    print(f"sender: {sender}")
+    print(f"kwargs: {kwargs}")
+    file_main = kwargs["instance"]
+    file_instance = user_directory_path(file_main, str(file_main.file))
+    # file_instance = str(kwargs["instance"].file)
+    # file_instance = kwargs["instance"].file.path
+    print(f"file_instance.file.path: {file_instance}")
+    print(f"file_main: {file_main}")
+    # create_meta_file(file_instance)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
-    root_file_name = os.path.splitext(file_instance.file.path)[0] #file name without extension
+    root_file_name = os.path.splitext(file_instance)[0] #file name without extension
 
 
     output_file = root_file_name+file_ext #join the rootname and extension
     media_path = settings.MEDIA_ROOT #get the media root
     final_output = os.path.relpath(output_file,media_path) #get the relative path
 
-    File.objects.filter(id=file_instance.id).update(meta_file=str(final_output))
+    # File.objects.filter(id=file_main.id).update(meta_file=str(final_output))
+    file_main.meta_file=(output_file)
+    print(f"outputfile: {output_file}")
+    print(f"outputfilewithjoin: {os.path.join(media_path,output_file)}")
+    # create_meta_file(str(os.path.join(media_path,output_file)))
+
+@receiver(post_save, sender=File)
+def make_meta(sender, **kwargs):
+    create_metadata.delay(kwargs['instance'].file.path)

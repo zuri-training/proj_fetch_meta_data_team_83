@@ -43,7 +43,7 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     
     def get_success_url(self):
         print(self.object.pk)
-        return reverse_lazy('file:file-detail', kwargs={'pk': self.object.pk})
+        return reverse_lazy('file:file-success', kwargs={'pk': self.object.pk})
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -57,11 +57,12 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         self.object = form.save(commit=False)
         self.object.user = self.request.user
+        
 
         # get the instance of the file that will be used to create the metadata
         # model_instance = File.objects.first().file
         # print(model_instance)
-
+        
         return super(FileCreateView, self).form_valid(form)
 
     #create the exif file
@@ -93,6 +94,9 @@ class FileListView(LoginRequiredMixin, ListView):
 #             metadata = read_file(request, path)
 #             context["meta_data"]= metadata
 
+class FileSuccessView(LoginRequiredMixin, DetailView):
+    model = File
+    template_name = 'file_control/file_success.html'
 
 class FileDetailView(LoginRequiredMixin, DetailView):
     model = File

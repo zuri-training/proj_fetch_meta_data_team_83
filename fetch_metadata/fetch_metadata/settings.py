@@ -169,9 +169,10 @@ REST_FRAMEWORK = {
 
 #Media files (uploaded files)
 MEDIA_URL = '/media/'
-STATIC_ROOT = "/var/www/metatrack83/static/"
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
-# MEDIA_ROOT = '/var/www/metatrack83/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
 
 # Static files (CSS, JavaScript, Images)
