@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header_container metatrack_slant">
+    <header class="header_container">
       <section id="nav_bar">
             <div class="nav_left">
               <a href="{%url 'common:home'%}"><img src="{% static 'img/metatrack_logo.svg'%}"
@@ -40,7 +40,6 @@
               placeholder="Search for files"
               class="search_field"
               />
-              <img src="img/Code Image.svg" class="show_photo" alt="" />
 
             {% else %}
               <div class="nav_right">
@@ -53,7 +52,9 @@
       </section>
 
       {% block hero %}
-
+      {%block image%}
+     
+      {% endblock %}
       {% endblock %}
       
       {% comment %} {% if user.is_authenticated %}
@@ -117,17 +118,17 @@
 
         {%endblock%}
       {% endif %} {% endcomment %}
-        
+      
 
     </header>
     <!-- End of Header -->
-    <div class="slant1">
+    {% comment %} <div class="slant1">
 			<hr class="header_borderline border-1" />
 		</div>
 
 		<div class=slant2>
 			<hr class="header_borderline border-2" />
-		</div>
+		</div> {% endcomment %}
     <!-- Main Body -->
     <main>{% block content %} {% endblock %}</main>
     <!-- End of Main Body -->

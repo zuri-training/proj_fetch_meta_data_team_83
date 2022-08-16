@@ -12,22 +12,23 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 }
 
 .header_container {
-    background-color: #003566;
+    /* display: flex;   */
+    height:auto;
+    background: linear-gradient(-10deg, transparent 0 35%, #557899 0 37.5%, #2a5780 0% 40%, #003566 20% 100%);
+    height: fit-content;
     padding-bottom: 4rem;
+    
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
 
 /* Styling of the hr tags under header container */
 
-.metatrack_slant {
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-    overflow: hidden;
-}
 
 .header_borderline {
     border: none;
     height: 2.2rem;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%); */
 }
 
 .border-1 {
@@ -86,15 +87,17 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 #top_head {
     max-width: 90%;
     margin: 0 auto;
-    padding-top: 2.5rem;
+    /* padding-top: 2.5rem; */
     display: flex; 
     justify-content: space-between;
  
 }
 
 #top_head .head_content {
+    display: flex;
+    flex-direction: column;
     max-width: 40%;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 #top_head .head_content .content {
@@ -103,7 +106,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 }
 
 #top_head .head_content .head_headings {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #FFFFFF;
 }
 

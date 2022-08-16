@@ -1,20 +1,14 @@
-<!DOCTYPE html>
+{%extends 'base.html'%}
 {% load static %}
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{% static 'css/how_it_works.css'}">
-    <title>HOW IT WORKS</title>
-</head>
 
-<body>
-    <header class="header__container">
+
+
         <!-- Insert Nav links -->
-        <section class="header__wrapper">
+{%block hero%}
+<div class = "header_container">
+<section class="header__wrapper">
+
             <div class="header__title">
                 <h1>We extract metadatas found in<br />files of any format</h1>
                 <span class="json">JSON</span>
@@ -44,8 +38,14 @@
                 <div class="ellipse sixteen"></div>
             </div>
         </section>
-    </header>
-    <main>
+    </div>
+{%endblock%}
+   
+{% block content %}
+{% block css %}
+<link href="{% static 'css/how_it_works.css'%}" rel="stylesheet" />
+{% endblock %}
+
         <section class="section">
             <div class="section__title">
                 <h1 class="section__header">Extracting metadata from your first Files?</h1>
@@ -142,7 +142,4 @@
                 <input type="submit" value="Extract Metadata">
             </div>
         </section>
-    </main>
-</body>
-
-</html>
+{% endblock %}

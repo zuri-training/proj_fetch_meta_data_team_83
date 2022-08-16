@@ -1,6 +1,10 @@
 {% extends 'base.html' %} {% load static %}
 
 {% block hero %}
+{% block image %}
+
+<img src="img/Code Image.svg" class="show_photo" alt="" />
+{%endblock%}
 <section id="top_head">
   <div class="head_content">
     <h1 class="head_headings content">Extract <span class="target_meta">Metadatas</span> from your Files</h1>
@@ -66,8 +70,8 @@
       </div>
       <div class="box_text">
         <p class="first_layout_texts">
-          Once generated, you are allow to <strong>Copy</strong> the extracted
-          metadatas to a clipboard
+          Once generated, you are allow to <strong>Download</strong> the extracted
+          metadatas in a <code>.mttrck</code> format, and open it with any text editor of your choice
         </p>
       </div>
     </div>
