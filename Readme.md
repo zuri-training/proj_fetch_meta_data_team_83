@@ -9,7 +9,7 @@ Metatrack is a project executed by team 83 in the 2022 cohort of Zuri's training
 - [What is Metatrack?](#what-is-meta-track)
 - [Is it necessary?](#is-it-necessary)
 - [Tech Stack](#tech-stack)
-- [Features](#how-will-it-benefit-you)
+- [Features And Benefits](#features-and-benefits)
 - [How to use Metatrack](#how-to-use-metatrack)
 - [Special Links](#special-links)
 - [How to test the app on your local machine](#run-the-app-in-your-local-machine)
@@ -33,7 +33,7 @@ If you are a Photographer, Journalist, Lawyer, NFT and Web 3 enthusiast, program
 
 This project was designed with [Figma and Figjam](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494), and built with HTML, CSS, django and postgresql database.
 
-### How will it benefit you
+### Features And Benefits
 
 The metatrack project has some amazing feature of immense benefit and they include:
 
