@@ -1,6 +1,6 @@
 # Project_Fetch_Metadata_Team_83
 
-# [MetaTrack](metatrack_logo.svg)<br>
+# ![MetaTrack](metatrack_logo.svg)<br>
 
 Metatrack is a project executed by team 83 in the 2022 cohort of Zuri's training..
 
