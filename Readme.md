@@ -1,6 +1,6 @@
 # Project_Fetch_Metadata_Team_83
 
-# ![MetaTrack-logo](metatrack_logo.svg) <br>Metatrack<br>
+# [![MetaTrack-logo](metatrack_logo.svg)](https://metatrack.zurifordummies.com)<br>Metatrack<br>
 
 Metatrack is a project executed by team 83 in the 2022 cohort of Zuri's training..
 
@@ -22,7 +22,7 @@ Metatrack is a project executed by team 83 in the 2022 cohort of Zuri's training
 Metatrack is a Web Application for saving digital files and extracting Metadata of those files.
 You also have an option to save, export, download, share and embed in your own website.
 
-To learn more about metadata and metatrack, [read our documentation](metatrack.herokuapp.com/documentation)
+To learn more about metadata and metatrack, [read our documentation](https://metatrack.herokuapp.com/documentation)
 
 ### Is it necessary
 
@@ -65,13 +65,13 @@ Programmers can easily embed generated metadata into a website’s code.
 
 ## Special Links
 
-#### [Project Documentation]().
+#### [Project Documentation](https://metatrack.zurifordummies/documentation).
 
 #### [Database Schema Diagram](https://www.figma.com/file/fIeIf2BakTUAXfUTv9EFnx/Team-83-DATABASE-SCHEMA?node-id=0%3A1).
 
 #### See our [design on Figma](https://www.figma.com/file/KyMXrf2whjJerytHr8occj/Meta-Data-Website?node-id=127%3A1494)
 
-#### Go to the website [here](metatrack.zurifordummies.com) and [here](metatrack.herokuapp.com)
+#### Go to the website [here](https://metatrack.zurifordummies.com) and [here](https://metatrack.herokuapp.com)
 
 ### Run the app in your local machine
 
@@ -102,8 +102,11 @@ These are some of the apps that should be installed in your local machine for a 
 
     1. Go to [postgresql website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and download postgresql database version 13.7 for uniformity
     2. Install with adminstrator priviledges and set your superuser password
-    3. open pgAdmin 4<br><br> ![pgAdmin](pgAdmin1.gif)<br><br>
-      - click server, and right click you PostgreSQL version
+    3. open pgAdmin 4
+    <br><br>
+    ![pg admin signin](pgAdmin1.gif)
+    <br><br>
+     - click server, and right click you PostgreSQL version
      - create new database and input your superuser password
 
 4. Create a `.env` file and type the following <br>
@@ -179,27 +182,27 @@ To [ingressive for good and zuri team](https://training.zuri.team/) for the trai
 
 Our team is made up of wonderful people, who all cotributed to this project to make it successful
 
-1. [Idimmachukwu Okoro](github.com/idimmusix) Team Lead/Backend Developer
-2. [Victoria Oladosu-Theverifiedvee](github.com/theverifiedvee) Assistant Team Lead/Product Designer
-3. [Oluwatobiloba Bamisebi](github.com/oluwatobiloba1) Documenter/Backend Developer
-4. [Chijioke Chibuike](github.com/chisquare7) Frontend Team Lead
-5. [Regina Onwuachumba](github.com/onwuachumba) Frontend Developer/Team Motivator
-6. [Abigail Agarin](github.com/abbiagarin) Frontend Developer/Assitant Documenter
-7. [Adeyeni Joseph Damilola](github.com/dvrmvc) Product Designer
-8. [Naandam Dariem](github.com/dariemjnr) Frontend Developer
-9. [Tobi Emmanuel](github.com/thobiy) Backend Developer
-10. [Yusuff Olatunji Sikiru](github.com/seek-techs) Backend Developer
-11. [Miracle Anyanwu](github.com/pyth0nkod3r) Backend Developer
-12. [Joshua](github.com/joshthefullstack) Frontend Developer
-13. [Omowumi Ishola](github.com/omowumiishola) Backend Developer
-    . [Opeyemi Mulkkah](github.com/horpehyemmy) Product Designer
-14. [Ottah Blessing Oghenewarhe](github.com/moblessing) Product Designer
-15. [Adebiyi Peace](github.com/adebiyipeace) Product Designer
-16. [Chinedu](github.com/edujuventus) Product Designer
-17. [Inamu Grace Osina](github.com/osina91) Product Designer
-18. [Ajadi Muibat Taiwo](github.com/muhibbah) Product Designer
-19. [Tinux](github.com/tinux001) Product Designer
-20. [Atinuke Yewande](github.com/ye-wande) Product Designer
+1. [Idimmachukwu Okoro](https://github.com/idimmusix) Team Lead/Backend Developer
+2. [Victoria Oladosu-Theverifiedvee](https://github.com/theverifiedvee) Assistant Team Lead/Product Designer
+3. [Oluwatobiloba Bamisebi](https://github.com/oluwatobiloba1) Documenter/Backend Developer
+4. [Chijioke Chibuike](https://github.com/chisquare7) Frontend Team Lead
+5. [Regina Onwuachumba](https://github.com/onwuachumba) Frontend Developer/Team Motivator
+6. [Abigail Agarin](https://github.com/abbiagarin) Frontend Developer/Assitant Documenter
+7. [Adeyeni Joseph Damilola](https://github.com/dvrmvc) Product Designer
+8. [Naandam Dariem](https://github.com/dariemjnr) Frontend Developer
+9. [Tobi Emmanuel](https://github.com/thobiy) Backend Developer
+10. [Yusuff Olatunji Sikiru](https://github.com/seek-techs) Backend Developer
+11. [Miracle Anyanwu](https://github.com/pyth0nkod3r) Backend Developer
+12. [Joshua](https://github.com/joshthefullstack) Frontend Developer
+13. [Omowumi Ishola](https://github.com/omowumiishola) Backend Developer
+    . [Opeyemi Mulkkah](https://github.com/horpehyemmy) Product Designer
+14. [Ottah Blessing Oghenewarhe](https://github.com/moblessing) Product Designer
+15. [Adebiyi Peace](https://github.com/adebiyipeace) Product Designer
+16. [Chinedu](https://github.com/edujuventus) Product Designer
+17. [Inamu Grace Osina](https://github.com/osina91) Product Designer
+18. [Ajadi Muibat Taiwo](https://github.com/muhibbah) Product Designer
+19. [Tinux](https://github.com/tinux001) Product Designer
+20. [Atinuke Yewande](https://github.com/ye-wande) Product Designer
 
 ### License
 
