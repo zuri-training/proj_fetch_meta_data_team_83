@@ -6,7 +6,7 @@
 }
 
 /* GENERAL SETTINGS */
-* {
+.section, .header__title {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,15 +15,15 @@
 .header__container {
   font-family: "Poppins", sans-serif;
   line-height: 1.9;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary); 
 }
 
-h1 {
+.section h1, .header__title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-p {
+.section p, .header__title p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: var(--color-primary-darker);
@@ -47,55 +47,55 @@ p {
   position: relative;
 }
 
-.json {
+.header__title .json {
   position: absolute;
   top: 7.5rem;
   left: 20.1rem;
 }
 
-.gif {
+.header__title .gif {
   position: absolute;
   top: 5.62rem;
   left: 40.9rem;
 }
 
-.pdf {
+.header__title .pdf {
   position: absolute;
   top: 7.5rem;
   right: 20.5rem;
 }
 
-.csv {
+.header__title .csv {
   position: absolute;
   top: 15.62rem;
   left: 13.12rem;
 }
 
-.png {
+.header__title .png {
   position: absolute;
   left: 20.5rem;
   bottom: 7.5rem;
 }
 
-.mp3 {
+.header__title .mp3 {
   position: absolute;
   bottom: 5.62rem;
   left: 40.5rem;
 }
 
-.mp4 {
+.header__title .mp4 {
   position: absolute;
   bottom: 7.5rem;
   right: 20.5rem;
 }
 
-.jpg {
+.header__title .jpg {
   position: absolute;
   top: 15.62rem;
   right: 13.12rem;
 }
 
-.ellipse {
+.header__title .ellipse {
   height: 1.75rem;
   width: 5.63rem;
   border-radius: 50%;
@@ -103,97 +103,97 @@ p {
   position: absolute;
 }
 
-.one {
+.header__title .one {
   transform: rotate(15deg);
   top: 7.5rem;
   left: 18.75rem;
 }
 
-.two {
+.header__title .two {
   transform: rotate(-15deg);
   top: 7.5rem;
   left: 18.75rem;
 }
 
-.three {
+.header__title .three {
   transform: rotate(15deg);
   top: 5.62rem;
   left: 38.63rem;
 }
 
-.four {
+.header__title .four {
   transform: rotate(-15deg);
   top: 5.62rem;
   left: 38.63rem;
 }
 
-.five {
+.header__title .five {
   transform: rotate(15deg);
   top: 7.5rem;
   right: 18.75rem;
 }
 
-.six {
+.header__title .six {
   transform: rotate(-15deg);
   top: 7.5rem;
   right: 18.75rem;
 }
 
-.seven {
+.header__title .seven {
   transform: rotate(15deg);
   top: 15.62rem;
   left: 11.25rem;
 }
 
-.eight {
+.header__title .eight {
   transform: rotate(-15deg);
   top: 15.62rem;
   left: 11.25rem;
 }
 
-.nine {
+.header__title .nine {
   transform: rotate(15deg);
   left: 18.75rem;
   bottom: 7.5rem;
 }
 
-.ten {
+.header__title .ten {
   transform: rotate(-15deg);
   left: 18.75rem;
   bottom: 7.5rem;
 }
 
-.eleven {
+.header__title .eleven {
   transform: rotate(15deg);
   bottom: 5.62rem;
   left: 38.63rem;
 }
 
-.twelve {
+.header__title .twelve {
   transform: rotate(-15deg);
   bottom: 5.62rem;
   left: 38.63rem;
 }
 
-.thirteen {
+.header__title .thirteen {
   transform: rotate(15deg);
   bottom: 7.5rem;
   right: 18.75rem;
 }
 
-.fourteen {
+.header__title .fourteen {
   transform: rotate(-15deg);
   bottom: 7.5rem;
   right: 18.75rem;
 }
 
-.fifteen {
+.header__title .fifteen {
   transform: rotate(15deg);
   top: 15.62rem;
   right: 11.25rem;
 }
 
-.sixteen {
+.header__title .sixteen {
   transform: rotate(-15deg);
   top: 15.62rem;
   right: 11.25rem;
@@ -210,7 +210,7 @@ p {
   text-align: center;
 }
 
-img {
+.section img {
   width: 22rem;
   height: 25rem;
   margin: 0 auto;
@@ -242,7 +242,7 @@ img {
   box-shadow: 0px 0px 3px 3px rgb(128 128 128 / 9%);
 }
 
-input {
+.section input {
   margin-top: 1rem;
   margin-bottom: 3.8rem;
   background-color: var(--color-primary);

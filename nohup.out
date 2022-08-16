@@ -2133,3 +2133,738 @@ Django version 4.1, using settings 'fetch_metadata.settings'
 Starting development server at http://0.0.0.0:17717/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
+[14/Aug/2022 19:03:39] "GET / HTTP/1.0" 200 9750
+Not Found: /img/Code Image.svg
+[14/Aug/2022 19:03:40] "GET /img/Code%20Image.svg HTTP/1.0" 404 3572
+[14/Aug/2022 19:16:53] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 19:32:26] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 19:32:38] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 19:33:18] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 20:56:49] "POST /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 20:56:49] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 20:57:25] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 20:57:27] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 21:11:10] "GET /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 21:11:10] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 21:19:32] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 21:19:39] "GET /favicon.ico HTTP/1.0" 404 3553
+[14/Aug/2022 23:15:50] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 23:16:05] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 23:17:47] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 23:17:50] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 23:17:53] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:18:04] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[14/Aug/2022 23:18:09] "GET /favicon.ico HTTP/1.0" 404 3549
+[14/Aug/2022 23:18:29] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:18:29] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 23:18:52] "POST /accounts/signup/ HTTP/1.0" 200 6457
+[14/Aug/2022 23:19:02] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 23:23:24] "HEAD / HTTP/1.0" 200 9200
+[14/Aug/2022 23:23:24] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 23:28:40] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 23:29:11] "POST /accounts/signup/ HTTP/1.0" 302 0
+[14/Aug/2022 23:29:12] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:29:43] "POST /accounts/login/ HTTP/1.0" 302 0
+[14/Aug/2022 23:29:43] "GET /dashboard/ HTTP/1.0" 302 0
+[14/Aug/2022 23:29:43] "GET /file/dashboard HTTP/1.0" 301 0
+[14/Aug/2022 23:29:44] "GET /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 23:29:44] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 23:30:36] "GET / HTTP/1.0" 200 9200
+[14/Aug/2022 23:30:41] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:31:02] "POST /accounts/login/ HTTP/1.0" 200 3274
+[14/Aug/2022 23:31:20] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:31:24] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[14/Aug/2022 23:32:25] "POST /accounts/signup/ HTTP/1.0" 302 0
+[14/Aug/2022 23:32:25] "GET /accounts/login/ HTTP/1.0" 200 3144
+[14/Aug/2022 23:32:39] "POST /accounts/login/ HTTP/1.0" 302 0
+[14/Aug/2022 23:32:39] "GET /dashboard/ HTTP/1.0" 302 0
+[14/Aug/2022 23:32:40] "GET /file/dashboard HTTP/1.0" 301 0
+[14/Aug/2022 23:32:40] "GET /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 23:32:40] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 23:33:35] "POST /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 23:33:35] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 23:34:12] "POST /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 23:34:13] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 23:34:18] "GET /file/dashboard/ HTTP/1.0" 200 17224
+Not Found: /file/dashboard/img/Code Image.svg
+[14/Aug/2022 23:34:18] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4057
+[14/Aug/2022 23:34:24] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 03:45:47] "GET / HTTP/1.0" 200 9200
+Not Found: /favicon.ico
+[15/Aug/2022 03:45:48] "GET /favicon.ico HTTP/1.0" 404 3549
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/commons/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 14, 2022 - 18:54:28
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Aug/2022 04:13:07] "GET /file/dashboard/ HTTP/1.0" 200 17606
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 04:13:07] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4403
+[15/Aug/2022 04:13:10] "GET /file/dashboard/ HTTP/1.0" 200 17606
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 04:13:11] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4403
+[15/Aug/2022 04:14:46] "GET /file/dashboard/ HTTP/1.0" 200 17606
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 04:14:46] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4403
+[15/Aug/2022 04:15:00] "POST /file/dashboard/ HTTP/1.0" 200 17606
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 04:15:01] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4403
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/commons/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2022 - 04:12:23
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Aug/2022 08:02:20] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 08:02:21] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 08:03:07] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 08:03:08] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 08:03:17] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 08:09:46] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 08:09:48] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 08:09:56] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 08:10:01] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:28:53] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 08:28:56] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 08:29:21] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:29:27] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 08:29:30] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:29:53] "POST /accounts/login/ HTTP/1.0" 200 3275
+[15/Aug/2022 08:30:07] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:30:57] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 08:30:57] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:31:11] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 08:31:11] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 08:31:11] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 08:31:12] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 08:31:12] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 08:35:59] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 08:36:18] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 08:36:29] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:38:31] "POST /accounts/login/ HTTP/1.0" 200 3282
+Internal Server Error: /accounts/password_reset/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: api/password_reset.html
+[15/Aug/2022 08:38:55] "GET /accounts/password_reset/ HTTP/1.0" 500 81359
+Internal Server Error: /accounts/password_reset/
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: api/password_reset.html
+[15/Aug/2022 08:39:00] "GET /accounts/password_reset/ HTTP/1.0" 500 81496
+[15/Aug/2022 08:39:05] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:39:19] "POST /accounts/login/ HTTP/1.0" 200 3282
+[15/Aug/2022 08:39:38] "POST /accounts/login/ HTTP/1.0" 200 3282
+[15/Aug/2022 08:39:42] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:39:52] "POST /accounts/login/ HTTP/1.0" 200 3282
+[15/Aug/2022 08:39:56] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:40:18] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 08:41:00] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 08:41:01] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:41:45] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 08:41:53] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 08:41:53] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 08:41:54] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 08:41:54] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 08:41:54] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 08:43:03] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 08:43:03] "GET /file/1 HTTP/1.0" 200 1352
+[15/Aug/2022 08:43:13] "GET /file/1/view HTTP/1.0" 200 9756
+[15/Aug/2022 09:38:35] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 09:38:37] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 09:38:38] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 09:38:52] "POST /accounts/login/ HTTP/1.0" 200 3288
+[15/Aug/2022 09:39:05] "POST /accounts/login/ HTTP/1.0" 200 3288
+[15/Aug/2022 09:45:15] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 09:45:17] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 09:46:02] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 09:46:02] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 09:46:18] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 09:46:18] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 09:46:18] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 09:46:19] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 09:46:19] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 09:46:46] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 09:46:46] "GET /file/2 HTTP/1.0" 200 1352
+Internal Server Error: /file/2/view
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 118, in get_context_data
+    metadata = read_file(path)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/readfile.py", line 11, in read_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_7/August 1st 2022 End_of_shift.mttrck'
+[15/Aug/2022 09:46:49] "GET /file/2/view HTTP/1.0" 500 88519
+[15/Aug/2022 09:47:05] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 09:47:17] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 09:47:17] "GET /file/3 HTTP/1.0" 200 1352
+[15/Aug/2022 09:47:19] "GET /file/3/view HTTP/1.0" 200 8060
+[15/Aug/2022 09:47:22] "GET /accounts/login HTTP/1.0" 301 0
+[15/Aug/2022 09:47:22] "GET /accounts/login/ HTTP/1.0" 200 3144
+Not Found: /favicon.ico
+[15/Aug/2022 09:47:24] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 10:03:11] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 10:03:12] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 10:03:30] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 10:03:31] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+Not Found: /favicon.ico
+[15/Aug/2022 11:40:16] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 14:36:20] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 14:36:22] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+Not Found: /favicon.ico
+[15/Aug/2022 14:36:25] "GET /favicon.ico HTTP/1.0" 404 3895
+Not Found: /logout
+[15/Aug/2022 14:36:37] "GET /logout HTTP/1.0" 404 3880
+[15/Aug/2022 14:36:48] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 14:36:48] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 14:37:01] "GET /admin HTTP/1.0" 301 0
+[15/Aug/2022 14:37:02] "GET /admin/ HTTP/1.0" 302 0
+[15/Aug/2022 14:37:02] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2389
+[15/Aug/2022 14:41:46] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2559
+[15/Aug/2022 14:42:00] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2569
+[15/Aug/2022 14:42:20] "GET /accounts/logout HTTP/1.0" 301 0
+[15/Aug/2022 14:42:20] "GET /accounts/logout/ HTTP/1.0" 302 0
+Not Found: /home/
+[15/Aug/2022 14:42:21] "GET /home/ HTTP/1.0" 404 3877
+[15/Aug/2022 14:42:27] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 14:46:55] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 14:46:59] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 14:47:21] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 14:48:01] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 14:48:01] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 14:48:21] "POST /accounts/login/ HTTP/1.0" 200 3273
+[15/Aug/2022 14:48:39] "POST /accounts/login/ HTTP/1.0" 200 3273
+[15/Aug/2022 14:48:46] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 14:52:28] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 14:52:31] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 14:53:12] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 14:53:49] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 14:53:50] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 14:54:12] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 14:54:13] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:54:14] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 14:54:15] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 14:54:15] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 14:54:42] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:54:43] "GET /file/4 HTTP/1.0" 200 1352
+[15/Aug/2022 14:54:54] "GET /file/4/view HTTP/1.0" 200 7005
+[15/Aug/2022 14:55:08] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 14:55:47] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:55:48] "GET /file/5 HTTP/1.0" 200 1352
+Internal Server Error: /file/5/view
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 118, in get_context_data
+    metadata = read_file(path)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/readfile.py", line 11, in read_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck'
+[15/Aug/2022 14:55:52] "GET /file/5/view HTTP/1.0" 500 88478
+Internal Server Error: /file/5/view
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 118, in get_context_data
+    metadata = read_file(path)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/readfile.py", line 11, in read_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck'
+[15/Aug/2022 14:56:03] "GET /file/5/view HTTP/1.0" 500 88478
+Internal Server Error: /file/5/view
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 118, in get_context_data
+    metadata = read_file(path)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/readfile.py", line 11, in read_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck'
+[15/Aug/2022 14:56:15] "GET /file/5/view HTTP/1.0" 500 88478
+[15/Aug/2022 14:56:22] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 14:56:35] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:56:35] "GET /file/6 HTTP/1.0" 200 1352
+Internal Server Error: /file/6/view
+Traceback (most recent call last):
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/var/www/proj_fetch_meta_data_team_83/env/lib/python3.10/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/views.py", line 118, in get_context_data
+    metadata = read_file(path)
+  File "/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/file_control/readfile.py", line 11, in read_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck'
+[15/Aug/2022 14:56:39] "GET /file/6/view HTTP/1.0" 500 88478
+[15/Aug/2022 14:57:00] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 14:57:26] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:57:27] "GET /file/7 HTTP/1.0" 200 1352
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2022 - 07:58:15
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_6/fayBeautiful.png
+file_main: File object (None)
+outputfile: user_6/fayBeautiful.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_6/fayBeautiful.mttrck
+1
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' fayBeautiful.png\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_6\n'], ['File Size                       ', ' 688 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 08:43:02+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 08:43:02+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 08:43:02+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' PNG\n'], ['File Type Extension             ', ' png\n'], ['MIME Type                       ', ' image/png\n'], ['Image Width                     ', ' 1200\n'], ['Image Height                    ', ' 628\n'], ['Bit Depth                       ', ' 8\n'], ['Color Type                      ', ' RGB with Alpha\n'], ['Compression                     ', ' Deflate/Inflate\n'], ['Filter                          ', ' Adaptive\n'], ['Interlace                       ', ' Noninterlaced\n'], ['SRGB Rendering                  ', ' Perceptual\n'], ['Pixels Per Unit X               ', ' 3780\n'], ['Pixels Per Unit Y               ', ' 3780\n'], ['Pixel Units                     ', ' meters\n'], ['Ads Created                     ', ' 2022-08-10\n'], ['Ads Ext Id                      ', ' 3988379f-012c-48ac-91dd-ed021c38b172\n'], ['Ads Fb Id                       ', ' 525265914179580\n'], ['Ads Touch Type                  ', ' 2\n'], ['Title                           ', ' Beige Modern August Mega Sale Promotion Facebook Ad\n'], ['Author                          ', ' Regina Onwuachumba\n'], ['Creator Tool                    ', ' Canva\n'], ['Image Size                      ', ' 1200x628\n'], ['Megapixels                      ', ' 0.754\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_7/August 1st 2022 End_of_shift.png
+file_main: File object (None)
+outputfile: user_7/August 1st 2022 End_of_shift.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_7/August 1st 2022 End_of_shift.mttrck
+2
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_7/dapo2.png
+file_main: File object (None)
+outputfile: user_7/dapo2.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_7/dapo2.mttrck
+3
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' dapo2.png\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_7\n'], ['File Size                       ', ' 307 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 09:47:17+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 09:47:17+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 09:47:17+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' PNG\n'], ['File Type Extension             ', ' png\n'], ['MIME Type                       ', ' image/png\n'], ['Image Width                     ', ' 717\n'], ['Image Height                    ', ' 541\n'], ['Bit Depth                       ', ' 8\n'], ['Color Type                      ', ' RGB with Alpha\n'], ['Compression                     ', ' Deflate/Inflate\n'], ['Filter                          ', ' Adaptive\n'], ['Interlace                       ', ' Noninterlaced\n'], ['SRGB Rendering                  ', ' Perceptual\n'], ['Gamma                           ', ' 2.2\n'], ['Pixels Per Unit X               ', ' 4724\n'], ['Pixels Per Unit Y               ', ' 4724\n'], ['Pixel Units                     ', ' meters\n'], ['Image Size                      ', ' 717x541\n'], ['Megapixels                      ', ' 0.388\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_9/yusuf.png
+file_main: File object (None)
+outputfile: user_9/yusuf.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/yusuf.mttrck
+4
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' yusuf.png\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9\n'], ['File Size                       ', ' 4.7 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 14:54:42+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 14:54:42+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 14:54:42+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' PNG\n'], ['File Type Extension             ', ' png\n'], ['MIME Type                       ', ' image/png\n'], ['Image Width                     ', ' 791\n'], ['Image Height                    ', ' 67\n'], ['Bit Depth                       ', ' 8\n'], ['Color Type                      ', ' RGB with Alpha\n'], ['Compression                     ', ' Deflate/Inflate\n'], ['Filter                          ', ' Adaptive\n'], ['Interlace                       ', ' Noninterlaced\n'], ['SRGB Rendering                  ', ' Perceptual\n'], ['Image Size                      ', ' 791x67\n'], ['Megapixels                      ', ' 0.053\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_9/download_business plan.pdf
+file_main: File object (None)
+outputfile: user_9/download_business plan.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck
+5
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_9/download_business plan.pdf
+file_main: File object (None)
+outputfile: user_9/download_business plan.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_business plan.mttrck
+6
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_9/devs.csv
+file_main: File object (None)
+outputfile: user_9/devs.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/devs.mttrck
+7
+[15/Aug/2022 14:57:31] "GET /file/7/view HTTP/1.0" 200 6193
+[15/Aug/2022 14:57:51] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 14:58:15] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 14:58:15] "GET /file/8 HTTP/1.0" 200 1352
+[15/Aug/2022 14:58:18] "GET /file/8/view HTTP/1.0" 200 17367
+[15/Aug/2022 14:58:41] "GET /file/dashboard/ HTTP/1.0" 200 17511
+[15/Aug/2022 15:15:36] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 15:15:36] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 15:18:09] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 15:18:09] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 15:18:31] "GET / HTTP/1.0" 200 9554
+Not Found: /documentation
+[15/Aug/2022 15:20:11] "GET /documentation HTTP/1.0" 404 3901
+Not Found: /documentation
+[15/Aug/2022 15:20:26] "GET /documentation HTTP/1.0" 404 3901
+[15/Aug/2022 15:49:31] "GET /accounts/login/ HTTP/1.0" 200 3144
+Not Found: /favicon.ico
+[15/Aug/2022 15:49:31] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 15:49:57] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:50:16] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:51:09] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:51:34] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:52:36] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:52:57] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:53:10] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 15:53:23] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 15:53:37] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 15:53:53] "POST /accounts/login/ HTTP/1.0" 200 3276
+[15/Aug/2022 15:53:59] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 15:54:09] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 15:54:52] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 15:55:06] "GET /accounts/login/ HTTP/1.0" 200 3144
+Not Found: /accounts
+[15/Aug/2022 15:55:25] "GET /accounts HTTP/1.0" 404 3886
+[15/Aug/2022 15:55:44] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 15:55:51] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 15:56:54] "POST /accounts/signup/ HTTP/1.0" 302 0
+[15/Aug/2022 15:56:54] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 15:57:18] "POST /accounts/login/ HTTP/1.0" 200 3273
+[15/Aug/2022 15:57:46] "POST /accounts/login/ HTTP/1.0" 200 3273
+[15/Aug/2022 15:58:10] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 15:58:11] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 15:58:11] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 15:58:12] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 15:58:13] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 15:58:24] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 15:58:45] "POST /accounts/login/ HTTP/1.0" 302 0
+[15/Aug/2022 15:58:46] "GET /dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 15:58:46] "GET /file/dashboard HTTP/1.0" 301 0
+[15/Aug/2022 15:58:47] "GET /file/dashboard/ HTTP/1.0" 200 17511
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 15:58:47] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 16:02:40] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 16:02:40] "GET /file/9 HTTP/1.0" 200 1352
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' devs.csv\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9\n'], ['File Size                       ', ' 654 bytes\n'], ['File Modification Date/Time     ', ' 2022:08:15 14:57:26+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 14:57:26+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 14:57:26+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' CSV\n'], ['File Type Extension             ', ' csv\n'], ['MIME Type                       ', ' text/csv\n'], ['MIME Encoding                   ', ' utf-8\n'], ['Byte Order Mark                 ', ' Yes\n'], ['Newlines                        ', ' Windows CRLF\n'], ['Delimiter                       ', ' (none)\n'], ['Quoting                         ', ' Double quotes\n'], ['Column Count                    ', ' 1\n'], ['Row Count                       ', ' 12\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_9/download_swot.pdf
+file_main: File object (None)
+outputfile: user_9/download_swot.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9/download_swot.mttrck
+8
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' download_swot.pdf\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_9\n'], ['File Size                       ', ' 751 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 14:58:15+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 14:58:15+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 14:58:15+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' PDF\n'], ['File Type Extension             ', ' pdf\n'], ['MIME Type                       ', ' application/pdf\n'], ['Linearized                      ', ' No\n'], ['Page Count                      ', ' 6\n'], ['Profile CMM Type                ', ' Linotronic\n'], ['Profile Version                 ', ' 2.1.0\n'], ['Profile Class                   ', ' Display Device Profile\n'], ['Color Space Data                ', ' RGB\n'], ['Profile Connection Space        ', ' XYZ\n'], ['Profile Date Time               ', ' 1998:02:09 06:49:00\n'], ['Profile File Signature          ', ' acsp\n'], ['Primary Platform                ', ' Microsoft Corporation\n'], ['CMM Flags                       ', ' Not Embedded, Independent\n'], ['Device Manufacturer             ', ' Hewlett-Packard\n'], ['Device Model                    ', ' sRGB\n'], ['Device Attributes               ', ' Reflective, Glossy, Positive, Color\n'], ['Rendering Intent                ', ' Perceptual\n'], ['Connection Space Illuminant     ', ' 0.9642 1 0.82491\n'], ['Profile Creator                 ', ' Hewlett-Packard\n'], ['Profile ID                      ', ' 0\n'], ['Profile Copyright               ', ' Copyright (c) 1998 Hewlett-Packard Company\n'], ['Profile Description             ', ' sRGB IEC61966-2.1\n'], ['Media White Point               ', ' 0.95045 1 1.08905\n'], ['Media Black Point               ', ' 0 0 0\n'], ['Red Matrix Column               ', ' 0.43607 0.22249 0.01392\n'], ['Green Matrix Column             ', ' 0.38515 0.71687 0.09708\n'], ['Blue Matrix Column              ', ' 0.14307 0.06061 0.7141\n'], ['Device Mfg Desc                 ', ' IEC http://www.iec.ch\n'], ['Device Model Desc               ', ' IEC 61966-2.1 Default RGB colour space - sRGB\n'], ['Viewing Cond Desc               ', ' Reference Viewing Condition in IEC61966-2.1\n'], ['Viewing Cond Illuminant         ', ' 19.6445 20.3718 16.8089\n'], ['Viewing Cond Surround           ', ' 3.92889 4.07439 3.36179\n'], ['Viewing Cond Illuminant Type    ', ' D50\n'], ['Luminance                       ', ' 76.03647 80 87.12462\n'], ['Measurement Observer            ', ' CIE 1931\n'], ['Measurement Backing             ', ' 0 0 0\n'], ['Measurement Geometry            ', ' Unknown\n'], ['Measurement Flare               ', ' 0.999%\n'], ['Measurement Illuminant          ', ' D65\n'], ['Technology                      ', ' Cathode Ray Tube Display\n'], ['Red Tone Reproduction Curve     ', ' (Binary data 2060 bytes, use -b option to extract)\n'], ['Green Tone Reproduction Curve   ', ' (Binary data 2060 bytes, use -b option to extract)\n'], ['Blue Tone Reproduction Curve    ', ' (Binary data 2060 bytes, use -b option to extract)\n'], ['PDF Version                     ', ' 1.4\n'], ['Title                           ', ' download_swot.pages\n'], ['Producer                        ', ' Mac OS X 10.13.6 Quartz PDFContext\n'], ['Creator                         ', ' Pages\n'], ['Create Date                     ', ' 2018:08:13 09:09:40Z\n'], ['Modify Date                     ', ' 2018:08:13 09:09:40Z\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_10/unnamed.png
+file_main: File object (None)
+outputfile: user_10/unnamed.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_10/unnamed.mttrck
+9
+[15/Aug/2022 16:02:52] "GET /file/9/view HTTP/1.0" 200 25442
+[15/Aug/2022 16:13:13] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 16:13:13] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+Not Found: /favicon.ico
+[15/Aug/2022 16:13:15] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 16:14:08] "GET / HTTP/1.0" 200 10124
+Not Found: /img/Code Image.svg
+[15/Aug/2022 16:14:08] "GET /img/Code%20Image.svg HTTP/1.0" 404 3918
+[15/Aug/2022 16:14:11] "POST /file/dashboard/ HTTP/1.0" 200 17573
+Not Found: /file/dashboard/img/Code Image.svg
+[15/Aug/2022 16:14:11] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 4594
+[15/Aug/2022 16:14:35] "POST /file/dashboard/ HTTP/1.0" 302 0
+[15/Aug/2022 16:14:36] "GET /file/10 HTTP/1.0" 200 1353
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' unnamed.png\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_10\n'], ['File Size                       ', ' 36 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 16:02:40+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 16:02:40+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 16:02:40+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' PNG\n'], ['File Type Extension             ', ' png\n'], ['MIME Type                       ', ' image/png\n'], ['Image Width                     ', ' 512\n'], ['Image Height                    ', ' 512\n'], ['Bit Depth                       ', ' 8\n'], ['Color Type                      ', ' RGB with Alpha\n'], ['Compression                     ', ' Deflate/Inflate\n'], ['Filter                          ', ' Adaptive\n'], ['Interlace                       ', ' Noninterlaced\n'], ['Exif Byte Order                 ', ' Little-endian (Intel, II)\n'], ['Bits Per Sample                 ', ' 8 8 8\n'], ['Orientation                     ', ' Horizontal (normal)\n'], ['X Resolution                    ', ' 145.13\n'], ['Y Resolution                    ', ' 145.13\n'], ['Resolution Unit                 ', ' cm\n'], ['Software                        ', ' GIMP 2.10.28\n'], ['Color Space                     ', ' sRGB\n'], ['Subfile Type                    ', ' Reduced-resolution image\n'], ['Photometric Interpretation      ', ' YCbCr\n'], ['Samples Per Pixel               ', ' 3\n'], ['Thumbnail Offset                ', ' 328\n'], ['Thumbnail Length                ', ' 7602\n'], ['Profile Name                    ', ' ICC profile\n'], ['Profile CMM Type                ', ' Little CMS\n'], ['Profile Version                 ', ' 4.3.0\n'], ['Profile Class                   ', ' Display Device Profile\n'], ['Color Space Data                ', ' RGB\n'], ['Profile Connection Space        ', ' XYZ\n'], ['Profile Date Time               ', ' 2021:09:20 12:21:00\n'], ['Profile File Signature          ', ' acsp\n'], ['Primary Platform                ', ' Microsoft Corporation\n'], ['CMM Flags                       ', ' Not Embedded, Independent\n'], ['Device Manufacturer             ', ' \n'], ['Device Model                    ', ' \n'], ['Device Attributes               ', ' Reflective, Glossy, Positive, Color\n'], ['Rendering Intent                ', ' Perceptual\n'], ['Connection Space Illuminant     ', ' 0.9642 1 0.82491\n'], ['Profile Creator                 ', ' Little CMS\n'], ['Profile ID                      ', ' 0\n'], ['Profile Description             ', ' GIMP built-in sRGB\n'], ['Profile Copyright               ', ' Public Domain\n'], ['Media White Point               ', ' 0.9642 1 0.82491\n'], ['Chromatic Adaptation            ', ' 1.04788 0.02292 -0.05022 0.02959 0.99048 -0.01707 -0.00925 0.01508 0.75168\n'], ['Red Matrix Column               ', ' 0.43604 0.22249 0.01392\n'], ['Blue Matrix Column              ', ' 0.14305 0.06061 0.71393\n'], ['Green Matrix Column             ', ' 0.38512 0.7169 0.09706\n'], ['Red Tone Reproduction Curve     ', ' (Binary data 32 bytes, use -b option to extract)\n'], ['Green Tone Reproduction Curve   ', ' (Binary data 32 bytes, use -b option to extract)\n'], ['Blue Tone Reproduction Curve    ', ' (Binary data 32 bytes, use -b option to extract)\n'], ['Chromaticity Channels           ', ' 3\n'], ['Chromaticity Colorant           ', ' Unknown (0)\n'], ['Chromaticity Channel 1          ', ' 0.64 0.33002\n'], ['Chromaticity Channel 2          ', ' 0.3 0.60001\n'], ['Chromaticity Channel 3          ', ' 0.15001 0.06\n'], ['Device Mfg Desc                 ', ' GIMP\n'], ['Device Model Desc               ', ' sRGB\n'], ['XMP Toolkit                     ', ' XMP Core 4.4.0-Exiv2\n'], ['Document ID                     ', ' gimp:docid:gimp:bcd2e47c-86ba-4b26-9f30-b8dba804fb77\n'], ['Instance ID                     ', ' xmp.iid:8ca0e7a2-0d73-4f4d-b71c-ac0508e6f289\n'], ['Original Document ID            ', ' xmp.did:b8c82b84-1bb0-4ba1-aaec-7b6474fdb0f2\n'], ['Format                          ', ' image/png\n'], ['Api                             ', ' 2.0\n'], ['Platform                        ', ' Windows\n'], ['Time Stamp                      ', ' 1632140798391109\n'], ['Version                         ', ' 2.10.28\n'], ['Creator Tool                    ', ' GIMP 2.10\n'], ['History Action                  ', ' saved\n'], ['History Changed                 ', ' /\n'], ['History Instance ID             ', ' xmp.iid:010d729a-db8b-4c54-94bd-7f34afb2c798\n'], ['History Software Agent          ', ' Gimp 2.10 (Windows)\n'], ['History When                    ', ' 2021:09:20 15:26:38\n'], ['Background Color                ', ' 68 68 64\n'], ['Pixels Per Unit X               ', ' 14513\n'], ['Pixels Per Unit Y               ', ' 14513\n'], ['Pixel Units                     ', ' meters\n'], ['Modify Date                     ', ' 2021:09:20 12:26:38\n'], ['Image Size                      ', ' 512x512\n'], ['Megapixels                      ', ' 0.262\n'], ['Thumbnail Image                 ', ' (Binary data 7602 bytes, use -b option to extract)\n']]
+sender: <class 'apps.file_control.models.File'>
+kwargs: {'signal': <django.db.models.signals.ModelSignal object at 0x7f7199aaf400>, 'instance': <File: File object (None)>, 'raw': False, 'using': 'default', 'update_fields': None}
+file_instance.file.path: user_5/20220608_145322.jpg
+file_main: File object (None)
+outputfile: user_5/20220608_145322.mttrck
+outputfilewithjoin: /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_5/20220608_145322.mttrck
+10
+[15/Aug/2022 16:14:42] "GET /file/10/view HTTP/1.0" 200 14427
+[15/Aug/2022 16:20:48] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 16:20:59] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 16:21:05] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[15/Aug/2022 16:21:17] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 16:21:24] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 16:21:30] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 16:21:35] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 16:22:22] "GET /services/ HTTP/1.0" 200 5291
+[15/Aug/2022 16:29:46] "GET /accounts/signup/ HTTP/1.0" 200 6330
+Not Found: /apple-touch-icon-120x120-precomposed.png
+[15/Aug/2022 16:29:46] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.0" 404 3982
+Not Found: /apple-touch-icon-120x120.png
+[15/Aug/2022 16:29:47] "GET /apple-touch-icon-120x120.png HTTP/1.0" 404 3946
+Not Found: /apple-touch-icon-precomposed.png
+[15/Aug/2022 16:29:47] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 3958
+Not Found: /apple-touch-icon.png
+[15/Aug/2022 16:29:47] "GET /apple-touch-icon.png HTTP/1.0" 404 3922
+Not Found: /favicon.ico
+[15/Aug/2022 16:29:47] "GET /favicon.ico HTTP/1.0" 404 3895
+Not Found: /apple-touch-icon-120x120-precomposed.png
+[15/Aug/2022 16:29:48] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.0" 404 3982
+Not Found: /apple-touch-icon-120x120.png
+[15/Aug/2022 16:29:49] "GET /apple-touch-icon-120x120.png HTTP/1.0" 404 3946
+Not Found: /apple-touch-icon-precomposed.png
+[15/Aug/2022 16:29:49] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 3958
+Not Found: /apple-touch-icon.png
+[15/Aug/2022 16:29:49] "GET /apple-touch-icon.png HTTP/1.0" 404 3922
+Not Found: /favicon.ico
+[15/Aug/2022 16:29:49] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 17:11:53] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 18:13:52] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 20:01:35] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 20:41:59] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 20:42:04] "GET /favicon.ico HTTP/1.0" 404 3895
+[15/Aug/2022 20:42:12] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 20:42:22] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 20:43:03] "POST /accounts/login/ HTTP/1.0" 200 3279
+[15/Aug/2022 20:43:14] "GET /accounts/login/ HTTP/1.0" 200 3144
+[15/Aug/2022 22:45:31] "GET / HTTP/1.0" 200 9554
+[15/Aug/2022 23:47:20] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[15/Aug/2022 23:50:17] "GET /favicon.ico HTTP/1.0" 404 3895
+[16/Aug/2022 02:08:58] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[16/Aug/2022 02:09:03] "GET /favicon.ico HTTP/1.0" 404 3895
+[16/Aug/2022 02:09:41] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 02:10:24] "POST /accounts/signup/ HTTP/1.0" 200 6353
+[16/Aug/2022 02:10:33] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 02:10:38] "GET / HTTP/1.0" 200 9554
+[16/Aug/2022 02:10:42] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 02:11:31] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 02:12:02] "POST /accounts/signup/ HTTP/1.0" 200 6353
+[16/Aug/2022 02:14:18] "GET /accounts/login HTTP/1.0" 301 0
+[16/Aug/2022 02:14:18] "GET /accounts/login/ HTTP/1.0" 200 3144
+Not Found: /favicon.ico
+[16/Aug/2022 02:14:24] "GET /favicon.ico HTTP/1.0" 404 3895
+[16/Aug/2022 02:14:48] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 02:15:10] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 02:17:15] "GET / HTTP/1.0" 200 9554
+[16/Aug/2022 02:17:23] "GET / HTTP/1.0" 200 9554
+[16/Aug/2022 02:55:32] "GET / HTTP/1.0" 200 9554
+Not Found: /favicon.ico
+[16/Aug/2022 04:27:42] "GET /favicon.ico HTTP/1.0" 404 3895
+[16/Aug/2022 04:29:22] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 04:30:00] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 04:30:26] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 04:31:07] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 04:31:14] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 04:31:28] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 04:31:46] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 04:32:12] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 04:32:24] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 04:32:29] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 04:32:34] "GET / HTTP/1.0" 200 9554
+[16/Aug/2022 04:32:47] "GET / HTTP/1.0" 200 9554
+[16/Aug/2022 04:38:51] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 04:39:18] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 04:39:31] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 08:18:19] "GET / HTTP/1.0" 200 9554
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/commons/urls.py changed, reloading.
+[['ExifTool Version Number         ', ' 12.40\n'], ['File Name                       ', ' 20220608_145322.jpg\n'], ['Directory                       ', ' /var/www/proj_fetch_meta_data_team_83/fetch_metadata/media/user_5\n'], ['File Size                       ', ' 393 KiB\n'], ['File Modification Date/Time     ', ' 2022:08:15 16:14:35+00:00\n'], ['File Access Date/Time           ', ' 2022:08:15 16:14:35+00:00\n'], ['File Inode Change Date/Time     ', ' 2022:08:15 16:14:35+00:00\n'], ['File Permissions                ', ' -rw-r--r--\n'], ['File Type                       ', ' JPEG\n'], ['File Type Extension             ', ' jpg\n'], ['MIME Type                       ', ' image/jpeg\n'], ['JFIF Version                    ', ' 1.01\n'], ['Resolution Unit                 ', ' None\n'], ['X Resolution                    ', ' 1\n'], ['Y Resolution                    ', ' 1\n'], ['Profile CMM Type                ', ' \n'], ['Profile Version                 ', ' 2.1.0\n'], ['Profile Class                   ', ' Display Device Profile\n'], ['Color Space Data                ', ' RGB\n'], ['Profile Connection Space        ', ' XYZ\n'], ['Profile Date Time               ', ' 0000:00:00 00:00:00\n'], ['Profile File Signature          ', ' acsp\n'], ['Primary Platform                ', ' Unknown ()\n'], ['CMM Flags                       ', ' Not Embedded, Independent\n'], ['Device Manufacturer             ', ' \n'], ['Device Model                    ', ' \n'], ['Device Attributes               ', ' Reflective, Glossy, Positive, Color\n'], ['Rendering Intent                ', ' Media-Relative Colorimetric\n'], ['Connection Space Illuminant     ', ' 0.9642 1 0.82491\n'], ['Profile Creator                 ', ' \n'], ['Profile ID                      ', ' 0\n'], ['Profile Description             ', ' sRGB\n'], ['Red Matrix Column               ', ' 0.43607 0.22249 0.01392\n'], ['Green Matrix Column             ', ' 0.38515 0.71687 0.09708\n'], ['Blue Matrix Column              ', ' 0.14307 0.06061 0.7141\n'], ['Red Tone Reproduction Curve     ', ' (Binary data 40 bytes, use -b option to extract)\n'], ['Green Tone Reproduction Curve   ', ' (Binary data 40 bytes, use -b option to extract)\n'], ['Blue Tone Reproduction Curve    ', ' (Binary data 40 bytes, use -b option to extract)\n'], ['Media White Point               ', ' 0.9642 1 0.82491\n'], ['Profile Copyright               ', ' Google Inc. 2016\n'], ['Image Width                     ', ' 2480\n'], ['Image Height                    ', ' 3508\n'], ['Encoding Process                ', ' Baseline DCT, Huffman coding\n'], ['Bits Per Sample                 ', ' 8\n'], ['Color Components                ', ' 3\n'], ['Y Cb Cr Sub Sampling            ', ' YCbCr4:2:0 (2 2)\n'], ['Image Size                      ', ' 2480x3508\n'], ['Megapixels                      ', ' 8.7\n']]
+Watching for file changes with StatReloader
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/fetch_metadata/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 16, 2022 - 11:45:45
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Aug/2022 11:46:57] "GET / HTTP/1.0" 200 9528
+Not Found: /img/Code Image.svg
+[16/Aug/2022 11:46:59] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+Not Found: /favicon.ico
+[16/Aug/2022 11:47:01] "GET /favicon.ico HTTP/1.0" 404 4333
+[16/Aug/2022 11:47:03] "GET / HTTP/1.0" 200 9528
+Not Found: /img/Code Image.svg
+[16/Aug/2022 11:47:03] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+[16/Aug/2022 11:47:15] "GET / HTTP/1.0" 200 9650
+[16/Aug/2022 11:47:22] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 11:47:39] "POST /accounts/login/ HTTP/1.0" 200 3277
+[16/Aug/2022 11:47:45] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 11:47:50] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 11:48:40] "POST /accounts/signup/ HTTP/1.0" 302 0
+[16/Aug/2022 11:48:40] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 11:49:08] "POST /accounts/login/ HTTP/1.0" 200 3279
+[16/Aug/2022 11:49:22] "GET / HTTP/1.0" 200 9650
+[16/Aug/2022 11:49:28] "POST /accounts/login/ HTTP/1.0" 200 3277
+[16/Aug/2022 11:49:45] "POST /accounts/login/ HTTP/1.0" 302 0
+[16/Aug/2022 11:49:45] "GET /dashboard/ HTTP/1.0" 302 0
+[16/Aug/2022 11:49:45] "GET /file/dashboard HTTP/1.0" 301 0
+[16/Aug/2022 11:49:45] "GET /file/dashboard/ HTTP/1.0" 200 17409
+Not Found: /file/dashboard/img/Code Image.svg
+[16/Aug/2022 11:49:46] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 5032
+Not Found: /favicon.ico
+[16/Aug/2022 11:50:03] "GET /favicon.ico HTTP/1.0" 404 4333
+[16/Aug/2022 11:50:04] "GET / HTTP/1.0" 200 9528
+Not Found: /img/Code Image.svg
+[16/Aug/2022 11:50:04] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+[16/Aug/2022 11:50:34] "GET /accounts/signup/ HTTP/1.0" 200 6330
+[16/Aug/2022 11:51:13] "POST /accounts/signup/ HTTP/1.0" 302 0
+[16/Aug/2022 11:51:15] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 11:51:50] "POST /accounts/login/ HTTP/1.0" 302 0
+[16/Aug/2022 11:51:53] "GET /dashboard/ HTTP/1.0" 302 0
+[16/Aug/2022 11:51:57] "GET /file/dashboard HTTP/1.0" 301 0
+[16/Aug/2022 11:51:58] "GET /file/dashboard/ HTTP/1.0" 200 17409
+Not Found: /file/dashboard/img/Code Image.svg
+[16/Aug/2022 11:52:00] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 5032
+[16/Aug/2022 11:53:23] "POST /file/dashboard/ HTTP/1.0" 302 0
+[16/Aug/2022 11:53:25] "GET /file/11 HTTP/1.0" 200 1781
+[16/Aug/2022 11:53:28] "GET /media/user_12/.jpg/yusuff.jpg HTTP/1.0" 200 48715
+[16/Aug/2022 11:53:39] "GET /file/11/view HTTP/1.0" 200 9598
+[16/Aug/2022 11:53:41] "GET /media/user_12/.jpg/yusuff.jpg HTTP/1.0" 200 48715
+[16/Aug/2022 11:59:01] "GET /accounts/login/ HTTP/1.0" 200 3144
+[16/Aug/2022 11:59:33] "GET / HTTP/1.0" 200 9528
+Not Found: /img/Code Image.svg
+[16/Aug/2022 11:59:39] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+[16/Aug/2022 12:04:55] "GET /how_it_works/ HTTP/1.0" 200 6133
+[16/Aug/2022 12:20:20] "GET / HTTP/1.0" 200 9650
+Not Found: /favicon.ico
+[16/Aug/2022 12:20:34] "GET /favicon.ico HTTP/1.0" 404 4337
+[16/Aug/2022 12:38:55] "GET /admin HTTP/1.0" 301 0
+[16/Aug/2022 12:39:07] "GET /admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:39:19] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2393
+/var/www/proj_fetch_meta_data_team_83/fetch_metadata/apps/commons/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 16, 2022 - 11:46:17
+Django version 4.1, using settings 'fetch_metadata.settings'
+Starting development server at http://0.0.0.0:17717/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Aug/2022 12:43:06] "GET /admin HTTP/1.0" 301 0
+[16/Aug/2022 12:43:07] "GET /admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:43:07] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2386
+[16/Aug/2022 12:43:09] "GET /admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:43:10] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2386
+[16/Aug/2022 12:43:24] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:43:37] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:43:45] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:44:18] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:44:22] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2570
+[16/Aug/2022 12:44:30] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:45:05] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:45:17] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:45:48] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2566
+[16/Aug/2022 12:46:46] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2563
+[16/Aug/2022 12:47:20] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2563
+[16/Aug/2022 12:47:31] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2563
+[16/Aug/2022 12:47:41] "GET / HTTP/1.0" 200 9241
+Not Found: /img/Code Image.svg
+[16/Aug/2022 12:47:42] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+[16/Aug/2022 12:47:48] "GET /admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:47:49] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2386
+[16/Aug/2022 12:48:02] "GET /accounts/logout HTTP/1.0" 301 0
+[16/Aug/2022 12:48:02] "GET /accounts/logout/ HTTP/1.0" 302 0
+[16/Aug/2022 12:48:03] "GET / HTTP/1.0" 200 9363
+[16/Aug/2022 12:48:09] "GET /admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:48:09] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 2223
+[16/Aug/2022 12:48:24] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2403
+[16/Aug/2022 12:48:43] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[16/Aug/2022 12:48:44] "GET /admin/ HTTP/1.0" 200 5600
+[16/Aug/2022 12:48:52] "GET /admin/commons/faq/add/ HTTP/1.0" 200 8088
+[16/Aug/2022 12:48:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3343
+[16/Aug/2022 12:51:16] "GET /file/dashboard/ HTTP/1.0" 200 17409
+Not Found: /file/dashboard/img/Code Image.svg
+[16/Aug/2022 12:51:17] "GET /file/dashboard/img/Code%20Image.svg HTTP/1.0" 404 5032
+[16/Aug/2022 12:52:16] "POST /admin/commons/faq/add/ HTTP/1.0" 200 8414
+[16/Aug/2022 12:52:16] "GET /admin/jsi18n/ HTTP/1.0" 200 3343
+[16/Aug/2022 12:52:31] "POST /admin/commons/faq/add/ HTTP/1.0" 302 0
+[16/Aug/2022 12:52:32] "GET /admin/commons/faq/ HTTP/1.0" 200 7811
+[16/Aug/2022 12:52:33] "GET /admin/jsi18n/ HTTP/1.0" 200 3343
+[16/Aug/2022 12:52:41] "GET / HTTP/1.0" 200 9629
+Not Found: /img/Code Image.svg
+[16/Aug/2022 12:52:42] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+[16/Aug/2022 12:53:28] "GET /how_it_works/ HTTP/1.0" 200 6133
+[16/Aug/2022 13:14:07] "GET /how_it_works/ HTTP/1.0" 200 6133
+[16/Aug/2022 13:46:37] "GET / HTTP/1.0" 200 9751
+[16/Aug/2022 13:46:38] "GET / HTTP/1.0" 200 9751
+[16/Aug/2022 13:46:38] "GET / HTTP/1.0" 200 9751
+[16/Aug/2022 15:37:55] "GET / HTTP/1.0" 200 9716
+Not Found: /img/Code Image.svg
+[16/Aug/2022 15:37:56] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356
+Not Found: /favicon.ico
+[16/Aug/2022 15:37:58] "GET /favicon.ico HTTP/1.0" 404 4333
+[16/Aug/2022 15:39:20] "GET / HTTP/1.0" 200 9716
+Not Found: /img/Code Image.svg
+[16/Aug/2022 15:39:21] "GET /img/Code%20Image.svg HTTP/1.0" 404 4356

@@ -11,6 +11,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: var(--color-primary);
 }
@@ -97,12 +99,13 @@ body {
   cursor: pointer;
 }
 
-.view_your a:link{
+.view_your{
   color: var(--color-secondary);
+  background-color: var(--color-secondary-darker);
 }
-.view_your a:visited{
+.view_your :hover{
   color: #ffef1a
 }
-.view_your a:hover{
-  color: #ffff00;
+.your_file{
+  color: var(--color-secondary)
 }
