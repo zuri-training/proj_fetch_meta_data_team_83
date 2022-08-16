@@ -28,7 +28,7 @@ class Post(models.Model):
    # Creating a default slug/username for users if blank.
     def get_absolute_url(self):
         """
-        Create a default url for each user using their username
+        Create a default url for each post using their slug
         """
         return reverse('documentation_detail', kwargs={'slug': self.slug})
 
@@ -37,5 +37,24 @@ class Post(models.Model):
         if not self.slug:
             # Create default slug
             self.slug = slugify(self.title)
+        # Finally save.
+        super().save(*args, **kwargs)
+
+class Faq(models.Model):
+    faqQuest = models.CharField(max_length=255)
+    faqAnswer = models.TextField()
+    slug = models.SlugField(max_length=255, default='faqs')
+    def __str__(self):
+        return self.faqQuest
+    def get_absolute_url(self):
+        """
+        Create a default url for each faq
+        """
+        return reverse('faq_detail', kwargs={'slug':self.slug})
+    def save(self, *args, **kwargs):
+        # Check for a slug
+        if not self.slug:
+            # Create default slug
+            self.slug = slugify(self.faqQuest)
         # Finally save.
         super().save(*args, **kwargs)

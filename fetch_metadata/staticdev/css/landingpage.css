@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
     max-width: 90%;
     margin: 0 auto;
     padding-top: 2.5rem;
-    display: flex; */
+    display: flex; 
     justify-content: space-between;
  
 }

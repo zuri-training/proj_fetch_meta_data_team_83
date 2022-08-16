@@ -4,7 +4,7 @@ from django.views.generic.base import RedirectView
 
 from django.urls import reverse_lazy
 from .forms import PostForm, EditForm
-from .models import Post
+from .models import Post, Faq
 
 class HomeView(ListView):
     """
@@ -12,6 +12,11 @@ class HomeView(ListView):
     """
     model = Post
     template_name = 'common/home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['faq'] = Faq.objects.all()
+        return context
 
 class DashboardView(RedirectView):
     # pattern_name="file:userFileUpload"

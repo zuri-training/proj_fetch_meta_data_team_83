@@ -175,14 +175,17 @@
     </p>
   </div>
   <div class="faq_bars">
-    <div class="faq_one faq_containers">
-      <h4 class="faq_quest">What are Meta Data?</h4>
+    
+      {%for answers in faq%}
+      <div class="faq_containers">
+      <h4 class="faq_quest">{{answers.faqQuest}}</h4>
       <div class="faq_body">
         <p class="faq_answers">
-          Metadatas are bits of information hidden inside files that make up its entirety.
+          {{answers.faqAnswer}}
         </p>
       </div>
       <hr class="hr_line">
+      {%endfor%}
     </div>
     <div class="faq_two faq_containers">
       <h4 class="faq_quest">
