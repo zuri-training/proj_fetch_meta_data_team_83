@@ -23,24 +23,24 @@
         <section class="metadata_information">
             <div class="metadata_details">
 
-<h3>Your file has been extracted successfully</h3>
-<a href="{%url 'file:file-detail' pk=file.id%}">click here to view your metadata</a>
+<h3 class="your_file">Your file has been extracted successfully</h3>
+
+<a href="{%url 'file:file-detail' pk=file.id%}" ><button class="view_your"> Click here to view your metadata</button></a>
 {% comment %} <a href="{%url 'file:file-view'%}">click here to view your file</a> {% endcomment %}
                 </div>
 
 
             </div>
-{%load temple%}
             <div class="div">
                 <img src="{{file.file.url}}" width="500" height="500"  class="extraction_file_img">
                 <div>
-                    <a src="{{ file.meta_file.url}}" download>
+                    <href="{{file.meta_file.url}}" download>
                         <button class="extraction_button extract-btn1">Download</button>
                     </a>
-                    <a src="{{ file.meta_file.url}}" download>
+                    <a href="{{ file.meta_file.url}}" download>
                         <button class="extraction_button extract-btn2">Share</button>
                     </a>
-                    <a src="{{ file.meta_file.url}}" download>
+                    <a href="{{ file.meta_file.url}}" download>
                         <button class="extraction_button extract-btn2">Embed</button>
                     </a>
                 </div>
@@ -48,35 +48,3 @@
             </div>
         </section>
         </header>
-        {% comment %}  <script>$('.metadata-details')).onfocus(function() {
-    setTimeout(function() {
-                    var metadata = JSON.parse(response["metadata"]);
-                    $.ajax( {
-                  contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    type: "get",
-                                    url:'{% url "file:meta-detail" %}',
-                    success: function(response) {
-                     console.log("got some response")
-                     var metadata = JSON.parse(response["metadata"]);
-                      {% for title,text in meta_data%}
-                <div class="data_detail">
-                    {%if 'ExifTool Version Number' in title%}
-                    {%elif 'Directory' in title%}
-                    {%else%}
-                    <span class="file_header"> {{title}}:</span>
-                    <p class="file_text">{{text}}</p>
-                    {%endif%}
-                </div>
-                {%endfor%}
-
-
-                  },
-                  error: function(data) {
-                      console.log("down here")
-                      post_tables("error being thrown")
-                  }
-               });
-    }, 100);
-});
-</script> {%endcomment %}

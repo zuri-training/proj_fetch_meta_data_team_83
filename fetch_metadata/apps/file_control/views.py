@@ -42,7 +42,6 @@ class FileCreateView(LoginRequiredMixin, CreateView):
     template_name = 'file_control/dashboard.html'
     
     def get_success_url(self):
-        print(self.object.pk)
         return reverse_lazy('file:file-success', kwargs={'pk': self.object.pk})
 
     def get_context_data(self, **kwargs):
@@ -123,7 +122,6 @@ class FileDetailView(LoginRequiredMixin, DetailView):
         path = os.path.join(settings.MEDIA_ROOT, metafile.path) #get the full path
 
         metadata = read_file(path)
-        print(metadata)
         context["meta_data"]= metadata
         return context
 

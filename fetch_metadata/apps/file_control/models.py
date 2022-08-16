@@ -100,14 +100,10 @@ def save_meta_file(sender,**kwargs):
     """
     Create the metadata file and populate the database
     """
-    print(f"sender: {sender}")
-    print(f"kwargs: {kwargs}")
     file_main = kwargs["instance"]
     file_instance = user_directory_path(file_main, str(file_main.file))
     # file_instance = str(kwargs["instance"].file)
     # file_instance = kwargs["instance"].file.path
-    print(f"file_instance.file.path: {file_instance}")
-    print(f"file_main: {file_main}")
     # create_meta_file(file_instance)
     file_ext = ".mttrck" #metatrack file extension for saving metadata
     root_file_name = os.path.splitext(file_instance)[0] #file name without extension
@@ -119,8 +115,7 @@ def save_meta_file(sender,**kwargs):
 
     # File.objects.filter(id=file_main.id).update(meta_file=str(final_output))
     file_main.meta_file=(output_file)
-    print(f"outputfile: {output_file}")
-    print(f"outputfilewithjoin: {os.path.join(media_path,output_file)}")
+
     # create_meta_file(str(os.path.join(media_path,output_file)))
 
 @receiver(post_save, sender=File)

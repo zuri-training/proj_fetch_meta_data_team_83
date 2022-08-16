@@ -48,3 +48,7 @@ class ServicePage(ListView):
 class AboutUs(ListView):
     model = Post
     template_name = 'common/about_us.html'
+
+class DocumentationView(DetailView):
+    model = Post
+    template_name = 'common/documentation.html'

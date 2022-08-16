@@ -25,40 +25,59 @@
 				</div>
 				<div class="top_buttons">
 					<div class="button_stuff">
-					<!-- <button class="extract_button">Extract</button> -->
-                                         
-                                           <form 
-						id="form" 
-						action="{% url 'file:userFileUpload' %}" 
-						role="form" 
-						method="POST" 
-						enctype="multipart/form-data"
-				         	/>
-						{% csrf_token %}
-						{{form.as_p}}
-                                                {% comment %} {%if forms.errors%}
-						<div>{{errors}}</div>{%endif%}
-                                                <div class="buttons_stuff">
-                                                
-						<input 
-						class="browse_button" 
-						type="file" 
-						name="{{form.file.name}}" 
-						value="Browse..."/>{% endcomment %}
-                                                </div>
-						<div class="side_button">
-							<input id="submit"
-								class="extract_button"
-								type="submit"
-								value="Extract"
-								class="extract_button"
-								name="submit"
-							/>
-						</div> 
-					</form>
+						<!-- <button class="extract_button">Extract</button> -->
+						        
+                        <form 
+							id="form" 
+							action="{% url 'file:userFileUpload' %}" 
+							role="form" 
+							class="browse_content"
+							method="POST" 
+							enctype="multipart/form-data"
+				        >
+							{% csrf_token %}
+							
+							{{form.as_p}}
+							{% comment %} <input 
+							type="file"
+							action="{%url 'file:userFileUpload'%}"
+							name="file"
+							class="browse_button"
+							id="input"
+							enctype="multipart/form-data"
+							method="POST"
+							style="opacity:0"
+							required
+							> {% endcomment %}
+							
+							{% comment %} 
+								{%if forms.errors%}
+									<div>{{errors}}</div>
+								{%endif%}
+								<div class="buttons_stuff">
+													
+									<input 
+										style="display:none" 
+										type="file" 
+										name="{{form.file.name}}" 
+										value="Browse..."/>
+
+								</div>
+							{% endcomment %}
+						
+							<div class="side_button">
+								<input id="submit"
+									class="extract_button"
+									type="submit"
+									value="Extract"
+									class="extract_button"
+									name="submit"
+								/>
+							</div> 
+					    </form>
                                         <!--end button class-->
+					</div>
 				</div>
-			</div>
 
 			{% endblock %}
 

@@ -96,3 +96,13 @@ body {
 .extract-btn2:hover {
   cursor: pointer;
 }
+
+.view_your a:link{
+  color: var(--color-secondary);
+}
+.view_your a:visited{
+  color: #ffef1a
+}
+.view_your a:hover{
+  color: #ffff00;
+}

@@ -22,7 +22,7 @@ class LoginUserView(views.LoginView):
 
 class LogoutUserView(views.LogoutView):
     template_name = 'common/home.html'
-    next_page = '/home/'
+    next_page = '/'
 
 class UserPasswordChangeView(views.PasswordChangeView):
     template_name = 'api/password_change.html'
