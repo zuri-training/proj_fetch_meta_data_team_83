@@ -13,10 +13,10 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 
 .header_container {
     /* display: flex;   */
-    height:auto;
-    background: linear-gradient(-10deg, transparent 0 35%, #557899 0 37.5%, #2a5780 0% 40%, #003566 20% 100%);
+    /* height:auto; */
+    background: linear-gradient(-12deg, transparent 0 35%, #557899 0 37.5%, #2a5780 0% 40%, #003566 20% 100%);
     height: fit-content;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6, a, p, button, span, input {
 }
 #top_head .head_img{
     position:relative;
+    margin-top: 1rem;
     /* width: 100rem; */
     /* height: 100rem; */
     overflow: visible;

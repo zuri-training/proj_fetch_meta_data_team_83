@@ -1,8 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% block css %}
-<link href="{% static 'css/dashboard.css'%}" rel="stylesheet" />
-{% endblock %}
 
 
 			{% block hero %}
@@ -82,6 +79,9 @@
 			{% endblock %}
 
 			{% block content%}
+			{% block css %}
+<link href="{% static 'css/dashboard.css'%}" rel="stylesheet" />
+{% endblock %}
 			<div class="overall_container">
 				<section class="middle_container">
 					<div class="second_right">

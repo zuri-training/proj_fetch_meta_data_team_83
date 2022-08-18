@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-.header_container {
-    background-color: #003566;
-    padding-bottom: .5rem;
-}
-
-h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
-    font-family: 'Poppins', sans-serif;
-}
-
 
 /* Styling of the main overall_container */
 /* #overall_container {
@@ -57,40 +41,7 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
 
 /* 1. Styling the right container (navigation container) */
 
-.right_container_header {
-    margin: 0 auto;
-}
 
-.right_container_header .nav_container .right_nav .right_navlinks {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 3rem;
-    padding-top: 2rem;
-}
-
-.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text {
-    color: #FFFFFF;
-}
-
-.right_container_header .nav_container .right_nav .right_navlinks .navlinks_text:hover {
-    color: #FFD60A;
-}
-
-.right_container_header .nav_container .right_nav .right_navlinks .search_field {
-    padding: .6rem;
-    font-style: italic;
-    border-radius: .2rem;
-    font-size: .5rem;
-    width: 12rem;
-    background-image: url(img/search_icon.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.right_container_header .nav_container .right_nav .right_navlinks .right_logo {
-    width: 5rem;
-}
 
 .right_container_header .nav_container .right_nav .right_navlinks .show_photo {
     height: 3rem;
@@ -99,7 +50,7 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
 
 /* 2. Styling the right container (right top container) */
 
-.right_container_header .right_top {
+.right_top {
     text-align: center;
     max-width: 35%;
     margin: 0 auto;
@@ -108,52 +59,51 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
     left: 35%; */
 }
 
-.right_container_header .right_top .right_head {
+.right_top .right_head {
     position: relative;
 }
 
-.right_container_header .right_top .right_head .right_heading {
+.right_top .right_head .right_heading {
     color: #FFFFFF;
     font-size: 2.5rem;
 }
 
-.right_container_header .right_top .right_head .target_meta {
+.right_top .right_head .target_meta {
     color: #FFD60A;
 }
 
-.right_container_header .right_top .right_head .straight_ell {
+.right_top .right_head .straight_ell {
     position: absolute;
     bottom: 45%;
     left: 30%;
 }
 
-.right_container_header .right_top .right_head .straight_ell .first_ell {
+.right_top .right_head .straight_ell .first_ell {
     width: 80%;
 }
 
-.right_container_header .right_top .right_head .slant_ell {
+.right_top .right_head .slant_ell {
     position: absolute;
     bottom: 45%;
     left: 30%;
 
 }
-
-.right_container_header .right_top .right_head .slant_ell .second_ell {
+.right_top .right_head .slant_ell .second_ell {
     width: 80%;
 }
 
-.right_container_header .right_top .right_head_texts .right_contents {
+.right_top .right_head_texts .right_contents {
     color: #FFFFFF;
 }
 
-.right_container_header .right_top .top_buttons {
+.right_top .top_buttons {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 7rem;
 }
 
-.right_container_header .right_top .top_buttons .button_stuff {
+.right_top .top_buttons .button_stuff {
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
@@ -161,11 +111,11 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
     margin-right: .5rem;
 }
 
-.right_container_header .right_top .top_buttons .side_button {
+.right_top .top_buttons .side_button {
     margin: auto 0;
 }
 
-.right_container_header .right_top .top_buttons .extract_button {
+.right_top .top_buttons .extract_button {
     padding: 0.2rem .8rem;
     background-color: #FFD60A;
     Fill: Solid;
@@ -174,14 +124,14 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
     font-size: .7rem;
 }
 
-.right_container_header .right_top .top_buttons .button_stuff {
+.right_top .top_buttons .button_stuff {
     background-color: #FFFFFF;
     Fill: Solid;
     border-radius: .2rem;
     border: none;
 }
 
-.right_container_header .right_top .top_buttons .button_stuff .browse_button {
+.right_top .top_buttons .button_stuff .browse_button {
     background-color: #707376;
     Fill: Solid;
     border-radius: .2rem;
@@ -191,8 +141,7 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, button, input, caption, span {
     font-size: .7rem;
     margin-right: .3rem;
 }
-
-.right_container_header .right_top .top_buttons .button_stuff .browse_content {
+.right_top .top_buttons .button_stuff .browse_content {
     font-size: .5rem;
 }
 
