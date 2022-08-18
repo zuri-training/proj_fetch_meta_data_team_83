@@ -120,4 +120,5 @@ def save_meta_file(sender,**kwargs):
 
 @receiver(post_save, sender=File)
 def make_meta(sender, **kwargs):
-    create_metadata.delay(kwargs['instance'].file.path)
+    create_meta_file(kwargs['instance'].file.path)
+    # create_metadata.delay(kwargs['instance'].file.path)

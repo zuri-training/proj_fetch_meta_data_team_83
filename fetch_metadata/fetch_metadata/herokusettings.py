@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+SECRET_KEY = "DJANGO_SECRET_KEY"
 
-DJANGO_ALLOWED_HOSTS = [os.getenv("DJANGO_ALLOWED_HOSTS")]
+DJANGO_ALLOWED_HOSTS = ["localhost", "metatrack.herokuapp.com", "*.metatrack.herokuapp.com"]
 # SECURITY WARNING: don't run with debug turned on in production!
 if not config("DJANGO_DEBUG"):
     DEBUG = False
@@ -222,5 +222,5 @@ else:
         ]
 # django_celery/settings.py
 # Celery settings
-CELERY_BROKER_URL = "redis://localhost:6379"
-CELERY_RESULT_BACKEND = "redis://localhost:6379"
+# CELERY_BROKER_URL = "redis://localhost:6379"
+# CELERY_RESULT_BACKEND = "redis://localhost:6379"
