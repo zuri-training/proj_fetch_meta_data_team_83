@@ -4,7 +4,7 @@ from django.views.generic.base import RedirectView
 
 from django.urls import reverse_lazy
 from .forms import PostForm, EditForm
-from .models import Post
+from .models import Post, Faq
 
 class HomeView(ListView):
     """
@@ -13,10 +13,16 @@ class HomeView(ListView):
     model = Post
     template_name = 'common/home.html'
 
-class DashboardView(RedirectView):
-    pattern_name="file:userFileUpload"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['faq'] = Faq.objects.all()
+        return context
 
-class HowItWorksView(DetailView):
+class DashboardView(RedirectView):
+    # pattern_name="file:userFileUpload"
+    pass
+
+class HowItWorksView(ListView):
     model = Post
     template_name = 'common/how_it_works.html'
     
@@ -38,3 +44,16 @@ class DeleteDocumentationView(PermissionRequiredMixin, DeleteView):
     model = Post
     template_name = 'common/delete_post.html'
     success_url = reverse_lazy('home')
+
+
+class ServicePage(ListView):
+    model = Post
+    template_name = 'common/service.html'
+
+class AboutUs(ListView):
+    model = Post
+    template_name = 'common/about_us.html'
+
+class DocumentationView(DetailView):
+    model = Post
+    template_name = 'common/documentation.html'

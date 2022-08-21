@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+:root{
+    /* font family */
+    --font-family: 'Poppins', sans-serif;
+    /* font weights */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+
+    /* font style */
+    --font-style: italic;
+
+/* colours */
+    --primary: #D4D5D6;
+    --secondary: #4D5054;
+    --accent: #707376;
+
+    /* font size */
+    --font-size: 18px;
+
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+li{
+    display: inline-block;
+    margin-inline: 1.5rem;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 15%;
+    background-color: var(--secondary);
+    width: 15%;
+    height: 100vh;
+    gap: 2rem;
+
+
+}
+
+.main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.5rem;
+
+}
+.header_logo svg {
+    width: 158px;
+    height: 62px;
+    margin-left: -2rem;
+}
+.header_navbar{
+    margin-block: 1rem;
+   /* padding-block: 1rem; */
+}
+.header_navbar li a{
+   font-size: 0.9rem;
+}
+
+
+.header_navbar-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+    text-decoration: none;
+
+}
+
+.header_searchbar{
+    width: 232px;
+    height: 46px;
+    position: relative;
+    padding-block-start: 0.5rem;
+    
+    
+}
+.header_searchbar input{
+    width: 100%;
+    padding-block: 0.5rem;
+    padding-inline-start: 0.5rem;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 0.4rem;
+    
+    
+}
+
+.header_searcbar-icon{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.8rem;
+}
+.header_searcbar-icon svg{
+  width: 18px;
+  height: 18px;
+}
+.header_profile-pic{
+    margin-inline-end: 2rem;
+}
+.header_profile-pic svg{
+    width: 40px;
+    height: 40px;
+  
+}
+
+.main-section{
+    margin-inline: 3rem;
+}
+.main-section  .main-section_heading {
+    text-align: center;
+    font-size: 2.0rem;
+}
+.main-section  .main-section_subheading {
+      text-align: center;
+}
+.main-section_subsection{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4.5rem;
+ 
+    margin-block-start: 3rem;
+    padding-inline-start: 2.5rem;
+}
+.main-section_subsection-folderimage{
+    
+    width: 50%;
+}
+
+.main-section_subsection-folderimage img{
+    
+    width: 95%;
+}
+
+.main-section_subsection-file-icons{
+    display: grid;
+
+    grid-template-areas: 
+    "img_1 img_2"
+    "img_3 img_4"
+    "img_5   .  ";
+    gap: 1rem;
+}
+.img_file_bg{
+    width: 180px;
+  border: 1px solid var(--accent);
+   padding-inline: 1rem; 
+  padding-block: 0.5rem; 
+}
+.small_grid{
+    display: grid;
+    grid-template-areas: 
+    "img file_type"
+    "img file_size "
+    ;
+}
+.img_file_bg img{
+   grid-area: img;
+    
+}
+.img_file_bg p{
+   grid-area: file_type;
+    
+}
+.img_file_bg h3{
+   grid-area: file_size;
+    
+}
+
+.main-section_subsection-file-icons_item1{
+
+    grid-area: img_1;
+}
+.main-section_subsection-file-icons_item2{
+    grid-area: img_2;
+}
+.main-section_subsection-file-icons_item3{
+    grid-area: img_3;
+}
+.main-section_subsection-file-icons_item4{
+    grid-area: img_4;
+}
+.main-section_subsection-file-icons_item5{
+    grid-area: img_5;
+}
+
+.main-section_subsection-arrow_right{
+   cursor: pointer;
+   border: 1px solid var(--accent);
+   border-radius: 0 0.5rem 0.5rem 0;
+   display: inline-block;
+   width: 64px;
+   height: 32px;
+   padding-inline: 1rem;
+   margin-inline-start: 23%;
+   margin-block-start: 1rem;
+
+
+}
+
+.main-section_subsection-arrow_right svg{
+    width: 32px;
+    height: 32px;
+
+}
+

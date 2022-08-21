@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{%static 'file_control/css/extraction_page.css'%}">
+    <link rel="stylesheet" href="{%static 'css/extraction_page.css'%}">
     <title>EXTRACTION PAGE</title>
 </head>
 
@@ -22,37 +22,42 @@
 
         <section class="metadata_information">
             <div class="metadata_details">
-               
 
-                {% for title,text in meta_data%}
+
+               {% for title,text in meta_data%}
                 <div class="data_detail">
                     {%if 'ExifTool Version Number' in title%}
                     {%elif 'Directory' in title%}
+                    {%elif 'File Permissions' in title%}
                     {%else%}
                     <span class="file_header"> {{title}}:</span>
                     <p class="file_text">{{text}}</p>
                     {%endif%}
                 </div>
-                {%endfor%}
-             
-                <div class="data_detail">
-                    <span class="file_header"> FILE NAME:</span>
-                    <p class="file_text">A_Metadata_Approach_for_Building_Web_Application.pdf</p>
-                </div>
+               {%endfor%}
 
-                <div class="data_detail">
-                    <span class="file_header">FILE SIZE:</span>
-                    <p class="file_text">536 KB</p>
-                </div>
 
-               
+
             </div>
 
             <div class="div">
-                <img src="images/Rectangle_shape.png" alt="" class="extraction_file_img">
+            {{file.filetype}}
+                {% if "image" in file.filetype%}
+                    <img src="{{file.file.url}}" width="500" height="500"  class="extraction_file_img">
+                {%else%}
+                    <iframe src="{{file.file.url}}">
+                {%endif%}
+
                 <div>
-                    <input type="submit" value="Export" class="extraction_button extract-btn1">
-                    <input type="submit" value="Share" class="extraction_button extract-btn2">
+                    <href="{{file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn1">Download</button>
+                    </a>
+                    <a href="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Share</button>
+                    </a>
+                    <a href="{{ file.meta_file.url}}" download>
+                        <button class="extraction_button extract-btn2">Embed</button>
+                    </a>
                 </div>
 
             </div>

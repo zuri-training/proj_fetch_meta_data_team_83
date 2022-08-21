@@ -24,12 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("DJANGO_SECRET_KEY",'django-insecure-j#$&w%&4m(rj!#dvzt3f3my#)qs)y5p)$x+3$sb^8@fp8858h&')
 
-DJANGO_ALLOWED_HOSTS = [config("DJANGO_ALLOWED_HOSTS")]
+DJANGO_ALLOWED_HOSTS = ['148.251.6.230','metatrack.zurifordummies.com','localhost', 'www.metatrack.zurifordummies.com']
 # SECURITY WARNING: don't run with debug turned on in production!
-if not config("DJANGO_DEBUG"):
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = True
 
 
 ALLOWED_HOSTS = DJANGO_ALLOWED_HOSTS
@@ -74,7 +71,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'fetch_metadata.urls'
 CSRF_TRUSTED_ORIGINS = [
-    'https://metatrack.herokuapp.com'
+    'https://metatrack.herokuapp.com',
+    'http://localhost',
+    'https://metatrack.zurifordummies.com'
 ]
 
 TEMPLATES = [
@@ -111,11 +110,11 @@ PG_PORT = config("PG_PORT")
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': PG_DB,
-        'USER': PG_USER,
-        'PASSWORD': PG_PASSWORD,
-        'HOST': PG_HOST,
-        'PORT': PG_PORT,
+        'NAME': 'idimmusix',
+        'USER': 'idimmusix',
+        'PASSWORD': 'idimmusix',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -166,61 +165,24 @@ REST_FRAMEWORK = {
                 'rest_framework.permissions.IsAuthenticated',
     ],
 }
-LOGIN_REDIRECT_URL = "dashboard"
-LOGOUT_REDIRECT_URL = "home"
-
-# Configure Django App for Heroku
-if DEBUG is False:
-    import django_on_heroku
-    import dj_database_url
-    STATIC_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
-    MEDIA_URL = '/fetchmetadata.s3.af-south-1.amazonaws.com/'
 
 
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
-
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-    AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
-    AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
-    AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
-    AWS_S3_CUSTOM_DOMAIN = config("AWS_S3_CUSTOM_DOMAIN")
-    AWS_S3_REGION_NAME = "af-south-1"
-    AWS_S3_OBJECT_PARAMETERS = {
-        'CacheControl': 'max-age=86400',
-    }
-    AWS_DEFAULT_ACL=None
-
-    # AWS_CLOUDFRONT_KEY = config('AWS_CLOUDFRONT_KEY', None).encode('ascii')
-    # AWS_CLOUDFRONT_KEY_ID = config('AWS_CLOUDFRONT_KEY_ID', None)
-    AWS_LOCATION = 'media'
-
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'staticdev'),
-    ]
-    STATIC_ROOT = 'static'
-
-    MEDIA_ROOT = 'media'
-    if "localhost" not in DJANGO_ALLOWED_HOSTS:
-        django_on_heroku.settings(locals())
-
-        DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-
-else:
-    #Media files (uploaded files)
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    STATIC_ROOT = 'static'
+#Media files (uploaded files)
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
 
-    # Static files (CSS, JavaScript, Images)
-    # https://docs.djangoproject.com/en/4.0/howto/static-files/
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = [
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'staticdev')
         ]
 # django_celery/settings.py
 # Celery settings
-CELERY_BROKER_URL = "redis://localhost:6379"
-CELERY_RESULT_BACKEND = "redis://localhost:6379"
+CELERY_BROKER_URL = "redis://localhost:17718"
+CELERY_RESULT_BACKEND = "redis://localhost:17718"

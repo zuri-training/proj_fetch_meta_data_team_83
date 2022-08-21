@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,13 +18,13 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="{% static 'css/stylesjosh.css'}" />
   <body>
     <div class="container">
       <div class="hero">
         <header>
           <a href=""
-            ><img src = "Joshua Images/METATRACK PNG 3.png" alt = ""></a
+            ><img src ="{% static 'img/METATRACK PNG 3.png'%}" alt = ""></a
           >
           <a href="" class="toggle__button">
             <span class="bar"></span>

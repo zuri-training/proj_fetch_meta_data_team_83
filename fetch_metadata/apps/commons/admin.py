@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from .forms import EditForm, PostForm
-from .models import Post
+from .models import Post,Faq
 
 
 class PostAdmin (admin.ModelAdmin):
@@ -28,3 +28,5 @@ class PostAdmin (admin.ModelAdmin):
         model = Post
 
 admin.site.register(Post, PostAdmin)
+
+admin.site.register(Faq)

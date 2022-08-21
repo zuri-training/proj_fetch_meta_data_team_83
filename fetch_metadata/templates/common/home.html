@@ -1,5 +1,10 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<header class="header_container">
+{% extends 'base.html' %} {% load static %}
+
+{% block hero %}
+{% block image %}
+
+<img src="img/Code Image.svg" class="show_photo" alt="" />
+{%endblock%}
 <section id="top_head">
   <div class="head_content">
     <h1 class="head_headings content">Extract <span class="target_meta">Metadatas</span> from your Files</h1>
@@ -8,14 +13,20 @@
       modification history to the software tools used to create them. Available
       to image files, csv, pdf, json, etc.
     </p>
+    {%if user.is_authenticated%}
+    <a href="{%url 'common:dashboard'%}"
+        ><button class="head_button">Extract Metadata</button></a
+      >
+    {%else%}
     <a href="{%url 'api:signup'%}"
       ><button class="head_button">Create A Free Account</button></a
     >
+    {%endif%}
   </div>
-  <div class="head_img"></div>
+  <div class="head_img"><img src="{% static 'img/image_display.svg'%}" alt="" class="image_display" /></div>
   <!--this is for image-->
-</section>
-</header>
+</section> {% endblock %}
+{% block content %}
 <section id="first_layout">
   <h2 class="how_heading">How it Works</h2>
   <div class="layout_boxes">
@@ -28,7 +39,6 @@
         />
       </div>
       <div class="box_text">
-        <div class="box_text">
           <p class="first_layout_texts">
           Upload files ranging from images, csv, pdf and json, etc. by clicking
           the <strong>Browse</strong> button
@@ -60,8 +70,8 @@
       </div>
       <div class="box_text">
         <p class="first_layout_texts">
-          Once generated, you are allow to <strong>Copy</strong> the extracted
-          metadatas to a clipboard
+          Once generated, you are allow to <strong>Download</strong> the extracted
+          metadatas in a <code>.mttrck</code> format, and open it with any text editor of your choice
         </p>
       </div>
     </div>
@@ -80,9 +90,14 @@
       An online exif data reader can show you all these hidden information.
     </p>
     <div class="metadata_button">
-      <a href="{%url 'api:signup'%}" target="_blank" rel="noopener noreferrer"
+      {%if user.is_authenticated%}
+      <a href="{%url 'common:dashboard'%}" target="_blank" rel="noopener noreferrer"
         ><button class="extract_button">Extract Metadata</button></a
       >
+      {%else%}
+      <a href="{%url 'api:signup'%}" target="_blank" rel="noopener noreferrer"
+        ><button class="extract_button">Extract Metadata</button></a
+      >{%endif%}
     </div>
   </div>
   <div class="layout_img">
@@ -111,9 +126,14 @@
       An exif viewer shows you all you need to know about your text document.
     </p>
     <div class="metadata_button">
+    {%if user.is_authenticated%}
+    <a href="{%url 'common:dashboard'%}"
+        ><button class="extract_button">Extract Metadata</button></a
+      >
+    {%else%}
       <a href="{%url 'api:signup'%}"
         ><button class="extract_button">Create A Free Account</button></a
-      >
+      >{%endif%}
     </div>
   </div>
 </section>
@@ -159,15 +179,17 @@
     </p>
   </div>
   <div class="faq_bars">
-    <div class="faq_one faq_containers">
-      <h4 class="faq_quest">What are Meta Data?</h4>
+    
+      {%for answers in faq%}
+      <div class="faq_containers">
+      <h4 class="faq_quest">{{answers.faqQuest}}</h4>
       <div class="faq_body">
         <p class="faq_answers">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
-          tempora!
+          {{answers.faqAnswer}}
         </p>
       </div>
       <hr class="hr_line">
+      {%endfor%}
     </div>
     <div class="faq_two faq_containers">
       <h4 class="faq_quest">
@@ -175,7 +197,7 @@
       </h4>
       <div class="faq_body">
         <p class="faq_answers">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum.
+          PDF, JSON, CSV, MP3, MP4, JPEG, PNG...
         </p>
       </div>
       <hr class="hr_line">
@@ -184,10 +206,13 @@
 
       <h4 class="faq_quest">Can we share details gotten from the copied metadata file?</h4>
       <div class="faq_body">
-        <p class="faq_answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eveniet?</p>
+        <p class="faq_answers">
+          Yes, you can decide to Share details through to anyone.
+        </p>
       </div>
       <hr class="hr_line">
     </div>
   </div>
 </section>
 {% endblock %}
+

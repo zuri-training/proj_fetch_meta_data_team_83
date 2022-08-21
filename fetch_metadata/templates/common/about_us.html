@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./about_us.css">
+    <link rel="stylesheet" href="{% static 'css/about_us.css'}">
     <title>ABOUT US</title>
 </head>
 
@@ -41,11 +42,11 @@
                     </p>
                 </div>
 
-                <img src="./images/Rectangle_4.png" alt="image_of_file_chartbox" class="about_us_img">
+                <img src="{% static 'img/Rectangle_4.png'%}" alt="image_of_file_chartbox" class="about_us_img">
                 <!-- No 1 end -->
 
                 <!-- No 2 start -->
-                <img src="./images/contract_display.png" alt="contract" class="about_us_img">
+                <img src="{% static 'img/contract_display.png'%}" alt="contract" class="about_us_img">
 
                 <div class="features__feature">
                     <div class="features__header">
@@ -69,35 +70,35 @@
             <div class="testimonial__cards-container">
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user1.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'img/user1.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Dvrmc</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings1.png" alt="" class="card_rating">
+                    <img src="{% static 'img/ratings1.png'%}" alt="" class="card_rating">
                 </div>
 
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user2.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'img/user2.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Idinnma</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings2.png" alt="" class="card_rating">
+                    <img src="{% static 'img/ratings2.png'%}" alt="" class="card_rating">
                 </div>
 
                 <div class="testimonial__card">
                     <div class="testimonial__author">
-                        <img src="./images/user3.png" alt="" class="testimonial__photo" />
+                        <img src="{% static 'img/user3.png'%}" alt="" class="testimonial__photo" />
                         <h2 class="testimonial__name">Opeyemmy</h2>
                     </div>
                     <p class="testimonial__text">
                         Scans the entirety of selected file(s). This scan could take hours
                     </p>
-                    <img src="./images/ratings3.png" alt="" class="card_rating">
+                    <img src="{% static 'img/ratings3.png'%}" alt="" class="card_rating">
                 </div>
             </div>
 
